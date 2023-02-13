@@ -207,6 +207,7 @@ Value is used within the record and variable to store values.
 > | Value::Ident(Ident)         | Stores a Ident value |
 > | Value::Selection(Selection) | Stores a Selection value |
 > | Value::Version(Version)     | Stores a version value |
+> | Value::List(List)           | Stores a list value |
 
 ##### Example
 > ```rust
