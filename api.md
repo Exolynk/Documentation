@@ -468,6 +468,172 @@ Sets the selected options of the given selection
 
 
 ------------------------------------------------------------------------------------------
+### List
+A can store multiple values at once. A list can be restricted to a specific value typ.
+<details>
+ <summary><code>List::new() -> List</code></summary>
+
+##### Description
+Returns a empty List with no typ restriction.
+##### Returns
+> | data type               | description                                                           |
+> |-------------------------|-----------------------------------------------------------------------|
+> | List.                   | A List object |
+
+</details>
+
+<details>
+ <summary><code>List::new_restriction(Value) -> List</code></summary>
+
+##### Description
+Returns a List with the given restriction typ in place.
+##### Parameters
+> | parameter | data type               | description                                                           |
+> |-----------|-------------------------|-----------------------------------------------------------------------|
+> | 1         | Value                   | A Value to define the restriction type and default value |
+##### Returns
+> | data type               | description                                                           |
+> |-------------------------|-----------------------------------------------------------------------|
+> | List                    | A List object |
+
+</details>
+
+<details>
+ <summary><code>List::set_restriction(Self, Option&lt;Value&gt;)</code></summary>
+
+##### Description
+Sets or removes the restriction of the list.
+##### Parameters
+> | parameter | data type               | description                                                           |
+> |-----------|-------------------------|-----------------------------------------------------------------------|
+> | 0         | Self / List.            | A reference to the own object |
+> | 1         | Option&lt;Value&gt;     | The restriction to set or None for no restriction |
+
+</details>
+
+<details>
+ <summary><code>List::get_restiction(Self) -> Option&lt;Value&gt;</code></summary>
+
+##### Description
+Gets the actual restriction of the list.
+##### Parameters
+> | parameter | data type               | description                                                           |
+> |-----------|-------------------------|-----------------------------------------------------------------------|
+> | 0         | Self / List             | A reference to the own object |
+##### Returns
+> | data type               | description                                                           |
+> |-------------------------|-----------------------------------------------------------------------|
+> | Option&lt;Value&gt;     | A Value which is the actual restriction |
+
+</details>
+
+<details>
+ <summary><code>List::add(Self, Value)</code></summary>
+
+##### Description
+Adds a new value to the list collection.
+##### Parameters
+> | parameter | data type               | description                                                           |
+> |-----------|-------------------------|-----------------------------------------------------------------------|
+> | 0         | Self / Selection        | A reference to the own object |
+> | 1         | Value                   | The value which should be added to the list |
+
+</details>
+
+<details>
+ <summary><code>List::get(Self, usize) -> Option&lt;Value&gt;</code></summary>
+
+##### Description
+Gets an entry from the list
+##### Parameters
+> | parameter | data type               | description                                                           |
+> |-----------|-------------------------|-----------------------------------------------------------------------|
+> | 0         | Self / List             | A reference to the own object |
+> | 1         | usize                   | The position in the list we want the entry of |
+##### Returns
+> | data type               | description                                                           |
+> |-------------------------|-----------------------------------------------------------------------|
+> | Option&lt;Value&gt;     | A Value which is the actual restriction |
+
+</details>
+
+<details>
+ <summary><code>List::replace(Self, usize, Value)</code></summary>
+
+##### Description
+Replaces an entry at the defined position.
+##### Parameters
+> | parameter | data type               | description                                                           |
+> |-----------|-------------------------|-----------------------------------------------------------------------|
+> | 0         | Self / List             | A reference to the own object |
+> | 1         | usize                   | The index of the entry inside the list to replace |
+> | 2         | Value                   | The new value to replace the old one with |
+
+</details>
+
+<details>
+ <summary><code>List::remove(Self, usize)</code></summary>
+
+##### Description
+Remove an entry at the given positon.
+##### Parameters
+> | parameter | data type               | description                                                           |
+> |-----------|-------------------------|-----------------------------------------------------------------------|
+> | 0         | Self / List             | A reference to the own object |
+> | 1         | usize                   | Position where the entry should be removed  |
+
+</details>
+
+<details>
+ <summary><code>List::clear(Self)</code></summary>
+
+##### Description
+Clears the complete list.
+##### Parameters
+> | parameter | data type               | description                                                           |
+> |-----------|-------------------------|-----------------------------------------------------------------------|
+> | 0         | Self / List             | A reference to the own object |
+
+</details>
+
+<details>
+ <summary><code>List::len(Self) -> usize</code></summary>
+
+##### Description
+Returns the length of the list
+##### Parameters
+> | parameter | data type               | description                                                           |
+> |-----------|-------------------------|-----------------------------------------------------------------------|
+> | 0         | Self / List             | A reference to the own object |
+##### Returns
+> | data type               | description                                                           |
+> |-------------------------|-----------------------------------------------------------------------|
+> | usize                   | Length of the list |
+
+</details>
+
+<details>
+ <summary><code>List::is_empty(Self) -> bool</code></summary>
+
+##### Description
+Returns if the list is empty or has entries inside.
+##### Parameters
+> | parameter | data type               | description                                                           |
+> |-----------|-------------------------|-----------------------------------------------------------------------|
+> | 0         | Self / List             | A reference to the own object |
+##### Returns
+> | data type               | description                                                           |
+> |-------------------------|-----------------------------------------------------------------------|
+> | bool                    | True when empty false when it has entries |
+
+</details>
+
+
+
+
+
+
+------------------------------------------------------------------------------------------
 ### Version
 A version object. Right now it only allows nubered version (e.g. 0, 1, 2, 3, ...) in future
 more version formats are planned.
