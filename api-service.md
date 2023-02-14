@@ -56,7 +56,7 @@ Inserts a new Record into the database.
  <summary><code>server::db::update_record(Record) -> async Result&lt;()&gt;</code></summary>
 
 ##### Description
-UUpdates a Record which already exist in the database.
+Updates a Record which already exist in the database. This also informs all subscribed clients about this change.
 ##### Parameters
 > | parameter | data type               | description                                       |
 > |-----------|-------------------------|---------------------------------------------------|
