@@ -1,10 +1,23 @@
+---
+title: Base API
+taxonomy:
+    category: docs
+process:
+    twig: true
+---
+
+[TOC]
+
 ## Base API
 ------------------------------------------------------------------------------------------
 ### Environment
 The environment is the system root and holds all models, records, configurations etc.
 Global settings, translations are stored within this object.
-<details>
- <summary><code>Getter</code></summary>
+
+
+
+[ui-accordion independent=true open=none]
+[ui-accordion-item title=<code>Getter</code>]
 
 ##### Parameters
 > | name      | data type               | description                                                           |
@@ -17,10 +30,9 @@ Global settings, translations are stored within this object.
 > | `translations`  | Selection         | The translations of the environment  |
 > | `settings`      | Settings          | The detail settings of the environment  |
 
-</details>
+[/ui-accordion-item]
 
-<details>
- <summary><code>Setter</code></summary>
+[ui-accordion-item title=<code>Setter</code>]
 
 ##### Parameters
 > | name           | data type          | description                                                  |
@@ -28,10 +40,10 @@ Global settings, translations are stored within this object.
 > | `name`         | Language           | Set the display name of the environment |
 > | `languages`    | Selection          | Set the supported languages for this environment  |
 > | `translations` | Selection          | Set the translations for this environment  |
-> | `settings`     | Settings           | Set the detail settings of the environment  |
+> | `settings`     | Settings           | Set the detail settin<code><code>Getter</code></code>gs of the environment  |
 
-</details>
-
+[/ui-accordion-item]
+[/ui-accordion]
 
 
 
@@ -39,8 +51,9 @@ Global settings, translations are stored within this object.
 ### Model
 A model represents a record type or a database table within the system. The model defines, which
 custom variables a record has and stores the workflows and services for these specific record types.
-<details>
- <summary><code>Getter</code></summary>
+
+[ui-accordion independent=true open=none]
+[ui-accordion-item title=<code>Getter</code>]
 
 ##### Parameters
 > | name      | data type               | description                                                           |
@@ -57,10 +70,9 @@ custom variables a record has and stores the workflows and services for these sp
 > | `record_status` | Selection         | Defines the different status options the record should have  |
 > | `variables`     | &lt;Variable&gt;  | The list of variables of this model  |
 
-</details>
+[/ui-accordion-item]
 
-<details>
- <summary><code>Setter</code></summary>
+[ui-accordion-item title=<code>Setter</code>]
 
 ##### Parameters
 > | name      | data type               | description                                                           |
@@ -72,8 +84,8 @@ custom variables a record has and stores the workflows and services for these sp
 > | `record_status` | Selection         | Defines the different status options the record should have  |
 > | `variables`     | &lt;Variable&gt;  | Set the list of variables of this model  |
 
-</details>
-
+[/ui-accordion-item]
+[/ui-accordion]
 
 
 
@@ -81,8 +93,9 @@ custom variables a record has and stores the workflows and services for these sp
 ### Record
 A record is a single dataset inside the system. It is stored as row within the internal database inside
 a table which is uunique for this record type / model.
-<details>
- <summary><code>Getter</code></summary>
+
+[ui-accordion independent=true open=none]
+[ui-accordion-item title=<code>Setter</code>]
 
 ##### Parameters
 > | name      | data type               | description                                                           |
@@ -96,10 +109,9 @@ a table which is uunique for this record type / model.
 > | `name`    | Language                | The display name of the record |
 > | `description`   | Language          | The display description of the record |
 
-</details>
+[/ui-accordion-item]
 
-<details>
- <summary><code>Setter</code></summary>
+[ui-accordion-item title=<code>Setter</code>]
 
 ##### Parameters
 > | name      | data type               | description                                                           |
@@ -111,10 +123,9 @@ a table which is uunique for this record type / model.
 > | `name`    | Language                | Set the display name of the record |
 > | `description`   | Language          | Set the display descritption of the record |
 
-</details>
+[/ui-accordion-item]
 
-<details>
- <summary><code>Record::set_value(Record, Ident, Value)</code></summary>
+[ui-accordion-item title=<code>Record::set_value(Record,\040Ident,\040Value)</code>]
 
 ##### Description
 Sets the value inside of a record. Providing the Ident "name", "description", "status", sets the standard record values. All other Idents will set a custom value.
@@ -125,10 +136,9 @@ Sets the value inside of a record. Providing the Ident "name", "description", "s
 > | 1         | Ident                   | Define which value should be set |
 > | 2         | Value                   | The value which should be set |
 
-</details>
+[/ui-accordion-item]
 
-<details>
- <summary><code>Record::get_variable(Record, Model, Ident) -> Option&lt;Variable&gt;</code></summary>
+[ui-accordion-item title=<code>Record::get_variable(Record,\040Model,\040Ident)\040->\040Option&lt;Variable&gt;</code>]
 
 ##### Description
 Returns a Variable for the given ident when found. The model is needed to abstract the right values.
@@ -143,8 +153,8 @@ Returns a Variable for the given ident when found. The model is needed to abstra
 > |-------------------------|-----------------------------------------------------------------------|
 > | Option&lt;Variable&gt;  | The variable when found |
 
-</details>
-
+[/ui-accordion-item]
+[/ui-accordion]
 
 
 
@@ -153,8 +163,9 @@ Returns a Variable for the given ident when found. The model is needed to abstra
 ### Variable
 A variable defines how a value should be handled, which type it has, etc. It's used mostly in the model
 to define how customer specific fields look like.
-<details>
- <summary><code>Getter</code></summary>
+
+[ui-accordion independent=true open=none]
+[ui-accordion-item title=<code>Getter</code>]
 
 ##### Parameters
 > | name      | data type               | description                                                           |
@@ -168,10 +179,9 @@ to define how customer specific fields look like.
 > | `name`    | Language                | The display name of the variable |
 > | `description`   | Language          | The display description of the variable |
 
-</details>
+[/ui-accordion-item]
 
-<details>
- <summary><code>Setter</code></summary>
+[ui-accordion-item title=<code>Setter</code>]
 
 ##### Parameters
 > | name      | data type               | description                                                           |
@@ -183,8 +193,8 @@ to define how customer specific fields look like.
 > | `name`    | Language                | The display name of the variable |
 > | `description`   | Language          | The display description of the variable |
 
-</details>
-
+[/ui-accordion-item]
+[/ui-accordion]
 
 
 
@@ -193,8 +203,9 @@ to define how customer specific fields look like.
 ### Value
 A value is an enum with a unit variant for each different value it can store. This strictly typed
 Value is used within the record and variable to store values.
-<details>
- <summary><code>Variants</code></summary>
+
+[ui-accordion independent=true open=none]
+[ui-accordion-item title=<code>Variants</code>]
 
 ##### Variants
 > | data type                   | description                                                           |
@@ -221,10 +232,9 @@ Value is used within the record and variable to store values.
 > }
 > ```
 
-</details>
+[/ui-accordion-item]
 
-<details>
- <summary><code>Value::as_string(Value) -> String</code></summary>
+[ui-accordion-item title=<code>Value::as_string(Value)\040->\040String</code>]
 
 ##### Description
 Returns a String whith the ident value type.
@@ -237,8 +247,8 @@ Returns a String whith the ident value type.
 > |-------------------------|-----------------------------------------------------------------------|
 > | String                  | A String object with the type e.g. language/float/bool/.... |
 
-</details>
-
+[/ui-accordion-item]
+[/ui-accordion]
 
 
 
@@ -247,8 +257,9 @@ Returns a String whith the ident value type.
 ------------------------------------------------------------------------------------------
 ### Language
 A language is an object with holds text translated in multiple languages.
-<details>
- <summary><code>Language::new() -> Language</code></summary>
+
+[ui-accordion independent=true open=none]
+[ui-accordion-item title=<code>Language::new()\040->\040Language</code>]
 
 ##### Description
 Returns a empty Language object.
@@ -257,10 +268,9 @@ Returns a empty Language object.
 > |-------------------------|-----------------------------------------------------------------------|
 > | Language                | A Language object |
 
-</details>
+[/ui-accordion-item]
 
-<details>
- <summary><code>Language::new_en(String) -> Language</code></summary>
+[ui-accordion-item title=<code>Language::new_en(String)\040>\040Language</code>]
 
 ##### Description
 Returns a Language object with the english languauge set.
@@ -273,10 +283,9 @@ Returns a Language object with the english languauge set.
 > |-------------------------|-----------------------------------------------------------------------|
 > | Language                | A Language object |
 
-</details>
+[/ui-accordion-item]
 
-<details>
- <summary><code>Language::get(Self, String) -> Option&lt;String&gt;</code></summary>
+[ui-accordion-item title=<code>Language::get(Self,\040String)\040->\040Option&lt;String&gt;</code>]
 
 ##### Description
 Returns the text in the defined language if found.
@@ -290,10 +299,9 @@ Returns the text in the defined language if found.
 > |-------------------------|-----------------------------------------------------------------------|
 > | Option&gt;Self&gt;      | Returns the text in the defined language if found |
 
-</details>
+[/ui-accordion-item]
 
-<details>
- <summary><code>Language::set(Self, String, String)</code></summary>
+[ui-accordion-item title=<code>Language::set(Self,\040String,\040String)</code>]
 
 ##### Description
 Sets the language text for the given language ident.
@@ -304,8 +312,8 @@ Sets the language text for the given language ident.
 > | 1         | String                  | The language ident (en, de, fr, it, ...) |
 > | 2         | String                  | The language text |
 
-</details>
-
+[/ui-accordion-item]
+[/ui-accordion]
 
 
 
@@ -314,8 +322,9 @@ Sets the language text for the given language ident.
 An Identifier is like a String but only allows small letters, underscore and numbers. The first character
 needs to be a small letter. When creating an ident from a String, it automatically transforms the String
 to a fitting ident.
-<details>
- <summary><code>Ident::new(String) -> Ident</code></summary>
+
+[ui-accordion independent=true open=none]
+[ui-accordion-item title=<code>Ident::new(String)\040->\040Ident</code>]
 
 ##### Description
 Returns a new Ident.
@@ -328,10 +337,9 @@ Returns a new Ident.
 > |-------------------------|-----------------------------------------------------------------------|
 > | Ident                   | A Ident object |
 
-</details>
+[/ui-accordion-item]
 
-<details>
- <summary><code>Ident::as_string(Ident) -> String</code></summary>
+[ui-accordion-item title=<code>Ident::as_string(Ident)\040->\040String</code>]
 
 ##### Description
 Returns a String whith the ident value.
@@ -344,16 +352,17 @@ Returns a String whith the ident value.
 > |-------------------------|-----------------------------------------------------------------------|
 > | String.                 | A String object |
 
-</details>
-
+[/ui-accordion-item]
+[/ui-accordion]
 
 
 
 ------------------------------------------------------------------------------------------
 ### Selection
 A selection is mostly used as dropdown fields to select one or multiple options.
-<details>
- <summary><code>Selection::new() -> Selection</code></summary>
+
+[ui-accordion independent=true open=none]
+[ui-accordion-item title=<code>Selection::new()\040->\040Selection</code>]
 
 ##### Description
 Returns a empty Selection object.
@@ -362,10 +371,9 @@ Returns a empty Selection object.
 > |-------------------------|-----------------------------------------------------------------------|
 > | Selection               | A Selection object |
 
-</details>
+[/ui-accordion-item]
 
-<details>
- <summary><code>Selection::new_languages() -> Selection</code></summary>
+[ui-accordion-item title=<code>Selection::new_languages()\040->\040Selection</code>]
 
 ##### Description
 Returns a Selection object, where the defaul languages (en, de, it, fr) are set with the translations.
@@ -374,10 +382,9 @@ Returns a Selection object, where the defaul languages (en, de, it, fr) are set 
 > |-------------------------|-----------------------------------------------------------------------|
 > | Selection               | A Selection object |
 
-</details>
+[/ui-accordion-item]
 
-<details>
- <summary><code>Selection::get(Self, String) -> Option&lt;Language&gt;</code></summary>
+[ui-accordion-item title=<code>Selection::get(Self,\040String)\040->\040Option&lt;Language&gt;</code>]
 
 ##### Description
 Returns the Language object for the defined option, when found
@@ -391,10 +398,9 @@ Returns the Language object for the defined option, when found
 > |-------------------------|-----------------------------------------------------------------------|
 > | Option&gt;Language&gt;  | Returns the language if found |
 
-</details>
+[/ui-accordion-item]
 
-<details>
- <summary><code>Selection::insert(Self, String, Language)</code></summary>
+[ui-accordion-item title=<code>Selection::insert(Self,\040String,\040Language)</code>]
 
 ##### Description
 Inserts a new option to the selection with the given ident and Language.
@@ -405,10 +411,9 @@ Inserts a new option to the selection with the given ident and Language.
 > | 1         | String                  | The option ident  |
 > | 2         | Language                | The language text |
 
-</details>
+[/ui-accordion-item]
 
-<details>
- <summary><code>Selection::get_mode(Self) -> SelectionMode</code></summary>
+[ui-accordion-item title=<code>Selection::get_mode(Self)\040->\040SelectionMode</code>]
 
 ##### Description
 Returns the SelectionMode enum for this selection
@@ -421,10 +426,9 @@ Returns the SelectionMode enum for this selection
 > |-------------------------|-----------------------------------------------------------------------|
 > | SelectionMode           | Returns the selection mode |
 
-</details>
+[/ui-accordion-item]
 
-<details>
- <summary><code>Selection::set_mode(Self, SelectionMode)</code></summary>
+[ui-accordion-item title=<code>Selection::set_mode(Self,\040SelectionMode)</code>]
 
 ##### Description
 Defines with selection mode (Single, Multi, Show) the selection should use.
@@ -434,10 +438,9 @@ Defines with selection mode (Single, Multi, Show) the selection should use.
 > | 0         | Self / Selection        | A reference to the own object |
 > | 1         | SelectionMode           | Set the mode |
 
-</details>
+[/ui-accordion-item]
 
-<details>
- <summary><code>Selection::get_selected(Self) -> Vec&lt;String&gt;</code></summary>
+[ui-accordion-item title=<code>Selection::get_selected(Self)\040->\040Vec&lt;String&gt;</code>]
 
 ##### Description
 Returns the idents of the selected options
@@ -450,10 +453,9 @@ Returns the idents of the selected options
 > |-------------------------|-----------------------------------------------------------------------|
 > | Vec&gt;Language&gt;     | Returns a list with the selected idents |
 
-</details>
+[/ui-accordion-item]
 
-<details>
- <summary><code>Selection::set_selected(Self, Vec&lt;String&gt;)</code></summary>
+[ui-accordion-item title=<code>Selection::set_selected(Self,\040Vec&lt;String&gt;)</code>]
 
 ##### Description
 Sets the selected options of the given selection
@@ -463,16 +465,17 @@ Sets the selected options of the given selection
 > | 0         | Self / Selection        | A reference to the own object |
 > | 1         | Vec&lt;String&gt;       | The selected option idents in a list  |
 
-</details>
-
+[/ui-accordion-item]
+[/ui-accordion]
 
 
 
 ------------------------------------------------------------------------------------------
 ### List
 A can store multiple values at once. A list can be restricted to a specific value typ.
-<details>
- <summary><code>List::new() -> List</code></summary>
+
+[ui-accordion independent=true open=none]
+[ui-accordion-item title=<code>List::new()\040->\040List</code>]
 
 ##### Description
 Returns a empty List with no typ restriction.
@@ -481,10 +484,9 @@ Returns a empty List with no typ restriction.
 > |-------------------------|-----------------------------------------------------------------------|
 > | List.                   | A List object |
 
-</details>
+[/ui-accordion-item]
 
-<details>
- <summary><code>List::new_restriction(Value) -> List</code></summary>
+[ui-accordion-item title=<code>List::new_restriction(Value)\040->\040List</code>]
 
 ##### Description
 Returns a List with the given restriction typ in place.
@@ -497,10 +499,9 @@ Returns a List with the given restriction typ in place.
 > |-------------------------|-----------------------------------------------------------------------|
 > | List                    | A List object |
 
-</details>
+[/ui-accordion-item]
 
-<details>
- <summary><code>List::set_restriction(Self, Option&lt;Value&gt;)</code></summary>
+[ui-accordion-item title=<code>List::set_restriction(Self,\040Option&lt;Value&gt;)</code>]
 
 ##### Description
 Sets or removes the restriction of the list.
@@ -510,10 +511,9 @@ Sets or removes the restriction of the list.
 > | 0         | Self / List.            | A reference to the own object |
 > | 1         | Option&lt;Value&gt;     | The restriction to set or None for no restriction |
 
-</details>
+[/ui-accordion-item]
 
-<details>
- <summary><code>List::get_restiction(Self) -> Option&lt;Value&gt;</code></summary>
+[ui-accordion-item title=<code>List::get_restiction(Self)\040->\040Option&lt;Value&gt;</code>]
 
 ##### Description
 Gets the actual restriction of the list.
@@ -526,10 +526,9 @@ Gets the actual restriction of the list.
 > |-------------------------|-----------------------------------------------------------------------|
 > | Option&lt;Value&gt;     | A Value which is the actual restriction |
 
-</details>
+[/ui-accordion-item]
 
-<details>
- <summary><code>List::add(Self, Value)</code></summary>
+[ui-accordion-item title=<code>List::add(Self,\040Value)</code>]
 
 ##### Description
 Adds a new value to the list collection.
@@ -539,10 +538,9 @@ Adds a new value to the list collection.
 > | 0         | Self / Selection        | A reference to the own object |
 > | 1         | Value                   | The value which should be added to the list |
 
-</details>
+[/ui-accordion-item]
 
-<details>
- <summary><code>List::get(Self, usize) -> Option&lt;Value&gt;</code></summary>
+[ui-accordion-item title=<code>List::get(Self,\040usize)\040->\040Option&lt;Value&gt;</code>]
 
 ##### Description
 Gets an entry from the list
@@ -556,10 +554,9 @@ Gets an entry from the list
 > |-------------------------|-----------------------------------------------------------------------|
 > | Option&lt;Value&gt;     | A Value which is the actual restriction |
 
-</details>
+[/ui-accordion-item]
 
-<details>
- <summary><code>List::replace(Self, usize, Value)</code></summary>
+[ui-accordion-item title=<code>List::replace(Self,\040usize,\040Value)</code>]
 
 ##### Description
 Replaces an entry at the defined position.
@@ -570,10 +567,9 @@ Replaces an entry at the defined position.
 > | 1         | usize                   | The index of the entry inside the list to replace |
 > | 2         | Value                   | The new value to replace the old one with |
 
-</details>
+[/ui-accordion-item]
 
-<details>
- <summary><code>List::remove(Self, usize)</code></summary>
+[ui-accordion-item title=<code>List::remove(Self,\040usize)</code>]
 
 ##### Description
 Remove an entry at the given positon.
@@ -583,10 +579,9 @@ Remove an entry at the given positon.
 > | 0         | Self / List             | A reference to the own object |
 > | 1         | usize                   | Position where the entry should be removed  |
 
-</details>
+[/ui-accordion-item]
 
-<details>
- <summary><code>List::clear(Self)</code></summary>
+[ui-accordion-item title=<code>List::clear(Self)</code>]
 
 ##### Description
 Clears the complete list.
@@ -595,10 +590,9 @@ Clears the complete list.
 > |-----------|-------------------------|-----------------------------------------------------------------------|
 > | 0         | Self / List             | A reference to the own object |
 
-</details>
+[/ui-accordion-item]
 
-<details>
- <summary><code>List::len(Self) -> usize</code></summary>
+[ui-accordion-item title=<code>List::len(Self)\040->\040usize</code>]
 
 ##### Description
 Returns the length of the list
@@ -611,10 +605,9 @@ Returns the length of the list
 > |-------------------------|-----------------------------------------------------------------------|
 > | usize                   | Length of the list |
 
-</details>
+[/ui-accordion-item]
 
-<details>
- <summary><code>List::is_empty(Self) -> bool</code></summary>
+[ui-accordion-item title=<code>List::is_empty(Self)\040->\040bool</code>]
 
 ##### Description
 Returns if the list is empty or has entries inside.
@@ -627,8 +620,8 @@ Returns if the list is empty or has entries inside.
 > |-------------------------|-----------------------------------------------------------------------|
 > | bool                    | True when empty false when it has entries |
 
-</details>
-
+[/ui-accordion-item]
+[/ui-accordion]
 
 
 
@@ -638,8 +631,9 @@ Returns if the list is empty or has entries inside.
 ### Version
 A version object. Right now it only allows nubered version (e.g. 0, 1, 2, 3, ...) in future
 more version formats are planned.
-<details>
- <summary><code>Version::new(String) -> Version </code></summary>
+
+[ui-accordion independent=true open=none]
+[ui-accordion-item title=<code>Version::new(String)\040->\040Version</code>]
 
 ##### Description
 Returns a new Version.
@@ -652,10 +646,9 @@ Returns a new Version.
 > |-------------------------|-----------------------------------------------------------------------|
 > | Version                 | A Version object |
 
-</details>
+[/ui-accordion-item]
 
-<details>
- <summary><code>Version::as_string(Version) -> String</code></summary>
+[ui-accordion-item title=<code>Version::as_string(Version)\040->\040String</code>]
 
 ##### Description
 Returns a String with the version.
@@ -668,8 +661,8 @@ Returns a String with the version.
 > |-------------------------|-----------------------------------------------------------------------|
 > | String.                 | A String object |
 
-</details>
-
+[/ui-accordion-item]
+[/ui-accordion]
 
 
 
@@ -679,8 +672,9 @@ Returns a String with the version.
 ------------------------------------------------------------------------------------------
 ### Access
 Access is a enum to control how variables can be seen and changed within the UI and on the server side
-<details>
- <summary><code>Variants</code></summary>
+
+[ui-accordion independent=true open=none]
+[ui-accordion-item title=<code>Variants</code>]
 
 ##### Variants
 > | data type                   | description                                                           |
@@ -690,10 +684,9 @@ Access is a enum to control how variables can be seen and changed within the UI 
 > | Access::Read                | Allows the user to just read the value |
 > | Access::Hide                | Hide the value from the user. Be aware this is only for the ui rendering! |
 
-</details>
+[/ui-accordion-item]
 
-<details>
- <summary><code>Access::from_str(String) -> Access</code></summary>
+[ui-accordion-item title=<code>Access::from_str(String)\040->\040Access</code>]
 
 ##### Description
 Creates the access enum from a string. When a wrong string is given, it returns Access::Hide as default.
@@ -706,10 +699,9 @@ Creates the access enum from a string. When a wrong string is given, it returns 
 > |-------------------------|-----------------------------------------------------------------------|
 > | Access                  | The access struct generated from the string |
 
-</details>
+[/ui-accordion-item]
 
-<details>
- <summary><code>Access::as_string(Access) -> String</code></summary>
+[ui-accordion-item title=<code>Access::as_string(Access)\040->\040String</code>]
 
 ##### Description
 Returns a String whith the access value.
@@ -722,8 +714,8 @@ Returns a String whith the access value.
 > |-------------------------|-----------------------------------------------------------------------|
 > | String                  | A String with the access |
 
-</details>
-
+[/ui-accordion-item]
+[/ui-accordion]
 
 
 
@@ -732,8 +724,9 @@ Returns a String whith the access value.
 ------------------------------------------------------------------------------------------
 ### Settings
 A map of keys and values wich stores detail settings for the system.
-<details>
- <summary><code>Settings::new() -> Settings</code></summary>
+
+[ui-accordion independent=true open=none]
+[ui-accordion-item title=<code>Settings::new()\040->\040Settings</code>]
 
 ##### Description
 Returns a empty Settings object.
@@ -742,10 +735,9 @@ Returns a empty Settings object.
 > |-------------------------|-----------------------------------------------------------------------|
 > | Settings                | A Settings object |
 
-</details>
+[/ui-accordion-item]
 
-<details>
- <summary><code>Settings::get(Self, String) -> Option&lt;String&gt;</code></summary>
+[ui-accordion-item title=<code>Settings::get(Self,String)\040->\040Option&lt;String&gt;</code>]
 
 ##### Description
 Returns the specific setting if found.
@@ -759,10 +751,9 @@ Returns the specific setting if found.
 > |-------------------------|-----------------------------------------------------------------------|
 > | Option&gt;String&gt;    | Returns the settings as string |
 
-</details>
+[/ui-accordion-item]
 
-<details>
- <summary><code>Settings::insert(Self, String, String)</code></summary>
+[ui-accordion-item title=<code>Settings::insert(Self,\040String,\040String)</code>]
 
 ##### Description
 Inserts a new setting in the settings object. An existing setting with the same ident will be overwritten.
@@ -773,10 +764,9 @@ Inserts a new setting in the settings object. An existing setting with the same 
 > | 1         | String                  | The settings ident |
 > | 2         | String                  | The detail setting |
 
-</details>
+[/ui-accordion-item]
 
-<details>
- <summary><code>Settings::remove(Self, String)</code></summary>
+[ui-accordion-item title=<code>Settings::remove(Self,\040String)</code>]
 
 ##### Description
 Removes a specific setting from the object.
@@ -786,9 +776,5 @@ Removes a specific setting from the object.
 > | 0         | Self / Settings         | A reference to the own object |
 > | 1         | String                  | The setting ident to be removed |
 
-</details>
-
-
-
-<br/>
-
+[/ui-accordion-item]
+[/ui-accordion]
