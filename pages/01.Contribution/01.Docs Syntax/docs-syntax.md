@@ -686,6 +686,73 @@ Content for chapter one.
 <br>
 <br>
 
+## Accordion
+
+##### Function of Grav Plugin: <a href="https://github.com/getgrav/grav-plugin-shortcode-ui/blob/develop/README.md" target="_blank">grav-plugin-shortcode-ui</a>
+
+An example of the Accordion shortcode is as follows:
+
+
+```
+[ ui-accordion independent=true open=none]
+[ ui-accordion-item title=<code>Record::get_variable(Record,\040Model,\040Ident)\040->\040Optioc&lt;Variable&gt;</code>]
+
+##### Description
+Returns a Variable for the given ident when found. The model is needed to abstract the right values.
+...
+
+[ /ui-accordion-item\]
+[ /ui-accordion]
+```
+
+Output:
+
+[ui-accordion independent=true open=none]
+[ui-accordion-item title=<code>Record::get_variable(Record,\040Model,\040Ident)\040->\040Option&lt;Variable&gt;</code>]
+
+##### Description
+Returns a Variable for the given ident when found. The model is needed to abstract the right values.
+...
+
+[/ui-accordion-item]
+[/ui-accordion]
+
+
+###Important
+
+Spaces in the Accordion Title Tags need to be escaped with ```\040```
+
+To display the Accordion Title as a code, Title Tags need to contain following html tags: ```<code></code>```
+
+<br>
+<br>
+<br>
+
+## Page Toc (Anchors + Table of Contents)
+
+##### Function of Grav Plugin: <a href="https://github.com/trilbymedia/grav-plugin-page-toc/blob/develop/README.md" target="_blank">grav-plugin-page-toc</a>
+
+### Usage
+
+#### Shortcode-like syntax in your content
+
+You can use the following shortcode-like syntax in your content:
+
+```md
+[TOC] or [TOC/] or [toc] or [toc /]
+```
+
+#### Page Configuration
+
+```md
+page-toc:
+  active: true
+```
+
+<br>
+<br>
+<br>
+
 
 ## Images
 Images have a similar syntax to links but include a preceding exclamation point.
