@@ -1,7 +1,8 @@
 ---
 title: 'Base API'
 taxonomy:
-    category: docs
+    category:
+        - docs
 process:
     markdown: true
     twig: false
@@ -224,7 +225,7 @@ Value is used within the record and variable to store values.
 > | Value::List(List)           | Stores a list value |
 
 ##### Example
-> ```rust
+> ```c#
 > // Create a Value with String typ
 > let val_s = Value::String("Hello World");
 > 
