@@ -225,7 +225,7 @@ Value is used within the record and variable to store values.
 > | Value::List(List)           | Stores a list value |
 
 ##### Example
-> ```c#
+> ```c++
 > // Create a Value with String typ
 > let val_s = Value::String("Hello World");
 > 
