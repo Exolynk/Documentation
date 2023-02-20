@@ -1,7 +1,8 @@
 ---
 title: 'Docs Syntax'
 taxonomy:
-    category: docs
+    category:
+        - docs
 ---
 
 Let's face it: Writing content for the Web is tiresome. WYSIWYG editors help alleviate this task, but they generally result in horrible code, or worse yet, ugly web pages.
@@ -740,8 +741,9 @@ To display the Accordion Title as a code, Title Tags need to contain following h
 You can use the following shortcode-like syntax in your content:
 
 ```md
-[TOC] or [TOC/] or [toc] or [toc /]
+[ TOC] or [ TOC/] or [ toc] or [ toc /]
 ```
+>>> Please make sure to delete the space in the template tags above ```[ TOC]``` (needed to make it in the example to prevent from interpreting).
 
 #### Page Configuration
 
