@@ -743,6 +743,7 @@ You can use the following shortcode-like syntax in your content:
 ```md
 [ TOC] or [ TOC/] or [ toc] or [ toc /]
 ```
+
 >>> Please make sure to delete the space in the template tags above ```[ TOC]``` (needed to make it in the example to prevent from interpreting).
 
 #### Page Configuration
