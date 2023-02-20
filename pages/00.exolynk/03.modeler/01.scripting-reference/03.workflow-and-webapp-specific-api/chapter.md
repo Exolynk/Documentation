@@ -13,9 +13,10 @@ The following webapp APIs are only availble in workflows and executed within a u
 ------------------------------------------------------------------------------------------
 
 ### hooks
-Workflows with an ident with one in the following list will be automatically triggered by events. 
-<details>
- <summary><code>new_record</code></summary>
+Workflows with an ident with one in the following list will be automatically triggered by events.
+
+[ui-accordion independent=true open=none]
+[ui-accordion-item title=<code>new_record</code>]
 
 ##### Description
 This workflow is triggered whenever the user creates a new record for a model. When this workflow does not exist or is not active, the system uses the default creation logic. The new record can be received in the normal way with `webapp::get_record() -> Record`. When this workflow is executed the model workflow is responisble to create the record within the database. Otherwise it will get lost.
@@ -36,18 +37,16 @@ This workflow is triggered whenever the user creates a new record for a model. W
 > }
 > ```
 
-</details>
-
-
-
+[ /ui-accordion-item\]
+[ /ui-accordion]
 
 
 
 ------------------------------------------------------------------------------------------
 ### webapp
-Generale functions to interact with the browser of the user.
-<details>
- <summary><code>webapp::is_edit() -> Bool</code></summary>
+    
+[ui-accordion independent=true open=none]
+[ui-accordion-item title=<code>webapp::is_edit()\040->\040Bool</code>]
 
 ##### Description
 Returns a boolean to indicate if the user is in edit mode or not.
@@ -56,10 +55,12 @@ Returns a boolean to indicate if the user is in edit mode or not.
 > |-------------------------|-----------------------------------------------------------------------|
 > | Bool                    | Returns true when the user is in edit mode, false if he is not |
 
-</details>
+[ /ui-accordion-item\]
+[ /ui-accordion]
 
-<details>
- <summary><code>webapp::set_edit(Bool)</code></summary>
+    
+[ui-accordion independent=true open=none]
+[ui-accordion-item title=<code>webapp::set_edit(Bool)</code>]
 
 ##### Description
 Defines the new edit status for the user.
@@ -68,10 +69,12 @@ Defines the new edit status for the user.
 > |-----------|-------------------------|-----------------------------------------------------------------------|
 > | 0         | Bool                    | Enable or disable the edit mode |
 
-</details>
+[ /ui-accordion-item\]
+[ /ui-accordion]
 
-<details>
- <summary><code>webapp::get_environment() -> Environment</code></summary>
+    
+[ui-accordion independent=true open=none]
+[ui-accordion-item title=<code>webapp::get_environment()\040->\040Environment</code>]
 
 ##### Description
 Returns the actual environment the user is logged in.
@@ -80,10 +83,12 @@ Returns the actual environment the user is logged in.
 > |-------------------------|-----------------------------------------------------------------------|
 > | Environment             | Returns the actual the environment of the user |
 
-</details>
+[ /ui-accordion-item\]
+[ /ui-accordion]
 
-<details>
- <summary><code>webapp::get_model() -> Model</code></summary>
+    
+[ui-accordion independent=true open=none]
+[ui-accordion-item title=<code>webapp::get_model()\040->\040Model</code>]
 
 ##### Description
 Returns the model this workflow is started from.
@@ -92,10 +97,12 @@ Returns the model this workflow is started from.
 > |-------------------------|-----------------------------------------------------------------------|
 > | Model                   | The model this workflow is called from |
 
-</details>
+[ /ui-accordion-item\]
+[ /ui-accordion]
 
-<details>
- <summary><code>webapp::get_record() -> Record</code></summary>
+
+[ui-accordion independent=true open=none]
+[ui-accordion-item title=<code>webapp::get_record()\040->\040Record</code>]
 
 ##### Description
 Returns the record this workflow is started from.
@@ -104,10 +111,12 @@ Returns the record this workflow is started from.
 > |-------------------------|-----------------------------------------------------------------------|
 > | Record                  | The record this workflow is called from |
 
-</details>
+[ /ui-accordion-item\]
+[ /ui-accordion]
 
-<details>
- <summary><code>webapp::rpc_call() -> async Result&lt;Any&gt;</code></summary>
+
+[ui-accordion independent=true open=none]
+[ui-accordion-item title=<code>webapp::rpc_call()\040->\040async\040Result&lt;Any&gt;</code>]
 
 ##### Description
 Calls a service for this record on the server. Returns the response from the server, which can be either
@@ -122,4 +131,5 @@ a any kind of a value or an error string. This is an async fuunction which need 
 > |-------------------------|-----------------------------------------------------------------------|
 > | async Result&lt;Any&gt; | The answer from the executed service |
 
-</details>
+[ /ui-accordion-item\]
+[ /ui-accordion]
