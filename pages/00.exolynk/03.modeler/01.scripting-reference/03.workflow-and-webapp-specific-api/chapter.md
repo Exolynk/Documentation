@@ -4,7 +4,7 @@ taxonomy:
     category: docs
 process:
     markdown: true
-    twig: true
+    twig: false
 ---
 
 [TOC]
