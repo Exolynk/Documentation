@@ -225,7 +225,7 @@ Value is used within the record and variable to store values.
 > | Value::List(List)           | Stores a list value |
 
 ##### Example
-> ```c++
+> ```rust
 > // Create a Value with String typ
 > let val_s = Value::String("Hello World");
 > 
@@ -235,6 +235,17 @@ Value is used within the record and variable to store values.
 > 	_ => println!("No String value")
 > }
 > ```
+
+```rust
+// Create a Value with String typ
+let val_s = Value::String("Hello World");
+
+// Check for the string
+match val_s {
+Value::String(s) => println!("String: {}", s),
+_ => println!("No String value")
+}
+```
 
 [/ui-accordion-item]
 
