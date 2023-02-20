@@ -236,17 +236,6 @@ Value is used within the record and variable to store values.
 > }
 > ```
 
-```rust
-// Create a Value with String typ
-let val_s = Value::String("Hello World");
-
-// Check for the string
-match val_s {
-Value::String(s) => println!("String: {}", s),
-_ => println!("No String value")
-}
-```
-
 [/ui-accordion-item]
 
 [ui-accordion-item title=<code>Value::as_string(Value)\040->\040String</code>]
