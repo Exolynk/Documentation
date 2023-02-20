@@ -37,8 +37,8 @@ This workflow is triggered whenever the user creates a new record for a model. W
 > }
 > ```
 
-[ /ui-accordion-item\]
-[ /ui-accordion]
+[/ui-accordion-item\]
+[/ui-accordion]
 
 
 
@@ -55,8 +55,8 @@ Returns a boolean to indicate if the user is in edit mode or not.
 > |-------------------------|-----------------------------------------------------------------------|
 > | Bool                    | Returns true when the user is in edit mode, false if he is not |
 
-[ /ui-accordion-item\]
-[ /ui-accordion]
+[/ui-accordion-item\]
+[/ui-accordion]
 
     
 [ui-accordion independent=true open=none]
@@ -69,8 +69,8 @@ Defines the new edit status for the user.
 > |-----------|-------------------------|-----------------------------------------------------------------------|
 > | 0         | Bool                    | Enable or disable the edit mode |
 
-[ /ui-accordion-item\]
-[ /ui-accordion]
+[/ui-accordion-item\]
+[/ui-accordion]
 
     
 [ui-accordion independent=true open=none]
@@ -83,8 +83,8 @@ Returns the actual environment the user is logged in.
 > |-------------------------|-----------------------------------------------------------------------|
 > | Environment             | Returns the actual the environment of the user |
 
-[ /ui-accordion-item\]
-[ /ui-accordion]
+[/ui-accordion-item\]
+[/ui-accordion]
 
     
 [ui-accordion independent=true open=none]
@@ -97,8 +97,8 @@ Returns the model this workflow is started from.
 > |-------------------------|-----------------------------------------------------------------------|
 > | Model                   | The model this workflow is called from |
 
-[ /ui-accordion-item\]
-[ /ui-accordion]
+[/ui-accordion-item\]
+[/ui-accordion]
 
 
 [ui-accordion independent=true open=none]
@@ -111,8 +111,8 @@ Returns the record this workflow is started from.
 > |-------------------------|-----------------------------------------------------------------------|
 > | Record                  | The record this workflow is called from |
 
-[ /ui-accordion-item\]
-[ /ui-accordion]
+[/ui-accordion-item\]
+[/ui-accordion]
 
 
 [ui-accordion independent=true open=none]
@@ -131,5 +131,5 @@ a any kind of a value or an error string. This is an async fuunction which need 
 > |-------------------------|-----------------------------------------------------------------------|
 > | async Result&lt;Any&gt; | The answer from the executed service |
 
-[ /ui-accordion-item\]
-[ /ui-accordion]
+[/ui-accordion-item\]
+[/ui-accordion]
