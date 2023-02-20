@@ -1,9 +1,8 @@
 ---
-title: Docs Syntax
+title: 'Docs Syntax'
 taxonomy:
     category: docs
 ---
-
 
 Let's face it: Writing content for the Web is tiresome. WYSIWYG editors help alleviate this task, but they generally result in horrible code, or worse yet, ugly web pages.
 
@@ -701,9 +700,11 @@ An example of the Accordion shortcode is as follows:
 Returns a Variable for the given ident when found. The model is needed to abstract the right values.
 ...
 
-[ /ui-accordion-item\]
+[ /ui-accordion-item]
 [ /ui-accordion]
 ```
+>>> Please make sure to delete the space in the template tags above ```[ /ui``` (needed to make it in the example to prevent from interpreting).
+
 
 Output:
 
