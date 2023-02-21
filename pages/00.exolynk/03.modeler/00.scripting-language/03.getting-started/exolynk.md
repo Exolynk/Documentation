@@ -15,7 +15,21 @@ process:
 The first thing you need to learn about in Rune is the `dbg` function. This is used to "debug" values provided to it in order to understand them. Anything can be provided to it, and it will do its best to describe it.
 
 ```rust
-{{#include ../../scripts/book/getting_started/dbg.rn}}
+pub fn main() {
+    let a = [1, 2, 3];
+    let b = '今';
+    let closure = || println("Hello");
+
+    dbg(a);
+    dbg(b);
+    dbg(function);
+    dbg(drop);
+    dbg(closure);
+}
+
+fn function() {
+    42
+}
 ```
 >>>>> by convention Rune uses files ending in .rn.
 
