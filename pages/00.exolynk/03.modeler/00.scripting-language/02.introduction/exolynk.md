@@ -8,7 +8,9 @@ process:
     twig: false
 ---
 
-# Introduction
+[TOC]
+
+**## Introduction**
 
 Rune is a dynamic programming language that is easily embeddable and has support for an exciting set of language features.
 
@@ -48,7 +50,7 @@ Asynchronous programming using select
 
 Rune has support for constant evaluation using the const keyword. Which can perform complex work at compile time.
 
-```rune
+```rust
 const BASE = 10;
 const LIMIT = 0b1 << 10;
 
