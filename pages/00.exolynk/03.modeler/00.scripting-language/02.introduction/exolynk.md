@@ -10,7 +10,7 @@ process:
 
 [TOC]
 
-**## Introduction**
+# Introduction
 
 Rune is a dynamic programming language that is easily embeddable and has support for an exciting set of language features.
 
