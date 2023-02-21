@@ -1,3 +1,13 @@
+---
+title: Foreword
+taxonomy:
+    category:
+        - docs
+process:
+    markdown: true
+    twig: false
+---
+
 # Foreword
 
 > "Why John-John Tedro was developing this programming language?"
