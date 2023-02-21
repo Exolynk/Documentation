@@ -1,3 +1,13 @@
+---
+title: Introduction
+taxonomy:
+    category:
+        - docs
+process:
+    markdown: true
+    twig: false
+---
+
 # Introduction
 
 Rune is a dynamic programming language that is easily embeddable and has support for an exciting set of language features.
@@ -6,7 +16,7 @@ Rune is a dynamic programming language that is easily embeddable and has support
 
 Rune prioritized excellent support for async with support for async functions, closures, blocks, and generators. And native support for select, a popular control flow mechanism for asynchronous code.
 
-```rune
+```rust
 use std::future;
 
 struct Timeout;
