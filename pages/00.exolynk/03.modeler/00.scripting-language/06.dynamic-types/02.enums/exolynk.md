@@ -1,3 +1,13 @@
+---
+title: Enums
+taxonomy:
+    category: docs
+process:
+    twig: true
+---
+
+[TOC]
+
 # Enums
 
 Rune has support for *enumerations*. These allow you to define a type with zero
@@ -14,11 +24,27 @@ Rune has native support for `Option`, the same enum available in Rust that
 allows you to represent data that can either be present with `Option::Some`, or
 absent with `Option::None`.
 
-```rune
-{{#include ../../scripts/book/enums/count_numbers.rn}}
+```rust
+use std::iter::range;
+
+fn count_numbers(limit) {
+    let limit = limit.unwrap_or(10);
+
+    for n in range(0, limit) {
+        println!("Count: {}", n);
+    }
+}
+
+pub fn main() {
+    println("First count!");
+    count_numbers(None);
+
+    println("Second count!");
+    count_numbers(Some(2));
+}
 ```
 
-```text
+```bash
 $> cargo run --bin rune -- run scripts/book/enums/count_numbers.rn
 First count!
 Count: 0

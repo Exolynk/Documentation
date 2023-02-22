@@ -1,3 +1,13 @@
+---
+title: Template literals
+taxonomy:
+    category: docs
+process:
+    twig: true
+---
+
+[TOC]
+
 # Template literals
 
 If you've been paying attention on previous sections you might have seen odd
@@ -5,13 +15,16 @@ looking strings like `` `Hello ${name}` ``. These are called *template
 literals*, and allow you to conveniently build strings using variables from the
 environment.
 
-> Template literals are [a concept borrowed from EcmaScript].
+>>>>> Template literals are [a concept borrowed from EcmaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals).
 
-```rune
-{{#include ../../scripts/book/template_literals/basic_template.rn}}
+```rust
+pub fn main() {
+    let age = 30;
+    dbg(`I am ${age} years old!`);
+}
 ```
 
-```text
+```bash
 $> cargo run --bin rune -- run scripts/book/template_literals/basic_template.rn
 "I am 30 years old!"
 == () (4.5678ms)
@@ -56,11 +69,14 @@ pub fn module() -> Result<Module, ContextError> {
 This is what allows status codes to be formatted into template strings, any
 types which do not implement this protocol will fail to run.
 
-```rune
-{{#include ../../scripts/book/template_literals/not_a_template.rn}}
+```rust
+pub fn main() {
+    let vec = [1, 2, 3];
+    dbg(`${vec}`);
+}
 ```
 
-```text
+```bash
 $> cargo run --bin rune -- run scripts/book/template_literals/not_a_template.rn
 == ! (`Vec` does not implement the `string_display` protocol (at 5)) (77.7µs)
 error: virtual machine error

@@ -1,3 +1,13 @@
+---
+title: Closures
+taxonomy:
+    category: docs
+process:
+    twig: true
+---
+
+[TOC]
+
 # Closures
 
 We've gone over functions before, and while incredibly useful there's a few more

@@ -1,3 +1,13 @@
+---
+title: Generators
+taxonomy:
+    category: docs
+process:
+    twig: true
+---
+
+[TOC]
+
 # Generators
 
 Generators are a convenient method for constructing functions which are capable
@@ -9,11 +19,33 @@ state is stored in the generator function.
 With this, we can create a fairly efficient generator to build fibonacci
 numbers.
 
-```rune
-{{#include ../../scripts/book/generators/fib_generator.rn}}
+```rust
+fn fib() {
+    let a = 0;
+    let b = 1;
+
+    loop {
+        yield a;
+        let c = a + b;
+        a = b;
+        b = c;
+    }
+}
+
+pub fn main() {
+    let g = fib();
+
+    while let Some(n) = g.next() {
+        println!("{}", n);
+
+        if n > 100 {
+            break;
+        }
+    }
+}
 ```
 
-```text
+```bash
 $> cargo run --bin rune -- run scripts/book/generators/fib_generator.rn
 0
 1
@@ -40,11 +72,23 @@ things easier to do.
 The first thing to know is that `yield` itself can actually *produce* a value,
 allowing the calling procedure to send values to the generator.
 
-```rune
-{{#include ../../scripts/book/generators/send_values.rn}}
+```rust
+fn printer() {
+    loop {
+        let out = yield;
+        println!("{:?}", out);
+    }
+}
+
+pub fn main() {
+    let printer = printer();
+    printer.resume(1);
+    printer.resume("John");
+    printer.resume((1, 2, 3));
+}
 ```
 
-```text
+```bash
 $> cargo run --bin rune -- run scripts/book/generators/send_values.rn
 "John"
 (1, 2, 3)
@@ -58,11 +102,28 @@ resume once.
 At that point it runs the block prior to the first yield, we can see this by
 instrumenting our code a little.
 
-```rune
-{{#include ../../scripts/book/generators/bootup.rn}}
+```rust
+fn printer() {
+    loop {
+        println("waiting for value...");
+        let out = yield;
+        println!("{:?}", out);
+    }
+}
+
+pub fn main() {
+    let printer = printer();
+
+    println("firing off the printer...");
+    printer.resume(());
+    println("ready to go!");
+
+    printer.resume("John");
+    printer.resume((1, 2, 3));
+}
 ```
 
-```text
+```bash
 $> cargo run --bin rune -- run scripts/book/generators/bootup.rn
 firing off the printer...
 waiting for value...
@@ -81,11 +142,21 @@ This adds a bit of complexity, since we need to pull out `GeneratorState`.
 This enum has two variants: `Yielded` and `Complete`, and represents all the
 possible states a generator can suspend itself into.
 
-```rune
-{{#include ../../scripts/book/generators/states.rn}}
+```rust
+fn print_once() {
+    let out = yield 1;
+    println!("{:?}", out);
+    2
+}
+
+pub fn main() {
+    let printer = print_once();
+    dbg(printer.resume(()));
+    dbg(printer.resume("John"));
+}
 ```
 
-```text
+```bash
 $> cargo run --bin rune -- run scripts/book/generators/states.rn
 Yielded(1)
 "John"
@@ -102,11 +173,22 @@ This corresponds to the *return value* of the generator.
 Trying to resume the generator after this will cause the virtual machine to
 error.
 
-```rune
-{{#include ../../scripts/book/generators/error.rn}}
+```rust
+fn print_once() {
+    yield 1
+}
+
+pub fn main() {
+    let printer = print_once();
+    dbg(printer);
+    dbg(printer.resume(()));
+    dbg(printer.resume("John"));
+    dbg(printer);
+    dbg(printer.resume(()));
+}
 ```
 
-```text
+```bash
 $> cargo run --bin rune -- run scripts/book/generators/error.rn
 Generator { completed: false }
 Yielded(1)

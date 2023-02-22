@@ -1,3 +1,13 @@
+---
+title: Primitive and reference types
+taxonomy:
+    category: docs
+process:
+    twig: true
+---
+
+[TOC]
+
 # Primitive and reference types
 
 Primitives are values stored immediately on the stack. In Rust terminology,
@@ -18,11 +28,17 @@ The primitives available in Rune are:
 You can see that these bytes are `Copy` when assigning them to a different
 variable, because a separate copy of the value will be used automatically.
 
-```rune
-{{#include ../../scripts/book/primitives/copy.rn}}
+```rust
+pub fn main() {
+    let a = 1;
+    let b = a;
+    a = 2;
+    println!("{}", a);
+    println!("{}", b);
+}
 ```
 
-```text
+```bash
 $> cargo run --bin rune -- run scripts/book/primitives/copy.rn
 2
 1
@@ -33,11 +49,17 @@ Other types like *strings* are stored by reference. Assigning them to a
 different variable will only *copy their reference*, but they still point to the
 same underlying data.
 
-```rune
-{{#include ../../scripts/book/primitives/primitives.rn}}
+```rust
+pub fn main() {
+    let a = String::from_str("Hello");
+    let b = a;
+    a.push_str(" World");
+    println(a);
+    println(b);
+}
 ```
 
-```text
+```bash
 $> cargo run --bin rune -- run scripts/book/primitives/primitives.rn
 Hello World
 Hello World
