@@ -1,3 +1,13 @@
+---
+title: Exolynk Modeler
+taxonomy:
+    category: docs
+process:
+    twig: true
+---
+
+[TOC]
+
 ## Exolynk Modeler 
 The Exolynk Modeler provides the functionality to adopt the system to the use-cases needed.
 

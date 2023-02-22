@@ -1,3 +1,13 @@
+---
+title: Concepts
+taxonomy:
+    category: docs
+process:
+    twig: true
+---
+
+[TOC]
+
 # Concepts
 
 This chapter covers common concepts that appear in almost all programming

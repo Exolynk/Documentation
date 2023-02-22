@@ -1,12 +1,12 @@
 ---
 title: Foreword
 taxonomy:
-    category:
-        - docs
+    category: docs
 process:
-    markdown: true
-    twig: false
+    twig: true
 ---
+
+[TOC]
 
 # Foreword
 

@@ -1,11 +1,9 @@
 ---
-title: 'Getting Started'
+title: Getting Started
 taxonomy:
-    category:
-        - docs
+    category: docs
 process:
-    markdown: true
-    twig: false
+    twig: true
 ---
 
 [TOC]

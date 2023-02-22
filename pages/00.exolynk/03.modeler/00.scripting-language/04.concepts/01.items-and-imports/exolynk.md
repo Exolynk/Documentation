@@ -1,3 +1,13 @@
+---
+title: Items and imports
+taxonomy:
+    category: docs
+process:
+    twig: true
+---
+
+[TOC]
+
 # Items and imports
 
 Everything in Rune has a unique name. Every function, type, and import. This
@@ -17,8 +27,12 @@ importing it. But what about `range`?
 If we wanted to use `range` we would have to import it first with a `use`
 statement:
 
-```rune
-{{#include ../../scripts/book/items_imports/example_import.rn}}
+```rust
+use std::iter::range;
+
+pub fn main() {
+    range(0, 10)
+}
 ```
 
 ```text
@@ -28,8 +42,10 @@ $> cargo run --bin rune -- run scripts/book/items_imports/example_import.rn
 
 Trying to use an item which doesn't exist results in a compile error:
 
-```rune
-{{#include ../../scripts/book/items_imports/missing_item.rn.fail}}
+```rust
+pub fn main() {
+    let foo = Foo::new();
+}
 ```
 
 ```text
@@ -53,8 +69,23 @@ matching the name of the module or defined directly inside of the source file.
 
 The following is an example of an *inline* module:
 
-```rune
-{{#include ../../scripts/book/items_imports/inline_modules.rn}}
+```rust
+mod foo {
+    pub fn get_number() {
+        1
+    }
+}
+
+mod bar {
+    pub fn get_number() {
+        2
+    }
+}
+
+pub fn main() {
+    foo::get_number() + bar::get_number()
+}
+
 ```
 
 ```text
@@ -65,18 +96,27 @@ $> cargo run --bin rune -- run scripts/book/items_imports/inline_modules.rn
 And this is the equivalent modules loaded from the filesystem. These are three
 separate files:
 
-```rune
-{{#include ../../scripts/book/items_imports/modules.rn}}
+```rust
+mod foo;
+mod bar;
+
+pub fn main() {
+    foo::get_number() + bar::get_number()
+}
 ```
 
-```rune
+```rust
 // file: ./foo/mod.rn
-{{#include ../../scripts/book/items_imports/foo/mod.rn}}
+pub fn get_number() {
+    2
+}
 ```
 
-```rune
+```rust
 // file: ./bar.rn
-{{#include ../../scripts/book/items_imports/bar.rn}}
+pub fn get_number() {
+    1
+}
 ```
 
 ```text

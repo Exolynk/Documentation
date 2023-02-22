@@ -1,11 +1,9 @@
 ---
 title: Introduction
 taxonomy:
-    category:
-        - docs
+    category: docs
 process:
-    markdown: true
-    twig: false
+    twig: true
 ---
 
 [TOC]
