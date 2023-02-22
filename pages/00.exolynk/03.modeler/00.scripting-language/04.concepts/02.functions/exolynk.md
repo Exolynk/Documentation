@@ -1,3 +1,13 @@
+---
+title: Functions
+taxonomy:
+    category: docs
+process:
+    twig: true
+---
+
+[TOC]
+
 # Functions
 
 One of the most common things in all of programming are functions. These are
@@ -16,8 +26,10 @@ In Rune, functions are declared with the `fn` keyword. You've already seen one
 which is used in every example, `main`. This is not a special function, but is
 simply what the Rune cli looks for when deciding what to execute.
 
-```rune
-{{#include ../../scripts/book/functions/main_function.rn}}
+```rust
+pub fn main() {
+    println("Hello World");
+}
 ```
 
 ```text
@@ -30,8 +42,19 @@ In Rune, you don't have to specify the return type of a function. Given that
 Rune is a dynamic programming language, this allows a function to return
 anything, even completely distinct types.
 
-```rune
-{{#include ../../scripts/book/functions/return_value.rn}}
+```rust
+fn foo(condition) {
+    if condition {
+        "Hello"
+    } else {
+        1
+    }
+}
+
+pub fn main() {
+    println!("{}", foo(true));
+    println!("{}", foo(false));
+}
 ```
 
 ```text

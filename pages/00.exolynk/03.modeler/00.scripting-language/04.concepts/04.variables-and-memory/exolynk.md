@@ -1,10 +1,25 @@
+---
+title: Variables and memory
+taxonomy:
+    category: docs
+process:
+    twig: true
+---
+
+[TOC]
+
 # Variables and memory
 
 Variables in Rune are defined using the `let` keyword. In contrast to Rust, all
 variables in Rune are mutable and can be changed at any time.
 
-```rune
-{{#include ../../scripts/book/variables/variables.rn}}
+```rust
+pub fn main() {
+    let x = 5;
+    println!("The value of x is: {}", x);
+    x = 6;
+    println!("The value of x is: {}", x);
+}
 ```
 
 ```text
@@ -17,21 +32,29 @@ Rune is a memory safe language. Regardless of what you write in a Rune script,
 we maintain the same memory safety guarantees as safe Rust. This is accomplished
 through reference counting.
 
-[Unless a value is `Copy`](5_1_primitives.md), they are reference counted and
+[Unless a value is `Copy`](../../05.built-in-types/01.primitives-and-references/primitives.md), they are reference counted and
 can be used at multiple locations. This means that they have *shared ownership*.
 Every variable that points to that value therefore points to *the same instance*
 of that value. You can think of every nontrivial value being automatically
 wrapped in an `Rc<RefCell<T>>` if that helps you out.
 
-> This is not exactly what's going on. If you're interested to learn more, Rune
-> uses a container called [`Shared<T>`] which is *like* an `Rc<RefCell<T>>`, but
-> has a few more tricks.
+>>>>> This is not exactly what's going on. If you're interested to learn more, Rune
+>>>>> uses a container called [`Shared<T>`](https://docs.rs/shared/) which is *like* an `Rc<RefCell<T>>`, but
+>>>>> has a few more tricks.
 
 We can see how this works by sharing and mutating one object across two
 variables:
 
-```rune
-{{#include ../../scripts/book/variables/shared_ownership.rn}}
+```rust
+pub fn main() {
+    let object = #{field: 1};
+    let object2 = object;
+    println!("{}", object.field);
+    object2.field = 2;
+
+    // Note: we changed `object2`, but read out `object`
+    println!("{}", object.field);
+}
 ```
 
 ```text
@@ -46,11 +69,16 @@ ownership of its arguments. We say that functions like these *move* their
 argument, and if we try to use a variable which has been moved an error will be
 raised in the virtual machine.
 
-> Note: Below we use the `drop` function, which is a built-in function that will
-> take its argument and free it.
+>>>>> Note: Below we use the `drop` function, which is a built-in function that will take its argument and free it.
 
-```rune
-{{#include ../../scripts/book/variables/take_argument.rn}}
+```rust
+pub fn main() {
+    let object = #{field: 1};
+    let object2 = object;
+    println!("field: {}", object.field);
+    drop(object2);
+    println!("field: {}", object.field);
+}
 ```
 
 ```text
@@ -69,8 +97,19 @@ If you need to, you can test if a variable is still accessible for reading with
 the prelude. An object which is writable is also *movable*, and can be provided
 to functions which need to move the value, like `drop`.
 
-```rune
-{{#include ../../scripts/book/variables/is_readable.rn}}
+```rust
+pub fn main() {
+    let object = #{field: 1};
+    let object2 = object;
+    println!("field: {}", object.field);
+    drop(object2);
+
+    if is_readable(object) {
+        println!("field: {}", object.field);
+    } else {
+        println!("object is no longer readable 😢");
+    }
+}
 ```
 
 ```text

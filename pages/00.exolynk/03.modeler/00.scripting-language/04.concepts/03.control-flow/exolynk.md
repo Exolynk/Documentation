@@ -1,3 +1,13 @@
+---
+title: Control Flow
+taxonomy:
+    category: docs
+process:
+    twig: true
+---
+
+[TOC]
+
 # Control Flow
 
 Rune supports a number of control flow expressions. We will be dedicating this
@@ -13,8 +23,19 @@ a unit `()`.
 The last statement in a function is known as an *implicit return*, and will be
 what the function returns by default unless a `return` is specified.
 
-```rune
-{{#include ../../scripts/book/control_flow/numbers_game.rn}}
+```rust
+fn foo(n) {
+    if n < 1 {
+        return "less than one";
+    }
+
+    "something else"
+}
+
+pub fn main() {
+    println!("{}", foo(0)); // => outputs: "less than one"
+    println!("{}", foo(10)); // => outputs: "something else"
+}
 ```
 
 ```text
@@ -29,8 +50,14 @@ something else
 If expressions allow you to provide a condition with one or more code branches.
 If the condition is `true`, the provided block of code will run.
 
-```rune
-{{#include ../../scripts/book/control_flow/conditional.rn}}
+```rust
+pub fn main() {
+    let number = 3;
+
+    if number < 5 {
+        println!("The number is smaller than 5");
+    }
+}
 ```
 
 ```text
@@ -42,8 +69,16 @@ The number *is* smaller than 5
 Optionally, we can add another branch under `else`, which will execute in case
 the condition is false.
 
-```rune
-{{#include ../../scripts/book/control_flow/conditional_else.rn}}
+```rust
+pub fn main() {
+    let number = 3;
+
+    if number < 5 {
+        println!("the number is smaller than 5");
+    } else {
+        println!("the number is 5 or bigger");
+    }
+}
 ```
 
 ```text
@@ -55,8 +90,18 @@ the number is smaller than 5
 We can also add an arbitrary number of `else if` branches, which allow us to
 specify many different conditions.
 
-```rune
-{{#include ../../scripts/book/control_flow/conditional_else_ifs.rn}}
+```rust
+pub fn main() {
+    let number = 3;
+
+    if number < 5 {
+        println!("the number is smaller than 5");
+    } else if number == 5 {
+        println!("the number is exactly 5");
+    } else {
+        println!("the number is bigger than 5");
+    }
+}
 ```
 
 ```text
@@ -70,8 +115,22 @@ a `match`.
 
 This will be covered in a later section, but here is a sneak peek:
 
-```rune
-{{#include ../../scripts/book/control_flow/first_match.rn}}
+```rust
+pub fn main() {
+    let number = 3;
+
+    match number {
+        n if n < 5 => {
+            println!("the number is smaller than 5");
+        }
+        5 => {
+            println!("the number is exactly 5");
+        }
+        n => {
+            println!("the number is bigger than 5");
+        }
+    }
+}
 ```
 
 ```text

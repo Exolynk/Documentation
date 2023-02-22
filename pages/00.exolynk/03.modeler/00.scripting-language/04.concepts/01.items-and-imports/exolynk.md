@@ -143,5 +143,5 @@ The available visibility modifiers are:
 * `pub(in path)` - the item is only visible in the specified path. This is *not
   supported yet*.
 
-> Note that Rune doesn't have support for crates yet, meaning `pub(crate)` and
-> `pub` are currently effectively equivalent.
+>>>>> Note that Rune doesn't have support for crates yet, meaning `pub(crate)` and
+>>>>> `pub` are currently effectively equivalent.
