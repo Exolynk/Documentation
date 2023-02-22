@@ -8,7 +8,7 @@ process:
 
 [TOC]
 
-# Variables and memory
+## Variables and memory
 
 Variables in Rune are defined using the `let` keyword. In contrast to Rust, all
 variables in Rune are mutable and can be changed at any time.
