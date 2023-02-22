@@ -28,7 +28,7 @@ they are definitely available to the compiler.
 Native modules also means we can re-use all the existing compiler infrastructure
 for Rune as a library for macro authors. Which is really nice!
 
-[issue #27]: https://github.com/rune-rs/rune/issues/27
+[issue #27]: [https://github.com/rune-rs/rune/issues/27](https://github.com/rune-rs/rune/issues/27)
 
 ## Writing a native macro
 
@@ -102,8 +102,3 @@ $> cargo run --bin rune -- run scripts/book/macros/stringy_math.rn -O macros=tru
 
 To access the `std::experimental`, you have to specify the `--experimental`
 option to the Rune CLI.
-
-[`quote!` macro]: https://docs.rs/rune/0/rune/macro.quote.html
-[famed counterpart in the Rust world]: https://docs.rs/quote/1/quote/
-[`Module`]: https://docs.rs/rune/0/rune/module/struct.Module.html
-[`Module::macro_`]: https://docs.rs/rune/0/rune/module/struct.Module.html#method.macro_

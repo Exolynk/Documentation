@@ -5,8 +5,9 @@ taxonomy:
 child_type: docs
 ---
 
-### Chapter 1
+### Exolynk
 
 # Documentation
 
-Discover the **basic** principles
+Welcome to the Exolynk Documentation
+Discover the **basic** scripting principles
