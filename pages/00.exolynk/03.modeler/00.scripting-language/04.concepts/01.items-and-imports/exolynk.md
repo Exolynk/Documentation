@@ -35,7 +35,7 @@ pub fn main() {
 }
 ```
 
-```text
+```bash
 $> cargo run --bin rune -- run scripts/book/items_imports/example_import.rn
 == Iterator (60µs)
 ```
@@ -48,7 +48,7 @@ pub fn main() {
 }
 ```
 
-```text
+```bash
 $> cargo run --bin rune -- run scripts/book/items_imports/missing_item.rn.fail
 error: compile error
   ┌─ scripts/book/items_imports/missing_item.rn.fail:2:15
@@ -88,7 +88,7 @@ pub fn main() {
 
 ```
 
-```text
+```bash
 $> cargo run --bin rune -- run scripts/book/items_imports/inline_modules.rn
 == 3 (33.2µs)
 ```
@@ -119,7 +119,7 @@ pub fn get_number() {
 }
 ```
 
-```text
+```bash
 $> cargo run --bin rune -- run scripts/book/items_imports/modules.rn
 == 3 (37.5µs)
 ```

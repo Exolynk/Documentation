@@ -96,7 +96,7 @@ pub fn main() {
 }
 ```
 
-```text
+```bash
 $> cargo run --bin rune -- run scripts/book/loops/loop_break.rn
 The final count is: 11
 == () (281.5µs)

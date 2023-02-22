@@ -31,7 +31,7 @@ fn function() {
 ```
 >>>>> by convention Rune uses files ending in .rn.
 
-```text
+```bash
 $> cargo run --bin rune -- run scripts/book/getting_started/dbg.rn
 [1, 2, 3]
 '今'
@@ -53,7 +53,7 @@ pub fn main() {
 }
 ```
 
-```text
+```bash
 $> cargo run --bin rune -- run scripts/book/getting_started/hello_world.rn
 Hello World
 == () (1.0864ms)
@@ -61,7 +61,7 @@ Hello World
 
 At the end of the script's output, you see this rather odd looking line:
 
-```text
+```bash
 == () (1.0864ms)
 ```
 
@@ -72,4 +72,4 @@ And that the script took `1.0864` milliseconds to run.
 
 So now you know how to run Rune scripts. Well done! Let's move on to the next chapter.
 
->>>>> For quick testing the the Rune Language we recommend to use this Playground: https://rune-rs.github.io/play
+>>>>> For quick testing the the Rune Language we recommend to use this Playground: [Rune Playground](https://rune-rs.github.io/play)

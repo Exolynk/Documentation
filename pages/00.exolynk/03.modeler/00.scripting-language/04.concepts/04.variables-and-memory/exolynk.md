@@ -22,7 +22,7 @@ pub fn main() {
 }
 ```
 
-```text
+```bash
 $> cargo run --bin rune -- run scripts/book/variables/variables.rn
 The value of x is: 5
 The value of x is: 6
@@ -81,7 +81,7 @@ pub fn main() {
 }
 ```
 
-```text
+```bash
 $> cargo run --bin rune -- run scripts/book/variables/take_argument.rn
 field: 1
 == ! (cannot read, value is moved (at 14)) (469µs)
@@ -112,7 +112,7 @@ pub fn main() {
 }
 ```
 
-```text
+```bash
 $> cargo run --bin rune -- run scripts/book/variables/is_readable.rn
 field: 1
 object is no longer readable 😢

@@ -32,7 +32,7 @@ pub fn main() {
 }
 ```
 
-```text
+```bash
 $> cargo run --bin rune -- run scripts/book/functions/main_function.rn
 Hello World
 == () (277.8µs)
@@ -57,7 +57,7 @@ pub fn main() {
 }
 ```
 
-```text
+```bash
 $> cargo run --bin rune -- run scripts/book/functions/return_value.rn
 Hello
 1

@@ -38,7 +38,7 @@ pub fn main() {
 }
 ```
 
-```text
+```bash
 $> cargo run --bin rune -- run scripts/book/control_flow/numbers_game.rn
 less than one
 something else
@@ -60,7 +60,7 @@ pub fn main() {
 }
 ```
 
-```text
+```bash
 $> cargo run --bin rune -- run scripts/book/control_flow/conditional.rn
 The number *is* smaller than 5
 == () (5.108ms)
@@ -81,7 +81,7 @@ pub fn main() {
 }
 ```
 
-```text
+```bash
 $> cargo run --bin rune -- run scripts/book/control_flow/conditional_else.rn
 the number is smaller than 5
 == () (196.1µs)
@@ -104,7 +104,7 @@ pub fn main() {
 }
 ```
 
-```text
+```bash
 $> cargo run --bin rune -- run scripts/book/control_flow/conditional_else_ifs.rn
 the number is smaller than 5
 == () (227.9µs)
@@ -133,7 +133,7 @@ pub fn main() {
 }
 ```
 
-```text
+```bash
 $> cargo run --bin rune -- run scripts/book/control_flow/first_match.rn
 the number is smaller than 5
 == () (124.2µs)
