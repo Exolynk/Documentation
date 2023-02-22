@@ -1,3 +1,13 @@
+---
+title: Asynchronous programming
+taxonomy:
+    category: docs
+process:
+    twig: true
+---
+
+[TOC]
+
 # Asynchronous programming
 
 Rune has first class support for Rust-like asynchronous programming.
@@ -11,11 +21,28 @@ the result of those tasks.
 
 A typical example would be if we want to perform multiple HTTP requests at once:
 
-```rune
-{{#include ../../scripts/book/async/async_http.rn}}
+```rust
+pub async fn main() {
+    let a = http::get("https://google.com");
+    let b = http::get("https://amazon.com");
+
+    loop {
+        let res = select {
+            res = a => res?,
+            res = b => res?,
+        };
+
+        match res {
+            () => break,
+            result => {
+                println!("{}", result.status());
+            }
+        }
+    }
+}
 ```
 
-```text
+```bash
 $> cargo run --bin rune -- run scripts/book/async/async_http.rn
 200 OK
 200 OK
@@ -33,11 +60,34 @@ It enables us to wait on a set of futures at the same time.
 A simple example of this is if we were to implement a simple request with a
 timeout:
 
-```rune
-{{#include ../../scripts/book/async/async_http_timeout.rn}}
+```rust
+struct Timeout;
+
+async fn request(timeout) {
+    let request = http::get(`http://httpstat.us/200?sleep=${timeout}`);
+    let timeout = time::sleep(time::Duration::from_secs(2));
+
+    let result = select {
+        _ = timeout => Err(Timeout),
+        res = request => res,
+    }?;
+
+    println!("{}", result.status());
+    Ok(())
+}
+
+pub async fn main() {
+    if let Err(Timeout) = request(1000).await {
+        println("Request timed out!");
+    }
+
+    if let Err(Timeout) = request(4000).await {
+        println("Request timed out!");
+    }
+}
 ```
 
-```text
+```bash
 $> cargo run --bin rune -- run scripts/book/async/async_http_timeout.rn
 200 OK
 Request timed out!
@@ -60,11 +110,34 @@ produce a `Future`.
 In order to get the result of this `Future` it must be `.await`ed. And `.await`
 is only permitted inside of `async` functions and closures.
 
-```rune
-{{#include ../../scripts/book/async/async_http_concurrent.rn}}
+```rust
+use std::future;
+
+struct Timeout;
+
+async fn request(timeout) {
+    let request = http::get(`http://httpstat.us/200?sleep=${timeout}`);
+    let timeout = time::sleep(time::Duration::from_secs(2));
+
+    let result = select {
+        _ = timeout => Err(Timeout),
+        res = request => res,
+    }?;
+
+    Ok(result)
+}
+
+pub async fn main() {
+    for result in future::join([request(1000), request(4000)]).await {
+        match result {
+            Ok(result) => println!("Result: {}", result.status()),
+            Err(Timeout) => println("Request timed out!"),
+        }
+    }
+}
 ```
 
-```text
+```bash
 $> cargo run --bin rune -- run scripts/book/async/async_http_concurrent.rn
 Result: 200 OK
 Request timed out!
@@ -76,11 +149,21 @@ Request timed out!
 Closures can be prefixed with the `async` keyword, meaning calling them will
 produce a future.
 
-```rune
-{{#include ../../scripts/book/async/async_closure.rn}}
+```rust
+fn do_request(url) {
+    async || {
+        Ok(http::get(url).await?.status())
+    }
+}
+
+pub async fn main() {
+    let future = do_request("https://google.com");
+    let status = future().await?;
+    println!("Status: {}", status);
+}
 ```
 
-```text
+```bash
 $> cargo run --bin rune -- run scripts/book/async/async_closure.rn
 Status: 200 OK
 == () (165.4817ms)
@@ -91,11 +174,21 @@ Status: 200 OK
 Blocks can be marked with `async` to produce on-the-fly futures. These blocks
 can capture variables the same way as closures do, but take no arguments.
 
-```rune
-{{#include ../../scripts/book/async/async_blocks.rn}}
+```rust
+fn do_request(url) {
+    async {
+        Ok(http::get(url).await?.status())
+    }
+}
+
+pub async fn main() {
+    let future = do_request("https://google.com");
+    let status = future.await?;
+    println!("Status: {}", status);
+}
 ```
 
-```text
+```bash
 $> cargo run --bin rune -- run scripts/book/async/async_blocks.rn
 Status: 200 OK
 == () (179.9381ms)

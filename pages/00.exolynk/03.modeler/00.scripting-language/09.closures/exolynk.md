@@ -25,11 +25,26 @@ its name without calling it.
 This allows for some really neat tricks, like passing in a function which
 represents the operation you want another function to use.
 
-```rune
-{{#include ../../scripts/book/closures/function_pointers.rn}}
+```rust
+fn do_thing(op) {
+    op(1, 2)
+}
+
+fn add(a, b) {
+    a + b
+}
+
+fn sub(a, b) {
+    a - b
+}
+
+pub fn main() {
+    println!("{}", do_thing(add));
+    println!("{}", do_thing(sub));
+}
 ```
 
-```text
+```bash
 $> cargo run --bin rune -- run scripts/book/closures/function_pointers.rn
 Result: 3
 Result: -1
@@ -42,16 +57,24 @@ Closures are anonymous functions which closes over their environment.
 This means that they capture any variables used inside of the closure, allowing
 them to be used when the function is being called.
 
-```rune
-{{#include ../../scripts/book/closures/basic_closure.rn}}
+```rust
+fn work(op) {
+    op(1, 2)
+}
+
+pub fn main() {
+    let n = 1;
+    println!("Result: {}", work(|a, b| n + a + b));
+    println!("Result: {}", work(|a, b| n + a * b));
+}
 ```
 
-```text
+```bash
 $> cargo run --bin rune -- run scripts/book/closures/basic_closure.rn
 Result: 4
 Result: 3
 == () (5.4354ms)
 ```
 
-> Hint: Closures which do not capture their environment are *identical* in
-> representation to a function.
+>>>>> Closures which do not capture their environment are *identical* in
+>>>>> representation to a function.
