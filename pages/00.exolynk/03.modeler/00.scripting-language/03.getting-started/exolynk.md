@@ -72,7 +72,7 @@ And that the script took `1.0864` milliseconds to run.
 
 So now you know how to run Rune scripts. Well done! Let's move on to the next chapter.
 
-<br><br>
+<br>
 
 ## Rune Playground
 
