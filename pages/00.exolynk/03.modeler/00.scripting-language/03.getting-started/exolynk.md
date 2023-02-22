@@ -1,5 +1,5 @@
 ---
-title: Getting Started
+title: Getting started
 taxonomy:
     category: docs
 process:
@@ -48,7 +48,9 @@ Rune also provides `print!` and `println!` macros which can be used to format di
 So for a more formal introduction, here is the official Rune `"Hello World"`:
 
 ```rust
-{{#include ../../scripts/book/getting_started/hello_world.rn}}
+pub fn main() {
+    println!("Hello World");
+}
 ```
 
 ```text
