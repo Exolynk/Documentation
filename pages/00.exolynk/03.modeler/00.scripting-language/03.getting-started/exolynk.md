@@ -1,5 +1,5 @@
 ---
-title: 'Getting started'
+title: 'Getting started with Rune'
 taxonomy:
     category: docs
 process:
@@ -73,3 +73,7 @@ And that the script took `1.0864` milliseconds to run.
 So now you know how to run Rune scripts. Well done! Let's move on to the next chapter.
 
 >>>>> For quick testing the the Rune Language we recommend to use this Playground: [Rune Playground](https://rune-rs.github.io/play)
+
+## Rune Playground
+
+<iframe src="https://rune-rs.github.io/play/" style="border:0px #ffffff none;" name="Rune Playground" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="800px" width="1000px" allowfullscreen></iframe>

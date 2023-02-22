@@ -1,5 +1,5 @@
 ---
-title: Introduction
+title: Introduction in Rune
 taxonomy:
     category: docs
 process:
@@ -68,4 +68,7 @@ pub fn main() {
 ```
 ```VALUE``` and ```LIMIT``` is calculated once, reducing the work needed at runtime
 
-<br><br>
+## Sources
+
+Rune github (official): [xxx](https://github.com/rune-rs/rune/)
+Rust: [xxx](https://rust-lang.org)

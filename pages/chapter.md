@@ -10,4 +10,5 @@ child_type: docs
 # Documentation
 
 Welcome to the Exolynk Documentation
+
 Discover the **basic** scripting principles
