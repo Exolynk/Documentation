@@ -1,5 +1,5 @@
 ---
-title: Exolynk
+title: Exolynk Documentation
 taxonomy:
     category: docs
 child_type: docs
