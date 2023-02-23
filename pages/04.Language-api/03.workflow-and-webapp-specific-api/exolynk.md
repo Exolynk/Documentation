@@ -116,6 +116,18 @@ Returns the record this workflow is started from.
 [/ui-accordion-item]
 [/ui-accordion]
 
+[ui-accordion independent=true open=none]
+[ui-accordion-item title=<code>webapp::get_user()\040->\040Record</code>]
+
+##### Description
+Returns the user record this workflow is started from.
+##### Returns
+> | data type               | description                                                           |
+> |-------------------------|-----------------------------------------------------------------------|
+> | Record                  | The user record this workflow is called from |
+
+[/ui-accordion-item]
+[/ui-accordion]
 
 [ui-accordion independent=true open=none]
 [ui-accordion-item title=<code>webapp::rpc_call()\040->\040async\040Result&lt;Any&gt;</code>]
