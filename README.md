@@ -5,40 +5,124 @@ Welcome to the Exolynk system documentation.
 
 
 ## Navigation
-- [1. Exolynk](/pages/00.exolynk/chapter.md)
-	- [Getting started](/pages/00.exolynk/01.getting-started/system.md)
-	- [Configuration](/pages/00.exolynk/02.configuration/settings.md)
-	- [Modeler](/pages/00.exolynk/03.modeler/modeler.md)
-		- [Scripting language](/pages/00.exolynk/03.modeler/00.scripting-language/script.md)
-			- [Foreword](/pages/00.exolynk/03.modeler/00.scripting-language/01.foreword/exolynk.md)
-			- [Introduction](/pages/00.exolynk/03.modeler/00.scripting-language/02.introduction/exolynk.md)
-			- [Getting Started](/pages/00.exolynk/03.modeler/00.scripting-language/03.getting-started/exolynk.md)
-			- [Concepts](/pages/00.exolynk/03.modeler/00.scripting-language/04.concepts/exolynk.md)
-				- [Items and imports](/pages/00.exolynk/03.modeler/00.scripting-language/04.concepts/01.items-and-imports/exolynk.md)
-				- [Functions](/pages/00.exolynk/03.modeler/00.scripting-language/04.concepts/02.functions/exolynk.md)
-				- [Control flow](/pages/00.exolynk/03.modeler/00.scripting-language/04.concepts/03.control-flow/exolynk.md)
-				- [Variables and memory](/pages/00.exolynk/03.modeler/00.scripting-language/04.concepts/04.variables-and-memory/exolynk.md)
-				- [Loops](/pages/00.exolynk/03.modeler/00.scripting-language/04.concepts/05.loops/exolynk.md)
-				- [Pattern matching](/pages/00.exolynk/03.modeler/00.scripting-language/04.concepts/06.pattern-matching/exolynk.md)
-				- [Template literals](/pages/00.exolynk/03.modeler/00.scripting-language/04.concepts/07.template-literals/exolynk.md)
-				- [Instance functions](/pages/00.exolynk/03.modeler/00.scripting-language/04.concepts/08.instance-functions/exolynk.md)
-			- [Built in types](/pages/00.exolynk/03.modeler/00.scripting-language/05.built-in-types/exolynk.md)
-				- [Primitives and references](/pages/00.exolynk/03.modeler/00.scripting-language/05.built-in-types/01.primitives-and-references/exolynk.md)
-				- [Vectors](/pages/00.exolynk/03.modeler/00.scripting-language/05.built-in-types/02.vectors/exolynk.md)
-				- [Objects](/pages/00.exolynk/03.modeler/00.scripting-language/05.built-in-types/03.objects/exolynk.md)
-				- [Tuples](/pages/00.exolynk/03.modeler/00.scripting-language/05.built-in-types/04.tuples/exolynk.md)
-			- [Dynamic types](/pages/00.exolynk/03.modeler/00.scripting-language/06.dynamic-types/exolynk.md)
-				- [Structs](/pages/00.exolynk/03.modeler/00.scripting-language/06.dynamic-types/01.structs/exolynk.md)
-				- [Enums](/pages/00.exolynk/03.modeler/00.scripting-language/06.dynamic-types/02.enums/exolynk.md)
-			- [Try-operator](/pages/00.exolynk/03.modeler/00.scripting-language/07.try-operator/exolynk.md)
-			- [Generators](/pages/00.exolynk/03.modeler/00.scripting-language/08.generators/exolynk.md)
-			- [Closures](/pages/00.exolynk/03.modeler/00.scripting-language/09.closures/exolynk.md)
-			- [Asynchronous programming](/pages/00.exolynk/03.modeler/00.scripting-language/10.asynchronous-programming/exolynk.md)
-				- [Streams](/pages/00.exolynk/03.modeler/00.scripting-language/10.asynchronous-programming/01.streams/exolynk.md)
-			- [Macros](/pages/00.exolynk/03.modeler/00.scripting-language/11.macros/exolynk.md)
-		- [Scripting reference](xxx.md)
-			- [Base API](xxx.md)
-			- [Service / Server Specific API](xxx.md)
-			- [Workflow / Webapp Specific API](xxx.md)
-- [2. Contribution](/pages/01.contribution/)
-	- [Docs Syntax](/pages/01.contribution/docs-syntax.md)
+- __Documentation__
+   - [README.md](README.md)
+   - [\_config.yml](_config.yml)
+   - [chapter.md](chapter.md)
+   - __pages__
+     - __01.Use\-of\-exolynk__
+       - __01.getting\-started__
+         - [exolynk.md](pages/01.Use-of-exolynk/01.getting-started/exolynk.md)
+       - __02.configuration__
+         - [exolynk.md](pages/01.Use-of-exolynk/02.configuration/exolynk.md)
+       - [chapter.md](pages/01.Use-of-exolynk/chapter.md)
+     - __02.Exolynk\-modeler__
+       - __01.layouting\-reference__
+       - [exolynk.md](pages/02.Exolynk-modeler/exolynk.md)
+     - __03.Rune\-language__
+       - __01.introduction__
+         - [exolynk.md](pages/03.Rune-language/01.introduction/exolynk.md)
+       - __02.getting\-started__
+         - [exolynk.md](pages/03.Rune-language/02.getting-started/exolynk.md)
+       - __03.concepts__
+         - __01.items\-and\-imports__
+           - [exolynk.md](pages/03.Rune-language/03.concepts/01.items-and-imports/exolynk.md)
+         - __02.functions__
+           - [exolynk.md](pages/03.Rune-language/03.concepts/02.functions/exolynk.md)
+         - __03.control\-flow__
+           - [exolynk.md](pages/03.Rune-language/03.concepts/03.control-flow/exolynk.md)
+         - __04.variables\-and\-memory__
+           - [exolynk.md](pages/03.Rune-language/03.concepts/04.variables-and-memory/exolynk.md)
+         - __05.loops__
+           - [exolynk.md](pages/03.Rune-language/03.concepts/05.loops/exolynk.md)
+         - __06.pattern\-matching__
+           - [exolynk.md](pages/03.Rune-language/03.concepts/06.pattern-matching/exolynk.md)
+         - __07.template\-literals__
+           - [exolynk.md](pages/03.Rune-language/03.concepts/07.template-literals/exolynk.md)
+         - __08.instance\-functions__
+           - [exolynk.md](pages/03.Rune-language/03.concepts/08.instance-functions/exolynk.md)
+         - [exolynk.md](pages/03.Rune-language/03.concepts/exolynk.md)
+       - __04.built\-in\-types__
+         - __01.primitives\-and\-references__
+           - [exolynk.md](pages/03.Rune-language/04.built-in-types/01.primitives-and-references/exolynk.md)
+         - __02.vectors__
+           - [exolynk.md](pages/03.Rune-language/04.built-in-types/02.vectors/exolynk.md)
+         - __03.objects__
+           - [exolynk.md](pages/03.Rune-language/04.built-in-types/03.objects/exolynk.md)
+         - __04.tuples__
+           - [exolynk.md](pages/03.Rune-language/04.built-in-types/04.tuples/exolynk.md)
+         - [exolynk.md](pages/03.Rune-language/04.built-in-types/exolynk.md)
+       - __05.dynamic\-types__
+         - __01.structs__
+           - [exolynk.md](pages/03.Rune-language/05.dynamic-types/01.structs/exolynk.md)
+         - __02.enums__
+           - [exolynk.md](pages/03.Rune-language/05.dynamic-types/02.enums/exolynk.md)
+         - [exolynk.md](pages/03.Rune-language/05.dynamic-types/exolynk.md)
+       - __06.try\-operator__
+         - [exolynk.md](pages/03.Rune-language/06.try-operator/exolynk.md)
+       - __07.generators__
+         - [exolynk.md](pages/03.Rune-language/07.generators/exolynk.md)
+       - __08.closures__
+         - [exolynk.md](pages/03.Rune-language/08.closures/exolynk.md)
+       - __09.asynchronous\-programming__
+         - __01.streams__
+           - [exolynk.md](pages/03.Rune-language/09.asynchronous-programming/01.streams/exolynk.md)
+         - [exolynk.md](pages/03.Rune-language/09.asynchronous-programming/exolynk.md)
+       - __10.macros__
+         - [exolynk.md](pages/03.Rune-language/10.macros/exolynk.md)
+       - [exolynk.md](pages/03.Rune-language/exolynk.md)
+     - __04.Language\-api__
+       - __01.base\-api__
+         - [exolynk.md](pages/04.Language-api/01.base-api/exolynk.md)
+       - __02.service\-and\-server\-specific\-api__
+         - [exolynk.md](pages/04.Language-api/02.service-and-server-specific-api/exolynk.md)
+       - __03.workflow\-and\-webapp\-specific\-api__
+         - [exolynk.md](pages/04.Language-api/03.workflow-and-webapp-specific-api/exolynk.md)
+       - [chapter.md](pages/04.Language-api/chapter.md)
+     - __05.contribution__
+       - __01.docs\-syntax__
+         - [docs\-syntax.md](pages/05.contribution/01.docs-syntax/docs-syntax.md)
+       - __02.contribution\-rules__
+       - [chapter.md](pages/05.contribution/chapter.md)
+     - [chapter.md](pages/chapter.md)
+     - __feed__
+       - [docs.md](pages/feed/docs.md)
+
+<br>
+
+### Little helper to generate md Navigation
+https://github.com/michalbe/md-file-tree
+
+Dependencies: **tree**
+
+Installation under MacOS: ```brew install tree```
+
+<br>
+
+
+## File Structure for Documentation CSM
+```bash
+└── pages
+    ├── 01.Use-of-exolynk
+    │   ├── 01.getting-started
+    │   │   └── exolynk.md
+    │   ├── 02.configuration
+    │   │   └── exolynk.md
+    │   └── chapter.md
+```
+
+#### Instruction
+
+1. For each document (*.md file) a separate folder is neccesary
+2. The folder has to be named as following: ```ORDER#.``` (two digits) ```FILENAME``` (lowercase) Example: ```01.``` ```getting-started```
+3. The File name needs to be allways ```exolynk.md``` (twig-template)
+4. The file title is specified in the document header as following:
+```bash
+---
+title: 'Getting started'
+taxonomy:
+    category: docs
+process:
+    twig: true
+---
+```
