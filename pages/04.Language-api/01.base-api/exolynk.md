@@ -100,7 +100,7 @@ A record is a single dataset inside the system. It is stored as row within the i
 a table which is uunique for this record type / model.
 
 [ui-accordion independent=true open=none]
-[ui-accordion-item title=<code>Setter</code>]
+[ui-accordion-item title=<code>Getter</code>]
 
 ##### Parameters
 > | name      | data type               | description                                                           |
@@ -143,6 +143,22 @@ Sets the value inside of a record. Providing the Ident "name", "description", "s
 
 [/ui-accordion-item]
 
+[ui-accordion-item title=<code>Record::get_value(Record,\040Ident)\040->\040Option&lt;Value&gt;</code>]
+
+##### Description
+Returns a Value for the given ident when found.
+##### Parameters
+> | parameter | data type               | description                                                           |
+> |-----------|-------------------------|-----------------------------------------------------------------------|
+> | 0         | Self / Record           | A reference to the own object |
+> | 2         | Ident                   | The Ident we want to have the value for |
+##### Returns
+> | data type               | description                                                           |
+> |-------------------------|-----------------------------------------------------------------------|
+> | Option&lt;Value&gt;  | The value when found |
+
+[/ui-accordion-item]
+
 [ui-accordion-item title=<code>Record::get_variable(Record,\040Model,\040Ident)\040->\040Option&lt;Variable&gt;</code>]
 
 ##### Description
@@ -152,7 +168,7 @@ Returns a Variable for the given ident when found. The model is needed to abstra
 > |-----------|-------------------------|-----------------------------------------------------------------------|
 > | 0         | Self / Record           | A reference to the own object |
 > | 1         | Model                   | A reference to the model this record belongs to |
-> | 2         | Ident                   | The Ident we want to have teh variable for |
+> | 2         | Ident                   | The Ident we want to have the variable for |
 ##### Returns
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
@@ -624,6 +640,56 @@ Returns if the list is empty or has entries inside.
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
 > | bool                    | True when empty false when it has entries |
+
+[/ui-accordion-item]
+[/ui-accordion]
+
+
+
+------------------------------------------------------------------------------------------
+### Reference
+A reference is a Uuid v4 which points towards another record. In special cases this can also point to
+a model or an environment. In this cases, this will not displayed correctly within the UI.
+
+[ui-accordion independent=true open=none]
+[ui-accordion-item title=<code>Reference::new()\040->\040Reference</code>]
+
+##### Description
+Returns a new Reference with a uuid of nil/all zeros.
+##### Returns
+> | data type               | description                                                           |
+> |-------------------------|-----------------------------------------------------------------------|
+> | Reference               | A Reference object |
+
+[/ui-accordion-item]
+
+[ui-accordion-item title=<code>Reference::as_string(Version)\040->\040String</code>]
+
+##### Description
+Returns a String with the uuid.
+##### Parameters
+> | parameter | data type               | description                                                           |
+> |-----------|-------------------------|-----------------------------------------------------------------------|
+> | 0         | Self / Reference        | A reference to the own object |
+##### Returns
+> | data type               | description                                                           |
+> |-------------------------|-----------------------------------------------------------------------|
+> | String                  | A String object |
+
+[/ui-accordion-item]
+
+[ui-accordion-item title=<code>Reference::from_str(String)\040->\040Result&lt;Reference&gt;</code>]
+
+##### Description
+Tries to create a new Reference from a string.
+##### Parameters
+> | parameter | data type               | description                                                           |
+> |-----------|-------------------------|-----------------------------------------------------------------------|
+> | 0         | String                  | A uuid string |
+##### Returns
+> | data type               | description                                                           |
+> |-------------------------|-----------------------------------------------------------------------|
+> | Result&lt;Reference&gt; | The reference or an error |
 
 [/ui-accordion-item]
 [/ui-accordion]
