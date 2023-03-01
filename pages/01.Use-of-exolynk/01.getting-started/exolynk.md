@@ -8,5 +8,20 @@ process:
 
 [TOC]
 
-## Start using the system
-TODO write how a user uses the system
+# Getting Started with Exolynk Platform
+
+## Overview
+
+## Functions
+
+### Modeler
+
+### Search
+
+### Inbox
+
+### Notifications
+
+### Favorites
+
+### Settings
