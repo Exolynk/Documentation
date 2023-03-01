@@ -98,7 +98,7 @@ Updates a Record which already exist in the database. This also informs all subs
 > | async Result&lt;()&gt; | Thorws an error when something went wrong |
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>server::db::add_inbox(String,&lt;String)\040->\040async\040Result&lt;()&gt;</code>]
+[ui-accordion-item title=<code>server::db::add_inbox(String,\040String)\040->\040async\040Result&lt;()&gt;</code>]
 ##### Description
 Adds a record into the inbox of a user. This also informs all subscribed clients about this change.
 ##### Parameters
@@ -112,7 +112,7 @@ Adds a record into the inbox of a user. This also informs all subscribed clients
 > | async Result&lt;()&gt;     | Thorws an error when something went wrong |
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>server::db::remove_inbox(String,&lt;String)\040->\040async\040Result&lt;()&gt;</code>]
+[ui-accordion-item title=<code>server::db::remove_inbox(String,\040String)\040->\040async\040Result&lt;()&gt;</code>]
 ##### Description
 Removes a record from the inbox of a user. This also informs all subscribed clients about this change.
 ##### Parameters
@@ -126,7 +126,7 @@ Removes a record from the inbox of a user. This also informs all subscribed clie
 > | async Result&lt;()&gt;     | Thorws an error when something went wrong |
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>server::db::add_favorite(String,&lt;String)\040->\040async\040Result&lt;()&gt;</code>]
+[ui-accordion-item title=<code>server::db::add_favorite(String,\040String)\040->\040async\040Result&lt;()&gt;</code>]
 ##### Description
 Adds a record into the favorite container of a user. This also informs all subscribed clients about this change.
 ##### Parameters
@@ -140,7 +140,7 @@ Adds a record into the favorite container of a user. This also informs all subsc
 > | async Result&lt;()&gt;     | Thorws an error when something went wrong |
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>server::db::remove_favorite(String,&lt;String)\040->\040async\040Result&lt;()&gt;</code>]
+[ui-accordion-item title=<code>server::db::remove_favorite(String,\040String)\040->\040async\040Result&lt;()&gt;</code>]
 ##### Description
 Removes a record from the favorites of a user. This also informs all subscribed clients about this change.
 ##### Parameters
