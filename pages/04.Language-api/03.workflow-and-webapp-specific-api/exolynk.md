@@ -147,3 +147,26 @@ a any kind of a value or an error string. This is an async fuunction which need 
 
 [/ui-accordion-item]
 [/ui-accordion]
+
+------------------------------------------------------------------------------------------
+### webapp::ui
+    
+[ui-accordion independent=true open=none]
+[ui-accordion-item title=<code>webapp::ui::popup(String,\040String,\040Vec&lt;Variable&gt;)\040->\040async\040Result&lt;(Bool,\040Vec&lt;Variable&gt;)&gt;</code>]
+
+##### Description
+Shows a popup to the user with the given Header, text and variables. When the user closes the popup it returns which button has been pressed and the new variables.
+##### Parameters
+> | parameter | data type               | description                                                           |
+> |-----------|-------------------------|-----------------------------------------------------------------------|
+> | 0         | String                  | The header text of the popup |
+> | 1         | String                  | An additional message for the user inside the poup |
+> | 1         | Vec&lt;Variable&gt;     | A list of variables which should be shown to the user |
+##### Returns
+> | data type               | description                                                           |
+> |-------------------------|-----------------------------------------------------------------------|
+> | Bool                    | Returns true the user selected submit, on cancel it returns false |
+> | Vec&lt;Variable&gt;     | The variables which have been updated by the users |
+
+[/ui-accordion-item]
+[/ui-accordion]
