@@ -12,7 +12,7 @@ process:
 
 ## Login
 
-![Login](login-popup.png)
+![Login](login-popup.png?resize=800&classes=left)
 
 
 
