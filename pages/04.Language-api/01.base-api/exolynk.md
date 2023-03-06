@@ -151,7 +151,7 @@ Returns a Value for the given ident when found.
 > | parameter | data type               | description                                                           |
 > |-----------|-------------------------|-----------------------------------------------------------------------|
 > | 0         | Self / Record           | A reference to the own object |
-> | 2         | Ident                   | The Ident we want to have the value for |
+> | 1         | Ident                   | The Ident we want to have the value for |
 ##### Returns
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
@@ -215,6 +215,39 @@ to define how customer specific fields look like.
 > | `description`   | Language          | The display description of the variable |
 
 [/ui-accordion-item]
+
+[ui-accordion-item title=<code>Variable::new(Ident,\040Value)\040->\040Variable</code>]
+
+##### Description
+Creates a new variable with an ident and the value.
+##### Parameters
+> | parameter | data type               | description                                                           |
+> |-----------|-------------------------|-----------------------------------------------------------------------|
+> | 0         | Ident                   | The ident of the new variable |
+> | 1         | Value                   | The value of the new variable |
+##### Returns
+> | data type               | description                                                           |
+> |-------------------------|-----------------------------------------------------------------------|
+> | Variable                | The newly created variable |
+
+[/ui-accordion-item]
+
+[ui-accordion-item title=<code>Variable::clone(Variable)\040->\040Variable</code>]
+
+##### Description
+Clones a variable and returns a new one with independent of the original one.
+##### Parameters
+> | parameter | data type               | description                                                           |
+> |-----------|-------------------------|-----------------------------------------------------------------------|
+> | 0         | Self / Variable         | A reference to the own object |
+##### Returns
+> | data type               | description                                                           |
+> |-------------------------|-----------------------------------------------------------------------|
+> | Variable                | The cloned new idendependet Variable |
+
+[/ui-accordion-item]
+
+
 [/ui-accordion]
 
 
