@@ -12,6 +12,8 @@ process:
 <br>
 <br>
 <br>
+<br>
+<br>
 
 # Modeler
 
@@ -30,7 +32,7 @@ In the detail in the section **General Settings** can be edited with activating 
 ### Available parameters:
 
 [ui-accordion independent=true open=none]
-[ui-accordion-item title=<strong>Uuid</strong>\040(fig.4)]
+[ui-accordion-item title=<b>Uuid</b>\040(fig.4)]
 Universally unique identifier (128-bit label used for identifying the object)
 [/ui-accordion-item]
 [/ui-accordion]
