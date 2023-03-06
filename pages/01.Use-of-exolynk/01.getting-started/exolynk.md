@@ -10,6 +10,12 @@ process:
 
 # Getting Started with Exolynk Platform
 
+## Login
+
+![Login](login-popup.png)
+
+
+
 ## Overview
 
 ## Functions

@@ -130,7 +130,7 @@ Returns the user record this workflow is started from.
 [/ui-accordion]
 
 [ui-accordion independent=true open=none]
-[ui-accordion-item title=<code>webapp::rpc_call()\040->\040async\040Result&lt;Any&gt;</code>]
+[ui-accordion-item title=<code>webapp::rpc_call(String,\040Any)\040->\040async\040Result&lt;Any&gt;</code>]
 
 ##### Description
 Calls a service for this record on the server. Returns the response from the server, which can be either

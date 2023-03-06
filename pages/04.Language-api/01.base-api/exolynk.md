@@ -273,6 +273,7 @@ Value is used within the record and variable to store values.
 > | Value::Selection(Selection) | Stores a Selection value |
 > | Value::Version(Version)     | Stores a version value |
 > | Value::List(List)           | Stores a list value |
+> | Value::Reference(Reference) | Stores a reference value |
 
 ##### Example
 > ```rust
