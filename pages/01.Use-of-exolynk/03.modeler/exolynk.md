@@ -2,8 +2,10 @@
 title: Modeler
 taxonomy:
     category: docs
+markdown.extra: true
 process:
-    twig: true
+    twig: false
+    markdown: true
 ---
 
 [TOC]
@@ -31,7 +33,7 @@ In the detail in the section **General Settings** can be edited with activating 
 
 ![Modeler General](modeler-general.png?resize=800,600){.float-left}
 
-![Modeler General](modeler-general.png?lightbox=1024&cropResize=200,200)
+![Modeler General](modeler-general.png?lightbox=1024&cropResize=600,600) {.left}
 
 ### Available parameters:
 
