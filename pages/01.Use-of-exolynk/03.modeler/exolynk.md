@@ -31,9 +31,7 @@ With the button **+ New** you can add a new model (this will appear with a logo 
 
 In the detail in the section **General Settings** can be edited with activating the **Edit** mode (figure 2 -> toggle between 'edit' and 'finish').
 
-![Modeler General](modeler-general.png?resize=800,600){.float-left}
-
-![Modeler General](modeler-general.png?lightbox=1024&cropResize=600,600) {.left}
+![Modeler General](modeler-general.png?lightbox=1024&cropResize=800,800) {.left}
 
 ### Available parameters:
 
@@ -44,19 +42,19 @@ Universally unique identifier (128-bit label used for identifying the object)
 [/ui-accordion]
 
 [ui-accordion independent=true open=none]
-[ui-accordion-item title=<strong>Ident</strong>\040(fig.5)]
+[ui-accordion-item title=<b>Ident</b>\040(fig.5)]
 ...
 [/ui-accordion-item]
 [/ui-accordion]
 
 [ui-accordion independent=true open=none]
-[ui-accordion-item title=<strong>Version</strong>\040(fig.6)]
+[ui-accordion-item title=Version\040(fig.6)]
 ...
 [/ui-accordion-item]
 [/ui-accordion]
 
 [ui-accordion independent=true open=none]
-[ui-accordion-item title=<strong>Status</strong>\040(fig.7)]
+[ui-accordion-item title=<strong>Status</strong>\040<p>(fig.7)</p>]
 ...
 [/ui-accordion-item]
 [/ui-accordion]
