@@ -35,64 +35,57 @@ In the detail in the section **General Settings** can be edited with activating 
 
 ### Available parameters:
 
-[ui-accordion independent=true open=none]
+[ui-accordion independent=true open=0]
+
 [ui-accordion-item title=<b>Uuid</b>\040(fig.4)]
 Universally unique identifier (128-bit label used for identifying the object)
 [/ui-accordion-item]
-[/ui-accordion]
 
-[ui-accordion independent=true open=none]
+
 [ui-accordion-item title=<b>Ident</b>\040(fig.5)]
 ...
 [/ui-accordion-item]
-[/ui-accordion]
 
-[ui-accordion independent=true open=none]
-[ui-accordion-item title=Version\040(fig.6)]
+
+[ui-accordion-item title=<b>Version</b>\040(fig.6)]
 ...
 [/ui-accordion-item]
-[/ui-accordion]
 
-[ui-accordion independent=true open=none]
-[ui-accordion-item title=<strong>Status</strong>\040<p>(fig.7)</p>]
+
+[ui-accordion-item title=<b>Status</b>\040(fig.7)]
 ...
 [/ui-accordion-item]
-[/ui-accordion]
 
-[ui-accordion independent=true open=none]
-[ui-accordion-item title=<strong>System\040Model</strong>\040(fig.8)]
+
+[ui-accordion-item title=<b>System\040Model</b>\040(fig.8)]
 ...
 [/ui-accordion-item]
-[/ui-accordion]
 
-[ui-accordion independent=true open=none]
-[ui-accordion-item title=<strong>Name</strong>\040(fig.9)]
+
+[ui-accordion-item title=<b>Name</b>\040(fig.9)]
 ...
 [/ui-accordion-item]
-[/ui-accordion]
 
-[ui-accordion independent=true open=none]
-[ ui-accordion-item title=<strong>Description</strong>\040(fig.10)]
+
+[ui-accordion-item title=<b>Description</b>\040(fig.10)]
 ...
 [/ui-accordion-item]
-[/ui-accordion]
 
-[ui-accordion independent=true open=none]
-[ui-accordion-item title=<strong>Icon</strong>\040(fig.11)]
+
+[ui-accordion-item title=<b>Icon</b>\040(fig.11)]
 For the icon shortcodes, please refere to the [UI5 Icon library](https://sapui5.hana.ondemand.com/sdk/test-resources/sap/m/demokit/iconExplorer/webapp/index.html#/overview/SAP-icons)
 [/ui-accordion-item]
-[/ui-accordion]
 
-[ui-accordion independent=true open=none]
-[ui-accordion-item title=<strong>Record\040Status</strong>\040(fig.12)]
+
+[ui-accordion-item title=<b>Record\040Status</b>\040(fig.12)]
 ...
 [/ui-accordion-item]
-[/ui-accordion]
 
-[ui-accordion independent=true open=none]
-[ui-accordion-item title=<strong>Model\040right</strong>\040(fig.13)]
+
+[ui-accordion-item title=<b>Model\040right</b>\040(fig.13)]
 ...
 [/ui-accordion-item]
+
 [/ui-accordion]
 
 
