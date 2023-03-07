@@ -14,6 +14,8 @@ process:
 <br>
 <br>
 <br>
+<br>
+<br>
 
 # Modeler
 
@@ -27,7 +29,9 @@ With the button **+ New** you can add a new model (this will appear with a logo 
 
 In the detail in the section **General Settings** can be edited with activating the **Edit** mode (figure 2 -> toggle between 'edit' and 'finish').
 
-![Modeler General](modeler-general.png?resize=800,600) {.float-left}
+![Modeler General](modeler-general.png?resize=800,600){.float-left}
+
+![Modeler General](modeler-general.png?lightbox=1024&cropResize=200,200)
 
 ### Available parameters:
 
