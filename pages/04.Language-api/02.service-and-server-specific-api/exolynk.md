@@ -85,13 +85,15 @@ Inserts a new Record into the database.
 > | async Result&lt;()&gt; | Thorws an error when something went wrong |
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>server::db::update_record(Record)\040->\040async\040Result&lt;()&gt;</code>]
+[ui-accordion-item title=<code>server::db::update_record_value(String,\040Ident,\040Value)\040->\040async\040Result&lt;()&gt;</code>]
 ##### Description
-Updates a Record which already exist in the database. This also informs all subscribed clients about this change.
+Updates a Record value in the database. This also informs all subscribed clients about this change.
 ##### Parameters
 > | parameter | data type               | description                                       |
 > |-----------|-------------------------|---------------------------------------------------|
-> | 0         | Record                  | The Record which should be updated |
+> | 0         | String                  | The uuid of the record be updated |
+> | 1         | Ident                   | The ident of the value to update |
+> | 2         | Value                   | The new value which should be applied to the record |
 ##### Returns
 > | data type                  | description                                                |
 > |----------------------------|------------------------------------------------------------|
