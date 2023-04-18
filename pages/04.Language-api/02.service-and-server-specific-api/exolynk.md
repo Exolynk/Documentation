@@ -156,4 +156,18 @@ Removes a record from the favorites of a user. This also informs all subscribed 
 > | async Result&lt;()&gt;     | Thorws an error when something went wrong |
 [/ui-accordion-item]
 
+[ui-accordion-item title=<code>server::db::reset_password(String,\040String)\040->\040async\040Result&lt;()&gt;</code>]
+##### Description
+Resets the password for the given user.
+##### Parameters
+> | parameter | data type               | description                                       |
+> |-----------|-------------------------|---------------------------------------------------|
+> | 0         | String                  | The uuid of the user to reset the password for |
+> | 1         | String                  | The new password to set for the user |
+##### Returns
+> | data type                  | description                                                |
+> |----------------------------|------------------------------------------------------------|
+> | async Result&lt;()&gt;     | Thorws an error when something went wrong |
+[/ui-accordion-item]
+
 [/ui-accordion]
