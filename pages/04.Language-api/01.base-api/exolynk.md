@@ -129,6 +129,8 @@ a table which is uunique for this record type / model.
 > | `released`| Bool                    | Implies if this model is released and not changeable anymore |
 > | `name`    | Language                | The display name of the record |
 > | `description`   | Language          | The display description of the record |
+> | `right`  | Reference                | The access right of the record  |
+> | `icon`   | String                   | The icon of the record  |
 
 [/ui-accordion-item]
 
@@ -143,6 +145,8 @@ a table which is uunique for this record type / model.
 > | `released`| Bool                    | Is the record released and not changeable anymore  |
 > | `name`    | Language                | Set the display name of the record |
 > | `description`   | Language          | Set the display descritption of the record |
+> | `right`  | Reference                | The access right of the record  |
+> | `icon`   | String                   | The icon of the record  |
 
 [/ui-accordion-item]
 
