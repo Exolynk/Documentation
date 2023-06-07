@@ -73,7 +73,7 @@ Defines if this variable is required or not.
 [/ui-accordion-item]
 
 
-[ui-accordion-item title=<b>Value type</b>\040(fig.11)]
+[ui-accordion-item title=<b>Value\040type</b>\040(fig.11)]
 Value Type defines the Datetype of this variable.<br>
 **Variable Datatypes:**<br>
 <code>Bool</code> = <br>
@@ -86,9 +86,18 @@ Value Type defines the Datetype of this variable.<br>
 <code>Selection</code> = selectionlist and dropdown<br>
 <code>String</code> = fulltext no limitations<br>
 <code>Version</code> = full numbers<br>
+
+>>> Value Type cannot be changed after Model is released.
+
+-> Model, variable, code(workflow and services) ident alwyas use prefix: ex "exl_role"
+
+>>>>> 
+
 [/ui-accordion-item]
 
-[ui-accordion-item title=<b>Default value type</b>\040(fig.12)]
+[ui-accordion-item title=<b>Default\040value</b>\040(fig.12)]
+The option '''Default Value''' is used to set a default value for that Variable. E.g. 
+
 [/ui-accordion-item]
 
 [/ui-accordion]
