@@ -170,4 +170,17 @@ Resets the password for the given user.
 > | async Result&lt;()&gt;     | Thorws an error when something went wrong |
 [/ui-accordion-item]
 
+[ui-accordion-item title=<code>server::db::get_model(String)\040->\040async\040Result&lt;Model&gt;</code>]
+##### Description
+Fetches a model from the database.
+##### Parameters
+> | parameter | data type               | description                                       |
+> |-----------|-------------------------|---------------------------------------------------|
+> | 0         | String                  | The uuid of the model to gget |
+##### Returns
+> | data type                  | description                                                |
+> |----------------------------|------------------------------------------------------------|
+> | async Result&lt;Model&gt; | The answer from the executed service |
+[/ui-accordion-item]
+
 [/ui-accordion]
