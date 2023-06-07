@@ -90,6 +90,22 @@ custom variables a record has and stores the workflows and services for these sp
 > | `variables`     | &lt;Variable&gt;  | Set the list of variables of this model  |
 
 [/ui-accordion-item]
+
+[ui-accordion-item title=<code>Model::create_record(Ident,\040Version,\040Language,\040Language)\040->\040Record</code>]
+
+##### Description
+Creates a new record from the model.
+
+##### Parameters
+> | parameter | data type               | description                                                           |
+> |-----------|-------------------------|-----------------------------------------------------------------------|
+> | 0         | Self / Model            | A reference to the own object |
+> | 1         | Ident                   | Define the ident name of the new record |
+> | 2         | Version                 | Set the version of the new record |
+> | 3         | Language                | Set the name of the new record |
+> | 4         | Language                | Set the description of the new record |
+
+[/ui-accordion-item]
 [/ui-accordion]
 
 
