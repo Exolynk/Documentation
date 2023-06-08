@@ -158,7 +158,7 @@ Removes a record from the favorites of a user. This also informs all subscribed 
 
 [ui-accordion-item title=<code>server::db::reset_password(String,\040String)\040->\040async\040Result&lt;()&gt;</code>]
 ##### Description
-Resets the password for the given user.
+Resets the password for the given user. The needs to have the `password_reset` right.
 ##### Parameters
 > | parameter | data type               | description                                       |
 > |-----------|-------------------------|---------------------------------------------------|
