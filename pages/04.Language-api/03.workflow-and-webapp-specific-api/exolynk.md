@@ -90,28 +90,28 @@ Returns the actual environment the user is logged in.
 
     
 [ui-accordion independent=true open=none]
-[ui-accordion-item title=<code>webapp::get_model()\040->\040Model</code>]
+[ui-accordion-item title=<code>webapp::get_model()\040->\040Option&lt;Model&gt;</code>]
 
 ##### Description
 Returns the model this workflow is started from.
 ##### Returns
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
-> | Model                   | The model this workflow is called from |
+> | Option<Model>           | The model this workflow is called from |
 
 [/ui-accordion-item]
 [/ui-accordion]
 
 
 [ui-accordion independent=true open=none]
-[ui-accordion-item title=<code>webapp::get_record()\040->\040Record</code>]
+[ui-accordion-item title=<code>webapp::get_record()\040->\040Option&lt;Record&gt;</code>]
 
 ##### Description
 Returns the record this workflow is started from.
 ##### Returns
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
-> | Record                  | The record this workflow is called from |
+> | Option<Record>          | The record this workflow is called from |
 
 [/ui-accordion-item]
 [/ui-accordion]

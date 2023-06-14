@@ -34,22 +34,22 @@ Returns the actual user which has triggered the service.
 > | Record                          | The user record |
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>server::get_record()\040->\040Record</code>]
+[ui-accordion-item title=<code>server::get_record()\040->\040Option&lt;Record&gt;</code>]
 ##### Description
 Returns the actual record for which the service has been triggered.
 ##### Returns
 > | data type                       | description                                                 |
 > |---------------------------------|-------------------------------------------------------------|
-> | Record                          | The record |
+> | Option<Record>                  | The record |
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>server::get_model()\040->\040Model</code>]
+[ui-accordion-item title=<code>server::get_model()\040->\040Option&lt;Model&gt;</code>]
 ##### Description
 Returns the actual model for which the service has been triggered.
 ##### Returns
 > | data type                       | description                                                 |
 > |---------------------------------|-------------------------------------------------------------|
-> | Model                           | The model |
+> | Option<Model>                   | The model |
 [/ui-accordion-item]
 [/ui-accordion]
 
