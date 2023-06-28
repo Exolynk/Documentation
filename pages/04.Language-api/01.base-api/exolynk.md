@@ -482,7 +482,7 @@ Returns a empty Language object.
 
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>Language::new_en(String)\040>\040Language</code>]
+[ui-accordion-item title=<code>Language::new_en(String)\040->\040Language</code>]
 
 ##### Description
 Returns a Language object with the english languauge set.
