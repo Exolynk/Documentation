@@ -90,28 +90,28 @@ Returns the actual environment the user is logged in.
 
     
 [ui-accordion independent=true open=none]
-[ui-accordion-item title=<code>webapp::get_model()\040->\040Model</code>]
+[ui-accordion-item title=<code>webapp::get_model()\040->\040Option&lt;Model&gt;</code>]
 
 ##### Description
 Returns the model this workflow is started from.
 ##### Returns
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
-> | Model                   | The model this workflow is called from |
+> | Option<Model>           | The model this workflow is called from |
 
 [/ui-accordion-item]
 [/ui-accordion]
 
 
 [ui-accordion independent=true open=none]
-[ui-accordion-item title=<code>webapp::get_record()\040->\040Record</code>]
+[ui-accordion-item title=<code>webapp::get_record()\040->\040Option&lt;Record&gt;</code>]
 
 ##### Description
 Returns the record this workflow is started from.
 ##### Returns
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
-> | Record                  | The record this workflow is called from |
+> | Option<Record>          | The record this workflow is called from |
 
 [/ui-accordion-item]
 [/ui-accordion]
@@ -167,6 +167,22 @@ Shows a popup to the user with the given Header, text and variables. When the us
 > |-------------------------|-----------------------------------------------------------------------|
 > | Bool                    | Returns true the user selected submit, on cancel it returns false |
 > | Vec&lt;Variable&gt;     | The variables which have been updated by the users |
+
+[/ui-accordion-item]
+
+
+[ui-accordion-item title=<code>webapp::ui::notification(String,\040String,\040String)</code>]
+
+##### Description
+Shows a notification to the user with a message for a specific time.
+The design of the message need to be defined as either "Information", "Positive", "Negative" or "Warning".
+
+##### Parameters
+> | parameter | data type               | description                                                           |
+> |-----------|-------------------------|-----------------------------------------------------------------------|
+> | 0         | String                  | The design of the motification message |
+> | 1         | String                  | The text of the message |
+> | 1         | u32                     | The time in ms to show the message to the user |
 
 [/ui-accordion-item]
 [/ui-accordion]

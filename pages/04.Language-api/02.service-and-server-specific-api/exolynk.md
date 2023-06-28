@@ -34,22 +34,22 @@ Returns the actual user which has triggered the service.
 > | Record                          | The user record |
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>server::get_record()\040->\040Record</code>]
+[ui-accordion-item title=<code>server::get_record()\040->\040Option&lt;Record&gt;</code>]
 ##### Description
 Returns the actual record for which the service has been triggered.
 ##### Returns
 > | data type                       | description                                                 |
 > |---------------------------------|-------------------------------------------------------------|
-> | Record                          | The record |
+> | Option<Record>                  | The record |
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>server::get_model()\040->\040Model</code>]
+[ui-accordion-item title=<code>server::get_model()\040->\040Option&lt;Model&gt;</code>]
 ##### Description
 Returns the actual model for which the service has been triggered.
 ##### Returns
 > | data type                       | description                                                 |
 > |---------------------------------|-------------------------------------------------------------|
-> | Model                           | The model |
+> | Option<Model>                   | The model |
 [/ui-accordion-item]
 [/ui-accordion]
 
@@ -158,7 +158,7 @@ Removes a record from the favorites of a user. This also informs all subscribed 
 
 [ui-accordion-item title=<code>server::db::reset_password(String,\040String)\040->\040async\040Result&lt;()&gt;</code>]
 ##### Description
-Resets the password for the given user.
+Resets the password for the given user. The needs to have the `password_reset` right.
 ##### Parameters
 > | parameter | data type               | description                                       |
 > |-----------|-------------------------|---------------------------------------------------|

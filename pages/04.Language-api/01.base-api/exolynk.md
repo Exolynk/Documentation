@@ -125,7 +125,7 @@ a table which is uunique for this record type / model.
 > | `ident`   | Ident                   | The unique textual identifier for the record  |
 > | `version` | Version                 | The version for the record  |
 > | `model`   | String                  | The uuid of the model as String  |
-> | `status`  | String                  | The status of the record  |
+> | `status`  | Ident                   | The status of the record  |
 > | `released`| Bool                    | Implies if this model is released and not changeable anymore |
 > | `name`    | Language                | The display name of the record |
 > | `description`   | Language          | The display description of the record |
@@ -141,7 +141,7 @@ a table which is uunique for this record type / model.
 > |-----------|-------------------------|-----------------------------------------------------------------------|
 > | `uuid`    | String                  | Set the uuid. This fails if the uuid has a wrong format  |
 > | `ident`   | Ident                   | Set the ident for the record, converts automatically to a valid form  |
-> | `status`  | String                  | Set the status for the record  |
+> | `status`  | Ident                   | Set the status for the record  |
 > | `released`| Bool                    | Is the record released and not changeable anymore  |
 > | `name`    | Language                | Set the display name of the record |
 > | `description`   | Language          | Set the display descritption of the record |
