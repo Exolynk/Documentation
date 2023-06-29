@@ -12,7 +12,7 @@ process:
 
 ## Login
 
-![Login](login-popup.png?resize=800,400&classes=left)
+![Login](login.gif?resize=800,400&classes=left)
 
 **Credentials required to login:**<br>
 Environment: *\*your tenant name**<br>
