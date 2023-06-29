@@ -8,16 +8,18 @@ process:
 
 [TOC]
 
+<br><br><br><br>
+
 # Getting Started with Exolynk Platform
 
 ## Login
 
-![Login](login.gif?resize=800,400&classes=left)
+![Login](login.gif?resize=800&classes=left)
 
 **Credentials required to login:**<br>
 Environment: \**your_tenant name\**<br>
 Username: \**your_username\**<br>
-Password: `\**your_password\**`<br>
+Password: \**your_password\**<br>
 <br>
 All credentials and your Platform URL will be provided after subscription order.
 
