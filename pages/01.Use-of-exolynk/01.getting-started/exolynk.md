@@ -15,9 +15,9 @@ process:
 ![Login](login.gif?resize=800,400&classes=left)
 
 **Credentials required to login:**<br>
-Environment: *\*your tenant name**<br>
-Username: *\*your username**<br>
-Password: *\*your password**<br>
+Environment: \**your_tenant name\**<br>
+Username: \**your_username\**<br>
+Password: `\**your_password\**`<br>
 <br>
 All credentials and your Platform URL will be provided after subscription order.
 
