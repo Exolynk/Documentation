@@ -46,3 +46,4 @@ Returns the color as string.
 > | String                  | Color as string |
 
 [/ui-accordion-item]
+[/ui-accordion]
