@@ -35,6 +35,8 @@ By clicking on the Home icon or the Exolynk logo, you can access the main menu w
 
 The Search function provides a fulltext search for all available items, models and documents. Including PDF content.
 
+>>>>>> the words must appear written out in full for a better search experience
+
 ### Inbox
 
 The personal Inbox is the central notification center where events, status changes or messages which are addressed to the specific user can be displayed.
