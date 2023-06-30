@@ -47,3 +47,12 @@ Returns the color as string.
 
 [/ui-accordion-item]
 [/ui-accordion]
+
+##### Color Codes
+Following html color code types are allowed:
+
+**Names** ```red``` </br>
+**HEX** ```#ff0000``` </br>
+**RGB** ```rgb(255, 0, 0)``` </br>
+**HSL** ```hsl(360deg, 100%, 50%)``` </br>
+
