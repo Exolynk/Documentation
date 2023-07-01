@@ -51,8 +51,68 @@ Returns the color as string.
 ##### Color Codes
 Following html color code types are allowed:
 
-**Names** ```red``` <br>
-**HEX** ```#ff0000``` <br>
-**RGB** ```rgb(255, 0, 0)``` <br>
-**HSL** ```hsl(360deg, 100%, 50%)``` <br>
+**Names:** ```red``` <br>
+**HEX:** ```#ff0000``` <br>
+**RGB:** ```rgb(255, 0, 0)``` <br>
+**HSL:** ```hsl(360deg, 100%, 50%)``` <br>
 
+##### Default Color Codes
+
+###### Semantic Colors
+
+<span style="color:#BB0000">**Negative**</span>
+
+HEX: `#BB0000` <br>
+
+**Negative** <br>
+HEX: ```#BB0000``` <br>
+RGB: ```187/0/0``` <br>
+
+**Critical** <br>
+HEX: ```#E78C07``` <br>
+RGB: ```231/140/7``` <br>
+
+**Positive** <br>
+HEX: ```#2B7D2B``` <br>
+RGB: ```43/125/43``` <br>
+
+**Neutral** <br>
+HEX: ```#5E696E``` <br>
+RGB: ```94/105/110``` <br>
+
+**Information** <br>
+HEX: ```#427cac``` <br>
+RGB: ```66/124/172``` <br>
+
+
+###### Accent Colors
+
+HEX: ```#E09D00``` <br>
+RGB: ```224/157/0``` <br>
+
+HEX: ```#E6600D``` <br>
+RGB: ```230/96/13``` <br>
+
+HEX: ```#C14646``` <br>
+RGB: ```193/70/70``` <br>
+
+HEX: ```#AB218E``` <br>
+RGB: ```171/33/142``` <br>
+
+HEX: ```#678BC7``` <br>
+RGB: ```103/139/199``` <br>
+
+HEX: ```#0092D1``` <br>
+RGB: ```0/146/209``` <br>
+
+HEX: ```#1A9898``` <br>
+RGB: ```26 152 152``` <br>
+
+HEX: ```#759421``` <br>
+RGB: ```117/148/33``` <br>
+
+HEX: ```#925ACE``` <br>
+RGB: ```146/90/206``` <br>
+
+HEX: ```#647987``` <br>
+RGB: ```100/121/135``` <br>
