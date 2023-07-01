@@ -48,7 +48,7 @@ Returns the color as string.
 [/ui-accordion-item]
 [/ui-accordion]
 
-##### Color Codes
+##### Supported color codes
 Following html color code types are allowed:
 
 **Names:** ```red``` <br>
@@ -56,36 +56,37 @@ Following html color code types are allowed:
 **RGB:** ```rgb(255, 0, 0)``` <br>
 **HSL:** ```hsl(360deg, 100%, 50%)``` <br>
 
-##### Default Color Codes
+##### Default color codes
 
-###### Semantic Colors
+[ui-accordion independent=true open=0]
 
-<span style="color:#BB0000">**Negative**</span>
+[ui-accordion-item title=Semantic Colors]
+##### Semantic Colors
 
-HEX: `#BB0000` <br>
-
-**Negative** <br>
+<span style="color:#BB0000">**Negative**</span><br>
 HEX: ```#BB0000``` <br>
 RGB: ```187/0/0``` <br>
 
-**Critical** <br>
+<span style="color:#E78C07">**Critical**</span><br>
 HEX: ```#E78C07``` <br>
 RGB: ```231/140/7``` <br>
 
-**Positive** <br>
+<span style="color:#2B7D2B">**Positive**</span><br>
 HEX: ```#2B7D2B``` <br>
 RGB: ```43/125/43``` <br>
 
-**Neutral** <br>
+<span style="color:#5E696E">**Neutral**</span><br>
 HEX: ```#5E696E``` <br>
 RGB: ```94/105/110``` <br>
 
-**Information** <br>
+<span style="color:#427cac">**Information**</span><br>
 HEX: ```#427cac``` <br>
 RGB: ```66/124/172``` <br>
+[/ui-accordion-item]
 
 
-###### Accent Colors
+[ui-accordion-item title=Accent Colors]
+##### Accent colors
 
 HEX: ```#E09D00``` <br>
 RGB: ```224/157/0``` <br>
@@ -116,3 +117,5 @@ RGB: ```146/90/206``` <br>
 
 HEX: ```#647987``` <br>
 RGB: ```100/121/135``` <br>
+[/ui-accordion-item]
+[/ui-accordion]
