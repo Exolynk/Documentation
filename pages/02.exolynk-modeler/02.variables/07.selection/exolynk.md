@@ -14,7 +14,8 @@ process:
 
 ------------------------------------------------------------------------------------------
 ### Selection
-The Selection list or dropdown can be used to select on of different options.
+The Selection list or dropdown can be used to select one or multiple options.
+More details here: <a href="../../language-api/base-api/selection#selection" target="_blank">Base API - Selection</a>
 
 >>>>>> UX Considerations: Use dropdowns for numerous or similar options. If the number of options is more than 6–7 you should consider putting them in the dropdown (selection instead of e.g. bool) as users anyway will not be able to keep all of them in mind.
 

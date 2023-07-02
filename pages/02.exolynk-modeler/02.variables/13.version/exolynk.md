@@ -1,5 +1,5 @@
 ---
-title: 'Color'
+title: 'Version'
 taxonomy:
     category:
         - docs
@@ -13,16 +13,15 @@ process:
 <br><br><br><br>
 
 ------------------------------------------------------------------------------------------
-### Color
-Color value type (HTML formats as defined here: <a href="../../language-api/base-api/color#color" target="_blank">Color Format</a>
-
+### Version
+A version object. Right now it only allows nubered version (e.g. 0, 1, 2, 3, ...) in future more version formats are planned. More details here: <a href="../../language-api/base-api/version#version" target="_blank">Base API Version</a>
 
 ### UI Example
-![Color](color.gif?resize=426&classes=left)
+![Version](version.gif?resize=800&classes=left)
 
 ### UI Layout Example
 ````html
-<variable ident="color_name" access="write" />
+<variable ident="version_name" access="write" />
 ````
 
 ### Attributes
@@ -35,7 +34,7 @@ Color value type (HTML formats as defined here: <a href="../../language-api/base
 > |-----------|-------------------------|-----------------------------------------------------------------------|
 > | Required    | Bool                  | mandatory to fill out (Yes or No)  |
 > | Access    | Selection               | Access right `change`, `hide`, `read`, `write`  |
-> | Default Value    | <a href="../../language-api/base-api/color#color" target="_blank">Color Format</a>Color Format</a>   | color which is field in per default  |
+> | Default Value    | Integer   | version which is field in per default  |
 
 [/ui-accordion-item]
 

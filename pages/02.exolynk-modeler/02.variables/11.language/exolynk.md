@@ -14,7 +14,8 @@ process:
 
 ------------------------------------------------------------------------------------------
 ### Language
-Language element for translations
+A language is an object with holds text translated in multiple languages.
+More details here: <a href="../../language-api/base-api/language#language" target="_blank">Base API - Language</a>
 
 ### UI Example
 ![Language](language.gif?resize=800&classes=left)

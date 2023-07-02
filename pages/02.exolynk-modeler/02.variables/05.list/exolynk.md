@@ -14,7 +14,9 @@ process:
 
 ------------------------------------------------------------------------------------------
 ### List
-The List element can be used to list one data type per rows. All avilable data types can be used to list
+The List element can be used to list one data type per rows. All avilable data types can be used to list.
+A can store multiple values at once. A list can be restricted to a specific value typ.
+More details here: <a href="../../language-api/base-api/list#list" target="_blank">Base API - List</a>
 
 ### UI Example (List String)
 ![List-String](list-string.gif?resize=800&classes=left)
