@@ -1,5 +1,5 @@
 ---
-title: 'Integer'
+title: 'String'
 taxonomy:
     category:
         - docs
@@ -13,15 +13,18 @@ process:
 <br><br><br><br>
 
 ------------------------------------------------------------------------------------------
-### Integer
-An integer is the number zero (0), a positive natural number (1, 2, 3, etc.) or a negative integer with a minus sign (−1, −2, −3, etc.)
+### String
+The Boolean (shortened to Bool) is a data type that has one of two possible values (usually denoted true and false) which is intended to represent the two truth values of logic and Boolean algebra.
 
-### UI Example
-![Integer](integer.gif?resize=800&classes=left)
+### UI Example (String)
+![String](string.gif?resize=800&classes=left)
+
+### UI Example (Multiline-String)
+![String](multiline-string.gif?resize=800&classes=left)
 
 ### UI Layout Example
 ````html
-<variable ident="integer_name" access="write" />
+<variable ident="string_name" access="write" />
 ````
 
 ### Attributes
@@ -35,6 +38,7 @@ An integer is the number zero (0), a positive natural number (1, 2, 3, etc.) or 
 > | Required    | Bool                  | mandatory to fill out (Yes or No)  |
 > | Access    | Selection               | Access right `change`, `hide`, `read`, `write`  |
 > | Default Value    | String         | value which is field in per default  |
+> | Multiline    | Bool         | Multiline active (Yes or No)  |
 
 [/ui-accordion-item]
 

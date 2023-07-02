@@ -1,5 +1,5 @@
 ---
-title: 'Integer'
+title: 'Float'
 taxonomy:
     category:
         - docs
@@ -13,15 +13,15 @@ process:
 <br><br><br><br>
 
 ------------------------------------------------------------------------------------------
-### Integer
-An integer is the number zero (0), a positive natural number (1, 2, 3, etc.) or a negative integer with a minus sign (−1, −2, −3, etc.)
+### Float
+The FLOAT data type stores double-precision floating-point numbers with up to 17 significant digits. Example: 12.874
 
 ### UI Example
-![Integer](integer.gif?resize=800&classes=left)
+![Float](float.gif?resize=800&classes=left)
 
 ### UI Layout Example
 ````html
-<variable ident="integer_name" access="write" />
+<variable ident="float_name" access="write" />
 ````
 
 ### Attributes

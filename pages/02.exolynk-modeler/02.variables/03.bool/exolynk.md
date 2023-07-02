@@ -1,5 +1,5 @@
 ---
-title: 'Integer'
+title: 'Bool'
 taxonomy:
     category:
         - docs
@@ -13,15 +13,15 @@ process:
 <br><br><br><br>
 
 ------------------------------------------------------------------------------------------
-### Integer
-An integer is the number zero (0), a positive natural number (1, 2, 3, etc.) or a negative integer with a minus sign (−1, −2, −3, etc.)
+### Boolean
+The Boolean (shortened to Bool) is a data type that has one of two possible values (usually denoted true and false) which is intended to represent the two truth values of logic and Boolean algebra.
 
 ### UI Example
-![Integer](integer.gif?resize=800&classes=left)
+![Bool](bool.gif?resize=800&classes=left)
 
 ### UI Layout Example
 ````html
-<variable ident="integer_name" access="write" />
+<variable ident="bool_name" access="write" />
 ````
 
 ### Attributes
