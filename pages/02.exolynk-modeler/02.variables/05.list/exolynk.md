@@ -1,5 +1,5 @@
 ---
-title: 'Bool'
+title: 'List'
 taxonomy:
     category:
         - docs
@@ -13,15 +13,16 @@ process:
 <br><br><br><br>
 
 ------------------------------------------------------------------------------------------
-### Boolean
-The Boolean (shortened to Bool) is a data type that has one of two possible values (usually denoted true and false) which is intended to represent the two truth values of logic and Boolean algebra.
+### List
+The List element can be used to list one data type per rows. All avilable data types can be used to list
 
-### UI Example
-![Bool](bool.gif?resize=97&classes=left)
+### UI Example (List String)
+![List-String](list-string.gif?resize=800&classes=left)
+
 
 ### UI Layout Example
 ````html
-<variable ident="bool_name" access="write" />
+<variable ident="list_name" access="write" />
 ````
 
 ### Attributes
@@ -35,6 +36,7 @@ The Boolean (shortened to Bool) is a data type that has one of two possible valu
 > | Required    | Bool                  | mandatory to fill out (Yes or No)  |
 > | Access    | Selection               | Access right `change`, `hide`, `read`, `write`  |
 > | Default Value    | String         | value which is field in per default  |
+> | Data type    | Selection         | Data type for list `Integer`, `Float`, `Bool`, `String`, `Selection`, `Reference`, `Ident`, `DateTime`, `Language`, `Color`, `Version`  |
 
 [/ui-accordion-item]
 

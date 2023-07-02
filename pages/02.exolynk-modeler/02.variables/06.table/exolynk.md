@@ -1,5 +1,5 @@
 ---
-title: 'Bool'
+title: 'Table'
 taxonomy:
     category:
         - docs
@@ -13,15 +13,19 @@ process:
 <br><br><br><br>
 
 ------------------------------------------------------------------------------------------
-### Boolean
-The Boolean (shortened to Bool) is a data type that has one of two possible values (usually denoted true and false) which is intended to represent the two truth values of logic and Boolean algebra.
+### Table
+The Table can be used to combine many different data types in a table form. E.g. for a reporting sheet with Amount (Integer), Description (String), and Customer (Reference to Customer Object).
 
-### UI Example
-![Bool](bool.gif?resize=97&classes=left)
+### UI Example (Table String)
+![Table-String](table-string.gif?resize=800&classes=left)
+
+### UI Example (3 columns Table with Integer, String and Reference)
+Data types in tables can be combined and defined per column:
+![Table-Mixed](table-mixed.gif?resize=800&classes=left)
 
 ### UI Layout Example
 ````html
-<variable ident="bool_name" access="write" />
+<variable ident="table_name" access="write" />
 ````
 
 ### Attributes
@@ -35,6 +39,7 @@ The Boolean (shortened to Bool) is a data type that has one of two possible valu
 > | Required    | Bool                  | mandatory to fill out (Yes or No)  |
 > | Access    | Selection               | Access right `change`, `hide`, `read`, `write`  |
 > | Default Value    | String         | value which is field in per default  |
+> | Data type    | Selection         | Data type for list columns `Integer`, `Float`, `Bool`, `String`, `Selection`, `Reference`, `Ident`, `DateTime`, `Language`, `Color`, `Version`  |
 
 [/ui-accordion-item]
 

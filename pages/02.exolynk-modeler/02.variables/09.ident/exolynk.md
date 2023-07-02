@@ -1,5 +1,5 @@
 ---
-title: 'Bool'
+title: 'Ident'
 taxonomy:
     category:
         - docs
@@ -13,15 +13,15 @@ process:
 <br><br><br><br>
 
 ------------------------------------------------------------------------------------------
-### Boolean
-The Boolean (shortened to Bool) is a data type that has one of two possible values (usually denoted true and false) which is intended to represent the two truth values of logic and Boolean algebra.
+### Ident
+The Ident tybe can be used as a unique identifier
 
 ### UI Example
-![Bool](bool.gif?resize=97&classes=left)
+![Ident](ident.gif?resize=800&classes=left)
 
 ### UI Layout Example
 ````html
-<variable ident="bool_name" access="write" />
+<variable ident="ident_name" access="write" />
 ````
 
 ### Attributes

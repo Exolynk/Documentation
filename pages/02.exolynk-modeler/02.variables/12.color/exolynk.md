@@ -1,5 +1,5 @@
 ---
-title: 'Bool'
+title: 'Color'
 taxonomy:
     category:
         - docs
@@ -13,15 +13,23 @@ process:
 <br><br><br><br>
 
 ------------------------------------------------------------------------------------------
-### Boolean
-The Boolean (shortened to Bool) is a data type that has one of two possible values (usually denoted true and false) which is intended to represent the two truth values of logic and Boolean algebra.
+### Color
+Color value type (HTML formats as defined here: https://docs.exolynk.com/language-api/base-api/color#color)
+
+[I'm a relative reference to a repository file](../blob/master/LICENSE)
+
+<a href="https://docs.exolynk.com/language-api/base-api/color#color" target="_blank">Color Format</a>
+<a href="../language-api/base-api/color#color" target="_blank">Color Format</a>
+<a href="../../language-api/base-api/color#color" target="_blank">Color Format</a>
+<a href="../../../language-api/base-api/color#color" target="_blank">Color Format</a>
+<a href="../../../../language-api/base-api/color#color" target="_blank">Color Format</a>
 
 ### UI Example
-![Bool](bool.gif?resize=97&classes=left)
+![Color](color.gif?resize=426&classes=left)
 
 ### UI Layout Example
 ````html
-<variable ident="bool_name" access="write" />
+<variable ident="color_name" access="write" />
 ````
 
 ### Attributes
@@ -34,7 +42,7 @@ The Boolean (shortened to Bool) is a data type that has one of two possible valu
 > |-----------|-------------------------|-----------------------------------------------------------------------|
 > | Required    | Bool                  | mandatory to fill out (Yes or No)  |
 > | Access    | Selection               | Access right `change`, `hide`, `read`, `write`  |
-> | Default Value    | String         | value which is field in per default  |
+> | Default Value    | <a href="https://docs.exolynk.com/language-api/base-api/color#color" target="_blank">Color Format</a>       | color which is field in per default  |
 
 [/ui-accordion-item]
 

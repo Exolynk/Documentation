@@ -1,5 +1,5 @@
 ---
-title: 'Bool'
+title: 'Selection'
 taxonomy:
     category:
         - docs
@@ -13,15 +13,17 @@ process:
 <br><br><br><br>
 
 ------------------------------------------------------------------------------------------
-### Boolean
-The Boolean (shortened to Bool) is a data type that has one of two possible values (usually denoted true and false) which is intended to represent the two truth values of logic and Boolean algebra.
+### Selection
+The Selection list or dropdown can be used to select on of different options.
+
+>>>>>> UX Considerations: Use dropdowns for numerous or similar options. If the number of options is more than 6–7 you should consider putting them in the dropdown (selection instead of e.g. bool) as users anyway will not be able to keep all of them in mind.
 
 ### UI Example
-![Bool](bool.gif?resize=97&classes=left)
+![Selection](selection.gif?resize=800&classes=left)
 
 ### UI Layout Example
 ````html
-<variable ident="bool_name" access="write" />
+<variable ident="selection_name" access="write" />
 ````
 
 ### Attributes
@@ -34,7 +36,8 @@ The Boolean (shortened to Bool) is a data type that has one of two possible valu
 > |-----------|-------------------------|-----------------------------------------------------------------------|
 > | Required    | Bool                  | mandatory to fill out (Yes or No)  |
 > | Access    | Selection               | Access right `change`, `hide`, `read`, `write`  |
-> | Default Value    | String         | value which is field in per default  |
+> | Default Value    | Selection         | element which is selected per default  |
+> | Selection Elements   | String         | elements which can be selected  |
 
 [/ui-accordion-item]
 
