@@ -33,6 +33,8 @@ Value is used within the record and variable to store values.
 > | Value::Version(Version)     | Stores a version value |
 > | Value::List(List)           | Stores a list value |
 > | Value::Reference(Reference) | Stores a reference value |
+> | Value::Color(Color)         | Stores a color value |
+> | Value::Table(Table)         | Stores a complete table |
 
 ##### Example
 > ```rust
@@ -195,6 +197,36 @@ Returns an Option which includes a Version, when the Value was of type Version.
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
 > | Option&lt;Version&gt;    | A option which contains the Version when the Value contianed a Version |
+
+[/ui-accordion-item]
+
+[ui-accordion-item title=<code>Value::get_color(Value)\040->\040Option&lt;Color&gt;</code>]
+
+##### Description
+Returns an Option which includes a Color, when the Value was of type Color.
+##### Parameters
+> | parameter | data type               | description                                                           |
+> |-----------|-------------------------|-----------------------------------------------------------------------|
+> | 0         | Self / Value            | A reference to the own object |
+##### Returns
+> | data type               | description                                                           |
+> |-------------------------|-----------------------------------------------------------------------|
+> | Option&lt;Color&gt;    | A option which contains the Color when the Value contianed a Color |
+
+[/ui-accordion-item]
+
+[ui-accordion-item title=<code>Value::get_table(Value)\040->\040Option&lt;Table&gt;</code>]
+
+##### Description
+Returns an Option which includes a Table, when the Value was of type Table.
+##### Parameters
+> | parameter | data type               | description                                                           |
+> |-----------|-------------------------|-----------------------------------------------------------------------|
+> | 0         | Self / Value            | A reference to the own object |
+##### Returns
+> | data type               | description                                                           |
+> |-------------------------|-----------------------------------------------------------------------|
+> | Option&lt;Table&gt;    | A option which contains the Table when the Value contianed a Table |
 
 [/ui-accordion-item]
 [/ui-accordion]

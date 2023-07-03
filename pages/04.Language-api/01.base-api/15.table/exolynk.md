@@ -83,7 +83,7 @@ Removes all rows and columns
 [/ui-accordion-item]
 
 
-[ui-accordion-item title=<code>Table::len(Self)\040->usize</code>]
+[ui-accordion-item title=<code>Table::len(Self)\040->\040usize</code>]
 
 ##### Description
 Returns the amount of columns inside the table.
@@ -95,7 +95,7 @@ Returns the amount of columns inside the table.
 [/ui-accordion-item]
 
 
-[ui-accordion-item title=<code>Table::is_empty(Self)\040->bool</code>]
+[ui-accordion-item title=<code>Table::is_empty(Self)\040->\040bool</code>]
 
 ##### Description
 Returns true, when there are no entries inside the table.
