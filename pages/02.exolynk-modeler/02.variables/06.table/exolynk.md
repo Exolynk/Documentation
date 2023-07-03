@@ -21,6 +21,7 @@ The Table can be used to combine many different data types in a table form. E.g.
 
 ### UI Example (3 columns Table with Integer, String and Reference)
 Data types in tables can be combined and defined per column:
+
 ![Table-Mixed](table-mixed.gif?resize=800&classes=left)
 
 ### UI Layout Example
