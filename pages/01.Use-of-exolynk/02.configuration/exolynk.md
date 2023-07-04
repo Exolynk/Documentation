@@ -15,6 +15,7 @@ Todo write documentation how to use the settings
 <span class="laptop"></span>
 <span class="accelerated"></span>
 
+<footer>
 <link
       rel="stylesheet"
       type="text/css"
@@ -30,3 +31,4 @@ Todo write documentation how to use the settings
         content: "\e0e0";
       }
     </style>
+</footer>
