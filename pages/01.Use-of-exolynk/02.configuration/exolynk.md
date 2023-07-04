@@ -15,6 +15,7 @@ Todo write documentation how to use the settings
 <span class="laptop"></span>
 <span class="accelerated"></span>
 <p class="ui5-icon">&#xe070</p>
+<p class="ui5-icon" style="font-size: 3em;">&#xe070</p>
 
 <footer>
 <link
