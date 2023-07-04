@@ -10,6 +10,15 @@ process:
 downloads:
     enabled: true
     include_all_files: true
+    info:
+        -
+            file: model_maintenance_request.json
+            enabled: true
+            name: null
+            featured: false
+            download_name: null
+            access: null
+            version: null
 markdown:
     extra: true
 ---
