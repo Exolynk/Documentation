@@ -13,7 +13,7 @@ process:
 <br><br><br><br>
 
 ------------------------------------------------------------------------------------------
-### Language
+### Multi-Language Text Field
 A language is an object with holds text translated in multiple languages.
 More details here: <a href="../../language-api/base-api/language#language" target="_blank">Base API - Language</a>
 

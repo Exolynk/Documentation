@@ -18,6 +18,8 @@ Date and Type in the format yyyy-MM-dd, HH:mm:ss with date/time picker.
 
 >>> If no default value is given the current date and time will be set if date/time picker is opened.
 
+>>>>> For the Calendar function (DateTime from - until) please use the OOTB Calendar function from the layout. More details here: <a href="../../exolynk-modeler/layout#calendar-start-end-date" target="_blank">Layout - Calendar Start & End Date</a>
+
 ### UI Example
 ![DateTime](date-time.gif?resize=800&classes=left)
 
