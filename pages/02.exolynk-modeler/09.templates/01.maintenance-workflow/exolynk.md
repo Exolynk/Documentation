@@ -25,9 +25,9 @@ markdown:
 
 [TOC]
 
-<br><br><br><br>
 
-------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
 
 <p class="ui5-icon" style="font-size: 4em;" name="wrench">&#xe002</p>
 
@@ -35,7 +35,7 @@ markdown:
 
 [downloads route="/downloads/model-templates/maintenance_request_model" layout="list-files" width="300" /]
 
-
+<br>
 
 
 [ui-tabs position="top-left" active="0" theme="lite"]
