@@ -14,11 +14,14 @@ process:
 
 ------------------------------------------------------------------------------------------
 
-<p class="ui5-icon" style="font-size: 5em;" name="wrench">&#xe002</p>
+<p class="ui5-icon" style="font-size: 4em;" name="wrench">&#xe002</p>
 
-# Maintenance Management Workflow
+## Maintenance Management Workflow
 
 Initial
+
+<i class="fa-light fa-file-arrow-down"></i>
+:fa-file-arrow-down:
 
 <footer>
     <link rel="stylesheet" type="text/css" href="https://ui5.sap.com/resources/sap/ui/core/themes/base/SAP-icons.css">
