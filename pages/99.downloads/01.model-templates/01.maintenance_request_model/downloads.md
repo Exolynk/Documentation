@@ -7,10 +7,10 @@ downloads:
   include_all: true
   info:
     -
-      file: model_maintenance_request.json
+      file: model_maintenance_request_v1.json
       enabled: true
       name: null
-      featured: true
+      featured: false
       download_name: null
       access: null
       version: 1

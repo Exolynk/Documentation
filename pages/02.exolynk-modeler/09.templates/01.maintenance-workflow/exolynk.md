@@ -18,7 +18,7 @@ downloads:
             featured: false
             download_name: null
             access: null
-            version: 1
+            version: 2
 markdown:
     extra: true
 ---
@@ -33,6 +33,8 @@ markdown:
 ## Maintenance Management Workflow
 
 [downloads route="/downloads/model-templates/maintenance_request_model" layout="list-files" width="300" /]
+
+[downloads route="./" layout="list-files" width="300" /]
 
 <br>
 
