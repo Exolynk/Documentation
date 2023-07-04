@@ -18,6 +18,8 @@ process:
 
 ## Maintenance Management Workflow
 
+[downloads route="/docs.exolynk.com/downloads/maintenance-model" layout="list-files" width="300" /]
+
 Initial
 
 [ui-tabs position="top-left" active="0" theme="lite"]
