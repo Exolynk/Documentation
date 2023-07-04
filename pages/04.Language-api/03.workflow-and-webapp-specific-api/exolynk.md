@@ -37,6 +37,8 @@ This workflow is triggered whenever the user creates a new record for a model. W
 > 		dbg(record);
 > 		// TODO: Create this record in an own service within the database
 > }
+> 
+> pub async fn test() {}
 > ```
 
 [/ui-accordion-item]
@@ -183,6 +185,26 @@ The design of the message need to be defined as either "Information", "Positive"
 > | 0         | String                  | The design of the motification message |
 > | 1         | String                  | The text of the message |
 > | 1         | u32                     | The time in ms to show the message to the user |
+
+[/ui-accordion-item]
+
+[ui-accordion-item title=<code>webapp::ui::print()</code>]
+
+##### Description
+Opens the print dialog of the actual selected record and tab. This view is optimized and styled for printing.
+Example workflow
+##### Example
+> ```rust
+> pub fn show() {
+>     true
+> }
+> 
+> pub async fn main() {
+>     webapp::ui::print();
+> }
+> 
+> pub async fn test() {}
+> ```
 
 [/ui-accordion-item]
 [/ui-accordion]
