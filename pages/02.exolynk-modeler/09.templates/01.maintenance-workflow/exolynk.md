@@ -26,10 +26,9 @@ markdown:
 [TOC]
 
 
-
----------------------------------------------------------------------------------
-
 <p class="ui5-icon" style="font-size: 4em;" name="wrench">&#xe002</p>
+
+<br><br><br><br>
 
 ## Maintenance Management Workflow
 
