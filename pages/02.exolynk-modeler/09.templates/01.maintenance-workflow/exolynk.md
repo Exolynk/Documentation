@@ -41,7 +41,7 @@ markdown:
 
 [downloads route="/maintenance-workflow" layout="list-files" width="300" /]
 
-[downloads route="/downloads/model-templates" layout="list-files" width="300" /]
+[downloads route="/downloads/model-templates/maintenance_request_model" layout="list-files" width="300" /]
 
 [downloads route="/downloads" layout="list-files" width="300" /]
 
