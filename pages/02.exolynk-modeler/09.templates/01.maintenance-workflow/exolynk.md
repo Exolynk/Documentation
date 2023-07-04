@@ -24,7 +24,7 @@ process:
 
 [downloads route="/../../../downloads/maintenance-model" layout="list-files" width="300" /]
 
-[downloads route="/../../downloads/maintenance-model" layout="list-files" width="300" /]
+[downloads route="/downloads" layout="list-files" width="300" /]
 
 
 Initial
