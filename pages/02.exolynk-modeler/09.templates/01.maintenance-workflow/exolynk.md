@@ -22,6 +22,11 @@ process:
 
 [downloads route="https://docs.exolynk.com/downloads" layout="list-files" width="300" /]
 
+[downloads route="../../../downloads/maintenance-model" layout="list-files" width="300" /]
+
+[downloads route="../../downloads/maintenance-model" layout="list-files" width="300" /]
+
+
 Initial
 
 [ui-tabs position="top-left" active="0" theme="lite"]
