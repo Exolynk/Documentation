@@ -14,6 +14,7 @@ Todo write documentation how to use the settings
 
 <span class="laptop"></span>
 <span class="accelerated"></span>
+<p class="ui5-icon">&#xe070</p>
 
 <footer>
 <link
@@ -30,5 +31,12 @@ Todo write documentation how to use the settings
         font-family: SAP-icons;
         content: "\e0e0";
       }
+      @font-face {
+      font-family: "ui5-icon-font";
+      src: url(https://docs.exolynk.com/cdn/SAP-icons.ttf) format("truetype");
+      }
+      p.ui5-icon { 
+      font-family: "ui5-icon-font";
+    }
     </style>
 </footer>
