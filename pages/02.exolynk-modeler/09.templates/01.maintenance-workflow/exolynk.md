@@ -33,14 +33,6 @@ markdown:
 
 ## Maintenance Management Workflow
 
-[downloads route="https://docs.exolynk.com/downloads/maintenance-model" layout="list-files" width="300" /]
-
-[downloads route="https://docs.exolynk.com/downloads" layout="list-files" width="300" /]
-
-[downloads route="/../../../downloads/maintenance-model" layout="list-files" width="300" /]
-
-[downloads route="/maintenance-workflow" layout="list-files" width="300" /]
-
 [downloads route="/downloads/model-templates/maintenance_request_model" layout="list-files" width="300" /]
 
 [downloads route="/downloads" layout="list-files" width="300" /]
