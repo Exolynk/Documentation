@@ -12,13 +12,13 @@ downloads:
     include_all_files: true
     info:
         -
-            file: model_maintenance_request.json
+            file: model_maintenance_request_v1.json
             enabled: true
             name: null
             featured: false
             download_name: null
             access: null
-            version: null
+            version: 1
 markdown:
     extra: true
 ---
