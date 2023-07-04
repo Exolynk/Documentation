@@ -37,7 +37,7 @@ markdown:
 
 [downloads route="/downloads" layout="list-files" width="300" /]
 
-Initial
+
 
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="First Tab"]
