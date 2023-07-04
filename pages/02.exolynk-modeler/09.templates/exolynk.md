@@ -1,5 +1,5 @@
 ---
-title: Tenplates
+title: Templates
 taxonomy:
     category: docs
 markdown.extra: true
