@@ -10,15 +10,6 @@ process:
 downloads:
     enabled: true
     include_all_files: true
-    info:
-        -
-            file: model_maintenance_request_v1.json
-            enabled: true
-            name: null
-            featured: false
-            download_name: null
-            access: null
-            version: 2
 markdown:
     extra: true
 ---
@@ -33,8 +24,6 @@ markdown:
 ## Maintenance Management Workflow
 
 [downloads route="/downloads/model-templates/maintenance_request_model" layout="list-files" width="300" /]
-
-[downloads route="./" layout="list-files" width="300" /]
 
 <br>
 
