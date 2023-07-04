@@ -1,14 +1,17 @@
 ---
-title: Maintenance Workflow
+title: 'Maintenance Workflow'
 taxonomy:
-    category: docs
+    category:
+        - docs
 markdown.extra: true
 process:
-    twig: false
     markdown: true
+    twig: false
 downloads:
     enabled: true
-    include_all_files: true # if you wish to display all uploaded files
+    include_all_files: true
+markdown:
+    extra: true
 ---
 
 [TOC]
