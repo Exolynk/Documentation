@@ -22,9 +22,9 @@ process:
 
 [downloads route="https://docs.exolynk.com/downloads" layout="list-files" width="300" /]
 
-[downloads route="../../../downloads/maintenance-model" layout="list-files" width="300" /]
+[downloads route="/../../../downloads/maintenance-model" layout="list-files" width="300" /]
 
-[downloads route="../../downloads/maintenance-model" layout="list-files" width="300" /]
+[downloads route="/../../downloads/maintenance-model" layout="list-files" width="300" /]
 
 
 Initial
