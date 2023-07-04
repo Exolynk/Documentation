@@ -6,6 +6,9 @@ markdown.extra: true
 process:
     twig: false
     markdown: true
+downloads:
+    enabled: true
+    include_all_files: true # if you wish to display all uploaded files
 ---
 
 [TOC]
@@ -24,7 +27,7 @@ process:
 
 [downloads route="/../../../downloads/maintenance-model" layout="list-files" width="300" /]
 
-[downloads route="/downloads" layout="list-files" width="300" /]
+[downloads route="/downloads/model-templates/maintenance_request_model" layout="list-files" width="300" /]
 
 
 Initial
