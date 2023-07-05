@@ -14,7 +14,7 @@ process:
 
 ------------------------------------------------------------------------------------------
 ### DateTime
-Date and Type in the format yyyy-MM-dd, HH:mm:ss with date/time picker.
+Date and Type in the format yyyy-MM-dd, HH:mm:ss with date/time picker. More details here: <a href="../../language-api/base-api/datetime#datetime" target="_blank">Base API - DateTime</a>
 
 >>> If no default value is given the current date and time will be set if date/time picker is opened.
 
