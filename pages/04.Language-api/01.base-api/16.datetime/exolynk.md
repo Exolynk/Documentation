@@ -48,7 +48,8 @@ Get a value from a row and column.
 [ui-accordion-item title=<code>DateTime::to_local_string(Self)\040->\040String</code>]
 
 ##### Description
-Set a value to local string.
+Get a value to local string.
+
 ##### Parameters
 > | parameter | data type               | description                                                           |
 > |-----------|-------------------------|-----------------------------------------------------------------------|
@@ -61,7 +62,7 @@ Set a value to local string.
 [/ui-accordion-item]
 
 
-[ui-accordion-item title=<code>DateTime::from_local_string(Self)\040->\040String</code>]
+[ui-accordion-item title=<code>DateTime::from_local_string(Self,\040String)\040->\040Result<DateTime></code>]
 
 ##### Description
 Get a value from local string.
@@ -69,10 +70,11 @@ Get a value from local string.
 > | parameter | data type               | description                                                           |
 > |-----------|-------------------------|-----------------------------------------------------------------------|
 > | 0         | Self / DateTime         | A reference to the own object |
+> | 1         | String / DateTime         | DateTime as string in format ```yyyy-MM-dd, HH:mm:ss``` |
 ##### Returns
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
-> | String                  | DateTime as string in format ```yyyy-MM-dd, HH:mm:ss``` |
+> | DateTime                  | DateTime as string in format ```yyyy-MM-dd, HH:mm:ss``` |
 
 [/ui-accordion-item]
 [/ui-accordion]
