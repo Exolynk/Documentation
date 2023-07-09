@@ -785,3 +785,40 @@ With a reference later in the document defining the URL location:
 
 
     [id]: http://octodex.github.com/images/dojocat.jpg  "The Dojocat"
+
+
+## UI5 Icons
+For all our Exolynk App-Icons we use the <a href="https://sapui5.hana.ondemand.com/sdk/test-resources/sap/m/demokit/iconExplorer/webapp/index.html#/overview/SAP-icons" target="_blank">SAP UI5 Icon font</a>. The use them in this documentation repository please use it as follow:
+
+1) Past the following footer code into the bottom part of you page:
+
+```html
+<footer>
+    <link rel="stylesheet" type="text/css" href="https://ui5.sap.com/resources/sap/ui/core/themes/base/SAP-icons.css">
+    <style>
+      .laptop::before {
+        font-family: SAP-icons;
+        content: "\e027";
+      }
+      .accelerated::before {
+        font-family: SAP-icons;
+        content: "\e0e0";
+      }
+      @font-face {
+      font-family: "ui5-icon-font";
+      src: url(https://docs.exolynk.com/cdn/SAP-icons.ttf) format("truetype");
+      }
+      p.ui5-icon { 
+      font-family: "ui5-icon-font";
+    }
+    </style>
+</footer>
+```
+<br>
+
+2)  Use the following snippet to add an Icon with html to the markdown page (please make sure to copy the Icon Unicode to display it properly):
+
+```html
+<p class="ui5-icon" style="font-size: 4em;" name="wrench">&#xe002</p>
+```
+

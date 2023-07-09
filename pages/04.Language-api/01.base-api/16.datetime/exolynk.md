@@ -25,7 +25,7 @@ Creates a new emtpy table.
 ##### Returns
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
-> | DateTime                 | A DateTime object |
+> | DateTime                | A DateTime object |
 
 [/ui-accordion-item]
 
@@ -62,19 +62,18 @@ Get a value to local string.
 [/ui-accordion-item]
 
 
-[ui-accordion-item title=<code>DateTime::from_local_string(Self,\040String)\040->\040Result<DateTime></code>]
+[ui-accordion-item title=<code>DateTime::from_local_string(String)\040->\040Result&lt;DateTime&gt;</code>]
 
 ##### Description
 Get a value from local string.
 ##### Parameters
 > | parameter | data type               | description                                                           |
 > |-----------|-------------------------|-----------------------------------------------------------------------|
-> | 0         | Self / DateTime         | A reference to the own object |
-> | 1         | String / DateTime         | DateTime as string in format ```yyyy-MM-dd, HH:mm:ss``` |
+> | 0         | String / DateTime         | DateTime as string in format ```yyyy-MM-dd, HH:mm:ss``` |
 ##### Returns
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
-> | DateTime                  | DateTime as string in format ```yyyy-MM-dd, HH:mm:ss``` |
+> | DateTime                | A DateTime object                                                     |
 
 [/ui-accordion-item]
 [/ui-accordion]
