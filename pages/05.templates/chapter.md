@@ -1,22 +1,15 @@
 ---
-title: Templates
+title: Contribution
 taxonomy:
     category: docs
-markdown.extra: true
-process:
-    twig: false
-    markdown: true
+child_type: docs
 ---
 
-[TOC]
+### Documentation
 
-<br><br><br><br>
+# RapidModels (Datamodel Templates)
 
-------------------------------------------------------------------------------------------
-
-## RapidModels (Datamodel Templates)
-
-![Service WF](service-wf-animated-7_en.gif?resize=1000&classes=left)
+![Service WF](service-wf-animated-7_en.gif?resize=600&classes=center)
 
 <footer>
     <link rel="stylesheet" type="text/css" href="https://ui5.sap.com/resources/sap/ui/core/themes/base/SAP-icons.css">

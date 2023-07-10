@@ -18,11 +18,7 @@ Todo write documentation how to use the settings
 <p class="ui5-icon" style="font-size: 3em;">&#xe070</p>
 
 <footer>
-<link
-      rel="stylesheet"
-      type="text/css"
-      href="https://ui5.sap.com/resources/sap/ui/core/themes/base/SAP-icons.css"
-    >
+    <link rel="stylesheet" type="text/css" href="https://ui5.sap.com/resources/sap/ui/core/themes/base/SAP-icons.css">
     <style>
       .laptop::before {
         font-family: SAP-icons;
