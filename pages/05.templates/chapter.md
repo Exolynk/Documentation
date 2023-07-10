@@ -7,7 +7,7 @@ child_type: docs
 
 ### Documentation
 
-# RapidModels (Datamodel Templates)
+## RapidModels (Datamodel Templates)
 
 ![Service WF](service-wf-animated-7_en.gif?resize=600&classes=center)
 
