@@ -11,7 +11,7 @@ child_type: docs
 
 <img src="https://docs.exolynk.com/templates/service-wf-animated-7_en.gif" alt="Alt text" style="box-shadow: 3px 3px 3px gray;">
 
-<img src="https://docs.exolynk.com/templates/service-wf-animated-7_en.gif" alt="Service WF" style=" width: 600px; -webkit-filter: drop-shadow(5px 5px 5px #222); filter: drop-shadow(5px 5px 5px #222);">
+<p style="text-align:center;"><img src="https://docs.exolynk.com/templates/service-wf-animated-7_en.gif" alt="Service WF" style="width: 750px; -webkit-filter: drop-shadow(5px 5px 5px #222); filter: drop-shadow(5px 5px 5px #222);"></p>
 
 
 <footer>
