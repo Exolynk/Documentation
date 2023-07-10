@@ -20,10 +20,12 @@ Model Templates can be found and downloaded on our template library or can be sh
 
 Pleas be aware,
 
-![Login](login.gif?resize=800&classes=left)
+![Upload](model-upload.gif?resize=800&classes=left)
 
 ### Template Download
 
+![Download](model-download.gif?resize=800&classes=left)
+
 ### Template edit
 
-![Login](login.gif?resize=800&classes=left)
+![Edit](model-edit.gif?resize=800&classes=left)

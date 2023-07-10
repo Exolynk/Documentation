@@ -14,21 +14,13 @@ process:
 
 ------------------------------------------------------------------------------------------
 
-# Model Templates
+## RapidModels (Datamodel Templates)
 
-Initial
+![Service WF](service-wf-animated-7_en.gif?resize=1000&classes=left)
 
 <footer>
     <link rel="stylesheet" type="text/css" href="https://ui5.sap.com/resources/sap/ui/core/themes/base/SAP-icons.css">
     <style>
-      .laptop::before {
-        font-family: SAP-icons;
-        content: "\e027";
-      }
-      .accelerated::before {
-        font-family: SAP-icons;
-        content: "\e0e0";
-      }
       @font-face {
       font-family: "ui5-icon-font";
       src: url(https://docs.exolynk.com/cdn/SAP-icons.ttf) format("truetype");
