@@ -215,10 +215,10 @@ Following html color code types are allowed:
 <span style="color:#880000">&#11044;</span> <span style="color:#880000"><strong>```#880000```</strong></span><br>
 <span style="color:rgb(136, 0, 0, 1.0)">&#11044;</span> <span style="color:rgb(136, 0, 0, 1.0)"><strong>```rgb(136, 0, 0, 1.0)```</strong></span><br>
 <span style="">Light Flavor 50% transparency</span><br>
-<span style="color:#CF7B7D">&#11044;</span> <span style="color:#CF7B7D"><strong>```#CF7B7D```</strong></span><br>
+<span style="color:#C68784">&#11044;</span> <span style="color:#C68784"><strong>```#C68784```</strong></span><br>
 <span style="color:rgb(136, 0, 0, 0.5)">&#11044;</span> <span style="color:rgb(136, 0, 0, 0.5)"><strong>```rgb(136, 0, 0, 0.5)```</strong></span><br>
 <span style="">Light Flavor 30% transparency</span><br>
-<span style="color:#E3B0B0">&#11044;</span> <span style="color:#E3B0B0"><strong>```#E3B0B0```</strong></span><br>
+<span style="color:#DEB8B5">&#11044;</span> <span style="color:#DEB8B5"><strong>```#DEB8B5```</strong></span><br>
 <span style="color:rgb(136, 0, 0, 0.3)">&#11044;</span> <span style="color:rgb(136, 0, 0, 0.3)"><strong>```rgb(136, 0, 0, 0.3)```</strong></span><br>
 <span style="">Dark Flavor</span><br>
 <span style="color:#FF8888">&#11044;</span> <span style="color:#FF8888"><strong>```#FF8888```</strong></span><br>
@@ -229,10 +229,10 @@ Following html color code types are allowed:
 <span style="color:#BB0000">&#11044;</span> <span style="color:#BB0000"><strong>```#BB0000```</strong></span><br>
 <span style="color:rgb(171, 34, 23, 1.0)">&#11044;</span> <span style="color:rgb(171, 34, 23, 1.0)"><strong>```rgb(171, 34, 23, 1.0)```</strong></span><br>
 <span style="">Light Flavor 50% transparency</span><br>
-<span style="color:#EC797C">&#11044;</span> <span style="color:#EC797C"><strong>```#EC797C```</strong></span><br>
+<span style="color:#D8948E">&#11044;</span> <span style="color:#D8948E"><strong>```#D8948E```</strong></span><br>
 <span style="color:rgb(171, 34, 23, 0.5)">&#11044;</span> <span style="color:rgb(171, 34, 23, 0.5)"><strong>```rgb(171, 34, 23, 0.5)```</strong></span><br>
 <span style="">Light Flavor 30% transparency</span><br>
-<span style="color:#F4B0B0">&#11044;</span> <span style="color:#F4B0B0"><strong>```#F4B0B0```</strong></span><br>
+<span style="color:#E8BEBB">&#11044;</span> <span style="color:#E8BEBB"><strong>```#E8BEBB```</strong></span><br>
 <span style="color:rgb(171, 34, 23, 0.3)">&#11044;</span> <span style="color:rgb(171, 34, 23, 0.3)"><strong>```rgb(171, 34, 23, 0.3)```</strong></span><br>
 <span style="">Dark Flavor</span><br>
 <span style="color:#FFBBBB">&#11044;</span> <span style="color:#FFBBBB"><strong>```#FFBBBB```</strong></span><br>
@@ -243,10 +243,10 @@ Following html color code types are allowed:
 <span style="color:#E78C07">&#11044;</span> <span style="color:#E78C07"><strong>```#E78C07```</strong></span><br>
 <span style="color:rgb(219, 144, 52, 1.0)">&#11044;</span> <span style="color:rgb(219, 144, 52, 1.0)"><strong>```rgb(219, 144, 52, 1.0)```</strong></span><br>
 <span style="">Light Flavor 50% transparency</span><br>
-<span style="color:#FBC379">&#11044;</span> <span style="color:#FBC379"><strong>```#FBC379```</strong></span><br>
+<span style="color:#EEC89E">&#11044;</span> <span style="color:#EEC89E"><strong>```#EEC89E```</strong></span><br>
 <span style="color:rgb(219, 144, 52, 0.5)">&#11044;</span> <span style="color:rgb(219, 144, 52, 0.5)"><strong>```rgb(219, 144, 52, 0.5)```</strong></span><br>
 <span style="">Light Flavor 30% transparency</span><br>
-<span style="color:#FDDBAF">&#11044;</span> <span style="color:#FDDBAF"><strong>```#FDDBAF```</strong></span><br>
+<span style="color:#F5DDC5">&#11044;</span> <span style="color:#F5DDC5"><strong>```#F5DDC5```</strong></span><br>
 <span style="color:rgb(219, 144, 52, 0.3)">&#11044;</span> <span style="color:rgb(219, 144, 52, 0.3)"><strong>```rgb(219, 144, 52, 0.3)```</strong></span><br>
 <span style="">Dark Flavor</span><br>
 <span style="color:#FABD64">&#11044;</span> <span style="color:#FABD64"><strong>```#FABD64```</strong></span><br>
