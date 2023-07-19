@@ -1,11 +1,9 @@
 ---
-title: Use of Exolynk
+title: test
 taxonomy:
     category: docs
 child_type: docs
 ---
 
-### Documentation
-
-# Use of Exolynk
+### test
 

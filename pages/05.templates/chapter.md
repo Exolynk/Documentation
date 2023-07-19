@@ -1,5 +1,5 @@
 ---
-title: Documentation
+title: RapidModels
 taxonomy:
     category: docs
 child_type: docs
