@@ -21,7 +21,7 @@ markdown:
 
 <br><br><br><br>
 
-## Customer Relationship Management Tool
+## Customer Relationship Management
 
 [downloads route="/downloads/model-templates/crm-light" layout="list-files" width="300" /]
 
@@ -110,13 +110,13 @@ Phasellus cursus odio ex, in **mattis lorem tincidunt** vel. Donec nibh odio, da
 
 [ui-tab title="Screenshots"]
 
-## CRM Usage
+#### CRM Usage
 ![CRM Usage](crm_capture.gif?resize=600&classes=left)
 
-## Dashboard
+#### Dashboard
 ![Dashboard](crm_dashboard.png?resize=600&classes=left)
 
-## Record Overview with Filter
+#### Record Overview with Filter
 ![Record Overview](crm_overview.png?resize=600&classes=left)
 
 [/ui-tab]
