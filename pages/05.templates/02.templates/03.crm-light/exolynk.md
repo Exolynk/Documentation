@@ -40,7 +40,7 @@ A lightweight and customizable CRM Tool to track Sales Opportunities in the foll
 - 6/6 Closed Won
 - 6/6 Closed Lost
 
-Supported features:
+**Supported features:**
 - Opportunitiy Information
     - Priority (A-List / B-List / C-List)
     - Opportunity value
@@ -52,8 +52,7 @@ Supported features:
     - Chart for Opportunities by Stage
     - Record log for all user interactions
     - User access management with roles and rights (can be configured per variable and layout)
-
-[ui-tabs position="top-left" active="0" theme="lite"]
+[/ui-tab]
 
 [ui-tab title="Predefined Model Variables"]
 > | Variable ident     | data type                       | Description
@@ -143,13 +142,13 @@ Supported features:
 
 [ui-tab title="Screenshots"]
 
-#### CRM Usage
+**CRM Usage**
 ![CRM Usage](crm_capture.gif?resize=600&classes=left)
 
-#### Dashboard
+**Dashboard**
 ![Dashboard](crm_dashboard.png?resize=600&classes=left)
 
-#### Record Overview with Filter
+**Record Overview with Filter**
 ![Record Overview](crm_overview.png?resize=600&classes=left)
 
 [/ui-tab]
