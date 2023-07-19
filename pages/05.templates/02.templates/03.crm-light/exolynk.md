@@ -143,12 +143,15 @@ A lightweight and customizable CRM Tool to track Sales Opportunities in the foll
 [ui-tab title="Screenshots"]
 
 **CRM Usage**
+
 ![CRM Usage](crm_capture.gif?resize=600&classes=left)
 
 **Dashboard**
+
 ![Dashboard](crm_dashboard.png?resize=600&classes=left)
 
 **Record Overview with Filter**
+
 ![Record Overview](crm_overview.png?resize=600&classes=left)
 
 [/ui-tab]
