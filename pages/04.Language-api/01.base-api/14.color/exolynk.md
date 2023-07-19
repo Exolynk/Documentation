@@ -234,32 +234,29 @@ Following html color code types are allowed:
 <span style="color:#CEDCEF">&#11044;</span> <span style="color:#CEDCEF"><strong>```#CEDCEF```</strong></span><br>
 <span style="color:rgb(80, 123, 168, 0.3)">&#11044;</span> <span style="color:rgb(80, 123, 168, 0.3)"><strong>```rgb(80, 123, 168, 0.3)```</strong></span><br>
 
-RGB 26/152/152
 <span style="color:#1A9898">**UI Indication 6**</span><br>
 <span style="">Light Flavor</span><br>
 <span style="color:#1A9898">&#11044;</span> <span style="color:#1A9898"><strong>```#1A9898```</strong></span><br>
-<span style="color:rgb(0, 146, 209, 1.0)">&#11044;</span> <span style="color:rgb(0, 146, 209, 1.0)"><strong>```rgb(0, 146, 209, 1.0)```</strong></span><br>
+<span style="color:rgb(26, 152, 152, 1.0)">&#11044;</span> <span style="color:rgb(26, 152, 152, 1.0)"><strong>```rgb(26, 152, 152, 1.0)```</strong></span><br>
 <span style="">Dark Flavor</span><br>
 <span style="color:#A6DFF3">&#11044;</span> <span style="color:#A6DFF3"><strong>```#A6DFF3```</strong></span><br>
-<span style="color:rgb(0, 146, 209, 0.3)">&#11044;</span> <span style="color:rgb(0, 146, 209, 0.3)"><strong>```rgb(0, 146, 209, 0.3)```</strong></span><br>
+<span style="color:rgb(26, 152, 152, 0.3)">&#11044;</span> <span style="color:rgb(26, 152, 152, 0.3)"><strong>```rgb(26, 152, 152, 0.3)```</strong></span><br>
 
-RGB 146/90/206
 <span style="color:#925ACE">**UI Indication 7**</span><br>
 <span style="">Light Flavor</span><br>
 <span style="color:#925ACE">&#11044;</span> <span style="color:#925ACE"><strong>```#925ACE```</strong></span><br>
-<span style="color:rgb(26, 152, 152, 1.0)">&#11044;</span> <span style="color:rgb(26, 152, 152, 1.0)"><strong>```rgb(26, 152, 152, 1.0)```</strong></span><br>
+<span style="color:rgb(146, 90, 206, 1.0)">&#11044;</span> <span style="color:rgb(146, 90, 206, 1.0)"><strong>```rgb(146, 90, 206, 1.0)```</strong></span><br>
 <span style="">Dark Flavor</span><br>
 <span style="color:#B0E1E1">&#11044;</span> <span style="color:#B0E1E1"><strong>```#B0E1E1```</strong></span><br>
-<span style="color:rgb(26, 152, 152, 0.3)">&#11044;</span> <span style="color:rgb(26, 152, 152, 0.3)"><strong>```rgb(26, 152, 152, 0.3)```</strong></span><br>
+<span style="color:rgb(146, 90, 206, 0.3)">&#11044;</span> <span style="color:rgb(146, 90, 206, 0.3)"><strong>```rgb(146, 90, 206, 0.3)```</strong></span><br>
 
-RGB 171/33/142
 <span style="color:#AB218E">**UI Indication 8**</span><br>
 <span style="">Light Flavor</span><br>
 <span style="color:#AB218E">&#11044;</span> <span style="color:#AB218E"><strong>```#AB218E```</strong></span><br>
-<span style="color:rgb(117, 148, 33, 1.0)">&#11044;</span> <span style="color:rgb(117, 148, 33, 1.0)"><strong>```rgb(117, 148, 33, 1.0)```</strong></span><br>
+<span style="color:rgb(171, 33, 142, 1.0)">&#11044;</span> <span style="color:rgb(171, 33, 142, 1.0)"><strong>```rgb(171, 33, 142, 1.0)```</strong></span><br>
 <span style="">Dark Flavor</span><br>
 <span style="color:#D2DFB8">&#11044;</span> <span style="color:#D2DFB8"><strong>```#D2DFB8```</strong></span><br>
-<span style="color:rgb(117, 148, 33, 0.3)">&#11044;</span> <span style="color:rgb(117, 148, 33, 0.3)"><strong>```rgb(117, 148, 33, 0.3)```</strong></span><br>
+<span style="color:rgb(171, 33, 142, 0.3)">&#11044;</span> <span style="color:rgb(171, 33, 142, 0.3)"><strong>```rgb(171, 33, 142, 0.3)```</strong></span><br>
 
 [/ui-accordion-item]
 [/ui-accordion]
