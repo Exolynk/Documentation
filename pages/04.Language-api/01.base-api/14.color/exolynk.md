@@ -63,29 +63,46 @@ Following html color code types are allowed:
 [ui-accordion-item title=Semantic Colors]
 ##### Semantic Colors
 
-<span style="">**Negative**</span><br>
+<span style="color:#BB0000">**Negative**</span><br>
 <span style="">Light Flavor</span><br>
 <span style="color:#BB0000">&#11044;</span> <span style="color:#BB0000"><strong>```#BB0000```</strong></span><br>
-<span style="color:rgb(187, 0, 0, 1.0)">&#11044;</span> <span style="color:#BB0000"><strong>```rgb(187, 0, 0, 1.0)```</strong></span><br>
+<span style="color:rgb(187, 0, 0, 1.0)">&#11044;</span> <span style="color:rgb(187, 0, 0, 1.0)"><strong>```rgb(187, 0, 0, 1.0)```</strong></span><br>
 <span style="">Dark Flavor</span><br>
 <span style="color:#f4afb1">&#11044;</span> <span style="color:#f4afb1"><strong>```#F4AFB1```</strong></span><br>
-<span style="color:rgb(187, 0, 0, 0.3)">&#11044;</span> <span style="color:#BB0000"><strong>```rgb(187, 0, 0, 0.3)```</strong></span><br>
+<span style="color:rgb(187, 0, 0, 0.3)">&#11044;</span> <span style="color:rgb(187, 0, 0, 0.3)"><strong>```rgb(187, 0, 0, 0.3)```</strong></span><br>
 
 <span style="color:#E78C07">**Critical**</span><br>
-HEX: ```#E78C07``` <br>
-RGB: ```231/140/7``` <br>
+<span style="">Light Flavor</span><br>
+<span style="color:#E78C07">&#11044;</span> <span style="color:#E78C07"><strong>```#E78C07```</strong></span><br>
+<span style="color:rgb(231, 140, 7, 1.0)">&#11044;</span> <span style="color:rgb(231, 140, 7, 1.0)"><strong>```rgb(231, 140, 7, 1.0)```</strong></span><br>
+<span style="">Dark Flavor</span><br>
+<span style="color:#FEDBAE">&#11044;</span> <span style="color:#FEDBAE"><strong>```#FEDBAE```</strong></span><br>
+<span style="color:rgb(231, 140, 7, 0.3)">&#11044;</span> <span style="color:rgb(231, 140, 7, 0.3)"><strong>```rgb(231, 140, 7, 0.3)```</strong></span><br>
 
 <span style="color:#2B7D2B">**Positive**</span><br>
-HEX: ```#2B7D2B``` <br>
-RGB: ```43/125/43``` <br>
+<span style="">Light Flavor</span><br>
+<span style="color:#2B7D2B">&#11044;</span> <span style="color:#2B7D2B"><strong>```#2B7D2B```</strong></span><br>
+<span style="color:rgb(43, 125, 43, 1.0)">&#11044;</span> <span style="color:rgb(43, 125, 43, 1.0)"><strong>```rgb(43, 125, 43, 1.0)```</strong></span><br>
+<span style="">Dark Flavor</span><br>
+<span style="color:#B8D9BC">&#11044;</span> <span style="color:#B8D9BC"><strong>```#B8D9BC```</strong></span><br>
+<span style="color:rgb(43, 125, 43, 0.3)">&#11044;</span> <span style="color:rgb(43, 125, 43, 0.3)"><strong>```rgb(43, 125, 43, 0.3)```</strong></span><br>
 
 <span style="color:#5E696E">**Neutral**</span><br>
-HEX: ```#5E696E``` <br>
-RGB: ```94/105/110``` <br>
+<span style="">Light Flavor</span><br>
+<span style="color:#5E696E">&#11044;</span> <span style="color:#5E696E"><strong>```#5E696E```</strong></span><br>
+<span style="color:rgb(94, 105, 110, 1.0)">&#11044;</span> <span style="color:rgb(94, 105, 110, 1.0)"><strong>```rgb(94, 105, 110, 1.0)```</strong></span><br>
+<span style="">Dark Flavor</span><br>
+<span style="color:#CDD2D3">&#11044;</span> <span style="color:#CDD2D3"><strong>```#CDD2D3```</strong></span><br>
+<span style="color:rgb(94, 105, 110, 0.3)">&#11044;</span> <span style="color:rgb(94, 105, 110, 0.3)"><strong>```rgb(94, 105, 110, 0.3)```</strong></span><br>
 
 <span style="color:#427cac">**Information**</span><br>
-HEX: ```#427cac``` <br>
-RGB: ```66/124/172``` <br>
+<span style="">Light Flavor</span><br>
+<span style="color:#427CAC">&#11044;</span> <span style="color:#427CAC"><strong>```#427CAC```</strong></span><br>
+<span style="color:rgb(66, 124, 172, 1.0)">&#11044;</span> <span style="color:rgb(66, 124, 172, 1.0)"><strong>```rgb(66, 124, 172, 1.0)```</strong></span><br>
+<span style="">Dark Flavor</span><br>
+<span style="color:#C2D7E8">&#11044;</span> <span style="color:#C2D7E8"><strong>```#C2D7E8```</strong></span><br>
+<span style="color:rgb(66, 124, 172, 0.3)">&#11044;</span> <span style="color:rgb(66, 124, 172, 0.3)"><strong>```rgb(66, 124, 172, 0.3)```</strong></span><br>
+
 [/ui-accordion-item]
 
 
