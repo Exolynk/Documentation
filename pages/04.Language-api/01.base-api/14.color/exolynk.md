@@ -63,9 +63,9 @@ Following html color code types are allowed:
 [ui-accordion-item title=Semantic Colors]
 ##### Semantic Colors
 
-<span style="color:#BB0000">**Negative**</span><br>
-HEX: ```#BB0000``` <br>
-RGB: ```187/0/0``` <br>
+<span style="color:000000">**Negative**</span><br>
+<span style="color:#BB0000">&#11044;</span> <span style="color:#BB0000"><strong>```#BB0000```</strong></span><br>
+<span style="color:rgb(187, 0, 0, 1.0)">&#11044;</span> <span style="color:#BB0000"><strong>```rgb(187, 0, 0, 1.0)```</strong></span><br>
 
 <span style="color:#E78C07">**Critical**</span><br>
 HEX: ```#E78C07``` <br>
