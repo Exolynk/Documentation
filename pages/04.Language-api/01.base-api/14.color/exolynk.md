@@ -116,7 +116,7 @@ Following html color code types are allowed:
 <span style="color:rgb(66, 124, 172, 0.3)">&#11044;</span> <span style="color:rgb(66, 124, 172, 0.3)"><strong>```rgb(66, 124, 172, 0.3)```</strong></span><br>
 <span style="">Dark Flavor</span><br>
 <span style="color:#91C8F6">&#11044;</span> <span style="color:#91C8F6"><strong>```#91C8F6```</strong></span><br>
-<span style="color:rgb(145, 200, 246, 0.3)">&#11044;</span> <span style="color:rgb(145, 200, 246, 0.3)"><strong>```rgb(145, 200, 246, 0.3)```</strong></span><br>
+<span style="color:rgb(145, 200, 246, 1.0)">&#11044;</span> <span style="color:rgb(145, 200, 246, 1.0)"><strong>```rgb(145, 200, 246, 1.0)```</strong></span><br>
 
 [/ui-accordion-item]
 
@@ -169,8 +169,9 @@ Following html color code types are allowed:
 <span style="color:#0092D1">&#11044;</span> <span style="color:#0092D1"><strong>```#0092D1```</strong></span><br>
 <span style="color:rgb(0, 146, 209, 1.0)">&#11044;</span> <span style="color:rgb(0, 146, 209, 1.0)"><strong>```rgb(0, 146, 209, 1.0)```</strong></span><br>
 <span style="">Light Flavor 30% transparency</span><br>
-<span style="color:#A6DFF3">&#11044;</span> <span style="color:#A6DFF3"><strong>```#A6DFF3```</strong></span><br>
+<span style="color:#A5DFF4">&#11044;</span> <span style="color:#A5DFF4"><strong>```#A5DFF4```</strong></span><br>
 <span style="color:rgb(0, 146, 209, 0.3)">&#11044;</span> <span style="color:rgb(0, 146, 209, 0.3)"><strong>```rgb(0, 146, 209, 0.3)```</strong></span><br>
+
 
 <span style="color:#1A9898">**Turquoise**</span><br>
 <span style="">Light Flavor</span><br>
@@ -213,8 +214,11 @@ Following html color code types are allowed:
 <span style="">Light Flavor</span><br>
 <span style="color:#880000">&#11044;</span> <span style="color:#880000"><strong>```#880000```</strong></span><br>
 <span style="color:rgb(136, 0, 0, 1.0)">&#11044;</span> <span style="color:rgb(136, 0, 0, 1.0)"><strong>```rgb(136, 0, 0, 1.0)```</strong></span><br>
+<span style="">Light Flavor 50% transparency</span><br>
+<span style="color:#CF7B7D">&#11044;</span> <span style="color:#CF7B7D"><strong>```#CF7B7D```</strong></span><br>
+<span style="color:rgb(136, 0, 0, 0.5)">&#11044;</span> <span style="color:rgb(136, 0, 0, 0.5)"><strong>```rgb(136, 0, 0, 0.5)```</strong></span><br>
 <span style="">Light Flavor 30% transparency</span><br>
-<span style="color:#FAE0AB">&#11044;</span> <span style="color:#FAE0AB"><strong>```#FAE0AB```</strong></span><br>
+<span style="color:#E3B0B0">&#11044;</span> <span style="color:#E3B0B0"><strong>```#E3B0B0```</strong></span><br>
 <span style="color:rgb(136, 0, 0, 0.3)">&#11044;</span> <span style="color:rgb(136, 0, 0, 0.3)"><strong>```rgb(136, 0, 0, 0.3)```</strong></span><br>
 <span style="">Dark Flavor</span><br>
 <span style="color:#FF8888">&#11044;</span> <span style="color:#FF8888"><strong>```#FF8888```</strong></span><br>
@@ -224,8 +228,11 @@ Following html color code types are allowed:
 <span style="">Light Flavor</span><br>
 <span style="color:#BB0000">&#11044;</span> <span style="color:#BB0000"><strong>```#BB0000```</strong></span><br>
 <span style="color:rgb(171, 34, 23, 1.0)">&#11044;</span> <span style="color:rgb(171, 34, 23, 1.0)"><strong>```rgb(171, 34, 23, 1.0)```</strong></span><br>
+<span style="">Light Flavor 50% transparency</span><br>
+<span style="color:#EB797C">&#11044;</span> <span style="color:#EB797C"><strong>```#EB797C```</strong></span><br>
+<span style="color:rgb(171, 34, 23, 0.5)">&#11044;</span> <span style="color:rgb(171, 34, 23, 0.5)"><strong>```rgb(171, 34, 23, 0.5)```</strong></span><br>
 <span style="">Light Flavor 30% transparency</span><br>
-<span style="color:#FECDB1">&#11044;</span> <span style="color:#FECDB1"><strong>```#FECDB1```</strong></span><br>
+<span style="color:#F5AFB1">&#11044;</span> <span style="color:#F5AFB1"><strong>```#F5AFB1```</strong></span><br>
 <span style="color:rgb(171, 34, 23, 0.3)">&#11044;</span> <span style="color:rgb(171, 34, 23, 0.3)"><strong>```rgb(171, 34, 23, 0.3)```</strong></span><br>
 <span style="">Dark Flavor</span><br>
 <span style="color:#FFBBBB">&#11044;</span> <span style="color:#FFBBBB"><strong>```#FFBBBB```</strong></span><br>
@@ -235,8 +242,11 @@ Following html color code types are allowed:
 <span style="">Light Flavor</span><br>
 <span style="color:#E78C07">&#11044;</span> <span style="color:#E78C07"><strong>```#E78C07```</strong></span><br>
 <span style="color:rgb(219, 144, 52, 1.0)">&#11044;</span> <span style="color:rgb(219, 144, 52, 1.0)"><strong>```rgb(219, 144, 52, 1.0)```</strong></span><br>
+<span style="">Light Flavor 50% transparency</span><br>
+<span style="color:#FBC377">&#11044;</span> <span style="color:#FBC377"><strong>```#FBC377```</strong></span><br>
+<span style="color:rgb(219, 144, 52, 0.5)">&#11044;</span> <span style="color:rgb(219, 144, 52, 0.5)"><strong>```rgb(219, 144, 52, 0.5)```</strong></span><br>
 <span style="">Light Flavor 30% transparency</span><br>
-<span style="color:#F3C5C6">&#11044;</span> <span style="color:#F3C5C6"><strong>```#F3C5C6```</strong></span><br>
+<span style="color:#FEDBAE">&#11044;</span> <span style="color:#FEDBAE"><strong>```#FEDBAE```</strong></span><br>
 <span style="color:rgb(219, 144, 52, 0.3)">&#11044;</span> <span style="color:rgb(219, 144, 52, 0.3)"><strong>```rgb(219, 144, 52, 0.3)```</strong></span><br>
 <span style="">Dark Flavor</span><br>
 <span style="color:#FABD64">&#11044;</span> <span style="color:#FABD64"><strong>```#FABD64```</strong></span><br>
@@ -246,8 +256,11 @@ Following html color code types are allowed:
 <span style="">Light Flavor</span><br>
 <span style="color:#2B7C2B">&#11044;</span> <span style="color:#2B7C2B"><strong>```#2B7C2B```</strong></span><br>
 <span style="color:rgb(67, 122, 54, 1.0)">&#11044;</span> <span style="color:rgb(67, 122, 54, 1.0)"><strong>```rgb(67, 122, 54, 1.0)```</strong></span><br>
-<span style="">Dark Flavor</span><br>
-<span style="color:#EDB9DF">&#11044;</span> <span style="color:#EDB9DF"><strong>```#EDB9DF```</strong></span><br>
+<span style="">Light Flavor 50% transparency</span><br>
+<span style="color:#89BE91">&#11044;</span> <span style="color:#89BE91"><strong>```#89BE91```</strong></span><br>
+<span style="color:rgb(67, 122, 54, 0.5)">&#11044;</span> <span style="color:rgb(67, 122, 54, 0.5)"><strong>```rgb(67, 122, 54, 0.5)```</strong></span><br>
+<span style="">Light Flavor 30% transparency</span><br>
+<span style="color:#B9D8BD">&#11044;</span> <span style="color:#B9D8BD"><strong>```#B9D8BD```</strong></span><br>
 <span style="color:rgb(67, 122, 54, 0.3)">&#11044;</span> <span style="color:rgb(67, 122, 54, 0.3)"><strong>```rgb(67, 122, 54, 0.3)```</strong></span><br>
 <span style="">Dark Flavor</span><br>
 <span style="color:#ABE2AB">&#11044;</span> <span style="color:#ABE2AB"><strong>```#ABE2AB```</strong></span><br>
@@ -257,8 +270,11 @@ Following html color code types are allowed:
 <span style="">Light Flavor</span><br>
 <span style="color:#427CAC">&#11044;</span> <span style="color:#427CAC"><strong>```#427CAC```</strong></span><br>
 <span style="color:rgb(80, 123, 168, 1.0)">&#11044;</span> <span style="color:rgb(80, 123, 168, 1.0)"><strong>```rgb(80, 123, 168, 1.0)```</strong></span><br>
+<span style="">Light Flavor 50% transparency</span><br>
+<span style="color:#98BED8">&#11044;</span> <span style="color:#98BED8"><strong>```#98BED8```</strong></span><br>
+<span style="color:rgb(80, 123, 168, 0.5)">&#11044;</span> <span style="color:rgb(80, 123, 168, 0.5)"><strong>```rgb(80, 123, 168, 0.5)```</strong></span><br>
 <span style="">Light Flavor 30% transparency</span><br>
-<span style="color:#CEDCEF">&#11044;</span> <span style="color:#CEDCEF"><strong>```#CEDCEF```</strong></span><br>
+<span style="color:#C2D8E8">&#11044;</span> <span style="color:#C2D8E8"><strong>```#C2D8E8```</strong></span><br>
 <span style="color:rgb(80, 123, 168, 0.3)">&#11044;</span> <span style="color:rgb(80, 123, 168, 0.3)"><strong>```rgb(80, 123, 168, 0.3)```</strong></span><br>
 <span style="">Dark Flavor</span><br>
 <span style="color:#91C8F6">&#11044;</span> <span style="color:#91C8F6"><strong>```#91C8F6```</strong></span><br>
@@ -268,8 +284,11 @@ Following html color code types are allowed:
 <span style="">Light Flavor</span><br>
 <span style="color:#1A9898">&#11044;</span> <span style="color:#1A9898"><strong>```#1A9898```</strong></span><br>
 <span style="color:rgb(26, 152, 152, 1.0)">&#11044;</span> <span style="color:rgb(26, 152, 152, 1.0)"><strong>```rgb(26, 152, 152, 1.0)```</strong></span><br>
+<span style="">Light Flavor 50% transparency</span><br>
+<span style="color:#78CDCC">&#11044;</span> <span style="color:#78CDCC"><strong>```#78CDCC```</strong></span><br>
+<span style="color:rgb(26, 152, 152, 0.5)">&#11044;</span> <span style="color:rgb(26, 152, 152, 0.5)"><strong>```rgb(26, 152, 152, 0.5)```</strong></span><br>
 <span style="">Light Flavor 30% transparency</span><br>
-<span style="color:#A6DFF3">&#11044;</span> <span style="color:#A6DFF3"><strong>```#A6DFF3```</strong></span><br>
+<span style="color:#AFE1E1">&#11044;</span> <span style="color:#AFE1E1"><strong>```#AFE1E1```</strong></span><br>
 <span style="color:rgb(26, 152, 152, 0.3)">&#11044;</span> <span style="color:rgb(26, 152, 152, 0.3)"><strong>```rgb(26, 152, 152, 0.3)```</strong></span><br>
 <span style="">Dark Flavor</span><br>
 <span style="color:#7FC6C6">&#11044;</span> <span style="color:#7FC6C6"><strong>```#7FC6C6```</strong></span><br>
@@ -279,8 +298,11 @@ Following html color code types are allowed:
 <span style="">Light Flavor</span><br>
 <span style="color:#925ACE">&#11044;</span> <span style="color:#925ACE"><strong>```#925ACE```</strong></span><br>
 <span style="color:rgb(146, 90, 206, 1.0)">&#11044;</span> <span style="color:rgb(146, 90, 206, 1.0)"><strong>```rgb(146, 90, 206, 1.0)```</strong></span><br>
+<span style="">Light Flavor 50% transparency</span><br>
+<span style="color:#CDABEA">&#11044;</span> <span style="color:#CDABEA"><strong>```#CDABEA```</strong></span><br>
+<span style="color:rgb(146, 90, 206, 0.5)">&#11044;</span> <span style="color:rgb(146, 90, 206, 0.5)"><strong>```rgb(146, 90, 206, 0.5)```</strong></span><br>
 <span style="">Light Flavor 30% transparency</span><br>
-<span style="color:#B0E1E1">&#11044;</span> <span style="color:#B0E1E1"><strong>```#B0E1E1```</strong></span><br>
+<span style="color:#E2CCF3">&#11044;</span> <span style="color:#E2CCF3"><strong>```#E2CCF3```</strong></span><br>
 <span style="color:rgb(146, 90, 206, 0.3)">&#11044;</span> <span style="color:rgb(146, 90, 206, 0.3)"><strong>```rgb(146, 90, 206, 0.3)```</strong></span><br>
 <span style="">Dark Flavor</span><br>
 <span style="color:#B995E0">&#11044;</span> <span style="color:#B995E0"><strong>```#B995E0```</strong></span><br>
@@ -290,8 +312,11 @@ Following html color code types are allowed:
 <span style="">Light Flavor</span><br>
 <span style="color:#AB218E">&#11044;</span> <span style="color:#AB218E"><strong>```#AB218E```</strong></span><br>
 <span style="color:rgb(171, 33, 142, 1.0)">&#11044;</span> <span style="color:rgb(171, 33, 142, 1.0)"><strong>```rgb(171, 33, 142, 1.0)```</strong></span><br>
+<span style="">Light Flavor 50% transparency</span><br>
+<span style="color:#E18CC9">&#11044;</span> <span style="color:#E18CC9"><strong>```#E18CC9```</strong></span><br>
+<span style="color:rgb(171, 33, 142, 0.5)">&#11044;</span> <span style="color:rgb(171, 33, 142, 0.5)"><strong>```rgb(171, 33, 142, 0.5)```</strong></span><br>
 <span style="">Light Flavor 30% transparency</span><br>
-<span style="color:#D2DFB8">&#11044;</span> <span style="color:#D2DFB8"><strong>```#D2DFB8```</strong></span><br>
+<span style="color:#EDBADE">&#11044;</span> <span style="color:#EDBADE"><strong>```#EDBADE```</strong></span><br>
 <span style="color:rgb(171, 33, 142, 0.3)">&#11044;</span> <span style="color:rgb(171, 33, 142, 0.3)"><strong>```rgb(171, 33, 142, 0.3)```</strong></span><br>
 <span style="">Dark Flavor</span><br>
 <span style="color:#E269C9">&#11044;</span> <span style="color:#E269C9"><strong>```#E269C9```</strong></span><br>
