@@ -31,23 +31,56 @@ markdown:
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="Description"]
 
-In tempor sed sapien eu porttitor. Aliquam cursus facilisis ante. Etiam neque nunc, blandit vel lacus et, faucibus accumsan lacus. Proin posuere varius purus quis faucibus. Quisque et enim vitae orci [placerat tincidunt](#) id ac eros. Fusce et gravida libero. 
+A lightweight and customizable CRM Tool to track Sales Opportunities in the following pipeline stages (status):
+- 1/6 Prospecting
+- 2/6 Qualification
+- 3/6 Needs Analysis
+- 4/6 Proposal
+- 5/6 Negotiation
+- 6/6 Closed Won
+- 6/6 Closed Lost
 
-Phasellus cursus odio ex, in **mattis lorem tincidunt** vel. Donec nibh odio, dapibus non ligula a, semper ornare massa. Nulla consectetur eu nunc sed ultrices. Integer at turpis dolor.
+Supported features:
+- Opportunitiy Information
+    - Priority (A-List / B-List / C-List)
+    - Opportunity value
+    - Forecast completion
+    - Company information (number of employees, industry, address, contact details,..)
+    - Assigning User with automated workflow to add new assigned leads to the selected sales user
+    - Tracking of activities and correspondences
+    - attachement (files, like Offer PDF`s, Pictures, etc.)
+    - Chart for Opportunities by Stage
+    - Record log for all user interactions
+    - User access management with roles and rights (can be configured per variable and layout)
 
 [ui-tabs position="top-left" active="0" theme="lite"]
 
-[ui-tab title="Predefined Variables"]
+[ui-tab title="Predefined Model Variables"]
 > | Variable ident     | data type                       | Description
 > |--------------------|---------------------------------|-----------------------------------------------------------------------|
-> | client_reference   | Reference -> Filter: Client     | Client  |
-> | goods_reference    | Reference -> Filter: Goods      | Goods |
-> | assigned_user_1    | Reference -> Filter: User       | Responsible service engineer 
-> | time_tracking      | Table                           | Time tracking
-> | service_report     | Table                           | Service Report
-> | client_accept      | Bool                            | Accepted by client
-> | service_date       | DateTime format                 | Date and Time
-
+> | contact_firstname          | String                          | Contact Firstname
+> | contact_lastname           | String                          | Contact Lastname
+> | client_phone               | String                          | Company Phone
+> | client_email               | String                          | Company Email Address
+> | client_start_date          | DateTime                        | Client Start Date
+> | client_address             | Location                        | Location with Map-View, Street, Nr., ZIP, Country
+> | contact_title              | String                          | Contact Title
+> | contact_phone              | String                          | Contact Phone
+> | contact_mobile             | String                          | Contact Mobile
+> | contact_email              | String                          | Contact Email Address
+> | client_website             | String                          | Company Website
+> | contact_linkedin           | String                          | Contact LinkedIn Profile
+> | crm_prio_select            | Selection                       | Options: A-List, B-List, C-List
+> | client_info                | String (Multiline)              | Longtext field for general information to the client/lead
+> | crm_activities             | Table                           | A Table with 3 columns: Date, Channel, Activity (Longtext Field)
+> | assigned_user_1            | Reference -> Filter: User       | A reference to the assigned responsible user
+> | opportunity_value_revenue  | Float                           | The value of the opportunity in CHF
+> | opportunity_value_licenses | Integer                         | The value of the opportunity in amount of licenses
+> | employees                  | Integer                         | The amount of emloyees at the prospect company
+> | industry                   | String                          | The industry where the prospect company is in
+> | exl_product_select         | Selection                       | Product Selection; Options: Starter, SME, Corporate
+> | forecast_completion        | DateTime                        | The date of the forecasted deal completion
+> | files                      | List Reference -> Filter: Files | A list of file attachements
 [/ui-tab]
 
 [ui-tab title="Dashboard Layout"]
