@@ -23,7 +23,7 @@ markdown:
 
 ## Maintenance Management Workflow
 
-[downloads route="/downloads/model-templates/maintenance_request_model" layout="list-files" width="300" /]
+[downloads route="/downloads/model-templates/maintenance-workflow" layout="list-files" width="300" /]
 
 <br>
 

@@ -1,0 +1,909 @@
+{
+  "uuid": "e45c3013-18f7-4eec-852e-121b15c23faf",
+  "ident": "model_demo",
+  "version": {
+    "typ": "Number",
+    "version": "32"
+  },
+  "status": "draft",
+  "name": [
+    [
+      "en",
+      "Demo Model"
+    ]
+  ],
+  "description": [
+    [
+      "en",
+      "Demo Model with all available Variables"
+    ]
+  ],
+  "icon": "example",
+  "layout": "<record>\n    <!-- Comment Demo Tab 1 -->\n    <tab name=\"Demo Tab 1\" active=\"true\" status=\"\">\n        <data name=\"Demo Section 1 - OOTB variables\">\n            <variable ident=\"ident\" access=\"write\" />\n            <variable ident=\"name\" access=\"write\" />\n            <variable ident=\"description\" access=\"write\" />\n            <variable ident=\"status\" access=\"write\" />\n        </data>\n        <data name=\"Demo Section 2 - custom variables\">\n            <variable ident=\"ident_demo\" access=\"write\" />\n            <variable ident=\"string_demo\" access=\"write\" />\n            <variable ident=\"multiline_demo\" access=\"write\" />\n            <variable ident=\"bool_demo\" access=\"write\" />\n            <variable ident=\"float_demo\" access=\"write\" />\n            <variable ident=\"integer_demo\" access=\"write\" />\n            <variable ident=\"list_demo\" access=\"write\" />\n            <variable ident=\"table_demo\" access=\"write\" />\n            <variable ident=\"reference_demo\" access=\"write\" />\n            <variable ident=\"selection_demo\" access=\"write\" />\n            <variable ident=\"datetime_demo\" access=\"write\" />\n            <variable ident=\"language_demo\" access=\"write\" />\n            <variable ident=\"version_demo\" access=\"write\" />\n            <variable ident=\"color_demo\" access=\"write\" />\n            <variable ident=\"location_demo\" access=\"write\" />\n            <variable ident=\"signature_demo\" access=\"write\" />\n        </data>\n    </tab>\n    \n    <!-- Comment Demo Tab 2 -->\n    <tab name=\"Demo Tab 2\" active=\"true\" status=\"\">\n        <raw-html style=\"color: green;\">\n            <h1>Header 1</h1>\n            <h2>Header 2</h2>\n            <h3>Header 3</h3>\n            <h4>Header 4</h4>\n            <h5>Header 5</h5>\n        </raw-html>\n    </tab>\n    \n    <!-- Raw HTML Example -->\n    <tab name=\"Raw HTML Example\" active=\"true\" status=\"\">\n        <raw-html>\n            <head>\n                <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n                <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n                <link href=\"https://fonts.googleapis.com/css2?family=Pacifico&family=Source+Code+Pro:wght@200&display=swap\" rel=\"stylesheet\">\n            </head>\n            \n              <h1 style=\"color: #255459;\">This is an h1 heading</h1>\n              <h2 style=\"color: #728a8c;\">This is an h2 heading</h2>\n              <h3 style=\"color: #A67676;\">This is an h3 heading</h3>\n              <p>This is a paragraph</p>\n              \n              <p>Here are some standard HTML elements:</p>\n              \n              <h4>Fonts:</h4>\n              <p style=\"font-family: 'Pacifico', cursive; font-family: 'Source Code Pro', monospace;\">Google Pacifico</p>\n    \n              \n              <h4>Lists:</h4>\n              <ul>\n                <li>Unordered list item 1</li>\n                <li>Unordered list item 2</li>\n                <li>Unordered list item 3</li>\n              </ul>\n              \n              <ol>\n                <li>Ordered list item 1</li>\n                <li>Ordered list item 2</li>\n                <li>Ordered list item 3</li>\n              </ol>\n              \n              <h4>Links:</h4>\n              <a href=\"https://www.example.com\">This is a link</a>\n              \n              <h4>Images:</h4>\n              <img src=\"https://exolynk.com/wp-content/uploads/2023/01/exolynk-logo-color-h1200.png\" alt=\"Image description\" style=\"width: 150px;\">\n              \n              <h4>Tables:</h4>\n              <table>\n                <thead>\n                  <tr>\n                    <th>Column 1</th>\n                    <th>Column 2</th>\n                  </tr>\n                </thead>\n                <tbody>\n                  <tr>\n                    <td>Row 1, Cell 1</td>\n                    <td>Row 1, Cell 2</td>\n                  </tr>\n                  <tr>\n                    <td>Row 2, Cell 1</td>\n                    <td>Row 2, Cell 2</td>\n                  </tr>\n                </tbody>\n              </table>\n              \n              <h4>Forms:</h4>\n              <form>\n                <label for=\"name\">Name:</label>\n                <input type=\"text\" id=\"name\" name=\"name\">\n                \n                <label for=\"email\">Email:</label>\n                <input type=\"email\" id=\"email\" name=\"email\">\n                \n                <input type=\"submit\" value=\"Submit\">\n              </form>\n        </raw-html>\n    </tab>\n\n    <!-- Chart -->\n    <tab name=\"Chart\">\n        <chart typ=\"bar\" name=\"Service Requests by status\">\n            <chart-data model=\"maintenance_request\" action=\"count\" variable=\"status\" group_by=\"ident\" name=\"New\">\n                <data-filter variable=\"status\" operator=\"equal\" value=\"new\" />\n            </chart-data>\n            <chart-data model=\"maintenance_request\" action=\"count\" variable=\"status\" group_by=\"ident\" name=\"Scheduled\">\n                <data-filter variable=\"status\" operator=\"equal\" value=\"scheduled\" />\n            </chart-data>\n            <chart-data model=\"maintenance_request\" action=\"count\" variable=\"status\" group_by=\"ident\" name=\"In process\">\n                <data-filter variable=\"status\" operator=\"equal\" value=\"in_process\" />\n            </chart-data>\n            <chart-data model=\"maintenance_request\" action=\"count\" variable=\"status\" group_by=\"ident\" name=\"Done\">\n                <data-filter variable=\"status\" operator=\"equal\" value=\"done\" />\n            </chart-data>\n        </chart>\n    </tab>\n    \n</record>",
+  "variables": [
+    {
+      "ident": "string_demo",
+      "system": false,
+      "released": true,
+      "name": [
+        [
+          "en",
+          "String"
+        ],
+        [
+          "de",
+          "Zeichenkette"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "String Value type"
+        ],
+        [
+          "de",
+          "Zeichenkette Werttyp"
+        ]
+      ],
+      "value": {
+        "String": ""
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    },
+    {
+      "ident": "bool_demo",
+      "system": false,
+      "released": true,
+      "name": [
+        [
+          "en",
+          "Bool"
+        ],
+        [
+          "de",
+          "Boolescher Wert"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Boolean value type"
+        ],
+        [
+          "de",
+          "Boolescher Werttyp"
+        ]
+      ],
+      "value": {
+        "Bool": false
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    },
+    {
+      "ident": "float_demo",
+      "system": false,
+      "released": true,
+      "name": [
+        [
+          "en",
+          "Float"
+        ],
+        [
+          "de",
+          "Gleitkommazahl"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Float value type"
+        ],
+        [
+          "de",
+          "Gleitkommazahl Werttyp"
+        ]
+      ],
+      "value": {
+        "Float": 0.0
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    },
+    {
+      "ident": "integer_demo",
+      "system": false,
+      "released": true,
+      "name": [
+        [
+          "en",
+          "Integer"
+        ],
+        [
+          "de",
+          "Ganzzahl"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Integer value type"
+        ],
+        [
+          "de",
+          "Ganzzahlige Werttyp"
+        ]
+      ],
+      "value": {
+        "Integer": 0
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    },
+    {
+      "ident": "list_demo",
+      "system": false,
+      "released": true,
+      "name": [
+        [
+          "en",
+          "List"
+        ],
+        [
+          "de",
+          "Liste"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "List value type"
+        ],
+        [
+          "de",
+          "Listen Werttyp"
+        ]
+      ],
+      "value": {
+        "List": {
+          "data": []
+        }
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    },
+    {
+      "ident": "reference_demo",
+      "system": false,
+      "released": true,
+      "name": [
+        [
+          "en",
+          "Reference"
+        ],
+        [
+          "de",
+          "Referenz"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Reference value type"
+        ],
+        [
+          "de",
+          "Referenz Werttyp"
+        ]
+      ],
+      "value": {
+        "Reference": "00000000-0000-0000-0000-000000000000"
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    },
+    {
+      "ident": "selection_demo",
+      "system": false,
+      "released": true,
+      "name": [
+        [
+          "en",
+          "Selection"
+        ],
+        [
+          "de",
+          "Auswahl"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Selection value type"
+        ],
+        [
+          "de",
+          "Auswahl Werttyp"
+        ]
+      ],
+      "value": {
+        "Selection": {
+          "selected": [],
+          "options": {}
+        }
+      },
+      "required": false,
+      "access": "Write",
+      "settings": {
+        "SelectionSettings": {
+          "mode": "Single",
+          "options": {
+            "selection_1": [
+              [
+                "en",
+                "Selection 1"
+              ],
+              [
+                "de",
+                "Auswahl 1"
+              ]
+            ],
+            "selection_3": [
+              [
+                "en",
+                "Selection 3"
+              ],
+              [
+                "de",
+                "Auswahl 3"
+              ]
+            ],
+            "selection_4": [
+              [
+                "en",
+                "Selection 4"
+              ],
+              [
+                "de",
+                "Auswahl 4"
+              ]
+            ],
+            "selection_2": [
+              [
+                "en",
+                "Selection 2"
+              ],
+              [
+                "de",
+                "Auswahl 2"
+              ]
+            ]
+          },
+          "change_target": "Settings"
+        }
+      }
+    },
+    {
+      "ident": "datetime_demo",
+      "system": false,
+      "released": true,
+      "name": [
+        [
+          "en",
+          "Date Time"
+        ],
+        [
+          "de",
+          "Datum Zeit"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Date Time value type"
+        ],
+        [
+          "de",
+          "Datum Zeit Werttyp"
+        ]
+      ],
+      "value": {
+        "Datetime": "2023-06-22 18:49:23.003000064 +02:00:00"
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    },
+    {
+      "ident": "ident_demo",
+      "system": false,
+      "released": true,
+      "name": [
+        [
+          "en",
+          "Ident"
+        ],
+        [
+          "de",
+          "Identität"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Ident value type"
+        ],
+        [
+          "de",
+          "Identität Werttyp"
+        ]
+      ],
+      "value": {
+        "Ident": ""
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    },
+    {
+      "ident": "language_demo",
+      "system": false,
+      "released": true,
+      "name": [
+        [
+          "en",
+          "Language"
+        ],
+        [
+          "de",
+          "Sprache"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Language value type"
+        ],
+        [
+          "de",
+          "Sprache Werttyp"
+        ]
+      ],
+      "value": {
+        "Language": [
+          [
+            "en",
+            "Assembly the Hardware"
+          ],
+          [
+            "de",
+            "Hardware Zusammenbauen"
+          ]
+        ]
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    },
+    {
+      "ident": "version_demo",
+      "system": false,
+      "released": true,
+      "name": [
+        [
+          "en",
+          "Version"
+        ],
+        [
+          "de",
+          "Version"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Version value type"
+        ],
+        [
+          "de",
+          "Version Werttyp"
+        ]
+      ],
+      "value": {
+        "Version": {
+          "typ": "Number",
+          "version": "1"
+        }
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    },
+    {
+      "ident": "multiline_demo",
+      "system": false,
+      "released": true,
+      "name": [
+        [
+          "en",
+          "Multiline String"
+        ],
+        [
+          "de",
+          "Mehrzeilige Zeichenkette"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Multiline String Value Type"
+        ],
+        [
+          "de",
+          "Mehrzeilige Zeichenkette"
+        ]
+      ],
+      "value": {
+        "String": ""
+      },
+      "required": false,
+      "access": "Write",
+      "settings": {
+        "StringSettings": {
+          "multiline": true
+        }
+      }
+    },
+    {
+      "ident": "table_demo",
+      "system": false,
+      "released": true,
+      "name": [
+        [
+          "en",
+          "Table"
+        ],
+        [
+          "de",
+          "Tabelle"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Table"
+        ],
+        [
+          "de",
+          "Tabelle"
+        ]
+      ],
+      "value": {
+        "Table": {
+          "entries": []
+        }
+      },
+      "required": false,
+      "access": "Write",
+      "settings": {
+        "TableSettings": {
+          "columns": [
+            {
+              "ident": "columna",
+              "position": 0,
+              "name": [
+                [
+                  "en",
+                  "column A (Int)"
+                ]
+              ],
+              "value": {
+                "Integer": 0
+              },
+              "setting": "None"
+            },
+            {
+              "ident": "columnb",
+              "position": 1,
+              "name": [
+                [
+                  "en",
+                  "column B (string)"
+                ]
+              ],
+              "value": {
+                "String": ""
+              },
+              "setting": "None"
+            },
+            {
+              "ident": "columnc",
+              "position": 2,
+              "name": [
+                [
+                  "en",
+                  "column C (ref)"
+                ]
+              ],
+              "value": {
+                "Reference": "00000000-0000-0000-0000-000000000000"
+              },
+              "setting": "None"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "ident": "color_demo",
+      "system": false,
+      "released": true,
+      "name": [
+        [
+          "en",
+          "Color"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Color"
+        ]
+      ],
+      "value": {
+        "Color": {
+          "color": ""
+        }
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    },
+    {
+      "ident": "location_demo",
+      "system": false,
+      "released": true,
+      "name": [
+        [
+          "en",
+          "Location"
+        ],
+        [
+          "de",
+          "Standort"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Location"
+        ],
+        [
+          "de",
+          "Standort"
+        ]
+      ],
+      "value": {
+        "Location": {
+          "house_number": "",
+          "road": "",
+          "town": "",
+          "state": "",
+          "postcode": "",
+          "country": "",
+          "lat": 0.0,
+          "lon": 0.0,
+          "validated": false
+        }
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    },
+    {
+      "ident": "signature_demo",
+      "system": false,
+      "released": true,
+      "name": [
+        [
+          "en",
+          "Signature"
+        ],
+        [
+          "de",
+          "Unterschrift"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Signature"
+        ],
+        [
+          "de",
+          "Unterschrift"
+        ]
+      ],
+      "value": {
+        "Signature": {
+          "location": {
+            "house_number": "",
+            "road": "",
+            "town": "",
+            "state": "",
+            "postcode": "",
+            "country": "",
+            "lat": 0.0,
+            "lon": 0.0,
+            "validated": false
+          },
+          "datetime": "2023-07-19 18:40:16.432999936 +02:00:00",
+          "signature": "",
+          "user": "00000000-0000-0000-0000-000000000000",
+          "signed": false
+        }
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    }
+  ],
+  "workflows": [
+    {
+      "ident": "print",
+      "name": [
+        [
+          "en",
+          "Print"
+        ],
+        [
+          "de",
+          "Drucken"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Print"
+        ],
+        [
+          "de",
+          "Drucken"
+        ]
+      ],
+      "icon": "print",
+      "active": true,
+      "system": false,
+      "code": "pub fn show() {\n    true\n}\n\npub async fn main() {\n    webapp::ui::print();\n}\n\npub async fn test() {}",
+      "typ": "Workflow"
+    },
+    {
+      "ident": "done",
+      "name": [
+        [
+          "en",
+          "Done"
+        ],
+        [
+          "de",
+          "Abgeschlossen"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Maintenance done"
+        ],
+        [
+          "de",
+          "Wartung abgeschlossen"
+        ]
+      ],
+      "icon": "accept",
+      "active": true,
+      "system": false,
+      "code": "pub fn show() {\n    let record = webapp::get_record()?;\n    if record.status.as_string() == \"pending\" {\n        return true;\n    }\n    return false;\n}\n\npub async fn main() {\n    let record = webapp::get_record()?;\n    let inp = (\"done\", \"\", \"rgb(43, 125, 43, 0.3)\");\n    webapp::rpc_call(\"set_status\", inp).await?;\n    Ok(())\n}\n\npub async fn test() {\n    //let x = show();\n    //println!(\"Show {}\", x);\n    main().await?;\n}",
+      "typ": "Workflow"
+    },
+    {
+      "ident": "in_progress",
+      "name": [
+        [
+          "en",
+          "Maintenance in progress"
+        ],
+        [
+          "de",
+          "Wartung in Bearbeitung"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Maintenance in progress"
+        ],
+        [
+          "de",
+          "Wartung in Bearbeitung"
+        ]
+      ],
+      "icon": "pending",
+      "active": true,
+      "system": false,
+      "code": "pub fn show() {\n    let record = webapp::get_record()?;\n    if record.status.as_string() == \"new\" {\n        return true;\n    }\n    return false;\n}\n\npub async fn main() {\n    let record = webapp::get_record()?;\n    let inp = (\"pending\", \"\", \"rgb(231, 140, 7, 0.3)\");\n    webapp::rpc_call(\"set_status\", inp).await?;\n    Ok(())\n}\n\npub async fn test() {\n    //let x = show();\n    //println!(\"Show {}\", x);\n    main().await?;\n}",
+      "typ": "Workflow"
+    },
+    {
+      "ident": "new",
+      "name": [
+        [
+          "en",
+          "New (for testing only!)"
+        ],
+        [
+          "de",
+          "Neu (for testing only!)"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "New (for testing only!)"
+        ],
+        [
+          "de",
+          "Neu (for testing only!)"
+        ]
+      ],
+      "icon": "create",
+      "active": true,
+      "system": false,
+      "code": "pub fn show() {\n    let record = webapp::get_record()?;\n    if record.status.as_string() == \"done\" {\n        return true;\n    } else if record.status.as_string() == \"\" {\n        return true;\n    }\n    return false;\n}\n\npub async fn main() {\n    let record = webapp::get_record()?;\n    let inp = (\"new\", \"\", \"\");\n    webapp::rpc_call(\"set_status\", inp).await?;\n    Ok(())\n}\n\npub async fn test() {\n    //let x = show();\n    //println!(\"Show {}\", x);\n    main().await?;\n}",
+      "typ": "Workflow"
+    }
+  ],
+  "services": [
+    {
+      "ident": "set_status",
+      "name": [
+        [
+          "en",
+          "Set Status"
+        ],
+        [
+          "de",
+          "Set Status"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Set Status Service"
+        ],
+        [
+          "de",
+          "Set Status Service"
+        ]
+      ],
+      "icon": "database",
+      "active": true,
+      "system": false,
+      "code": "pub async fn main(inp) {\n    dbg(inp.0);\n    dbg(inp.2);\n    let status = Ident::new(inp.0);\n    let record = server::get_record()?;\n    server::db::update_record_value(record.uuid, Ident::new(\"status\"), Value::Ident(status)).await?;\n    server::db::update_record_value(record.uuid, Ident::new(\"highlight_color\"), Value::Color(Color::new(inp.2))).await?;\n    Ok(())\n}\n\npub async fn test() {\n    let inp = (\"pending\", \"\", \"\");\n    main(inp).await?;\n}",
+      "typ": "Service"
+    },
+    {
+      "ident": "set_user_inbox",
+      "name": [
+        [
+          "en",
+          "Set User Inbox"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Set User Inbox Service"
+        ],
+        [
+          "de",
+          "Set User Inbox Service"
+        ]
+      ],
+      "icon": "database",
+      "active": true,
+      "system": false,
+      "code": "pub async fn main(inp) {\n    dbg(inp.0);\n    dbg(inp.1);\n    server::db::add_inbox(inp.0, inp.1).await?;\n    Ok(())\n}\n\npub async fn test() {\n}",
+      "typ": "Service"
+    }
+  ],
+  "record_status": {
+    "selected": [
+      "new"
+    ],
+    "options": {
+      "new": [
+        [
+          "en",
+          "new"
+        ],
+        [
+          "de",
+          "Neu"
+        ]
+      ],
+      "pending": [
+        [
+          "en",
+          "pending"
+        ],
+        [
+          "de",
+          "Ausstehend"
+        ]
+      ],
+      "done": [
+        [
+          "en",
+          "done"
+        ],
+        [
+          "de",
+          "Abgeschlossen"
+        ]
+      ]
+    }
+  },
+  "record_right": "fea81c48-c424-4d1f-9639-6a28624b1bb1",
+  "system": false,
+  "children": {
+    "ident": "children",
+    "system": true,
+    "released": false,
+    "name": [
+      [
+        "en",
+        "Children"
+      ]
+    ],
+    "description": [
+      [
+        "en",
+        "Children Table"
+      ]
+    ],
+    "value": {
+      "Table": {
+        "entries": []
+      }
+    },
+    "required": true,
+    "access": "Change",
+    "settings": {
+      "TableSettings": {
+        "columns": [
+          {
+            "ident": "children",
+            "position": 0,
+            "name": [
+              [
+                "en",
+                "Children"
+              ]
+            ],
+            "value": {
+              "Reference": "00000000-0000-0000-0000-000000000000"
+            },
+            "setting": "None"
+          }
+        ]
+      }
+    }
+  }
+}
