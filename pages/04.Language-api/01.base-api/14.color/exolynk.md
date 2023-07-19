@@ -131,7 +131,7 @@ Following html color code types are allowed:
 <span style="color:rgb(193, 70, 70, 1.0)">&#11044;</span> <span style="color:rgb(193, 70, 70, 1.0)"><strong>```rgb(193, 70, 70, 1.0)```</strong></span><br>
 <span style="">Dark Flavor</span><br>
 <span style="color:#F3C5C6">&#11044;</span> <span style="color:#F3C5C6"><strong>```#F3C5C6```</strong></span><br>
-<span style="color:rgb(rgb(193, 70, 70, 0.3)">&#11044;</span> <span style="color:rgb(193, 70, 70, 0.3)"><strong>```rgb(193, 70, 70, 0.3)```</strong></span><br>
+<span style="color:rgb(193, 70, 70, 0.3)">&#11044;</span> <span style="color:rgb(193, 70, 70, 0.3)"><strong>```rgb(193, 70, 70, 0.3)```</strong></span><br>
 
 <span style="color:#AB218E">**Violet**</span><br>
 <span style="">Light Flavor</span><br>
@@ -139,7 +139,7 @@ Following html color code types are allowed:
 <span style="color:rgb(171, 33, 142, 1.0)">&#11044;</span> <span style="color:rgb(171, 33, 142, 1.0)"><strong>```rgb(171, 33, 142, 1.0)```</strong></span><br>
 <span style="">Dark Flavor</span><br>
 <span style="color:#EDB9DF">&#11044;</span> <span style="color:#EDB9DF"><strong>```#EDB9DF```</strong></span><br>
-<span style="color:rgb(rgb(171, 33, 142, 0.3)">&#11044;</span> <span style="color:rgb(171, 33, 142, 0.3)"><strong>```rgb(171, 33, 142, 0.3)```</strong></span><br>
+<span style="color:rgb(171, 33, 142, 0.3)">&#11044;</span> <span style="color:rgb(171, 33, 142, 0.3)"><strong>```rgb(171, 33, 142, 0.3)```</strong></span><br>
 
 <span style="color:#678BC7">**Darkblue**</span><br>
 <span style="">Light Flavor</span><br>
@@ -188,6 +188,82 @@ Following html color code types are allowed:
 <span style="">Dark Flavor</span><br>
 <span style="color:#CED7DB">&#11044;</span> <span style="color:#CED7DB"><strong>```#CED7DB```</strong></span><br>
 <span style="color:rgb(100, 121, 135, 0.3)">&#11044;</span> <span style="rgb(100, 121, 135, 0.3)"><strong>```rgb(100, 121, 135, 0.3)```</strong></span><br>
+
+[/ui-accordion-item]
+
+[ui-accordion-item title=Indicator Colors]
+##### Accent colors
+
+<span style="color:#880000">**UI Indication 1**</span><br>
+<span style="">Light Flavor</span><br>
+<span style="color:#880000">&#11044;</span> <span style="color:#880000"><strong>```#880000```</strong></span><br>
+<span style="color:rgb(136, 0, 0, 1.0)">&#11044;</span> <span style="color:rgb(136, 0, 0, 1.0)"><strong>```rgb(136, 0, 0, 1.0)```</strong></span><br>
+<span style="">Dark Flavor</span><br>
+<span style="color:#FAE0AB">&#11044;</span> <span style="color:#FAE0AB"><strong>```#FAE0AB```</strong></span><br>
+<span style="color:rgb(136, 0, 0, 0.3)">&#11044;</span> <span style="color:rgb(136, 0, 0, 0.3)"><strong>```rgb(136, 0, 0, 0.3)```</strong></span><br>
+
+RGB 171/34/23
+<span style="color:#BB0000">**UI Indication 2**</span><br>
+<span style="">Light Flavor</span><br>
+<span style="color:#BB0000">&#11044;</span> <span style="color:#BB0000"><strong>```#BB0000```</strong></span><br>
+<span style="color:rgb(230, 96, 13, 1.0)">&#11044;</span> <span style="color:rgb(230, 96, 13, 1.0)"><strong>```rgb(230, 96, 13, 1.0)```</strong></span><br>
+<span style="">Dark Flavor</span><br>
+<span style="color:#FECDB1">&#11044;</span> <span style="color:#FECDB1"><strong>```#FECDB1```</strong></span><br>
+<span style="color:rgb(230, 96, 13, 0.3)">&#11044;</span> <span style="color:rgb(230, 96, 13, 0.3)"><strong>```rgb(230, 96, 13, 0.3)```</strong></span><br>
+
+RGB 219/144/52
+<span style="color:#E78C07">**UI Indication 3**</span><br>
+<span style="">Light Flavor</span><br>
+<span style="color:#E78C07">&#11044;</span> <span style="color:#E78C07"><strong>```#E78C07```</strong></span><br>
+<span style="color:rgb(193, 70, 70, 1.0)">&#11044;</span> <span style="color:rgb(193, 70, 70, 1.0)"><strong>```rgb(193, 70, 70, 1.0)```</strong></span><br>
+<span style="">Dark Flavor</span><br>
+<span style="color:#F3C5C6">&#11044;</span> <span style="color:#F3C5C6"><strong>```#F3C5C6```</strong></span><br>
+<span style="color:rgb(193, 70, 70, 0.3)">&#11044;</span> <span style="color:rgb(193, 70, 70, 0.3)"><strong>```rgb(193, 70, 70, 0.3)```</strong></span><br>
+
+RGB 67/122/54
+<span style="color:#2B7C2B">**UI Indication 4**</span><br>
+<span style="">Light Flavor</span><br>
+<span style="color:#2B7C2B">&#11044;</span> <span style="color:#2B7C2B"><strong>```#2B7C2B```</strong></span><br>
+<span style="color:rgb(171, 33, 142, 1.0)">&#11044;</span> <span style="color:rgb(171, 33, 142, 1.0)"><strong>```rgb(171, 33, 142, 1.0)```</strong></span><br>
+<span style="">Dark Flavor</span><br>
+<span style="color:#EDB9DF">&#11044;</span> <span style="color:#EDB9DF"><strong>```#EDB9DF```</strong></span><br>
+<span style="color:rgb(171, 33, 142, 0.3)">&#11044;</span> <span style="color:rgb(171, 33, 142, 0.3)"><strong>```rgb(171, 33, 142, 0.3)```</strong></span><br>
+
+RGB 80/123/168
+<span style="color:#427CAC">**UI Indication 5**</span><br>
+<span style="">Light Flavor</span><br>
+<span style="color:#427CAC">&#11044;</span> <span style="color:#427CAC"><strong>```#427CAC```</strong></span><br>
+<span style="color:rgb(103, 139, 199, 1.0)">&#11044;</span> <span style="color:rgb(103, 139, 199, 1.0)"><strong>```rgb(103, 139, 199, 1.0)```</strong></span><br>
+<span style="">Dark Flavor</span><br>
+<span style="color:#CEDCEF">&#11044;</span> <span style="color:#CEDCEF"><strong>```#CEDCEF```</strong></span><br>
+<span style="color:rgb(103, 139, 199, 0.3)">&#11044;</span> <span style="color:rgb(103, 139, 199, 0.3)"><strong>```rgb(103, 139, 199, 0.3)```</strong></span><br>
+
+RGB 26/152/152
+<span style="color:#1A9898">**UI Indication 6**</span><br>
+<span style="">Light Flavor</span><br>
+<span style="color:#1A9898">&#11044;</span> <span style="color:#1A9898"><strong>```#1A9898```</strong></span><br>
+<span style="color:rgb(0, 146, 209, 1.0)">&#11044;</span> <span style="color:rgb(0, 146, 209, 1.0)"><strong>```rgb(0, 146, 209, 1.0)```</strong></span><br>
+<span style="">Dark Flavor</span><br>
+<span style="color:#A6DFF3">&#11044;</span> <span style="color:#A6DFF3"><strong>```#A6DFF3```</strong></span><br>
+<span style="color:rgb(0, 146, 209, 0.3)">&#11044;</span> <span style="color:rgb(0, 146, 209, 0.3)"><strong>```rgb(0, 146, 209, 0.3)```</strong></span><br>
+
+RGB 146/90/206
+<span style="color:#925ACE">**UI Indication 7**</span><br>
+<span style="">Light Flavor</span><br>
+<span style="color:#925ACE">&#11044;</span> <span style="color:#925ACE"><strong>```#925ACE```</strong></span><br>
+<span style="color:rgb(26, 152, 152, 1.0)">&#11044;</span> <span style="color:rgb(26, 152, 152, 1.0)"><strong>```rgb(26, 152, 152, 1.0)```</strong></span><br>
+<span style="">Dark Flavor</span><br>
+<span style="color:#B0E1E1">&#11044;</span> <span style="color:#B0E1E1"><strong>```#B0E1E1```</strong></span><br>
+<span style="color:rgb(26, 152, 152, 0.3)">&#11044;</span> <span style="color:rgb(26, 152, 152, 0.3)"><strong>```rgb(26, 152, 152, 0.3)```</strong></span><br>
+
+RGB 171/33/142
+<span style="color:#AB218E">**UI Indication 8**</span><br>
+<span style="">Light Flavor</span><br>
+<span style="color:#AB218E">&#11044;</span> <span style="color:#AB218E"><strong>```#AB218E```</strong></span><br>
+<span style="color:rgb(117, 148, 33, 1.0)">&#11044;</span> <span style="color:rgb(117, 148, 33, 1.0)"><strong>```rgb(117, 148, 33, 1.0)```</strong></span><br>
+<span style="">Dark Flavor</span><br>
+<span style="color:#D2DFB8">&#11044;</span> <span style="color:#D2DFB8"><strong>```#D2DFB8```</strong></span><br>
+<span style="color:rgb(117, 148, 33, 0.3)">&#11044;</span> <span style="color:rgb(117, 148, 33, 0.3)"><strong>```rgb(117, 148, 33, 0.3)```</strong></span><br>
 
 [/ui-accordion-item]
 [/ui-accordion]
