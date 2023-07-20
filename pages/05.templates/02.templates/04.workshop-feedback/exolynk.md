@@ -33,7 +33,7 @@ markdown:
 
 A workshop feedback tool as it was used at the Zürioberland Forum 2023 to collect workshop feedback over 5 workshops and totally 40 questions. Each Model represents one workshop with different questions.
 
-Here you will find a summary about this workshop: <a href="workshop-feedback/Zuerioberland-Forum-2023-Stationaere-Arbeit.pdf" target="_blank">Zuerioberland Forum 2023 Stationäre Arbeit</a>
+Here you will find a summary about this workshop: <a href="https://exolynk.com/wp-content/uploads/2023/07/Zuerioberland-Forum-2023-Stationaere-Arbeit.pdf" target="_blank">Zuerioberland Forum 2023 Stationäre Arbeit</a>
 
 **Supported features:**
 - Participant Information
@@ -88,11 +88,11 @@ Here you will find a summary about this workshop: <a href="workshop-feedback/Zue
 
 **Usage**
 
-![Usage](screenshot-1.png?resize=600&classes=left)
+![Usage](screenshot-1.png?resize=800&classes=left)
 
 **Evaluation**
 
-![Evaluation](screenshot-2.png?resize=600&classes=left)
+![Evaluation](screenshot-2.png?resize=800&classes=left)
 
 [/ui-tab]
 
