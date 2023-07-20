@@ -40,4 +40,4 @@ After uploading (in unrealeased status) templates can be edited and deleted full
 
 >>> Please note: After uploading (before or after releasing) you need to set the model right "Search Access Right" ```record_search``` that user having access to this new model.
 
-![Model Right](model-right.png?resize=600&classes=left)
+![Model Right](model-right.png?resize=800&classes=left)
