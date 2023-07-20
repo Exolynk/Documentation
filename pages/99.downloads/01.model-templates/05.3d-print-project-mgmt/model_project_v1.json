@@ -1,0 +1,794 @@
+{
+  "uuid": "355c4036-4041-4616-ad1f-0f5ffd8c2069",
+  "ident": "project",
+  "version": {
+    "typ": "Number",
+    "version": "49"
+  },
+  "status": "draft",
+  "name": [
+    [
+      "en",
+      "Project"
+    ]
+  ],
+  "description": [
+    [
+      "en",
+      "Project"
+    ]
+  ],
+  "icon": "factory",
+  "layout": "<record>\n    //Tab Projekt\n    <tab name=\"Projekt\" active=\"true\" status=\"\">\n        <data name=\"Properties\">\n            <variable ident=\"ident\" />\n            <variable ident=\"status\" access=\"write\"/>\n            <variable ident=\"name\" />\n            <variable ident=\"description\" />\n            <variable ident=\"deliverydate\" />\n            <variable ident=\"price_agreed\" />\n            <variable ident=\"einkaufspreis\" />\n            <variable ident=\"files\" />\n            <variable ident=\"creator\" access=\"read\" />\n            <variable ident=\"calendar_start\" name=\"Projekt Start\" access=\"write\" />\n            <variable ident=\"calendar_end\" name=\"Projekt Ende\" access=\"write\" />\n        </data>\n        <data name=\"Kunde\">\n            <variable ident=\"client_name\" />\n            <variable ident=\"client_email\" />\n            <variable ident=\"client_phone\" />\n            <variable ident=\"client_address\" />\n        </data>\n    </tab>\n    \n    //Tab Auftrag\n    <tab name=\"Auftrag\" active=\"true\" status=\"\">\n        <data name=\"Properties\">\n            <variable ident=\"status\" access=\"write\"/>\n            <variable ident=\"name\" />\n            <variable ident=\"description\" />\n            <variable ident=\"amount\" />\n            <variable ident=\"filament_prod\" />\n            <variable ident=\"material_color\" />\n            <variable ident=\"weight\" />\n        </data>\n        <files variable=\"files\" />\n    </tab>\n    \n    //Tab Logs\n    <tab name=\"Logs\">\n        <record-logs />\n    </tab>\n    \n    //Tab Chart\n    <tab name=\"Projekt Übersicht\">\n        <data name=\"Projekt Info\">\n            <variable ident=\"name\" />\n            <variable ident=\"status\" />\n            <variable ident=\"deliverydate\" />\n            <variable ident=\"client_name\" />\n            <variable ident=\"client_email\" />\n            <variable ident=\"client_phone\" />\n            <variable ident=\"client_address\" />\n        </data>\n        <chart typ=\"bar\" name=\"Projekte nach Status (Bar Chart)\">\n            <chart-data model=\"project\" action=\"count\" variable=\"status\" name=\"Entwurf\">\n                <data-filter variable=\"status\" operator=\"equal\" value=\"draft\" />\n            </chart-data>\n            <chart-data model=\"project\" action=\"count\" variable=\"status\" name=\"In Konstruktion\">\n                <data-filter variable=\"status\" operator=\"equal\" value=\"in_construction\" />\n            </chart-data>\n            <chart-data model=\"project\" action=\"count\" variable=\"status\" name=\"In Produktion\">\n                <data-filter variable=\"status\" operator=\"equal\" value=\"in_production\" />\n            </chart-data>\n            <chart-data model=\"project\" action=\"count\" variable=\"status\" name=\"In Auslieferung\">\n                <data-filter variable=\"status\" operator=\"equal\" value=\"in_delivery\" />\n            </chart-data>\n            <chart-data model=\"project\" action=\"count\" variable=\"status\" name=\"Abgeschlossen\">\n                <data-filter variable=\"status\" operator=\"equal\" value=\"closed\" />\n            </chart-data>\n        </chart>\n    </tab>\n</record>",
+  "variables": [
+    {
+      "ident": "filamenttype",
+      "system": false,
+      "released": true,
+      "name": [
+        [
+          "en",
+          "Filament Art"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Filament Art"
+        ]
+      ],
+      "value": {
+        "List": {
+          "data": [
+            {
+              "String": "PLA"
+            },
+            {
+              "String": "ABS"
+            },
+            {
+              "String": "PETG (PET, PETT)"
+            },
+            {
+              "String": "TPE, TPU, TPC (Flexible)"
+            },
+            {
+              "String": "Nylon (PA)"
+            },
+            {
+              "String": "Polycarbonate (PC)"
+            }
+          ]
+        }
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    },
+    {
+      "ident": "weight",
+      "system": false,
+      "released": true,
+      "name": [
+        [
+          "en",
+          "Gewicht"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Produkt Gewicht"
+        ]
+      ],
+      "value": {
+        "String": "0"
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    },
+    {
+      "ident": "deliverydate",
+      "system": false,
+      "released": true,
+      "name": [
+        [
+          "en",
+          "Lieferdatum"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Lieferdatum"
+        ]
+      ],
+      "value": {
+        "Datetime": "2023-04-20 16:33:21.655000064 +02:00:00"
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    },
+    {
+      "ident": "files",
+      "system": false,
+      "released": true,
+      "name": [
+        [
+          "en",
+          "Files"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Files"
+        ]
+      ],
+      "value": {
+        "List": {
+          "data": []
+        }
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    },
+    {
+      "ident": "client_name",
+      "system": false,
+      "released": true,
+      "name": [
+        [
+          "en",
+          "Kunden Name"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Kunden Name"
+        ]
+      ],
+      "value": {
+        "String": "Vorname Nachname"
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    },
+    {
+      "ident": "client_address",
+      "system": false,
+      "released": true,
+      "name": [
+        [
+          "en",
+          "Kunden Adresse"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Kunden Adresse"
+        ]
+      ],
+      "value": {
+        "String": "Strasse Nr ,PLZ Ort"
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    },
+    {
+      "ident": "material",
+      "system": false,
+      "released": true,
+      "name": [
+        [
+          "en",
+          "Material"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Material"
+        ]
+      ],
+      "value": {
+        "Selection": {
+          "selected": [
+            "PLA"
+          ],
+          "options": {
+            "PLA": []
+          }
+        }
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    },
+    {
+      "ident": "client_email",
+      "system": false,
+      "released": true,
+      "name": [
+        [
+          "en",
+          "Kunden E-Mail"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Kunden E-Mail"
+        ]
+      ],
+      "value": {
+        "String": "email@domain.ch"
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    },
+    {
+      "ident": "client_phone",
+      "system": false,
+      "released": true,
+      "name": [
+        [
+          "en",
+          "Kunden Tel. Nr."
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Kunden Tel. Nr."
+        ]
+      ],
+      "value": {
+        "String": "+41"
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    },
+    {
+      "ident": "price_agreed",
+      "system": false,
+      "released": true,
+      "name": [
+        [
+          "en",
+          "Preis"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Preis"
+        ]
+      ],
+      "value": {
+        "String": "CHF "
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    },
+    {
+      "ident": "material_color",
+      "system": false,
+      "released": true,
+      "name": [
+        [
+          "en",
+          "Filament Farbe"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Filament Farbe"
+        ]
+      ],
+      "value": {
+        "String": ""
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    },
+    {
+      "ident": "filament_prod",
+      "system": false,
+      "released": true,
+      "name": [
+        [
+          "en",
+          "Filament"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Filament für Produktion"
+        ]
+      ],
+      "value": {
+        "Reference": "00000000-0000-0000-0000-000000000000"
+      },
+      "required": false,
+      "access": "Write",
+      "settings": {
+        "ReferenceSettings": {
+          "typ": {
+            "RecordTyp": "filament"
+          }
+        }
+      }
+    },
+    {
+      "ident": "amount",
+      "system": false,
+      "released": true,
+      "name": [
+        [
+          "en",
+          "Anzahl"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Anzahl Prototypen"
+        ]
+      ],
+      "value": {
+        "Integer": 0
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    },
+    {
+      "ident": "einkaufspreis",
+      "system": false,
+      "released": true,
+      "name": [
+        [
+          "en",
+          "Einkaufspreis"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Einkaufspreis"
+        ]
+      ],
+      "value": {
+        "Integer": 0
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    }
+  ],
+  "workflows": [
+    {
+      "ident": "in_production",
+      "name": [
+        [
+          "en",
+          "2/4 in Production"
+        ],
+        [
+          "de",
+          "2/4 in Produktion"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "In Production"
+        ]
+      ],
+      "icon": "machine",
+      "active": true,
+      "system": false,
+      "code": "pub fn show() {\n    let record = webapp::get_record()?;\n    if record.status.as_string() == \"in_construction\" {\n        return true;\n    }\n    return false;\n}\n\npub async fn main() {\n    let record = webapp::get_record()?;\n    let inp = (\"in_production\", \"\", \"#C2E0E1\"); //turquoise\n    webapp::rpc_call(\"set_status_service\", inp).await?;\n            \n    // set in inbox\n    let usr = record.get_value(Ident::new(\"assigned_user\"))?.get_reference()?.as_string();\n    let inp = (usr, record.uuid);\n    dbg(usr);\n    dbg(record.uuid);\n    webapp::rpc_call(\"set_user_inbox_service\", inp).await?;\n    Ok(())\n}\n\npub async fn test() {\n    //let x = show();\n    //println!(\"Show {}\", x);\n    main().await?;\n}",
+      "typ": "Workflow"
+    },
+    {
+      "ident": "in_construction",
+      "name": [
+        [
+          "en",
+          "1/4 in Construction"
+        ],
+        [
+          "de",
+          "1/4 in Konstruktion"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "In Construction"
+        ]
+      ],
+      "icon": "write-new",
+      "active": true,
+      "system": false,
+      "code": "pub fn show() {\n    let record = webapp::get_record()?;\n    if record.status.as_string() == \"draft\" {\n        return true;\n    }\n    return false;\n}\n\npub async fn main() {\n    let record = webapp::get_record()?;\n    let inp = (\"in_construction\", \"\", \"#BFDEF1\"); //blue\n    webapp::rpc_call(\"set_status_service\", inp).await?;\n            \n    // set in inbox\n    let usr = record.get_value(Ident::new(\"assigned_user\"))?.get_reference()?.as_string();\n    let inp = (usr, record.uuid);\n    dbg(usr);\n    dbg(record.uuid);\n    webapp::rpc_call(\"set_user_inbox_service\", inp).await?;\n    Ok(())\n}\n\npub async fn test() {\n    //let x = show();\n    //println!(\"Show {}\", x);\n    main().await?;\n}",
+      "typ": "Workflow"
+    },
+    {
+      "ident": "draft",
+      "name": [
+        [
+          "en",
+          "Draft"
+        ],
+        [
+          "de",
+          "Entwurf"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Draft"
+        ],
+        [
+          "de",
+          "Entwurf"
+        ]
+      ],
+      "icon": "create",
+      "active": false,
+      "system": false,
+      "code": "pub fn show() {\n    let record = webapp::get_record()?;\n    if record.status.as_string() == \"new\" {\n        return true;\n    } else if record.status.as_string() == \"\" {\n        return true;\n    }\n    return false;\n}\n\npub async fn main() {\n    let record = webapp::get_record()?;\n    let inp = (\"draft\", \"\", \"\");\n    webapp::rpc_call(\"set_status_service\", inp).await?;\n        \n    // set in inbox -> Teamleader\n    let usr = record.get_value(Ident::new(\"assigned_user\"))?.get_reference()?.as_string();\n    let inp = (usr, record.uuid);\n    dbg(usr);\n    dbg(record.uuid);\n    webapp::rpc_call(\"set_user_inbox_service\", inp).await?;\n    Ok(())\n}\n\npub async fn test() {\n    //let x = show();\n    //println!(\"Show {}\", x);\n    main().await?;\n}",
+      "typ": "Workflow"
+    },
+    {
+      "ident": "in_delivery",
+      "name": [
+        [
+          "en",
+          "3/4 in Delivery"
+        ],
+        [
+          "de",
+          "3/4 in Auslieferung"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "In Delivery"
+        ]
+      ],
+      "icon": "shipping-status",
+      "active": true,
+      "system": false,
+      "code": "pub fn show() {\n    let record = webapp::get_record()?;\n    if record.status.as_string() == \"in_production\" {\n        return true;\n    }\n    return false;\n}\n\npub async fn main() {\n    let record = webapp::get_record()?;\n    let inp = (\"in_delivery\", \"\", \"#E8BEDE\"); //purpur\n    webapp::rpc_call(\"set_status_service\", inp).await?;\n            \n    // set in inbox -> Teamleader\n    let usr = record.get_value(Ident::new(\"assigned_user\"))?.get_reference()?.as_string();\n    let inp = (usr, record.uuid);\n    dbg(usr);\n    dbg(record.uuid);\n    webapp::rpc_call(\"set_user_inbox_service\", inp).await?;\n    Ok(())\n}\n\npub async fn test() {\n    //let x = show();\n    //println!(\"Show {}\", x);\n    main().await?;\n}",
+      "typ": "Workflow"
+    },
+    {
+      "ident": "closed",
+      "name": [
+        [
+          "en",
+          "4/4 Closed"
+        ],
+        [
+          "fr",
+          "4/4 Terminé"
+        ],
+        [
+          "de",
+          "4/4 Abgeschlossen"
+        ],
+        [
+          "it",
+          "4/4 Completato"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Closed Workflow"
+        ],
+        [
+          "fr",
+          "Terminé Workflow"
+        ],
+        [
+          "de",
+          "Abgeschlossen Workflow"
+        ],
+        [
+          "it",
+          "Completato Workflow"
+        ]
+      ],
+      "icon": "sys-enter",
+      "active": true,
+      "system": false,
+      "code": "pub fn show() {\n    let record = webapp::get_record()?;\n    if record.status.as_string() == \"draft\" {\n        return true;\n    } else if record.status.as_string() == \"in_construction\" {\n        return true;\n    } else if record.status.as_string() == \"in_delivery\" {\n        return true;\n    }\n    return false;\n}\n\npub async fn main() {\n    let record = webapp::get_record()?;\n    let inp = (\"closed\", \"\", \"#D5DEC0\"); //green\n    webapp::rpc_call(\"set_status_service\", inp).await?;\n        \n    // set in inbox\n    let usr = record.get_value(Ident::new(\"assigned_user\"))?.get_reference()?.as_string();\n    let inp = (usr, record.uuid);\n    dbg(usr);\n    dbg(record.uuid);\n    webapp::rpc_call(\"set_user_inbox_service\", inp).await?;\n    Ok(())\n}\n\npub async fn test() {\n    //let x = show();\n    //println!(\"Show {}\", x);\n    main().await?;\n}",
+      "typ": "Workflow"
+    }
+  ],
+  "services": [
+    {
+      "ident": "in_production_service",
+      "name": [
+        [
+          "en",
+          "in Production Service_old"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "in Production Service"
+        ]
+      ],
+      "icon": "machine",
+      "active": false,
+      "system": false,
+      "code": "pub async fn main(inp) {\n    let record = server::get_record()?;\n    server::db::update_record_value(record.uuid, Ident::new(\"status\"), Value::Ident(Ident::new(\"in-production\"))).await?;\n    return true;\n}",
+      "typ": "Service"
+    },
+    {
+      "ident": "in_construction_service",
+      "name": [
+        [
+          "en",
+          "In Construction Service_old"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "In Construction Service"
+        ]
+      ],
+      "icon": "write-new",
+      "active": false,
+      "system": false,
+      "code": "pub async fn main(inp) {\n    let record = server::get_record()?;\n    server::db::update_record_value(record.uuid, Ident::new(\"status\"), Value::Ident(Ident::new(\"in-construction\"))).await?;\n    return true;\n}",
+      "typ": "Service"
+    },
+    {
+      "ident": "draft_service",
+      "name": [
+        [
+          "en",
+          "Draft_old"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Draft Service"
+        ]
+      ],
+      "icon": "create",
+      "active": false,
+      "system": false,
+      "code": "",
+      "typ": "Service"
+    },
+    {
+      "ident": "in_delivery_service",
+      "name": [
+        [
+          "en",
+          "In Delivery Service_old"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "In Delivery Service"
+        ]
+      ],
+      "icon": "shipping-status",
+      "active": false,
+      "system": false,
+      "code": "pub async fn main(inp) {\n    let record = server::get_record()?;\n    server::db::update_record_value(record.uuid, Ident::new(\"status\"), Value::Ident(Ident::new(\"in-delivery\"))).await?;\n    return true;\n}",
+      "typ": "Service"
+    },
+    {
+      "ident": "set_status_service",
+      "name": [
+        [
+          "en",
+          "Set Staus Service"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Set Staus Service"
+        ]
+      ],
+      "icon": "database",
+      "active": true,
+      "system": false,
+      "code": "pub async fn main(inp) {\n    dbg(inp.0);\n    dbg(inp.2);\n    let status = Ident::new(inp.0);\n    let record = server::get_record()?;\n    server::db::update_record_value(record.uuid, Ident::new(\"status\"), Value::Ident(status)).await?;\n    server::db::update_record_value(record.uuid, Ident::new(\"highlight_color\"), Value::Color(Color::new(inp.2))).await?;\n    Ok(())\n}\n\npub async fn test() {\n    let inp = (\"new\", \"\", \"\");\n    main(inp).await?;\n}",
+      "typ": "Service"
+    },
+    {
+      "ident": "set_user_inbox_service",
+      "name": [
+        [
+          "en",
+          "Set User Inbox Service"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Set User Inbox Service"
+        ]
+      ],
+      "icon": "database",
+      "active": true,
+      "system": false,
+      "code": "pub async fn main(inp) {\n    dbg(inp.0);\n    dbg(inp.1);\n    server::db::add_inbox(inp.0, inp.1).await?;\n    Ok(())\n}\n\npub async fn test() {\n}",
+      "typ": "Service"
+    }
+  ],
+  "record_status": {
+    "selected": [
+      "draft"
+    ],
+    "options": {
+      "in_construction": [
+        [
+          "en",
+          "1/4 In Construction"
+        ],
+        [
+          "fr",
+          "1/4 En construction"
+        ],
+        [
+          "de",
+          "1/4 In Konstruktion"
+        ],
+        [
+          "it",
+          "1/4 In costruzione"
+        ]
+      ],
+      "closed": [
+        [
+          "en",
+          "4/4 Closed"
+        ],
+        [
+          "fr",
+          "4/4 Terminé"
+        ],
+        [
+          "de",
+          "4/4 Abgeschlossen"
+        ],
+        [
+          "it",
+          "4/4 Completato"
+        ]
+      ],
+      "in_delivery": [
+        [
+          "en",
+          "3/4 In delivery"
+        ],
+        [
+          "fr",
+          "3/4 En cours de livraison"
+        ],
+        [
+          "de",
+          "3/4 In Auslieferung"
+        ],
+        [
+          "it",
+          "3/4 In consegna"
+        ]
+      ],
+      "draft": [
+        [
+          "en",
+          "Draft"
+        ],
+        [
+          "fr",
+          "Projet"
+        ],
+        [
+          "de",
+          "Entwurf"
+        ],
+        [
+          "it",
+          "Bozza"
+        ]
+      ],
+      "in_production": [
+        [
+          "en",
+          "2/4 In Production"
+        ],
+        [
+          "fr",
+          "2/4 En production"
+        ],
+        [
+          "de",
+          "2/4 In Produktion"
+        ],
+        [
+          "it",
+          "2/4 In produzione"
+        ]
+      ]
+    }
+  },
+  "record_right": "0aef5f01-f7c6-41ea-90b3-0d752a26e15e",
+  "system": false,
+  "children": {
+    "ident": "children",
+    "system": true,
+    "released": false,
+    "name": [
+      [
+        "en",
+        "Children"
+      ]
+    ],
+    "description": [
+      [
+        "en",
+        "Children Table"
+      ]
+    ],
+    "value": {
+      "Table": {
+        "entries": []
+      }
+    },
+    "required": true,
+    "access": "Change",
+    "settings": {
+      "TableSettings": {
+        "columns": [
+          {
+            "ident": "children",
+            "position": 0,
+            "name": [
+              [
+                "en",
+                "Children"
+              ]
+            ],
+            "value": {
+              "Reference": "00000000-0000-0000-0000-000000000000"
+            },
+            "setting": "None"
+          }
+        ]
+      }
+    }
+  }
+}

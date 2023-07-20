@@ -1,0 +1,359 @@
+{
+  "uuid": "eb15095a-4649-4240-a5cb-9bda6e3db001",
+  "ident": "filament",
+  "version": {
+    "typ": "Number",
+    "version": "30"
+  },
+  "status": "draft",
+  "name": [
+    [
+      "en",
+      "Filament"
+    ]
+  ],
+  "description": [
+    [
+      "en",
+      "Filament"
+    ]
+  ],
+  "icon": "goalseek",
+  "layout": "<record>\n    <tab name=\"Spezifikation\" active=\"true\" status=\"\">\n        <data name=\"Properties\">\n            <variable ident=\"ident\" />\n            <variable ident=\"status\" access=\"write\"/>\n            <variable ident=\"name\" />\n            <variable ident=\"description\" />\n            <variable ident=\"filament_supplier_url\" />\n            <variable ident=\"filament_material\" />\n            <variable ident=\"filament_color\" />\n            <variable ident=\"filament_img\" />\n            <variable ident=\"on_stock\" />\n        </data>\n        <files variable=\"filament_img\" />\n    </tab>\n    \n    <tab name=\"Logs\">\n    <record-logs />\n    \n    </tab>\n    <tab name=\"Übersicht Lager\">\n        <chart typ=\"bar\" name=\"Filament lagernd\">\n            <chart-data model=\"filament\" action=\"count\" variable=\"on_stock\" name=\"PLA\">\n            </chart-data>\n            <chart-data model=\"filament\" action=\"count\" variable=\"on_stock\" name=\"ABS\">\n            </chart-data>\n        </chart>\n    </tab>\n    \n</record>",
+  "variables": [
+    {
+      "ident": "filament_material",
+      "system": false,
+      "released": true,
+      "name": [
+        [
+          "en",
+          "Filament Material"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Filament Material"
+        ]
+      ],
+      "value": {
+        "Selection": {
+          "selected": [],
+          "options": {
+            "ABS": [
+              [
+                "en",
+                "Acrylonitrile Butadiene Styrene Copolymer (ABS)"
+              ],
+              [
+                "de",
+                "Acrylnitril-Butadien-Styrol-Copolymer (ABS)"
+              ]
+            ],
+            "PC": [
+              [
+                "en",
+                "Polycarbonate (PC)"
+              ],
+              [
+                "de",
+                "Polycarbonate (PC)"
+              ]
+            ],
+            "PLA": [
+              [
+                "en",
+                "Polylactic Acid (PLA)"
+              ],
+              [
+                "de",
+                "Polylactic Acid (PLA)"
+              ]
+            ],
+            "PETG (PET, PETT)": [
+              [
+                "en",
+                "Polyethylene Terephthalate (PET)"
+              ],
+              [
+                "de",
+                "Polyethylenterephthalat (PET)"
+              ]
+            ],
+            "TPE, TPU, TPC (Flexible)": [
+              [
+                "en",
+                "Thermoplastic Elastomers (TPE)"
+              ],
+              [
+                "de",
+                "Thermoplastische Elastomere (TPE)"
+              ]
+            ],
+            "PA": [
+              [
+                "en",
+                "Polyamide (PA)"
+              ],
+              [
+                "de",
+                "Polyamid (PA)"
+              ]
+            ]
+          }
+        }
+      },
+      "required": true,
+      "access": "Write",
+      "settings": "None"
+    },
+    {
+      "ident": "filament_color",
+      "system": false,
+      "released": true,
+      "name": [
+        [
+          "en",
+          "Filament Farbe"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Filament Farbe"
+        ]
+      ],
+      "value": {
+        "Selection": {
+          "selected": [
+            "white"
+          ],
+          "options": {
+            "blue": [
+              [
+                "en",
+                "blue"
+              ],
+              [
+                "de",
+                "blau"
+              ]
+            ],
+            "red": [
+              [
+                "en",
+                "red"
+              ],
+              [
+                "de",
+                "rot"
+              ]
+            ],
+            "transparent": [
+              [
+                "en",
+                "transparent"
+              ],
+              [
+                "de",
+                "transparent"
+              ]
+            ],
+            "black": [
+              [
+                "en",
+                "black"
+              ],
+              [
+                "de",
+                "schwarz"
+              ]
+            ],
+            "white": [
+              [
+                "en",
+                "white"
+              ],
+              [
+                "de",
+                "weiss"
+              ]
+            ]
+          }
+        }
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    },
+    {
+      "ident": "filament_img",
+      "system": false,
+      "released": true,
+      "name": [
+        [
+          "en",
+          "Filament Foto"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Filament Foto"
+        ]
+      ],
+      "value": {
+        "List": {
+          "data": []
+        }
+      },
+      "required": false,
+      "access": "Write",
+      "settings": {
+        "ListSettings": {
+          "restrict_value": {
+            "Reference": "00000000-0000-0000-0000-000000000000"
+          },
+          "restrict_setting": {
+            "ReferenceSettings": {
+              "typ": {
+                "RecordTyp": "file"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "ident": "filament_supplier_url",
+      "system": false,
+      "released": true,
+      "name": [
+        [
+          "en",
+          "Filament Lieferanten URL"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Filament Lieferanten URL"
+        ]
+      ],
+      "value": {
+        "String": "https:"
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    },
+    {
+      "ident": "string",
+      "system": false,
+      "released": true,
+      "name": [
+        [
+          "en",
+          "string"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "string"
+        ]
+      ],
+      "value": {
+        "String": "0"
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    },
+    {
+      "ident": "on_stock",
+      "system": false,
+      "released": true,
+      "name": [
+        [
+          "en",
+          "auf Lager"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "auf Lager"
+        ]
+      ],
+      "value": {
+        "Integer": 0
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    }
+  ],
+  "workflows": [],
+  "services": [],
+  "record_status": {
+    "selected": [
+      "draft"
+    ],
+    "options": {
+      "draft": [
+        [
+          "en",
+          "draft"
+        ]
+      ]
+    }
+  },
+  "record_right": "59d30c89-5830-4820-afe2-33cf373bb69d",
+  "system": false,
+  "children": {
+    "ident": "children",
+    "system": true,
+    "released": false,
+    "name": [
+      [
+        "en",
+        "Children"
+      ]
+    ],
+    "description": [
+      [
+        "en",
+        "Children Table"
+      ]
+    ],
+    "value": {
+      "Table": {
+        "entries": []
+      }
+    },
+    "required": true,
+    "access": "Change",
+    "settings": {
+      "TableSettings": {
+        "columns": [
+          {
+            "ident": "children",
+            "position": 0,
+            "name": [
+              [
+                "en",
+                "Children"
+              ]
+            ],
+            "value": {
+              "Reference": "00000000-0000-0000-0000-000000000000"
+            },
+            "setting": "None"
+          }
+        ]
+      }
+    }
+  }
+}
