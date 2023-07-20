@@ -41,3 +41,10 @@ After uploading (in unrealeased status) templates can be edited and deleted full
 >>> Please note: After uploading (before or after releasing) you need to set the model right "Search Access Right" ```record_search``` that user having access to this new model.
 
 ![Model Right](model-right.png?resize=800&classes=left)
+
+
+#### Add Dashboard Layout
+
+Copy the Dashboard Layout HTML from the Section Tap in the RapidModel Description site and paste into the User Layout Settings as follow:
+
+![Dashboard Layout](Dashboard-Layout.gif?resize=600&classes=left)
