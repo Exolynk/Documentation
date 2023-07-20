@@ -83,7 +83,7 @@ This is a simple predefined demo model which includes all available variables an
 
 **Usage**
 
-![Usage](demo-model.gif?resize=600&classes=left)
+![Usage](demo-model.gif?resize=800&classes=left)
 
 [/ui-tab]
 

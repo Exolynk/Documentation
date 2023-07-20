@@ -1,0 +1,433 @@
+{
+  "uuid": "55cc6c4d-bb33-4f42-ae19-2b4689321c40",
+  "ident": "informationen",
+  "version": {
+    "typ": "Number",
+    "version": "3"
+  },
+  "status": "draft",
+  "name": [
+    [
+      "en",
+      "Informationen Workshop"
+    ]
+  ],
+  "description": [
+    [
+      "en",
+      "Teilnehmer Informationen Workshop"
+    ]
+  ],
+  "icon": "information",
+  "layout": "<record>\n    <!--<highlight-button title=\"Search\" text=\"Better Search\" icon=\"search\" link=\"#/search\" />-->\n    <tab name=\"Informationen\" active=\"true\" status=\"\">\n        <data name=\"Teilnehmer Informationen\">\n            <variable ident=\"branche\" access=\"write\" />\n            <variable ident=\"andere_branche\" access=\"write\" />\n            <variable ident=\"mitarbeitende\" access=\"write\" />\n        </data>\n    </tab>\n    <tab name=\"Logs\">\n        <record-logs />\n    </tab>\n    <!--\n    <tab name=\"Chart\">\n        <chart typ=\"bar\" name=\"Incidents by status\">\n            <chart-data model=\"incident\" action=\"count\" variable=\"status\" group_by=\"ident\" name=\"New\">\n                <data-filter variable=\"status\" operator=\"equal\" value=\"new\" />\n            </chart-data>\n            <chart-data model=\"incident\" action=\"count\" variable=\"status\" group_by=\"ident\" name=\"Clarification\">\n                <data-filter variable=\"status\" operator=\"equal\" value=\"clarification\" />\n            </chart-data>\n            <chart-data model=\"incident\" action=\"count\" variable=\"status\" group_by=\"ident\" name=\"Processing\">\n                <data-filter variable=\"status\" operator=\"equal\" value=\"processing\" />\n            </chart-data>\n            <chart-data model=\"incident\" action=\"count\" variable=\"status\" group_by=\"ident\" name=\"Reviewed\">\n                <data-filter variable=\"status\" operator=\"equal\" value=\"reviewed\" />\n            </chart-data>\n            <chart-data model=\"incident\" action=\"count\" variable=\"status\" group_by=\"ident\" name=\"Solved\">\n                <data-filter variable=\"status\" operator=\"equal\" value=\"solved\" />\n            </chart-data>\n        </chart>\n    </tab>\n    -->\n</record>",
+  "variables": [
+    {
+      "ident": "branche",
+      "system": false,
+      "released": true,
+      "name": [
+        [
+          "en",
+          "Branche"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "In welcher Branche sind Sie mit Ihrem Unternehmen tätig?"
+        ]
+      ],
+      "value": {
+        "Selection": {
+          "selected": [
+            "keine Angaben"
+          ],
+          "options": {
+            "Baubranche": [
+              [
+                "en",
+                "Baubranche"
+              ],
+              [
+                "de",
+                "Baubranche"
+              ]
+            ],
+            "Gastronomie": [
+              [
+                "en",
+                "Gastronomie"
+              ],
+              [
+                "de",
+                "Gastronomie"
+              ]
+            ],
+            "keine Angaben": [
+              [
+                "en",
+                "keine Angaben"
+              ],
+              [
+                "de",
+                "keine Angaben"
+              ]
+            ],
+            "Informatik": [
+              [
+                "en",
+                "Informatik"
+              ],
+              [
+                "de",
+                "Informatik"
+              ]
+            ]
+          }
+        }
+      },
+      "required": false,
+      "access": "Write",
+      "settings": {
+        "SelectionSettings": {
+          "mode": "Single",
+          "options": {
+            "Gastronomie": [
+              [
+                "en",
+                "Gastronomie"
+              ],
+              [
+                "de",
+                "Gastronomie"
+              ]
+            ],
+            "keine Angaben": [
+              [
+                "en",
+                "keine Angaben"
+              ],
+              [
+                "de",
+                "keine Angaben"
+              ]
+            ],
+            "Bildung": [
+              [
+                "en",
+                "Bildung"
+              ],
+              [
+                "de",
+                "Bildung"
+              ]
+            ],
+            "Medizin / Gesundheit": [
+              [
+                "en",
+                "Medizin / Gesundheit"
+              ],
+              [
+                "de",
+                "Medizin / Gesundheit"
+              ]
+            ],
+            "Öffentliche Verwaltung": [
+              [
+                "en",
+                "Öffentliche Verwaltung"
+              ],
+              [
+                "de",
+                "Öffentliche Verwaltung"
+              ]
+            ],
+            "Medien": [
+              [
+                "en",
+                "Medien"
+              ],
+              [
+                "de",
+                "Medien"
+              ]
+            ],
+            "Baubranche": [
+              [
+                "en",
+                "Baubranche"
+              ],
+              [
+                "de",
+                "Baubranche"
+              ]
+            ],
+            "Handwerk": [
+              [
+                "en",
+                "Handwerk"
+              ],
+              [
+                "de",
+                "Handwerk"
+              ]
+            ],
+            "Industrie": [
+              [
+                "en",
+                "Industrie"
+              ],
+              [
+                "de",
+                "Industrie"
+              ]
+            ],
+            "Tourismus": [
+              [
+                "en",
+                "Tourismus"
+              ],
+              [
+                "de",
+                "Tourismus"
+              ]
+            ],
+            "Gastgewerbe": [
+              [
+                "en",
+                "Gastgewerbe"
+              ],
+              [
+                "de",
+                "Gastgewerbe"
+              ]
+            ],
+            "Natur / Umwelt": [
+              [
+                "en",
+                "Natur / Umwelt"
+              ],
+              [
+                "de",
+                "Natur / Umwelt"
+              ]
+            ],
+            "Informatik": [
+              [
+                "en",
+                "Informatik"
+              ],
+              [
+                "de",
+                "Informatik"
+              ]
+            ],
+            "Retail": [
+              [
+                "en",
+                "Retail"
+              ],
+              [
+                "de",
+                "Retail"
+              ]
+            ],
+            "Beratung": [
+              [
+                "en",
+                "Beratung"
+              ],
+              [
+                "de",
+                "Beratung"
+              ]
+            ],
+            "Gesundheitswesen": [
+              [
+                "en",
+                "Gesundheitswesen"
+              ],
+              [
+                "de",
+                "Gesundheitswesen"
+              ]
+            ],
+            "Logistik": [
+              [
+                "en",
+                "Logistik"
+              ],
+              [
+                "de",
+                "Logistik"
+              ]
+            ],
+            "Soziales": [
+              [
+                "en",
+                "Soziales"
+              ],
+              [
+                "de",
+                "Soziales"
+              ]
+            ]
+          },
+          "change_target": "Selection"
+        }
+      }
+    },
+    {
+      "ident": "mitarbeitende",
+      "system": false,
+      "released": true,
+      "name": [
+        [
+          "en",
+          "Anzahl Mitarbeitende"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Anzahl Mitarbeitende in Ihrem Unternehmen"
+        ]
+      ],
+      "value": {
+        "Selection": {
+          "selected": [],
+          "options": {
+            "1-5 Mitarbeitende": [
+              [
+                "en",
+                "1-5 Mitarbeitende"
+              ],
+              [
+                "de",
+                "1-5 Mitarbeitende"
+              ]
+            ],
+            "11-20 Mitarbeitende": [
+              [
+                "en",
+                "11-20 Mitarbeitende"
+              ],
+              [
+                "de",
+                "11-20 Mitarbeitende"
+              ]
+            ],
+            "21-50 Mitarbeitende": [
+              [
+                "en",
+                "21-50 Mitarbeitende"
+              ],
+              [
+                "de",
+                "21-50 Mitarbeitende"
+              ]
+            ],
+            "6-10 Mitarbeitende": [
+              [
+                "en",
+                "6-10 Mitarbeitende"
+              ],
+              [
+                "de",
+                "6-10 Mitarbeitende"
+              ]
+            ],
+            "50+ Mitarbeitende": [
+              [
+                "en",
+                "50+ Mitarbeitende"
+              ],
+              [
+                "de",
+                "50+ Mitarbeitende"
+              ]
+            ]
+          }
+        }
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    },
+    {
+      "ident": "andere_branche",
+      "system": false,
+      "released": true,
+      "name": [
+        [
+          "en",
+          "Andere Branche"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Andere Branche"
+        ]
+      ],
+      "value": {
+        "String": ""
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    }
+  ],
+  "workflows": [],
+  "services": [],
+  "record_status": {
+    "selected": [],
+    "options": {}
+  },
+  "record_right": "95cf8a3b-12cd-4d85-ae9f-47be8ca74ef6",
+  "system": false,
+  "children": {
+    "ident": "children",
+    "system": true,
+    "released": false,
+    "name": [
+      [
+        "en",
+        "Children"
+      ]
+    ],
+    "description": [
+      [
+        "en",
+        "Children Table"
+      ]
+    ],
+    "value": {
+      "Table": {
+        "entries": []
+      }
+    },
+    "required": true,
+    "access": "Change",
+    "settings": {
+      "TableSettings": {
+        "columns": [
+          {
+            "ident": "children",
+            "position": 0,
+            "name": [
+              [
+                "en",
+                "Children"
+              ]
+            ],
+            "value": {
+              "Reference": "00000000-0000-0000-0000-000000000000"
+            },
+            "setting": "None"
+          }
+        ]
+      }
+    }
+  }
+}

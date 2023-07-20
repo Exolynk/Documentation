@@ -1,0 +1,261 @@
+{
+  "uuid": "dd1df25c-0c71-4f0b-b785-168830562433",
+  "ident": "feedback_workshop_2",
+  "version": {
+    "typ": "Number",
+    "version": "3"
+  },
+  "status": "draft",
+  "name": [
+    [
+      "en",
+      "Workshop B - Digitalisierung"
+    ]
+  ],
+  "description": [
+    [
+      "en",
+      "Feedback Workshop B - Digitalisierung"
+    ]
+  ],
+  "icon": "meeting-room",
+  "layout": "<record>\n    <!--<highlight-button title=\"Search\" text=\"Better Search\" icon=\"search\" link=\"#/search\" />-->\n    <tab name=\"Workshop\" active=\"true\" status=\"\">\n        <data name=\"Workshop Feedback\">\n            <variable ident=\"feedback_1\" access=\"write\" />\n            <variable ident=\"feedback_2\" access=\"write\" />\n            <variable ident=\"feedback_3\" access=\"write\" />\n            <variable ident=\"feedback_4\" access=\"write\" />\n            <variable ident=\"feedback_5\" access=\"write\" />\n            <variable ident=\"feedback_6\" access=\"write\" />\n            <variable ident=\"feedback_7\" access=\"write\" />\n            <variable ident=\"feedback_8\" access=\"write\" />\n        </data>\n    </tab>\n    <tab name=\"Logs\">\n        <record-logs />\n    </tab>\n    <!--\n    <tab name=\"Auswertung\">\n        <chart typ=\"bar\" name=\"Feedbacks\">\n            <chart-data model=\"feedback_workshop_1\" action=\"count\" variable=\"feedback_1\" group_by=\"ident\" name=\"Feedback 1\">\n                <data-filter variable=\"feedback_1\" operator=\"equal\" value=\"true\" />\n            </chart-data>\n            <chart-data model=\"feedback_workshop_1\" action=\"count\" variable=\"feedback_2\" group_by=\"ident\" name=\"Feedback 2\">\n                <data-filter variable=\"feedback_2\" operator=\"equal\" value=\"true\" />\n            </chart-data>\n            <chart-data model=\"feedback_workshop_1\" action=\"count\" variable=\"feedback_4\" group_by=\"ident\" name=\"Feedback 3\">\n                <data-filter variable=\"feedback_3\" operator=\"equal\" value=\"true\" />\n            </chart-data>\n            <chart-data model=\"feedback_workshop_1\" action=\"count\" variable=\"feedback_4\" group_by=\"ident\" name=\"Feedback 4\">\n                <data-filter variable=\"feedback_4\" operator=\"equal\" value=\"true\" />\n            </chart-data>\n            <chart-data model=\"feedback_workshop_1\" action=\"count\" variable=\"feedback_5\" group_by=\"ident\" name=\"Feedback 5\">\n                <data-filter variable=\"feedback_5\" operator=\"equal\" value=\"true\" />\n            </chart-data>\n            <chart-data model=\"feedback_workshop_1\" action=\"count\" variable=\"feedback_6\" group_by=\"ident\" name=\"Feedback 6\">\n                <data-filter variable=\"feedback_6\" operator=\"equal\" value=\"true\" />\n            </chart-data>\n            <chart-data model=\"feedback_workshop_1\" action=\"count\" variable=\"feedback_7\" group_by=\"ident\" name=\"Feedback 7\">\n                <data-filter variable=\"feedback_7\" operator=\"equal\" value=\"true\" />\n            </chart-data>\n            <chart-data model=\"feedback_workshop_1\" action=\"count\" variable=\"feedback_8\" group_by=\"ident\" name=\"Feedback 8\">\n                <data-filter variable=\"feedback_8\" operator=\"equal\" value=\"true\" />\n            </chart-data>\n        </chart>\n    </tab>\n    -->\n</record>",
+  "variables": [
+    {
+      "ident": "feedback_1",
+      "system": false,
+      "released": true,
+      "name": [
+        [
+          "en",
+          "1. Outsourcing"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "1. Outsourcing"
+        ]
+      ],
+      "value": {
+        "Bool": false
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    },
+    {
+      "ident": "feedback_2",
+      "system": false,
+      "released": true,
+      "name": [
+        [
+          "en",
+          "2. Projektmanagement-Plattform"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "2. Projektmanagement-Plattform"
+        ]
+      ],
+      "value": {
+        "Bool": false
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    },
+    {
+      "ident": "feedback_3",
+      "system": false,
+      "released": true,
+      "name": [
+        [
+          "en",
+          "3. Dokumentenverwaltung"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "3. Dokumentenverwaltung"
+        ]
+      ],
+      "value": {
+        "Bool": false
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    },
+    {
+      "ident": "feedback_4",
+      "system": false,
+      "released": true,
+      "name": [
+        [
+          "en",
+          "4. Kollaborationstools"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "4. Kollaborationstools"
+        ]
+      ],
+      "value": {
+        "Bool": false
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    },
+    {
+      "ident": "feedback_5",
+      "system": false,
+      "released": true,
+      "name": [
+        [
+          "en",
+          "5. Digitales Marketing und E-Commerce"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "5. Digitales Marketing und E-Commerce"
+        ]
+      ],
+      "value": {
+        "Bool": false
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    },
+    {
+      "ident": "feedback_6",
+      "system": false,
+      "released": true,
+      "name": [
+        [
+          "en",
+          "6. Weiterbildungen"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "6. Weiterbildungen"
+        ]
+      ],
+      "value": {
+        "Bool": false
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    },
+    {
+      "ident": "feedback_7",
+      "system": false,
+      "released": true,
+      "name": [
+        [
+          "en",
+          "7. Digitale Zeiterfassung"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "7. Digitale Zeiterfassung"
+        ]
+      ],
+      "value": {
+        "Bool": false
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    },
+    {
+      "ident": "feedback_8",
+      "system": false,
+      "released": true,
+      "name": [
+        [
+          "en",
+          "8. Low-Code Lösungen"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "8. Low-Code Lösungen"
+        ]
+      ],
+      "value": {
+        "Bool": false
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    }
+  ],
+  "workflows": [],
+  "services": [],
+  "record_status": {
+    "selected": [],
+    "options": {}
+  },
+  "record_right": "95cf8a3b-12cd-4d85-ae9f-47be8ca74ef6",
+  "system": false,
+  "children": {
+    "ident": "children",
+    "system": true,
+    "released": false,
+    "name": [
+      [
+        "en",
+        "Children"
+      ]
+    ],
+    "description": [
+      [
+        "en",
+        "Children Table"
+      ]
+    ],
+    "value": {
+      "Table": {
+        "entries": []
+      }
+    },
+    "required": true,
+    "access": "Change",
+    "settings": {
+      "TableSettings": {
+        "columns": [
+          {
+            "ident": "children",
+            "position": 0,
+            "name": [
+              [
+                "en",
+                "Children"
+              ]
+            ],
+            "value": {
+              "Reference": "00000000-0000-0000-0000-000000000000"
+            },
+            "setting": "None"
+          }
+        ]
+      }
+    }
+  }
+}
