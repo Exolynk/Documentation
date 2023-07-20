@@ -1,9 +1,9 @@
 {
-  "uuid": "355c4036-4041-4616-ad1f-0f5ffd8c2069",
+  "uuid": "33efe0bc-473c-4bae-8126-ed5c154ad210",
   "ident": "project",
   "version": {
     "typ": "Number",
-    "version": "49"
+    "version": "1"
   },
   "status": "draft",
   "name": [
@@ -24,7 +24,7 @@
     {
       "ident": "filamenttype",
       "system": false,
-      "released": true,
+      "released": false,
       "name": [
         [
           "en",
@@ -68,7 +68,7 @@
     {
       "ident": "weight",
       "system": false,
-      "released": true,
+      "released": false,
       "name": [
         [
           "en",
@@ -91,7 +91,7 @@
     {
       "ident": "deliverydate",
       "system": false,
-      "released": true,
+      "released": false,
       "name": [
         [
           "en",
@@ -114,7 +114,7 @@
     {
       "ident": "files",
       "system": false,
-      "released": true,
+      "released": false,
       "name": [
         [
           "en",
@@ -139,7 +139,7 @@
     {
       "ident": "client_name",
       "system": false,
-      "released": true,
+      "released": false,
       "name": [
         [
           "en",
@@ -162,7 +162,7 @@
     {
       "ident": "client_address",
       "system": false,
-      "released": true,
+      "released": false,
       "name": [
         [
           "en",
@@ -185,7 +185,7 @@
     {
       "ident": "material",
       "system": false,
-      "released": true,
+      "released": false,
       "name": [
         [
           "en",
@@ -215,7 +215,7 @@
     {
       "ident": "client_email",
       "system": false,
-      "released": true,
+      "released": false,
       "name": [
         [
           "en",
@@ -238,7 +238,7 @@
     {
       "ident": "client_phone",
       "system": false,
-      "released": true,
+      "released": false,
       "name": [
         [
           "en",
@@ -261,7 +261,7 @@
     {
       "ident": "price_agreed",
       "system": false,
-      "released": true,
+      "released": false,
       "name": [
         [
           "en",
@@ -284,7 +284,7 @@
     {
       "ident": "material_color",
       "system": false,
-      "released": true,
+      "released": false,
       "name": [
         [
           "en",
@@ -307,7 +307,7 @@
     {
       "ident": "filament_prod",
       "system": false,
-      "released": true,
+      "released": false,
       "name": [
         [
           "en",
@@ -336,7 +336,7 @@
     {
       "ident": "amount",
       "system": false,
-      "released": true,
+      "released": false,
       "name": [
         [
           "en",
@@ -359,7 +359,7 @@
     {
       "ident": "einkaufspreis",
       "system": false,
-      "released": true,
+      "released": false,
       "name": [
         [
           "en",
@@ -528,86 +528,6 @@
   ],
   "services": [
     {
-      "ident": "in_production_service",
-      "name": [
-        [
-          "en",
-          "in Production Service_old"
-        ]
-      ],
-      "description": [
-        [
-          "en",
-          "in Production Service"
-        ]
-      ],
-      "icon": "machine",
-      "active": false,
-      "system": false,
-      "code": "pub async fn main(inp) {\n    let record = server::get_record()?;\n    server::db::update_record_value(record.uuid, Ident::new(\"status\"), Value::Ident(Ident::new(\"in-production\"))).await?;\n    return true;\n}",
-      "typ": "Service"
-    },
-    {
-      "ident": "in_construction_service",
-      "name": [
-        [
-          "en",
-          "In Construction Service_old"
-        ]
-      ],
-      "description": [
-        [
-          "en",
-          "In Construction Service"
-        ]
-      ],
-      "icon": "write-new",
-      "active": false,
-      "system": false,
-      "code": "pub async fn main(inp) {\n    let record = server::get_record()?;\n    server::db::update_record_value(record.uuid, Ident::new(\"status\"), Value::Ident(Ident::new(\"in-construction\"))).await?;\n    return true;\n}",
-      "typ": "Service"
-    },
-    {
-      "ident": "draft_service",
-      "name": [
-        [
-          "en",
-          "Draft_old"
-        ]
-      ],
-      "description": [
-        [
-          "en",
-          "Draft Service"
-        ]
-      ],
-      "icon": "create",
-      "active": false,
-      "system": false,
-      "code": "",
-      "typ": "Service"
-    },
-    {
-      "ident": "in_delivery_service",
-      "name": [
-        [
-          "en",
-          "In Delivery Service_old"
-        ]
-      ],
-      "description": [
-        [
-          "en",
-          "In Delivery Service"
-        ]
-      ],
-      "icon": "shipping-status",
-      "active": false,
-      "system": false,
-      "code": "pub async fn main(inp) {\n    let record = server::get_record()?;\n    server::db::update_record_value(record.uuid, Ident::new(\"status\"), Value::Ident(Ident::new(\"in-delivery\"))).await?;\n    return true;\n}",
-      "typ": "Service"
-    },
-    {
       "ident": "set_status_service",
       "name": [
         [
@@ -689,22 +609,22 @@
           "4/4 Completato"
         ]
       ],
-      "in_delivery": [
+      "in_production": [
         [
           "en",
-          "3/4 In delivery"
+          "2/4 In Production"
         ],
         [
           "fr",
-          "3/4 En cours de livraison"
+          "2/4 En production"
         ],
         [
           "de",
-          "3/4 In Auslieferung"
+          "2/4 In Produktion"
         ],
         [
           "it",
-          "3/4 In consegna"
+          "2/4 In produzione"
         ]
       ],
       "draft": [
@@ -725,22 +645,22 @@
           "Bozza"
         ]
       ],
-      "in_production": [
+      "in_delivery": [
         [
           "en",
-          "2/4 In Production"
+          "3/4 In delivery"
         ],
         [
           "fr",
-          "2/4 En production"
+          "3/4 En cours de livraison"
         ],
         [
           "de",
-          "2/4 In Produktion"
+          "3/4 In Auslieferung"
         ],
         [
           "it",
-          "2/4 In produzione"
+          "3/4 In consegna"
         ]
       ]
     }

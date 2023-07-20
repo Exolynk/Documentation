@@ -1,5 +1,5 @@
 ---
-title: '3D Print Projects'
+title: '3D Print Project Mngmt'
 taxonomy:
     category:
         - docs

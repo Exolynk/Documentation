@@ -1,9 +1,9 @@
 {
-  "uuid": "eb15095a-4649-4240-a5cb-9bda6e3db001",
+  "uuid": "8c05c2b9-acdf-4512-87da-8fa21e03a6a7",
   "ident": "filament",
   "version": {
     "typ": "Number",
-    "version": "30"
+    "version": "1"
   },
   "status": "draft",
   "name": [
@@ -24,7 +24,7 @@
     {
       "ident": "filament_material",
       "system": false,
-      "released": true,
+      "released": false,
       "name": [
         [
           "en",
@@ -41,6 +41,16 @@
         "Selection": {
           "selected": [],
           "options": {
+            "TPE, TPU, TPC (Flexible)": [
+              [
+                "en",
+                "Thermoplastic Elastomers (TPE)"
+              ],
+              [
+                "de",
+                "Thermoplastische Elastomere (TPE)"
+              ]
+            ],
             "ABS": [
               [
                 "en",
@@ -61,16 +71,6 @@
                 "Polycarbonate (PC)"
               ]
             ],
-            "PLA": [
-              [
-                "en",
-                "Polylactic Acid (PLA)"
-              ],
-              [
-                "de",
-                "Polylactic Acid (PLA)"
-              ]
-            ],
             "PETG (PET, PETT)": [
               [
                 "en",
@@ -81,14 +81,14 @@
                 "Polyethylenterephthalat (PET)"
               ]
             ],
-            "TPE, TPU, TPC (Flexible)": [
+            "PLA": [
               [
                 "en",
-                "Thermoplastic Elastomers (TPE)"
+                "Polylactic Acid (PLA)"
               ],
               [
                 "de",
-                "Thermoplastische Elastomere (TPE)"
+                "Polylactic Acid (PLA)"
               ]
             ],
             "PA": [
@@ -111,7 +111,7 @@
     {
       "ident": "filament_color",
       "system": false,
-      "released": true,
+      "released": false,
       "name": [
         [
           "en",
@@ -130,6 +130,16 @@
             "white"
           ],
           "options": {
+            "black": [
+              [
+                "en",
+                "black"
+              ],
+              [
+                "de",
+                "schwarz"
+              ]
+            ],
             "blue": [
               [
                 "en",
@@ -160,16 +170,6 @@
                 "transparent"
               ]
             ],
-            "black": [
-              [
-                "en",
-                "black"
-              ],
-              [
-                "de",
-                "schwarz"
-              ]
-            ],
             "white": [
               [
                 "en",
@@ -190,7 +190,7 @@
     {
       "ident": "filament_img",
       "system": false,
-      "released": true,
+      "released": false,
       "name": [
         [
           "en",
@@ -228,7 +228,7 @@
     {
       "ident": "filament_supplier_url",
       "system": false,
-      "released": true,
+      "released": false,
       "name": [
         [
           "en",
@@ -249,32 +249,9 @@
       "settings": "None"
     },
     {
-      "ident": "string",
-      "system": false,
-      "released": true,
-      "name": [
-        [
-          "en",
-          "string"
-        ]
-      ],
-      "description": [
-        [
-          "en",
-          "string"
-        ]
-      ],
-      "value": {
-        "String": "0"
-      },
-      "required": false,
-      "access": "Write",
-      "settings": "None"
-    },
-    {
       "ident": "on_stock",
       "system": false,
-      "released": true,
+      "released": false,
       "name": [
         [
           "en",

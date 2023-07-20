@@ -75,6 +75,13 @@ This is a simple predefined demo model which includes all available variables an
     <highlight-button title="Status pending" text="Model Demo" icon="example" link="#/search?lang=en&query=&model=model_demo&status=pending" />
     <highlight-button title="Status done" text="Model Demo" icon="example" link="#/search?lang=en&query=&model=model_demo&status=done" />
     <highlight-button title="Exolynk Website" text="External URL" icon="chain-link" link="https://exolynk.com" />
+    
+    <!-- Line Break -->
+    <new-line /> 
+    <raw-html>
+    <h4>URL to Dev Env. Mobile</h4>
+        <img src="https://exolynk.com/qr-dev.png" alt="Image description" style="width: 150px;">
+    </raw-html>
 </home>
 ```
 [/ui-tab]
