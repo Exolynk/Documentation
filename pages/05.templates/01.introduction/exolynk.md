@@ -36,6 +36,8 @@ After uploading (in unrealeased status) templates can be edited and deleted full
 
 >>>> Please be aware that in **released** models, either the model itself nor its variables can be deleted. New variables can be added or edited. If you added a wrong variable and released the model accidentally, no worries, just do not link it in the layout and it will be nowhere visible on the front-end side.
 
+<br>
+
 >>> Please note: After uploading (before or after releasing) you need to set the model right "Search Access Right" ```record_search`````` that user having access to this new model.
 
 ![Model Right](model-right.png?resize=600&classes=left)
