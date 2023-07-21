@@ -1,0 +1,1537 @@
+{
+  "uuid": "32094e3e-615a-441a-a5da-5dc68f77fc35",
+  "ident": "opportunities",
+  "version": {
+    "typ": "Number",
+    "version": "1"
+  },
+  "status": "draft",
+  "name": [
+    [
+      "en",
+      "Opportunities"
+    ]
+  ],
+  "description": [
+    [
+      "en",
+      "CRM Opportunities"
+    ]
+  ],
+  "icon": "crm-sales",
+  "layout": "<record>\n    <!-- Lead Informationen -->\n    <tab name=\"Lead Informationen\" active=\"true\" status=\"\">\n        <data name=\"Pipeline\">\n            <variable ident=\"status\" access=\"write\" />\n            <variable ident=\"crm_prio_select\" access=\"write\" />\n            <variable ident=\"opportunity_value_revenue\" access=\"write\" />\n            <variable ident=\"opportunity_value_licenses\" access=\"write\" />\n            <variable ident=\"exl_product_select\" access=\"write\" />\n            <variable ident=\"forecast_completion\" access=\"write\" />\n            <variable ident=\"assigned_user_1\" access=\"write\" />\n        </data>\n        <data name=\"Company Information\">\n            <variable ident=\"industry\" access=\"write\" />\n            <variable ident=\"employees\" access=\"write\" />\n            <variable ident=\"client_start_date\" access=\"write\" />\n        </data>\n        <data name=\"Company Contact Details\">\n            <variable ident=\"ident\" name=\"Kundennummer\" access=\"write\" />\n            <variable ident=\"name\" access=\"write\" />\n            <variable ident=\"description\" access=\"write\" />\n            <variable ident=\"client_info\" access=\"write\" />\n            <variable ident=\"client_phone\" access=\"write\" />\n            <variable ident=\"client_email\" access=\"write\" />\n            <variable ident=\"client_website\" access=\"write\" />\n            <variable ident=\"client_address\" access=\"write\" />\n        </data>\n        <data name=\"Contact Person\">\n            <variable ident=\"contact_title\" access=\"write\" />\n            <variable ident=\"contact_firstname\" access=\"write\" />\n            <variable ident=\"contact_lastname\" access=\"write\" />\n            <variable ident=\"contact_phone\" access=\"write\" />\n            <variable ident=\"contact_mobile\" access=\"write\" />\n            <variable ident=\"contact_email\" access=\"write\" />\n            <variable ident=\"contact_linkedin\" access=\"write\" />\n        </data>\n    </tab>\n    \n    <!-- CRM Activities -->\n    <tab name=\"Activities\" active=\"true\" status=\"\">\n        <data name=\"CRM Activities\">\n            <variable ident=\"crm_activities\" access=\"write\" />\n        </data>\n    </tab>\n    \n    <!-- CRM Taskes -->\n    <tab name=\"Taskes\" active=\"true\" status=\"\">\n        <data name=\"CRM Taskes\">\n            <variable ident=\"crm_taskes\" access=\"write\" />\n        </data>\n    </tab>\n    \n    <!-- Attachements -->\n    <tab name=\"Attachements\" active=\"true\" status=\"\">\n        <data name=\"Files\">\n            <variable ident=\"files\" access=\"write\" />\n        </data>\n        <files variable=\"files\" />\n    </tab>\n    \n    <!-- Chart Opportunity by Stage -->\n    <tab name=\"Chart\">\n        <chart typ=\"bar\" name=\"Opportunity by Stage\">\n            <chart-data model=\"opportunities\" action=\"count\" variable=\"status\" group_by=\"ident\" name=\"New\">\n                <data-filter variable=\"status\" operator=\"equal\" value=\"new\" />\n            </chart-data>\n            <chart-data model=\"opportunities\" action=\"count\" variable=\"status\" group_by=\"ident\" name=\"1/7 Prospecting\">\n                <data-filter variable=\"status\" operator=\"equal\" value=\"prospecting\" />\n            </chart-data>\n            <chart-data model=\"opportunities\" action=\"count\" variable=\"status\" group_by=\"ident\" name=\"2/7 Qualification\">\n                <data-filter variable=\"status\" operator=\"equal\" value=\"qualification\" />\n            </chart-data>\n            <chart-data model=\"opportunities\" action=\"count\" variable=\"status\" group_by=\"ident\" name=\"3/7 Needs Analysis\">\n                <data-filter variable=\"status\" operator=\"equal\" value=\"needs_analysis\" />\n            </chart-data>\n            <chart-data model=\"opportunities\" action=\"count\" variable=\"status\" group_by=\"ident\" name=\"4/7 Proposal\">\n                <data-filter variable=\"status\" operator=\"equal\" value=\"proposal\" />\n            </chart-data>\n            <chart-data model=\"opportunities\" action=\"count\" variable=\"status\" group_by=\"ident\" name=\"5/7 Negotiation\">\n                <data-filter variable=\"status\" operator=\"equal\" value=\"negotiation\" />\n            </chart-data>\n            <chart-data model=\"opportunities\" action=\"count\" variable=\"status\" group_by=\"ident\" name=\"6/7 Rollout\">\n                <data-filter variable=\"status\" operator=\"equal\" value=\"won_closed\" />\n            </chart-data>\n            <chart-data model=\"opportunities\" action=\"count\" variable=\"status\" group_by=\"ident\" name=\"7/7 Closed Won\">\n                <data-filter variable=\"status\" operator=\"equal\" value=\"won_closed\" />\n            </chart-data>\n            <chart-data model=\"opportunities\" action=\"count\" variable=\"status\" group_by=\"ident\" name=\"7/7 Closed Lost\">\n                <data-filter variable=\"status\" operator=\"equal\" value=\"lost_closed\" />\n            </chart-data>\n        </chart>\n    </tab>\n\n    <!-- Logs -->    \n    <tab name=\"Logs\">\n        <record-logs />\n    </tab>\n</record>",
+  "variables": [
+    {
+      "ident": "contact_firstname",
+      "system": false,
+      "released": false,
+      "name": [
+        [
+          "de",
+          "Vorname"
+        ],
+        [
+          "en",
+          "First name"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "first name"
+        ],
+        [
+          "de",
+          "Vorname"
+        ]
+      ],
+      "value": {
+        "String": ""
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    },
+    {
+      "ident": "contact_lastname",
+      "system": false,
+      "released": false,
+      "name": [
+        [
+          "de",
+          "Nachname"
+        ],
+        [
+          "en",
+          "Last name"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "last name"
+        ]
+      ],
+      "value": {
+        "String": ""
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    },
+    {
+      "ident": "client_phone",
+      "system": false,
+      "released": false,
+      "name": [
+        [
+          "de",
+          "Telefon Zentrale"
+        ],
+        [
+          "en",
+          "Client Phone"
+        ]
+      ],
+      "description": [
+        [
+          "de",
+          "Telefon Zentrale"
+        ],
+        [
+          "en",
+          "Client Phone Number"
+        ]
+      ],
+      "value": {
+        "String": ""
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    },
+    {
+      "ident": "client_email",
+      "system": false,
+      "released": false,
+      "name": [
+        [
+          "en",
+          "Client E-Mail"
+        ],
+        [
+          "de",
+          "Kunden E-Mail"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Client E-Mail"
+        ],
+        [
+          "de",
+          "Kunden E-Mail"
+        ]
+      ],
+      "value": {
+        "String": ""
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    },
+    {
+      "ident": "client_start_date",
+      "system": false,
+      "released": false,
+      "name": [
+        [
+          "en",
+          "Client Start Date"
+        ],
+        [
+          "de",
+          "Kunde seit"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Client Start Date"
+        ],
+        [
+          "de",
+          "Kunde seit"
+        ]
+      ],
+      "value": {
+        "Datetime": "2023-06-18 12:58:58.332 +02:00:00"
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    },
+    {
+      "ident": "client_address",
+      "system": false,
+      "released": false,
+      "name": [
+        [
+          "de",
+          "Kunden Adresse"
+        ],
+        [
+          "en",
+          "Client Address"
+        ]
+      ],
+      "description": [
+        [
+          "de",
+          "Kunden Adresse"
+        ],
+        [
+          "en",
+          "Client Address"
+        ]
+      ],
+      "value": {
+        "Location": {
+          "house_number": "",
+          "road": "",
+          "town": "",
+          "state": "",
+          "postcode": "",
+          "country": "",
+          "lat": 0.0,
+          "lon": 0.0,
+          "validated": false
+        }
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    },
+    {
+      "ident": "contact_title",
+      "system": false,
+      "released": false,
+      "name": [
+        [
+          "de",
+          "Anrede Ansprechpartner:in"
+        ],
+        [
+          "en",
+          "Contact Title"
+        ]
+      ],
+      "description": [
+        [
+          "de",
+          "Anrede Ansprechpartner:in"
+        ],
+        [
+          "en",
+          "Contact Title"
+        ]
+      ],
+      "value": {
+        "String": ""
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    },
+    {
+      "ident": "contact_phone",
+      "system": false,
+      "released": false,
+      "name": [
+        [
+          "de",
+          "Festnetz Ansprechpartner:in"
+        ],
+        [
+          "en",
+          "Contact Phone"
+        ]
+      ],
+      "description": [
+        [
+          "de",
+          "Festnetz Ansprechpartner:in"
+        ],
+        [
+          "en",
+          "Contact Phone"
+        ]
+      ],
+      "value": {
+        "String": ""
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    },
+    {
+      "ident": "contact_mobile",
+      "system": false,
+      "released": false,
+      "name": [
+        [
+          "de",
+          "Mobile Ansprechpartner:in"
+        ],
+        [
+          "en",
+          "Contact Mobile"
+        ]
+      ],
+      "description": [
+        [
+          "de",
+          "Mobile Ansprechpartner:in"
+        ],
+        [
+          "en",
+          "Contact Mobile"
+        ]
+      ],
+      "value": {
+        "String": ""
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    },
+    {
+      "ident": "contact_email",
+      "system": false,
+      "released": false,
+      "name": [
+        [
+          "en",
+          "Contact E-Mail"
+        ],
+        [
+          "de",
+          "E-Mail Ansprechpartner:in"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Contact E-Mail"
+        ],
+        [
+          "de",
+          "E-Mail Ansprechpartner:in"
+        ]
+      ],
+      "value": {
+        "String": ""
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    },
+    {
+      "ident": "client_website",
+      "system": false,
+      "released": false,
+      "name": [
+        [
+          "de",
+          "Firmen Website"
+        ],
+        [
+          "en",
+          "Client Website"
+        ]
+      ],
+      "description": [
+        [
+          "de",
+          "Firmen Website"
+        ],
+        [
+          "en",
+          "Client Website"
+        ]
+      ],
+      "value": {
+        "String": ""
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    },
+    {
+      "ident": "contact_linkedin",
+      "system": false,
+      "released": false,
+      "name": [
+        [
+          "en",
+          "Contact Linkedin"
+        ],
+        [
+          "de",
+          "Kontakt LinkedIn"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Contact LinkedIn"
+        ],
+        [
+          "de",
+          "Kontakt LinkedIn"
+        ]
+      ],
+      "value": {
+        "String": ""
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    },
+    {
+      "ident": "crm_prio_select",
+      "system": false,
+      "released": false,
+      "name": [
+        [
+          "en",
+          "Priority"
+        ],
+        [
+          "de",
+          "Priorität"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Priority"
+        ],
+        [
+          "de",
+          "Priorität"
+        ]
+      ],
+      "value": {
+        "Selection": {
+          "selected": [
+            "-"
+          ],
+          "options": {}
+        }
+      },
+      "required": false,
+      "access": "Write",
+      "settings": {
+        "SelectionSettings": {
+          "mode": "Single",
+          "options": {
+            "A": [
+              [
+                "en",
+                "A-List"
+              ],
+              [
+                "de",
+                "A-Liste"
+              ]
+            ],
+            "B": [
+              [
+                "en",
+                "B-List"
+              ],
+              [
+                "de",
+                "B-Liste"
+              ]
+            ],
+            "-": [
+              [
+                "en",
+                "-"
+              ],
+              [
+                "de",
+                "-"
+              ]
+            ],
+            "C": [
+              [
+                "en",
+                "C-List"
+              ],
+              [
+                "de",
+                "C-Liste"
+              ]
+            ]
+          },
+          "change_target": "Settings"
+        }
+      }
+    },
+    {
+      "ident": "client_info",
+      "system": false,
+      "released": false,
+      "name": [
+        [
+          "en",
+          "Additional Information"
+        ],
+        [
+          "de",
+          "Zusätzliche Informationen"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Additional Information"
+        ],
+        [
+          "de",
+          "Zusätzliche Informationen"
+        ]
+      ],
+      "value": {
+        "String": ""
+      },
+      "required": false,
+      "access": "Write",
+      "settings": {
+        "StringSettings": {
+          "multiline": true
+        }
+      }
+    },
+    {
+      "ident": "crm_activities",
+      "system": false,
+      "released": false,
+      "name": [
+        [
+          "en",
+          "Activities"
+        ],
+        [
+          "de",
+          "Aktivitäten"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Activities"
+        ],
+        [
+          "de",
+          "Aktivitäten"
+        ]
+      ],
+      "value": {
+        "Table": {
+          "entries": []
+        }
+      },
+      "required": false,
+      "access": "Write",
+      "settings": {
+        "TableSettings": {
+          "columns": [
+            {
+              "ident": "date",
+              "position": 0,
+              "name": [
+                [
+                  "en",
+                  "Date"
+                ],
+                [
+                  "de",
+                  "Datum"
+                ]
+              ],
+              "value": {
+                "Datetime": "2023-07-17 16:18:49.032 +02:00:00"
+              },
+              "setting": "None"
+            },
+            {
+              "ident": "activity",
+              "position": 2,
+              "name": [
+                [
+                  "en",
+                  "Activity"
+                ],
+                [
+                  "de",
+                  "Aktivität"
+                ]
+              ],
+              "value": {
+                "String": ""
+              },
+              "setting": {
+                "StringSettings": {
+                  "multiline": true
+                }
+              }
+            },
+            {
+              "ident": "channel",
+              "position": 1,
+              "name": [
+                [
+                  "en",
+                  "Channel"
+                ],
+                [
+                  "de",
+                  "Kanal"
+                ]
+              ],
+              "value": {
+                "Selection": {
+                  "selected": [
+                    "-"
+                  ],
+                  "options": {
+                    "-": [
+                      [
+                        "en",
+                        "-"
+                      ],
+                      [
+                        "de",
+                        "-"
+                      ]
+                    ],
+                    "linkedin": [
+                      [
+                        "en",
+                        "LinkedIn"
+                      ],
+                      [
+                        "de",
+                        "LinkedIn"
+                      ]
+                    ],
+                    "im": [
+                      [
+                        "en",
+                        "Message (SMS, WhatsApp,..)"
+                      ],
+                      [
+                        "de",
+                        "Nachricht (SMS, WhatsApp,..)"
+                      ]
+                    ],
+                    "fair": [
+                      [
+                        "en",
+                        "Fair"
+                      ],
+                      [
+                        "de",
+                        "Messe"
+                      ]
+                    ],
+                    "phone": [
+                      [
+                        "en",
+                        "Phone"
+                      ],
+                      [
+                        "de",
+                        "Telefon"
+                      ]
+                    ],
+                    "meeting": [
+                      [
+                        "en",
+                        "Meeting"
+                      ],
+                      [
+                        "de",
+                        "Meeting"
+                      ]
+                    ],
+                    "email": [
+                      [
+                        "en",
+                        "E-Mail"
+                      ],
+                      [
+                        "de",
+                        "E-Mail"
+                      ]
+                    ],
+                    "internal": [
+                      [
+                        "en",
+                        "Internal Note"
+                      ],
+                      [
+                        "de",
+                        "Interne Notiz"
+                      ]
+                    ]
+                  }
+                }
+              },
+              "setting": "None"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "ident": "assigned_user_1",
+      "system": false,
+      "released": false,
+      "name": [
+        [
+          "en",
+          "Assigned User"
+        ],
+        [
+          "de",
+          "Zugewiesener Benutzer"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Assigned User"
+        ],
+        [
+          "de",
+          "Zugewiesener Benutzer"
+        ]
+      ],
+      "value": {
+        "Reference": "00000000-0000-0000-0000-000000000000"
+      },
+      "required": false,
+      "access": "Write",
+      "settings": {
+        "ReferenceSettings": {
+          "typ": {
+            "RecordTyp": "user"
+          }
+        }
+      }
+    },
+    {
+      "ident": "opportunity_value_revenue",
+      "system": false,
+      "released": false,
+      "name": [
+        [
+          "en",
+          "Opportunity Value Revenue (CHF)"
+        ],
+        [
+          "de",
+          "Opportunitätswert Einnahmen (CHF)"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Opportunity Value Revenue"
+        ],
+        [
+          "de",
+          "Opportunitätswert Einnahmen"
+        ]
+      ],
+      "value": {
+        "Float": 0.0
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    },
+    {
+      "ident": "opportunity_value_licenses",
+      "system": false,
+      "released": false,
+      "name": [
+        [
+          "en",
+          "Opportunity Value Licenses (Qty)"
+        ],
+        [
+          "de",
+          "Opportunitätswert-Lizenzen (Anz.)"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Opportunity Value Licenses"
+        ],
+        [
+          "de",
+          "Opportunitätswert-Lizenzen"
+        ]
+      ],
+      "value": {
+        "Integer": 0
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    },
+    {
+      "ident": "employees",
+      "system": false,
+      "released": false,
+      "name": [
+        [
+          "en",
+          "Amount of employees"
+        ],
+        [
+          "de",
+          "Anzahl Mitarbeitende"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Amount of employees"
+        ],
+        [
+          "de",
+          "Anzahl Mitarbeitende"
+        ]
+      ],
+      "value": {
+        "Integer": 0
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    },
+    {
+      "ident": "industry",
+      "system": false,
+      "released": false,
+      "name": [
+        [
+          "en",
+          "Industry"
+        ],
+        [
+          "de",
+          "Branche"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Industry"
+        ],
+        [
+          "de",
+          "Branche"
+        ]
+      ],
+      "value": {
+        "String": ""
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    },
+    {
+      "ident": "exl_product_select",
+      "system": false,
+      "released": false,
+      "name": [
+        [
+          "en",
+          "Proposed Product"
+        ],
+        [
+          "de",
+          "Gewünschtes Produkt"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Proposed Product"
+        ],
+        [
+          "de",
+          "Gewünschtes Produkt"
+        ]
+      ],
+      "value": {
+        "Selection": {
+          "selected": [
+            "-"
+          ],
+          "options": {}
+        }
+      },
+      "required": false,
+      "access": "Write",
+      "settings": {
+        "SelectionSettings": {
+          "mode": "Single",
+          "options": {
+            "kmu": [
+              [
+                "en",
+                "SME"
+              ],
+              [
+                "de",
+                "KMU"
+              ]
+            ],
+            "corporate": [
+              [
+                "en",
+                "Corporate"
+              ],
+              [
+                "de",
+                "Corporate"
+              ]
+            ],
+            "-": [
+              [
+                "en",
+                "-"
+              ],
+              [
+                "de",
+                "-"
+              ]
+            ],
+            "starter": [
+              [
+                "en",
+                "Starter"
+              ],
+              [
+                "de",
+                "Starter"
+              ]
+            ]
+          },
+          "change_target": "Settings"
+        }
+      }
+    },
+    {
+      "ident": "forecast_completion",
+      "system": false,
+      "released": false,
+      "name": [
+        [
+          "en",
+          "Forecast Completion"
+        ],
+        [
+          "de",
+          "Abschlussprognose"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Forecast Completion"
+        ],
+        [
+          "de",
+          "Abschlussprognose"
+        ]
+      ],
+      "value": {
+        "Datetime": "2023-07-19 16:16:49.623000064 +02:00:00"
+      },
+      "required": false,
+      "access": "Write",
+      "settings": "None"
+    },
+    {
+      "ident": "files",
+      "system": false,
+      "released": false,
+      "name": [
+        [
+          "en",
+          "Files"
+        ],
+        [
+          "de",
+          "Dateien"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Files"
+        ],
+        [
+          "de",
+          "Dateien"
+        ]
+      ],
+      "value": {
+        "List": {
+          "data": []
+        }
+      },
+      "required": false,
+      "access": "Write",
+      "settings": {
+        "ListSettings": {
+          "restrict_value": {
+            "Reference": "00000000-0000-0000-0000-000000000000"
+          },
+          "restrict_setting": {
+            "ReferenceSettings": {
+              "typ": {
+                "RecordTyp": "file"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "ident": "crm_taskes",
+      "system": false,
+      "released": false,
+      "name": [
+        [
+          "en",
+          "Taskes"
+        ],
+        [
+          "de",
+          "Aufgaben"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Taskes"
+        ],
+        [
+          "de",
+          "Aufgaben"
+        ]
+      ],
+      "value": {
+        "Table": {
+          "entries": []
+        }
+      },
+      "required": false,
+      "access": "Write",
+      "settings": {
+        "TableSettings": {
+          "columns": [
+            {
+              "ident": "due_date",
+              "position": 0,
+              "name": [
+                [
+                  "en",
+                  "Due date"
+                ],
+                [
+                  "de",
+                  "Fälligkeit"
+                ]
+              ],
+              "value": {
+                "Datetime": "2023-07-21 09:26:33.975000064 +02:00:00"
+              },
+              "setting": "None"
+            },
+            {
+              "ident": "task",
+              "position": 2,
+              "name": [
+                [
+                  "en",
+                  "Task"
+                ],
+                [
+                  "de",
+                  "Aufgabe"
+                ]
+              ],
+              "value": {
+                "String": ""
+              },
+              "setting": {
+                "StringSettings": {
+                  "multiline": true
+                }
+              }
+            },
+            {
+              "ident": "assignee",
+              "position": 1,
+              "name": [
+                [
+                  "en",
+                  "Assignee"
+                ],
+                [
+                  "de",
+                  "Zuständigkeit"
+                ]
+              ],
+              "value": {
+                "Reference": "00000000-0000-0000-0000-000000000000"
+              },
+              "setting": {
+                "ReferenceSettings": {
+                  "typ": {
+                    "RecordTyp": "user"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "workflows": [
+    {
+      "ident": "prospecting_workflow",
+      "name": [
+        [
+          "en",
+          "1/7 Prospecting"
+        ],
+        [
+          "de",
+          "1/7 Erkundung"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Prospecting Workflow"
+        ],
+        [
+          "de",
+          "Erkundung Workflow"
+        ]
+      ],
+      "icon": "sys-find",
+      "active": true,
+      "system": false,
+      "code": "pub fn show() {\n    let record = webapp::get_record()?;\n    if record.status.as_string() == \"new\" {\n        return true;\n    } else if record.status.as_string() == \"\" {\n        return true;\n    }\n    return false;\n}\n\npub async fn main() {\n    let record = webapp::get_record()?;\n    let inp = (\"prospecting\", \"\", \"#D0D6DA\"); //color: gray\n    webapp::rpc_call(\"set_status_service\", inp).await?;\n    \n    // set in inbox -> Assigned User\n    let usr = record.get_value(Ident::new(\"assigned_user_1\"))?.get_reference()?.as_string();\n    let inp = (usr, record.uuid);\n    dbg(usr);\n    dbg(record.uuid);\n    webapp::rpc_call(\"set_user_inbox_service\", inp).await?;\n    Ok(())\n}\n\npub async fn test() {\n    //let x = show();\n    //println!(\"Show {}\", x);\n    main().await?;\n}\n",
+      "typ": "Workflow"
+    },
+    {
+      "ident": "qualification_workflow",
+      "name": [
+        [
+          "en",
+          "2/7 Qualification"
+        ],
+        [
+          "de",
+          "2/7 Qualifizierung"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Qualification Workflow"
+        ],
+        [
+          "de",
+          "Qualifizierung Workflow"
+        ]
+      ],
+      "icon": "validate",
+      "active": true,
+      "system": false,
+      "code": "pub fn show() {\n    let record = webapp::get_record()?;\n    if record.status.as_string() == \"prospecting\" {\n        return true;\n    }\n        return false;\n}\n\npub async fn main() {\n    let record = webapp::get_record()?;\n    let inp = (\"qualification\", \"\", \"#BFDEF1\"); //color: blue\n    webapp::rpc_call(\"set_status_service\", inp).await?;\n    \n    // set in inbox -> Assigned User\n    let usr = record.get_value(Ident::new(\"assigned_user_1\"))?.get_reference()?.as_string();\n    let inp = (usr, record.uuid);\n    dbg(usr);\n    dbg(record.uuid);\n    webapp::rpc_call(\"set_user_inbox_service\", inp).await?;\n    Ok(())\n}\n\npub async fn test() {\n    //let x = show();\n    //println!(\"Show {}\", x);\n    main().await?;\n}\n",
+      "typ": "Workflow"
+    },
+    {
+      "ident": "needs_analysis_workflow",
+      "name": [
+        [
+          "en",
+          "3/7 Needs Analysis"
+        ],
+        [
+          "de",
+          "3/7 Bedürfnisanalyse"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Needs Analysis Workflow"
+        ],
+        [
+          "de",
+          "Bedürfnisanalyse Workflow"
+        ]
+      ],
+      "icon": "tools-opportunity",
+      "active": true,
+      "system": false,
+      "code": "pub fn show() {\n    let record = webapp::get_record()?;\n    if record.status.as_string() == \"qualification\" {\n        return true;\n    }\n        return false;\n}\n\npub async fn main() {\n    let record = webapp::get_record()?;\n    let inp = (\"needs_analysis\", \"\", \"#C2E0E1\"); //color: turquoise\n    webapp::rpc_call(\"set_status_service\", inp).await?;\n    \n    // set in inbox -> Assigned User\n    let usr = record.get_value(Ident::new(\"assigned_user_1\"))?.get_reference()?.as_string();\n    let inp = (usr, record.uuid);\n    dbg(usr);\n    dbg(record.uuid);\n    webapp::rpc_call(\"set_user_inbox_service\", inp).await?;\n    Ok(())\n}\n\npub async fn test() {\n    //let x = show();\n    //println!(\"Show {}\", x);\n    main().await?;\n}\n",
+      "typ": "Workflow"
+    },
+    {
+      "ident": "proposal",
+      "name": [
+        [
+          "en",
+          "4/7 Proposal"
+        ],
+        [
+          "de",
+          "4/7  Angebot"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Proposal Workflow"
+        ],
+        [
+          "de",
+          "Angebot Workflow"
+        ]
+      ],
+      "icon": "sales-document",
+      "active": true,
+      "system": false,
+      "code": "pub fn show() {\n    let record = webapp::get_record()?;\n    if record.status.as_string() == \"needs_analysis\" {\n        return true;\n    }\n        return false;\n}\n\npub async fn main() {\n    let record = webapp::get_record()?;\n    let inp = (\"proposal\", \"\", \"#E8BEDE\"); //color: purpur\n    webapp::rpc_call(\"set_status_service\", inp).await?;\n    \n    // set in inbox -> Assigned User\n    let usr = record.get_value(Ident::new(\"assigned_user_1\"))?.get_reference()?.as_string();\n    let inp = (usr, record.uuid);\n    dbg(usr);\n    dbg(record.uuid);\n    webapp::rpc_call(\"set_user_inbox_service\", inp).await?;\n    Ok(())\n}\n\npub async fn test() {\n    //let x = show();\n    //println!(\"Show {}\", x);\n    main().await?;\n}\n",
+      "typ": "Workflow"
+    },
+    {
+      "ident": "negotiation",
+      "name": [
+        [
+          "en",
+          "5/7 Negotiation"
+        ],
+        [
+          "de",
+          "5/7 Verhandlung"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Negotiation Workflow"
+        ],
+        [
+          "de",
+          "Verhandlung Workflow"
+        ]
+      ],
+      "icon": "discussion-2",
+      "active": true,
+      "system": false,
+      "code": "pub fn show() {\n    let record = webapp::get_record()?;\n    if record.status.as_string() == \"proposal\" {\n        return true;\n    }\n        return false;\n}\n\npub async fn main() {\n    let record = webapp::get_record()?;\n    let inp = (\"negotiation\", \"\", \"#DFCDF1\"); //color: purple\n    webapp::rpc_call(\"set_status_service\", inp).await?;\n    \n    // set in inbox -> Assigned User\n    let usr = record.get_value(Ident::new(\"assigned_user_1\"))?.get_reference()?.as_string();\n    let inp = (usr, record.uuid);\n    dbg(usr);\n    dbg(record.uuid);\n    webapp::rpc_call(\"set_user_inbox_service\", inp).await?;\n    Ok(())\n}\n\npub async fn test() {\n    //let x = show();\n    //println!(\"Show {}\", x);\n    main().await?;\n}\n",
+      "typ": "Workflow"
+    },
+    {
+      "ident": "closed_won_workflow",
+      "name": [
+        [
+          "en",
+          "7/7 Closed Won"
+        ],
+        [
+          "de",
+          "7/7 Abgeschlossen Gewonnen"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Closed Won Workflow"
+        ],
+        [
+          "de",
+          "Abgeschlossen Gewonnen Workflow"
+        ]
+      ],
+      "icon": "competitor",
+      "active": true,
+      "system": false,
+      "code": "pub fn show() {\n    let record = webapp::get_record()?;\n    if record.status.as_string() == \"rollout\" {\n        return true;\n    }\n    return false;\n}\n\npub async fn main() {\n    let record = webapp::get_record()?;\n    let inp = (\"won_closed\", \"\", \"#759421\"); //color: green\n    webapp::rpc_call(\"set_status_service\", inp).await?;\n    \n    // set in inbox -> Assigned User\n    let usr = record.get_value(Ident::new(\"assigned_user_1\"))?.get_reference()?.as_string();\n    let inp = (usr, record.uuid);\n    dbg(usr);\n    dbg(record.uuid);\n    webapp::rpc_call(\"set_user_inbox_service\", inp).await?;\n    Ok(())\n}\n\npub async fn test() {\n    //let x = show();\n    //println!(\"Show {}\", x);\n    main().await?;\n}\n",
+      "typ": "Workflow"
+    },
+    {
+      "ident": "closed_lost_workflow",
+      "name": [
+        [
+          "de",
+          "6/6 Abgeschlossen Verloren"
+        ],
+        [
+          "en",
+          "7/7 Closed Lost"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Closed Lost Workflow"
+        ],
+        [
+          "de",
+          "Abgeschlossen Verloren Workflow"
+        ]
+      ],
+      "icon": "sys-cancel",
+      "active": true,
+      "system": false,
+      "code": "pub fn show() {\n    let record = webapp::get_record()?;\n    if record.status.as_string() == \"negotiation\" {\n        return true;\n    } else if record.status.as_string() == \"prospecting\" {\n        return true;\n    } else if record.status.as_string() == \"qualification\" {\n        return true;\n    } else if record.status.as_string() == \"needs_analysis\" {\n        return true;\n    } else if record.status.as_string() == \"proposal\" {\n        return true;\n    } else if record.status.as_string() == \"rollout\" {\n        return true;\n    }\n    return false;\n}\n\npub async fn main() {\n    let record = webapp::get_record()?;\n    let inp = (\"lost_closed\", \"\", \"#C14646\"); //color: red\n    webapp::rpc_call(\"set_status_service\", inp).await?;\n    \n    // set in inbox -> Assigned User\n    let usr = record.get_value(Ident::new(\"assigned_user_1\"))?.get_reference()?.as_string();\n    let inp = (usr, record.uuid);\n    dbg(usr);\n    dbg(record.uuid);\n    webapp::rpc_call(\"set_user_inbox_service\", inp).await?;\n    Ok(())\n}\n\npub async fn test() {\n    //let x = show();\n    //println!(\"Show {}\", x);\n    main().await?;\n}\n",
+      "typ": "Workflow"
+    },
+    {
+      "ident": "rollout",
+      "name": [
+        [
+          "en",
+          "6/7 Rollout"
+        ],
+        [
+          "de",
+          "6/7 Ausrollen"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Rollout Workflow"
+        ],
+        [
+          "de",
+          "Ausrollen Workflow"
+        ]
+      ],
+      "icon": "play",
+      "active": true,
+      "system": false,
+      "code": "pub fn show() {\n    let record = webapp::get_record()?;\n    if record.status.as_string() == \"negotiation\" {\n        return true;\n    }\n        return false;\n}\n\npub async fn main() {\n    let record = webapp::get_record()?;\n    let inp = (\"rollout\", \"\", \"#C7D8E7\"); //color: gray\n    webapp::rpc_call(\"set_status_service\", inp).await?;\n    \n    // set in inbox -> Assigned User\n    let usr = record.get_value(Ident::new(\"assigned_user_1\"))?.get_reference()?.as_string();\n    let inp = (usr, record.uuid);\n    dbg(usr);\n    dbg(record.uuid);\n    webapp::rpc_call(\"set_user_inbox_service\", inp).await?;\n    Ok(())\n}\n\npub async fn test() {\n    //let x = show();\n    //println!(\"Show {}\", x);\n    main().await?;\n}\n",
+      "typ": "Workflow"
+    }
+  ],
+  "services": [
+    {
+      "ident": "set_status_service",
+      "name": [
+        [
+          "en",
+          "Set Status Service"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Set Status Service"
+        ]
+      ],
+      "icon": "database",
+      "active": true,
+      "system": false,
+      "code": "pub async fn main(inp) {\n    dbg(inp.0);\n    dbg(inp.2);\n    let status = Ident::new(inp.0);\n    let record = server::get_record()?;\n    server::db::update_record_value(record.uuid, Ident::new(\"status\"), Value::Ident(status)).await?;\n    server::db::update_record_value(record.uuid, Ident::new(\"highlight_color\"), Value::Color(Color::new(inp.2))).await?;\n    Ok(())\n}\n\npub async fn test() {\n    let inp = (\"new\", \"\", \"\");\n    main(inp).await?;\n}",
+      "typ": "Service"
+    },
+    {
+      "ident": "set_user_inbox_service",
+      "name": [
+        [
+          "en",
+          "Set User Inbox Service"
+        ]
+      ],
+      "description": [
+        [
+          "en",
+          "Set User Inbox Service"
+        ]
+      ],
+      "icon": "database",
+      "active": true,
+      "system": false,
+      "code": "pub async fn main(inp) {\n    dbg(inp.0);\n    dbg(inp.1);\n    server::db::add_inbox(inp.0, inp.1).await?;\n    Ok(())\n}\n\npub async fn test() {\n}",
+      "typ": "Service"
+    }
+  ],
+  "record_status": {
+    "selected": [
+      "new"
+    ],
+    "options": {
+      "rollout": [
+        [
+          "en",
+          "6/7 Rollout"
+        ],
+        [
+          "de",
+          "6/7 Ausrollen"
+        ]
+      ],
+      "qualification": [
+        [
+          "en",
+          "2/6 Qualification"
+        ],
+        [
+          "de",
+          "2/6 Qualifizierung"
+        ]
+      ],
+      "won_closed": [
+        [
+          "en",
+          "6/6 Closed Won"
+        ],
+        [
+          "fr",
+          "6/6 Abgeschlossen Gewonnen"
+        ]
+      ],
+      "needs_analysis": [
+        [
+          "en",
+          "3/7 Needs Analysis"
+        ],
+        [
+          "de",
+          "3/7 Bedürfnisanalyse"
+        ]
+      ],
+      "prospecting": [
+        [
+          "en",
+          "1/6 Prospecting"
+        ],
+        [
+          "de",
+          "1/6 Erkundung"
+        ]
+      ],
+      "new": [
+        [
+          "en",
+          "0/7 New"
+        ],
+        [
+          "de",
+          "0/7 Neu"
+        ]
+      ],
+      "proposal": [
+        [
+          "en",
+          "4/6 Proposal"
+        ],
+        [
+          "de",
+          "4/6 Angebot"
+        ]
+      ],
+      "lost_closed": [
+        [
+          "en",
+          "7/7 Closed Lost"
+        ],
+        [
+          "de",
+          "7/7 Abgeschlossen Verloren"
+        ]
+      ],
+      "negotiation": [
+        [
+          "en",
+          "5/7 Negotiation"
+        ],
+        [
+          "de",
+          "5/7 Verhandlung"
+        ]
+      ]
+    }
+  },
+  "record_right": "38dd8f25-5f68-4af3-8b9e-69c61d4cb94f",
+  "system": false,
+  "children": {
+    "ident": "children",
+    "system": true,
+    "released": false,
+    "name": [
+      [
+        "en",
+        "Children"
+      ]
+    ],
+    "description": [
+      [
+        "en",
+        "Children Table"
+      ]
+    ],
+    "value": {
+      "Table": {
+        "entries": []
+      }
+    },
+    "required": true,
+    "access": "Change",
+    "settings": {
+      "TableSettings": {
+        "columns": [
+          {
+            "ident": "children",
+            "position": 0,
+            "name": [
+              [
+                "en",
+                "Children"
+              ]
+            ],
+            "value": {
+              "Reference": "00000000-0000-0000-0000-000000000000"
+            },
+            "setting": "None"
+          }
+        ]
+      }
+    }
+  }
+}

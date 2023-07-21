@@ -94,46 +94,62 @@ A lightweight and customizable CRM Tool to track Sales Opportunities in the foll
     <highlight-button title="Dateien" text="Alle Anhänge" icon="attachment-photo" link="#/search?lang=en&query=&offset=0&model=file" />
     <highlight-button title="Hinzufügen" text="Record hinzufügen" icon="add" link="#/search?lang=en&query=&offset=0&model=maintenance_request&add=maintenance_request" />
     <!-- Line Break -->
-    <new-line />
+    <!-- <new-line /> -->
     <highlight-button title="Opportunities" text="CRM Opportinities" icon="crm-sales" link="#/search?lang=en&query=&model=opportunities&status=&view=List&print=false&tab=" />
     <highlight-button title="All Leads" text="CRM Opportinities" icon="group-2" link="#/search?lang=en&query=&model=opportunities&status=&view=Table&print=false&tab=&cols=name+status+crm_prio_select+assigned_user_1+" />
     <!-- Line Break -->
     <new-line />    
-    <highlight-button title="1/6 Prospecting" text="CRM Opportinities" icon="sys-find" link="#/search?lang=en&query=&model=opportunities&status=prospecting%2C+&view=Table&print=false&tab=&cols=name+status+crm_prio_select+assigned_user_1+" />
-    <highlight-button title="2/6 Qualification" text="CRM Opportinities" icon="sys-find" link="#/search?lang=en&query=&model=opportunities&status=qualification%2C+&view=Table&print=false&tab=&cols=name+status+crm_prio_select+assigned_user_1+" />
-    <highlight-button title="3/6 Needs Analysis" text="CRM Opportinities" icon="tools-opportunity" link="#/search?lang=en&query=&model=opportunities&status=needs_analysis%2C+&view=Table&print=false&tab=&cols=name+status+crm_prio_select+assigned_user_1+" />
-    <highlight-button title="4/6 Proposal" text="CRM Opportinities" icon="sales-document" link="#/search?lang=en&query=&model=opportunities&status=proposal%2C+&view=Table&print=false&tab=&cols=name+status+crm_prio_select+assigned_user_1+" />
-    <highlight-button title="5/6 Negotiation" text="CRM Opportinities" icon="discussion-2" link="#/search?lang=en&query=&model=opportunities&status=negotiation%2C+&view=Table&print=false&tab=&cols=name+status+crm_prio_select+assigned_user_1+" />
-    <highlight-button title="6/6 Closed Won" text="CRM Opportinities" icon="competitor" link="#/search?lang=en&query=&model=opportunities&status=won_closed%2C+&view=Table&print=false&tab=&cols=name+status+crm_prio_select+assigned_user_1+" />
-    <highlight-button title="6/6 Closed Los" text="CRM Opportinities" icon="sys-cancel" link="#/search?lang=en&query=&model=opportunities&status=lost_closed%2C+&view=Table&print=false&tab=&cols=name+status+crm_prio_select+assigned_user_1+" />
+    <highlight-button title="1/7 Prospecting" text="CRM Opportinities" icon="sys-find" link="#/search?lang=en&query=&model=opportunities&status=prospecting%2C+&view=Table&print=false&tab=&cols=name+status+crm_prio_select+assigned_user_1+" />
+    <highlight-button title="2/7 Qualification" text="CRM Opportinities" icon="validate" link="#/search?lang=en&query=&model=opportunities&status=qualification%2C+&view=Table&print=false&tab=&cols=name+status+crm_prio_select+assigned_user_1+" />
+    <highlight-button title="3/7 Needs Analysis" text="CRM Opportinities" icon="tools-opportunity" link="#/search?lang=en&query=&model=opportunities&status=needs_analysis%2C+&view=Table&print=false&tab=&cols=name+status+crm_prio_select+assigned_user_1+" />
+    <highlight-button title="4/7 Proposal" text="CRM Opportinities" icon="sales-document" link="#/search?lang=en&query=&model=opportunities&status=proposal%2C+&view=Table&print=false&tab=&cols=name+status+crm_prio_select+assigned_user_1+" />
+    <highlight-button title="5/7 Negotiation" text="CRM Opportinities" icon="discussion-2" link="#/search?lang=en&query=&model=opportunities&status=negotiation%2C+&view=Table&print=false&tab=&cols=name+status+crm_prio_select+assigned_user_1+" />
+    <highlight-button title="6/7 Rollout" text="CRM Opportinities" icon="play" link="#/search?lang=en&query=&model=opportunities&status=rollout%2C+&view=Table&print=false&tab=&cols=name+status+crm_prio_select+assigned_user_1+" />
+    <highlight-button title="7/7 Closed Won" text="CRM Opportinities" icon="competitor" link="#/search?lang=en&query=&model=opportunities&status=won_closed%2C+&view=Table&print=false&tab=&cols=name+status+crm_prio_select+assigned_user_1+" />
+    <highlight-button title="7/7 Closed Los" text="CRM Opportinities" icon="sys-cancel" link="#/search?lang=en&query=&model=opportunities&status=lost_closed%2C+&view=Table&print=false&tab=&cols=name+status+crm_prio_select+assigned_user_1+" />
 
     <!-- Line Break -->
     <new-line />   
-    <!-- Pipline Chart -->
+    <!-- Pipline Chart Bar-->
     <chart typ="bar" name="Pipline Opportunity by Stage">
         <chart-data model="opportunities" action="count" variable="status" group_by="ident" name="New">
             <data-filter variable="status" operator="equal" value="new" />
         </chart-data>
-        <chart-data model="opportunities" action="count" variable="status" group_by="ident" name="1/6 Prospecting">
+        <chart-data model="opportunities" action="count" variable="status" group_by="ident" name="1/7 Prospecting">
             <data-filter variable="status" operator="equal" value="prospecting" />
         </chart-data>
-        <chart-data model="opportunities" action="count" variable="status" group_by="ident" name="2/6 Qualification">
+        <chart-data model="opportunities" action="count" variable="status" group_by="ident" name="2/7 Qualification">
             <data-filter variable="status" operator="equal" value="qualification" />
         </chart-data>
-        <chart-data model="opportunities" action="count" variable="status" group_by="ident" name="3/6 Needs Analysis">
+        <chart-data model="opportunities" action="count" variable="status" group_by="ident" name="3/7 Needs Analysis">
             <data-filter variable="status" operator="equal" value="needs_analysis" />
         </chart-data>
-        <chart-data model="opportunities" action="count" variable="status" group_by="ident" name="4/6 Proposal">
+        <chart-data model="opportunities" action="count" variable="status" group_by="ident" name="4/7 Proposal">
             <data-filter variable="status" operator="equal" value="proposal" />
         </chart-data>
-        <chart-data model="opportunities" action="count" variable="status" group_by="ident" name="5/6 Negotiation">
+        <chart-data model="opportunities" action="count" variable="status" group_by="ident" name="5/7 Negotiation">
             <data-filter variable="status" operator="equal" value="negotiation" />
         </chart-data>
-        <chart-data model="opportunities" action="count" variable="status" group_by="ident" name="6/6 Closed Won">
+        <chart-data model="opportunities" action="count" variable="status" group_by="ident" name="6/7 Rollout">
             <data-filter variable="status" operator="equal" value="won_closed" />
         </chart-data>
-        <chart-data model="opportunities" action="count" variable="status" group_by="ident" name="6/6 Closed Lost">
+        <chart-data model="opportunities" action="count" variable="status" group_by="ident" name="7/7 Closed Won">
+            <data-filter variable="status" operator="equal" value="won_closed" />
+        </chart-data>
+        <chart-data model="opportunities" action="count" variable="status" group_by="ident" name="7/7 Closed Lost">
             <data-filter variable="status" operator="equal" value="lost_closed" />
+        </chart-data>
+    </chart>
+    <!-- Pipline Chart Doughnut-->
+    <chart typ="doughnut" name="Pipline Opportunity Won/Lost">
+        <chart-data model="opportunities" action="count" variable="status" group_by="ident" name="Opportunities Won">
+            <data-filter variable="status" operator="equal" value="won_closed" />
+        </chart-data>
+        <chart-data model="opportunities" action="count" variable="status" group_by="ident" name="Opportunities Lost">
+            <data-filter variable="status" operator="equal" value="lost_closed" />
+        </chart-data>
+        <chart-data model="opportunities" action="count" variable="status" group_by="ident" name="Opportunities Rollout">
+            <data-filter variable="status" operator="equal" value="rollout" />
         </chart-data>
     </chart>
 </home>
