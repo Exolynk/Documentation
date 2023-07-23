@@ -1,9 +1,9 @@
 {
-  "uuid": "e45c3013-18f7-4eec-852e-121b15c23faf",
+  "uuid": "74e5c201-7ada-41d1-b5ba-27052f5fc203",
   "ident": "model_demo",
   "version": {
     "typ": "Number",
-    "version": "32"
+    "version": "1"
   },
   "status": "draft",
   "name": [
@@ -19,12 +19,12 @@
     ]
   ],
   "icon": "example",
-  "layout": "<record>\n    <!-- Comment Demo Tab 1 -->\n    <tab name=\"Demo Tab 1\" active=\"true\" status=\"\">\n        <data name=\"Demo Section 1 - OOTB variables\">\n            <variable ident=\"ident\" access=\"write\" />\n            <variable ident=\"name\" access=\"write\" />\n            <variable ident=\"description\" access=\"write\" />\n            <variable ident=\"status\" access=\"write\" />\n        </data>\n        <data name=\"Demo Section 2 - custom variables\">\n            <variable ident=\"ident_demo\" access=\"write\" />\n            <variable ident=\"string_demo\" access=\"write\" />\n            <variable ident=\"multiline_demo\" access=\"write\" />\n            <variable ident=\"bool_demo\" access=\"write\" />\n            <variable ident=\"float_demo\" access=\"write\" />\n            <variable ident=\"integer_demo\" access=\"write\" />\n            <variable ident=\"list_demo\" access=\"write\" />\n            <variable ident=\"table_demo\" access=\"write\" />\n            <variable ident=\"reference_demo\" access=\"write\" />\n            <variable ident=\"selection_demo\" access=\"write\" />\n            <variable ident=\"datetime_demo\" access=\"write\" />\n            <variable ident=\"language_demo\" access=\"write\" />\n            <variable ident=\"version_demo\" access=\"write\" />\n            <variable ident=\"color_demo\" access=\"write\" />\n            <variable ident=\"location_demo\" access=\"write\" />\n            <variable ident=\"signature_demo\" access=\"write\" />\n        </data>\n    </tab>\n    \n    <!-- Comment Demo Tab 2 -->\n    <tab name=\"Demo Tab 2\" active=\"true\" status=\"\">\n        <raw-html style=\"color: green;\">\n            <h1>Header 1</h1>\n            <h2>Header 2</h2>\n            <h3>Header 3</h3>\n            <h4>Header 4</h4>\n            <h5>Header 5</h5>\n        </raw-html>\n    </tab>\n    \n    <!-- Raw HTML Example -->\n    <tab name=\"Raw HTML Example\" active=\"true\" status=\"\">\n        <raw-html>\n            <head>\n                <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n                <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n                <link href=\"https://fonts.googleapis.com/css2?family=Pacifico&family=Source+Code+Pro:wght@200&display=swap\" rel=\"stylesheet\">\n            </head>\n            \n              <h1 style=\"color: #255459;\">This is an h1 heading</h1>\n              <h2 style=\"color: #728a8c;\">This is an h2 heading</h2>\n              <h3 style=\"color: #A67676;\">This is an h3 heading</h3>\n              <p>This is a paragraph</p>\n              \n              <p>Here are some standard HTML elements:</p>\n              \n              <h4>Fonts:</h4>\n              <p style=\"font-family: 'Pacifico', cursive; font-family: 'Source Code Pro', monospace;\">Google Pacifico</p>\n    \n              \n              <h4>Lists:</h4>\n              <ul>\n                <li>Unordered list item 1</li>\n                <li>Unordered list item 2</li>\n                <li>Unordered list item 3</li>\n              </ul>\n              \n              <ol>\n                <li>Ordered list item 1</li>\n                <li>Ordered list item 2</li>\n                <li>Ordered list item 3</li>\n              </ol>\n              \n              <h4>Links:</h4>\n              <a href=\"https://www.example.com\">This is a link</a>\n              \n              <h4>Images:</h4>\n              <img src=\"https://exolynk.com/wp-content/uploads/2023/01/exolynk-logo-color-h1200.png\" alt=\"Image description\" style=\"width: 150px;\">\n              \n              <h4>Tables:</h4>\n              <table>\n                <thead>\n                  <tr>\n                    <th>Column 1</th>\n                    <th>Column 2</th>\n                  </tr>\n                </thead>\n                <tbody>\n                  <tr>\n                    <td>Row 1, Cell 1</td>\n                    <td>Row 1, Cell 2</td>\n                  </tr>\n                  <tr>\n                    <td>Row 2, Cell 1</td>\n                    <td>Row 2, Cell 2</td>\n                  </tr>\n                </tbody>\n              </table>\n              \n              <h4>Forms:</h4>\n              <form>\n                <label for=\"name\">Name:</label>\n                <input type=\"text\" id=\"name\" name=\"name\">\n                \n                <label for=\"email\">Email:</label>\n                <input type=\"email\" id=\"email\" name=\"email\">\n                \n                <input type=\"submit\" value=\"Submit\">\n              </form>\n        </raw-html>\n    </tab>\n\n    <!-- Chart -->\n    <tab name=\"Chart\">\n        <chart typ=\"bar\" name=\"Service Requests by status\">\n            <chart-data model=\"maintenance_request\" action=\"count\" variable=\"status\" group_by=\"ident\" name=\"New\">\n                <data-filter variable=\"status\" operator=\"equal\" value=\"new\" />\n            </chart-data>\n            <chart-data model=\"maintenance_request\" action=\"count\" variable=\"status\" group_by=\"ident\" name=\"Scheduled\">\n                <data-filter variable=\"status\" operator=\"equal\" value=\"scheduled\" />\n            </chart-data>\n            <chart-data model=\"maintenance_request\" action=\"count\" variable=\"status\" group_by=\"ident\" name=\"In process\">\n                <data-filter variable=\"status\" operator=\"equal\" value=\"in_process\" />\n            </chart-data>\n            <chart-data model=\"maintenance_request\" action=\"count\" variable=\"status\" group_by=\"ident\" name=\"Done\">\n                <data-filter variable=\"status\" operator=\"equal\" value=\"done\" />\n            </chart-data>\n        </chart>\n    </tab>\n    \n</record>",
+  "layout": "<record>\n    <!-- Comment Demo Tab 1 -->\n    <tab name=\"Demo Tab 1\" active=\"true\" status=\"\">\n        <data name=\"Demo Section 1 - OOTB variables\">\n            <variable ident=\"ident\" access=\"write\" />\n            <variable ident=\"name\" access=\"write\" />\n            <variable ident=\"description\" access=\"write\" />\n            <variable ident=\"status\" access=\"write\" />\n        </data>\n        <data name=\"Demo Section 2 - custom variables\">\n            <variable ident=\"ident_demo\" access=\"write\" />\n            <variable ident=\"string_demo\" access=\"write\" />\n            <variable ident=\"multiline_demo\" access=\"write\" />\n            <variable ident=\"bool_demo\" access=\"write\" />\n            <variable ident=\"float_demo\" access=\"write\" />\n            <variable ident=\"integer_demo\" access=\"write\" />\n            <variable ident=\"list_demo\" access=\"write\" />\n            <variable ident=\"table_demo\" access=\"write\" />\n            <variable ident=\"reference_demo\" access=\"write\" />\n            <variable ident=\"selection_demo\" access=\"write\" />\n            <variable ident=\"datetime_demo\" access=\"write\" />\n            <variable ident=\"language_demo\" access=\"write\" />\n            <variable ident=\"version_demo\" access=\"write\" />\n            <variable ident=\"color_demo\" access=\"write\" />\n            <variable ident=\"location_demo\" access=\"write\" />\n            <variable ident=\"signature_demo\" access=\"write\" />\n        </data>\n    </tab>\n    \n    <!-- Comment Demo Tab 2 -->\n    <tab name=\"Demo Tab 2\" active=\"true\" status=\"\">\n        <raw-html style=\"color: green;\">\n            <h1>Header 1</h1>\n            <h2>Header 2</h2>\n            <h3>Header 3</h3>\n            <h4>Header 4</h4>\n            <h5>Header 5</h5>\n        </raw-html>\n        <raw-html style=\"white-space: nowrap;\">\n            <p style=\"color:#E78C07; white-space: nowrap;\"><ui5-icon _ui5rt0=\"\" _ui5host=\"\" ui5-icon=\"\" name=\"information\" style=\"color:#E78C07; white-space: nowrap; vertical-align: middle;\"></ui5-icon> Information (orange)</p>\n            <p style=\"color:#BB0000; white-space: nowrap;\"><ui5-icon _ui5rt0=\"\" _ui5host=\"\" ui5-icon=\"\" name=\"warning\" style=\"color:#BB0000; white-space: nowrap; vertical-align: middle;\"></ui5-icon> Warning (red)</p>\n            <p style=\"color:#2B7D2B; white-space: nowrap;\"><ui5-icon _ui5rt0=\"\" _ui5host=\"\" ui5-icon=\"\" name=\"status-positive\" style=\"color:#2B7D2B; white-space: nowrap; vertical-align: middle;\"></ui5-icon> Success (green)</p>\n        </raw-html>\n    </tab>\n    \n    <!-- Raw HTML Example -->\n    <tab name=\"Raw HTML Example\" active=\"true\" status=\"\">\n        <raw-html>\n            <head>\n                <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n                <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n                <link href=\"https://fonts.googleapis.com/css2?family=Pacifico&family=Source+Code+Pro:wght@200&display=swap\" rel=\"stylesheet\">\n            </head>\n            \n              <h1 style=\"color: #255459;\">This is an h1 heading</h1>\n              <h2 style=\"color: #728a8c;\">This is an h2 heading</h2>\n              <h3 style=\"color: #A67676;\">This is an h3 heading</h3>\n              <p>This is a paragraph</p>\n              \n              <p>Here are some standard HTML elements:</p>\n              \n              <h4>Fonts:</h4>\n              <p style=\"font-family: 'Pacifico', cursive; font-family: 'Source Code Pro', monospace;\">Google Pacifico</p>\n    \n              \n              <h4>Lists:</h4>\n              <ul>\n                <li>Unordered list item 1</li>\n                <li>Unordered list item 2</li>\n                <li>Unordered list item 3</li>\n              </ul>\n              \n              <ol>\n                <li>Ordered list item 1</li>\n                <li>Ordered list item 2</li>\n                <li>Ordered list item 3</li>\n              </ol>\n              \n              <h4>Links:</h4>\n              <a href=\"https://www.example.com\">This is a link</a>\n              \n              <h4>Images:</h4>\n              <img src=\"https://exolynk.com/wp-content/uploads/2023/01/exolynk-logo-color-h1200.png\" alt=\"Image description\" style=\"width: 150px;\">\n              \n              <h4>Tables:</h4>\n              <table>\n                <thead>\n                  <tr>\n                    <th>Column 1</th>\n                    <th>Column 2</th>\n                  </tr>\n                </thead>\n                <tbody>\n                  <tr>\n                    <td>Row 1, Cell 1</td>\n                    <td>Row 1, Cell 2</td>\n                  </tr>\n                  <tr>\n                    <td>Row 2, Cell 1</td>\n                    <td>Row 2, Cell 2</td>\n                  </tr>\n                </tbody>\n              </table>\n              \n              <h4>Forms:</h4>\n              <form>\n                <label for=\"name\">Name:</label>\n                <input type=\"text\" id=\"name\" name=\"name\">\n                \n                <label for=\"email\">Email:</label>\n                <input type=\"email\" id=\"email\" name=\"email\">\n                \n                <input type=\"submit\" value=\"Submit\">\n              </form>\n        </raw-html>\n    </tab>\n\n    <!-- Chart -->\n    <tab name=\"Chart\">\n        <chart typ=\"bar\" name=\"Service Requests by status\">\n            <chart-data model=\"maintenance_request\" action=\"count\" variable=\"status\" group_by=\"ident\" name=\"New\">\n                <data-filter variable=\"status\" operator=\"equal\" value=\"new\" />\n            </chart-data>\n            <chart-data model=\"maintenance_request\" action=\"count\" variable=\"status\" group_by=\"ident\" name=\"Scheduled\">\n                <data-filter variable=\"status\" operator=\"equal\" value=\"scheduled\" />\n            </chart-data>\n            <chart-data model=\"maintenance_request\" action=\"count\" variable=\"status\" group_by=\"ident\" name=\"In process\">\n                <data-filter variable=\"status\" operator=\"equal\" value=\"in_process\" />\n            </chart-data>\n            <chart-data model=\"maintenance_request\" action=\"count\" variable=\"status\" group_by=\"ident\" name=\"Done\">\n                <data-filter variable=\"status\" operator=\"equal\" value=\"done\" />\n            </chart-data>\n        </chart>\n    </tab>\n    \n</record>",
   "variables": [
     {
       "ident": "string_demo",
       "system": false,
-      "released": true,
+      "released": false,
       "name": [
         [
           "en",
@@ -55,7 +55,7 @@
     {
       "ident": "bool_demo",
       "system": false,
-      "released": true,
+      "released": false,
       "name": [
         [
           "en",
@@ -86,7 +86,7 @@
     {
       "ident": "float_demo",
       "system": false,
-      "released": true,
+      "released": false,
       "name": [
         [
           "en",
@@ -117,7 +117,7 @@
     {
       "ident": "integer_demo",
       "system": false,
-      "released": true,
+      "released": false,
       "name": [
         [
           "en",
@@ -148,7 +148,7 @@
     {
       "ident": "list_demo",
       "system": false,
-      "released": true,
+      "released": false,
       "name": [
         [
           "en",
@@ -181,7 +181,7 @@
     {
       "ident": "reference_demo",
       "system": false,
-      "released": true,
+      "released": false,
       "name": [
         [
           "en",
@@ -212,7 +212,7 @@
     {
       "ident": "selection_demo",
       "system": false,
-      "released": true,
+      "released": false,
       "name": [
         [
           "en",
@@ -245,6 +245,26 @@
         "SelectionSettings": {
           "mode": "Single",
           "options": {
+            "selection_2": [
+              [
+                "en",
+                "Selection 2"
+              ],
+              [
+                "de",
+                "Auswahl 2"
+              ]
+            ],
+            "selection_4": [
+              [
+                "en",
+                "Selection 4"
+              ],
+              [
+                "de",
+                "Auswahl 4"
+              ]
+            ],
             "selection_1": [
               [
                 "en",
@@ -264,26 +284,6 @@
                 "de",
                 "Auswahl 3"
               ]
-            ],
-            "selection_4": [
-              [
-                "en",
-                "Selection 4"
-              ],
-              [
-                "de",
-                "Auswahl 4"
-              ]
-            ],
-            "selection_2": [
-              [
-                "en",
-                "Selection 2"
-              ],
-              [
-                "de",
-                "Auswahl 2"
-              ]
             ]
           },
           "change_target": "Settings"
@@ -293,7 +293,7 @@
     {
       "ident": "datetime_demo",
       "system": false,
-      "released": true,
+      "released": false,
       "name": [
         [
           "en",
@@ -324,7 +324,7 @@
     {
       "ident": "ident_demo",
       "system": false,
-      "released": true,
+      "released": false,
       "name": [
         [
           "en",
@@ -355,7 +355,7 @@
     {
       "ident": "language_demo",
       "system": false,
-      "released": true,
+      "released": false,
       "name": [
         [
           "en",
@@ -395,7 +395,7 @@
     {
       "ident": "version_demo",
       "system": false,
-      "released": true,
+      "released": false,
       "name": [
         [
           "en",
@@ -429,7 +429,7 @@
     {
       "ident": "multiline_demo",
       "system": false,
-      "released": true,
+      "released": false,
       "name": [
         [
           "en",
@@ -464,7 +464,7 @@
     {
       "ident": "table_demo",
       "system": false,
-      "released": true,
+      "released": false,
       "name": [
         [
           "en",
@@ -544,7 +544,7 @@
     {
       "ident": "color_demo",
       "system": false,
-      "released": true,
+      "released": false,
       "name": [
         [
           "en",
@@ -569,7 +569,7 @@
     {
       "ident": "location_demo",
       "system": false,
-      "released": true,
+      "released": false,
       "name": [
         [
           "en",
@@ -610,7 +610,7 @@
     {
       "ident": "signature_demo",
       "system": false,
-      "released": true,
+      "released": false,
       "name": [
         [
           "en",
@@ -828,14 +828,14 @@
       "new"
     ],
     "options": {
-      "new": [
+      "done": [
         [
           "en",
-          "new"
+          "done"
         ],
         [
           "de",
-          "Neu"
+          "Abgeschlossen"
         ]
       ],
       "pending": [
@@ -848,19 +848,19 @@
           "Ausstehend"
         ]
       ],
-      "done": [
+      "new": [
         [
           "en",
-          "done"
+          "new"
         ],
         [
           "de",
-          "Abgeschlossen"
+          "Neu"
         ]
       ]
     }
   },
-  "record_right": "fea81c48-c424-4d1f-9639-6a28624b1bb1",
+  "record_right": "38dd8f25-5f68-4af3-8b9e-69c61d4cb94f",
   "system": false,
   "children": {
     "ident": "children",

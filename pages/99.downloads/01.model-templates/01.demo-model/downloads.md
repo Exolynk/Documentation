@@ -7,11 +7,11 @@ downloads:
   include_all: true
   info:
     -
-      file: model_demo_v1.2.json
+      file: model_demo_v1.3.json
       enabled: true
       name: null
       featured: false
       download_name: null
       access: null
-      version: 1.2
+      version: 1.3
 ---
