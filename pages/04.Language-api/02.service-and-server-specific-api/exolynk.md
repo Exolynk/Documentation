@@ -183,4 +183,17 @@ Fetches a model from the database.
 > | async Result&lt;Model&gt; | The answer from the executed service |
 [/ui-accordion-item]
 
+[ui-accordion-item title=<code>server::db::exec_sql(String)\040->\040async\040Result&lt;SqlQueryAnswer&gt;</code>]
+##### Description
+Executes a SqlQuery against the database.
+##### Parameters
+> | parameter | data type               | description                                       |
+> |-----------|-------------------------|---------------------------------------------------|
+> | 0         | String                  | The sql string to be executed |
+##### Returns
+> | data type                  | description                                                |
+> |----------------------------|------------------------------------------------------------|
+> | async Result&lt;SqlQueryAnswer&gt; | The answer from the executed sql |
+[/ui-accordion-item]
+
 [/ui-accordion]
