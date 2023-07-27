@@ -132,7 +132,7 @@ Returns the user record this workflow is started from.
 [/ui-accordion]
 
 [ui-accordion independent=true open=none]
-[ui-accordion-item title=<code>webapp::rpc_call(String,\040Any)\040->\040async\040Result&lt;Any&gt;</code>]
+[ui-accordion-item title=<code>webapp::rpc_call(String,\040String,\040Any)\040->\040async\040Result&lt;Vec&lt;Any&gt;&gt;</code>]
 
 ##### Description
 Calls a service for this record on the server. Returns the response from the server, which can be either
@@ -140,12 +140,13 @@ a any kind of a value or an error string. This is an async fuunction which need 
 ##### Parameters
 > | parameter | data type               | description                                                           |
 > |-----------|-------------------------|-----------------------------------------------------------------------|
-> | 0         | String                  | The ident/name of the service which should be called |
-> | 1         | Any                     | A value which should be send to the service - () for none |
+> | 0         | String                  | String defining either environment or model service typ |
+> | 1         | String                  | The ident/name of the service which should be called |
+> | 2         | Any                     | A value which should be send to the service - () for none |
 ##### Returns
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
-> | async Result&lt;Any&gt; | The answer from the executed service |
+> | async Result&lt;Vec&lt;Any&gt;&gt; | The answer from the executed service as vector |
 
 [/ui-accordion-item]
 [/ui-accordion]
