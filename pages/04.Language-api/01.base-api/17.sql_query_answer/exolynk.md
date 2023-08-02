@@ -18,14 +18,21 @@ A struct which is returned from a successfull executed SqlQuery. It either conta
 
 
 [ui-accordion independent=true open=none]
-[ui-accordion-item title=<code>SqlQueryAnswer::get_records(Self)\040->\040Option&lt;Vec&lt;Record&gt;&gt;</code>]
+
+[ui-accordion-item title=<code>Variants</code>]
+
+##### Variants
+> | data type                   | description                                                               |
+> |-----------------------------|---------------------------------------------------------------------------|
+> | SqlQueryAnswer::Records     | List if records returned from an SQL query                                |
+> | SqlQueryAnswer::Columns     | Mutliple columns returned from an SQL query                               |
+
+[/ui-accordion-item]
+
+[ui-accordion-item title=<code>sqlqueryanswer.get_records()\040->\040Option&lt;Vec&lt;Record&gt;&gt;</code>]
 
 ##### Description
 Returns a list with the records returned from the database query.
-##### Parameters
-> | parameter | data type               | description                                                           |
-> |-----------|-------------------------|-----------------------------------------------------------------------|
-> | 0         | Self / SqlQueryAnswer   | A reference to the own object |
 ##### Returns
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
@@ -34,14 +41,10 @@ Returns a list with the records returned from the database query.
 [/ui-accordion-item]
 
 
-[ui-accordion-item title=<code>SqlQueryAnswer::get_columns(Self)\040->\040Option&lt;Vec&lt;Object&gt;&gt;</code>]
+[ui-accordion-item title=<code>sqlqueryanswer.get_columns()\040->\040Option&lt;Vec&lt;Object&gt;&gt;</code>]
 
 ##### Description
 Returns a vector of objects, which contain the columns requested.
-##### Parameters
-> | parameter | data type               | description                                                           |
-> |-----------|-------------------------|-----------------------------------------------------------------------|
-> | 0         | Self / SqlQueryAnswer   | A reference to the own object |
 ##### Returns
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
