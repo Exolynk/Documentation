@@ -1,5 +1,5 @@
 ---
-title: 'Settings'
+title: 'Env Detail Settings'
 taxonomy:
     category:
         - docs
@@ -13,7 +13,7 @@ process:
 <br><br><br><br>
 
 ------------------------------------------------------------------------------------------
-### Settings
+### Environment Detail Settings
 A map of keys and values wich stores detail settings for the system.
 
 [ui-accordion independent=true open=none]
@@ -24,48 +24,51 @@ Returns a empty Settings object.
 ##### Returns
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
-> | Settings                | A Settings object |
+> | Settings                | A Settings object                                                     |
 
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>Settings::get(Self,String)\040->\040Option&lt;String&gt;</code>]
+[ui-accordion-item title=<code>settings.get(String)\040->\040Option&lt;String&gt;</code>]
 
 ##### Description
 Returns the specific setting if found.
 ##### Parameters
 > | parameter | data type               | description                                                           |
 > |-----------|-------------------------|-----------------------------------------------------------------------|
-> | 0         | Self / Settings         | A reference to the own object |
-> | 1         | String                  | The setting ident |
+> | 0         | String                  | The setting ident                                                     |
 ##### Returns
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
-> | Option&gt;String&gt;    | Returns the settings as string |
+> | Option&gt;String&gt;    | Returns the settings as string                                        |
 
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>Settings::insert(Self,\040String,\040String)</code>]
+[ui-accordion-item title=<code>settings.insert(String,\040String)\040->\040Result&lt;()&gt;</code>]
 
 ##### Description
 Inserts a new setting in the settings object. An existing setting with the same ident will be overwritten.
 ##### Parameters
 > | parameter | data type               | description                                                           |
 > |-----------|-------------------------|-----------------------------------------------------------------------|
-> | 0         | Self / Settings         | A reference to the own object |
-> | 1         | String                  | The settings ident |
-> | 2         | String                  | The detail setting |
-
+> | 0         | String                  | The settings ident                                                    |
+> | 1         | String                  | The detail setting                                                    |
+##### Returns
+> | data type               | description                                                           |
+> |-------------------------|-----------------------------------------------------------------------|
+> | Result&lt;()&gt;        | Returns error when input was wrong                                    |
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>Settings::remove(Self,\040String)</code>]
+[ui-accordion-item title=<code>settings.remove(String)\040->\040Result&lt;()&gt;</code>]
 
 ##### Description
 Removes a specific setting from the object.
 ##### Parameters
 > | parameter | data type               | description                                                           |
 > |-----------|-------------------------|-----------------------------------------------------------------------|
-> | 0         | Self / Settings         | A reference to the own object |
-> | 1         | String                  | The setting ident to be removed |
-
+> | 0         | String                  | The setting ident to be removed                                       |
+##### Returns
+> | data type               | description                                                           |
+> |-------------------------|-----------------------------------------------------------------------|
+> | Result&lt;()&gt;        | Returns error when input was wrong                                    |
 [/ui-accordion-item]
 [/ui-accordion]
