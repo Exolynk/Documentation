@@ -40,14 +40,14 @@ custom variables a record has and stores the workflows and services for these sp
 [ui-accordion-item title=<code>Setter</code>]
 
 ##### Parameters
-> | name            | data type               | description                                              |
-> |-----------------|-------------------------|----------------------------------------------------------|
-> | `icon`          | Icon \| String    | The icon of the model (either Icon or String)                  |
-> | `layout`        | String            | The html layout of the model for its records                   |
-> | `name`          | Language          | Set the display name of the model                              |
-> | `description`   | Language          | Set the display descritption of the model                      |
-> | `record_status` | Selection         | Defines the different status options the record should have    |
-> | `variables`     | &lt;Variable&gt;  | Set the list of variables of this model                        |
+> | name            | data type          | description                                                 |
+> |-----------------|--------------------|-------------------------------------------------------------|
+> | `icon`          | Icon \| String     | The icon of the model (either Icon or String)               |
+> | `layout`        | String             | The html layout of the model for its records                |
+> | `name`          | Language \| String | Set the display name of the model (if string language is per default EN) |
+> | `description`   | Language \| String | Set the display descritption of the model (if string language is per default EN) |
+> | `record_status` | Selection          | Defines the different status options the record should have |
+> | `variables`     | &lt;Variable&gt;   | Set the list of variables of this model                     |
 
 [/ui-accordion-item]
 
@@ -59,13 +59,13 @@ custom variables a record has and stores the workflows and services for these sp
 Creates a new record from the model. Parameter 0 is always a reference to the own object
 
 ##### Parameters
-> | parameter | data type               | description                                                    |
-> |-----------|-------------------------|----------------------------------------------------------------|
-> | 0         | Self / Model            | A reference to the own object |
-> | 1         | Ident                   | Define the ident name of the new record |
-> | 2         | Version                 | Set the version of the new record |
-> | 3         | Language                | Set the name of the new record |
-> | 4         | Language                | Set the description of the new record |
+> | parameter | data type            | description                                                    |
+> |-----------|----------------------|----------------------------------------------------------------|
+> | 0         | Self / Model         | A reference to the own object                                  |
+> | 1         | Ident                | Define the ident name of the new record                        |
+> | 2         | Version              | Set the version of the new record                              |
+> | 3         | Language \| String   | Set the name of the new record (if string language is per default EN) |
+> | 4         | Language \| String   | Set the description of the new record (if string language is per default EN) |
 
 [/ui-accordion-item]
 [/ui-accordion]
