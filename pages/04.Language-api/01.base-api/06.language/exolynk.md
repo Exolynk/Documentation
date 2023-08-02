@@ -28,14 +28,14 @@ Returns a empty Language object.
 
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>Language::new_en(String)\040->\040Language</code>]
+[ui-accordion-item title=<code>Language::from(Any)\040->\040Result\040&lt;Language&gt;</code>]
 
 ##### Description
 Returns a Language object with the english languauge set.
 ##### Parameters
 > | parameter | data type               | description                                                           |
 > |-----------|-------------------------|-----------------------------------------------------------------------|
-> | 0         | String                  | The text in the english language to initalize the Langauge object with |
+> | 0         | String \| Language      | The text in the english language to initalize the Langauge object with |
 ##### Returns
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
