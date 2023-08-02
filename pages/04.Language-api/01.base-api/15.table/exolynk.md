@@ -61,20 +61,19 @@ Set a value into a row and column.
 > | Result&lt;()&gt;        | Returns error when input was wrong                                    |
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>Table::remove(Self,\040usize)</code>]
+[ui-accordion-item title=<code>table.remove(Integer)</code>]
 
 ##### Description
 Removes the given row.
 ##### Parameters
 > | parameter | data type               | description                                                           |
 > |-----------|-------------------------|-----------------------------------------------------------------------|
-> | 0         | Self / Table            | A reference to the own object                                         |
-> | 1         | usize                   | The row number to delete                                              |
+> | 0         | Integer                 | The row number to delete                                              |
 
 [/ui-accordion-item]
 
 
-[ui-accordion-item title=<code>Table::clear(Self)</code>]
+[ui-accordion-item title=<code>table.clear()</code>]
 
 ##### Description
 Removes all rows and columns
@@ -82,19 +81,19 @@ Removes all rows and columns
 [/ui-accordion-item]
 
 
-[ui-accordion-item title=<code>Table::len(Self)\040->\040usize</code>]
+[ui-accordion-item title=<code>table.len()\040->\040Integer</code>]
 
 ##### Description
 Returns the amount of columns inside the table.
 ##### Returns
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
-> | usize                   | The number of columns                                                 |
+> | Integer                 | The number of columns                                                 |
 
 [/ui-accordion-item]
 
 
-[ui-accordion-item title=<code>Table::is_empty(Self)\040->\040bool</code>]
+[ui-accordion-item title=<code>table.is_empty()\040->\040bool</code>]
 
 ##### Description
 Returns true, when there are no entries inside the table.
