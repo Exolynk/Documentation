@@ -65,7 +65,7 @@ Fetches a record from the database.
 ##### Parameters
 > | parameter | data type               | description                                       |
 > |-----------|-------------------------|---------------------------------------------------|
-> | 0         | String\|Reference                  | The uuid of the record to query |
+> | 0         | String \| Reference     | The uuid of the record to query |
 ##### Returns
 > | data type                  | description                                                |
 > |----------------------------|------------------------------------------------------------|
@@ -78,78 +78,78 @@ Inserts a new Record into the database.
 ##### Parameters
 > | parameter | data type               | description                                       |
 > |-----------|-------------------------|---------------------------------------------------|
-> | 0         | Record                  | The Record which should be inserted into the db |
+> | 0         | Record                  | The Record which should be inserted into the db   |
 ##### Returns
 > | data type                  | description                                                |
 > |----------------------------|------------------------------------------------------------|
 > | async Result&lt;()&gt; | Thorws an error when something went wrong |
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>server::db::update_record_value(String,\040Ident,\040Value)\040->\040async\040Result&lt;()&gt;</code>]
+[ui-accordion-item title=<code>server::db::update_record_value(Reference,\040Ident,\040Value)\040->\040async\040Result&lt;()&gt;</code>]
 ##### Description
 Updates a Record value in the database. This also informs all subscribed clients about this change.
 ##### Parameters
-> | parameter | data type               | description                                       |
-> |-----------|-------------------------|---------------------------------------------------|
-> | 0         | String                  | The uuid of the record be updated |
-> | 1         | Ident                   | The ident of the value to update |
-> | 2         | Value                   | The new value which should be applied to the record |
+> | parameter | data type               | description                                         |
+> |-----------|-------------------------|-----------------------------------------------------|
+> | 0         | String \| Reference     | The uuid of the record be updated                   |
+> | 1         | Ident \| String         | The ident of the value to update                    |
+> | 2         | Value                   | The new value which should be applied to the record (any value type allowed) |
 ##### Returns
-> | data type                  | description                                                |
-> |----------------------------|------------------------------------------------------------|
+> | data type                  | description                                                  |
+> |----------------------------|--------------------------------------------------------------|
 > | async Result&lt;()&gt; | Thorws an error when something went wrong |
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>server::db::add_inbox(String,\040String)\040->\040async\040Result&lt;()&gt;</code>]
+[ui-accordion-item title=<code>server::db::add_inbox(Ident,\040Reference)\040->\040async\040Result&lt;()&gt;</code>]
 ##### Description
 Adds a record into the inbox of a user. This also informs all subscribed clients about this change.
 ##### Parameters
 > | parameter | data type               | description                                       |
 > |-----------|-------------------------|---------------------------------------------------|
-> | 0         | String                  | The uuid of the user |
-> | 1         | String                  | The uuid of the record to add into the inbox |
+> | 0         | Ident \| Reference      | The uuid of the user (Ident, UUID of Reference as String) |
+> | 1         | Reference \| String     | The uuid of the record to add into the inbox      |
 ##### Returns
 > | data type                  | description                                                |
 > |----------------------------|------------------------------------------------------------|
 > | async Result&lt;()&gt;     | Thorws an error when something went wrong |
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>server::db::remove_inbox(String,\040String)\040->\040async\040Result&lt;()&gt;</code>]
+[ui-accordion-item title=<code>server::db::remove_inbox(Ident,\040Reference\040->\040async\040Result&lt;()&gt;</code>]
 ##### Description
 Removes a record from the inbox of a user. This also informs all subscribed clients about this change.
 ##### Parameters
 > | parameter | data type               | description                                       |
 > |-----------|-------------------------|---------------------------------------------------|
-> | 0         | String                  | The uuid of the user |
-> | 1         | String                  | The uuid of the record to remove from the inbox |
+> | 0         | Ident \| Reference      | The uuid of the user (Ident, UUID of Reference as String) |
+> | 1         | Reference \| String     | The uuid of the record to remove from the inbox   |
 ##### Returns
 > | data type                  | description                                                |
 > |----------------------------|------------------------------------------------------------|
 > | async Result&lt;()&gt;     | Thorws an error when something went wrong |
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>server::db::add_favorite(String,\040String)\040->\040async\040Result&lt;()&gt;</code>]
+[ui-accordion-item title=<code>server::db::add_favorite(Ident,\040Reference)\040->\040async\040Result&lt;()&gt;</code>]
 ##### Description
 Adds a record into the favorite container of a user. This also informs all subscribed clients about this change.
 ##### Parameters
 > | parameter | data type               | description                                       |
 > |-----------|-------------------------|---------------------------------------------------|
-> | 0         | String                  | The uuid of the user |
-> | 1         | String                  | The uuid of the record to add into the favorites |
+> | 0         | Ident \| Reference      | The uuid of the user (Ident, UUID of Reference as String) |
+> | 1         | Reference \| String     | The uuid of the record to add into the favorites  |
 ##### Returns
 > | data type                  | description                                                |
 > |----------------------------|------------------------------------------------------------|
 > | async Result&lt;()&gt;     | Thorws an error when something went wrong |
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>server::db::remove_favorite(String,\040String)\040->\040async\040Result&lt;()&gt;</code>]
+[ui-accordion-item title=<code>server::db::remove_favorite(Ident,\040Reference)\040->\040async\040Result&lt;()&gt;</code>]
 ##### Description
 Removes a record from the favorites of a user. This also informs all subscribed clients about this change.
 ##### Parameters
 > | parameter | data type               | description                                       |
 > |-----------|-------------------------|---------------------------------------------------|
-> | 0         | String                  | The uuid of the user |
-> | 1         | String                  | The uuid of the record to remove from the favorites |
+> | 0         | Ident \| Reference      | The uuid of the user (Ident, UUID of Reference as String) |
+> | 1         | Reference \| String     | The uuid of the record to remove from the favorites |
 ##### Returns
 > | data type                  | description                                                |
 > |----------------------------|------------------------------------------------------------|
