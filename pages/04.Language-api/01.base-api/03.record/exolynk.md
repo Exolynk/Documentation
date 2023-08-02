@@ -52,7 +52,7 @@ a table which is uunique for this record type / model.
 
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>record.set_value()\040->\040Result()</code>]
+[ui-accordion-item title=<code>record.set_value(Ident,\040Value)\040->\040Result()</code>]
 
 ##### Description
 Sets the value inside of a record. Providing the Ident "name", "description", "status", sets the standard record values. All other Idents will set a custom value.
@@ -68,15 +68,14 @@ Sets the value inside of a record. Providing the Ident "name", "description", "s
 
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>record.get_value()\040->\040Result()</code>]
+[ui-accordion-item title=<code>record.get_value(Ident)\040->\040Result()</code>]
 
 ##### Description
 Returns a Value for the given ident when found.
 ##### Parameters
 > | parameter | data type               | description                                                           |
 > |-----------|-------------------------|-----------------------------------------------------------------------|
-> | 0         | Self / Record           | A reference to the own object |
-> | 1         | Ident                   | The Ident we want to have the value for |
+> | 0         | Ident                   | The Ident we want to have the value for |
 ##### Returns
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
