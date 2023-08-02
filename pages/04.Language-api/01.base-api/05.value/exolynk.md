@@ -50,7 +50,7 @@ Value is used within the record and variable to store values.
 
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>Value::get_string(Value)\040->\040Option&lt;String&gt;</code>]
+[ui-accordion-item title=<code>value.get_string(Value)\040->\040Option&lt;String&gt;</code>]
 
 ##### Description
 Returns an Option which includes a String, when the Value was of type String.
