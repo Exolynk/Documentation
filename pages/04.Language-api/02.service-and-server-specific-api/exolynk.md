@@ -156,27 +156,27 @@ Removes a record from the favorites of a user. This also informs all subscribed 
 > | async Result&lt;()&gt;     | Thorws an error when something went wrong |
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>server::db::reset_password(String,\040String)\040->\040async\040Result&lt;()&gt;</code>]
+[ui-accordion-item title=<code>server::db::reset_password(Ident,\040String)\040->\040async\040Result&lt;()&gt;</code>]
 ##### Description
 Resets the password for the given user. The needs to have the `password_reset` right.
 ##### Parameters
 > | parameter | data type               | description                                       |
 > |-----------|-------------------------|---------------------------------------------------|
-> | 0         | String                  | The uuid of the user to reset the password for |
-> | 1         | String                  | The new password to set for the user |
+> | 0         | Ident \| Reference      | The uuid of the user to reset the password for    |
+> | 1         | String                  | The new password to set for the user              |
 ##### Returns
 > | data type                  | description                                                |
 > |----------------------------|------------------------------------------------------------|
-> | async Result&lt;()&gt;     | Thorws an error when something went wrong |
+> | async Result&lt;()&gt;     | Thorws an error when something went wrong                  |
 [/ui-accordion-item]
 
 [ui-accordion-item title=<code>server::db::get_model(String)\040->\040async\040Result&lt;Model&gt;</code>]
 ##### Description
-Fetches a model from the database.
+Fetches a model from the database. Get ether a model by ident or by the uuid (always of active model).
 ##### Parameters
 > | parameter | data type               | description                                       |
 > |-----------|-------------------------|---------------------------------------------------|
-> | 0         | String                  | The uuid of the model to gget |
+> | 0         | String                  | The uuid of the model to get                      |
 ##### Returns
 > | data type                  | description                                                |
 > |----------------------------|------------------------------------------------------------|
