@@ -39,15 +39,14 @@ Returns a Selection object, where the defaul languages (en, de, it, fr) are set 
 
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>Selection::get(Self,\040String)\040->\040Option&lt;Language&gt;</code>]
+[ui-accordion-item title=<code>selection.get(String)\040->\040Option&lt;Language&gt;</code>]
 
 ##### Description
 Returns the Language object for the defined option, when found
 ##### Parameters
 > | parameter | data type               | description                                                           |
 > |-----------|-------------------------|-----------------------------------------------------------------------|
-> | 0         | Self / Selection        | A reference to the own object |
-> | 1         | String                  | The option ident |
+> | 0         | String                  | The option ident |
 ##### Returns
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
@@ -55,70 +54,51 @@ Returns the Language object for the defined option, when found
 
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>Selection::insert(Self,\040String,\040Language)</code>]
+[ui-accordion-item title=<code>selection.insert(String,\040Language)\040->\040Result&lt;()&gt;</code>]
 
 ##### Description
 Inserts a new option to the selection with the given ident and Language.
 ##### Parameters
 > | parameter | data type               | description                                                           |
 > |-----------|-------------------------|-----------------------------------------------------------------------|
-> | 0         | Self / Selection        | A reference to the own object |
-> | 1         | String                  | The option ident  |
-> | 2         | Language                | The language text |
-
-[/ui-accordion-item]
-
-[ui-accordion-item title=<code>Selection::get_mode(Self)\040->\040SelectionMode</code>]
-
-##### Description
-Returns the SelectionMode enum for this selection
-##### Parameters
-> | parameter | data type               | description                                                           |
-> |-----------|-------------------------|-----------------------------------------------------------------------|
-> | 0         | Self / Selection        | A reference to the own object |
+> | 0         | String                  | The option ident  |
+> | 1         | Language                | The language text |
 ##### Returns
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
-> | SelectionMode           | Returns the selection mode |
-
+> | Result&lt;()&gt;        | Returns error when input was wrong                                    |
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>Selection::set_mode(Self,\040SelectionMode)</code>]
-
-##### Description
-Defines with selection mode (Single, Multi, Show) the selection should use.
-##### Parameters
-> | parameter | data type               | description                                                           |
-> |-----------|-------------------------|-----------------------------------------------------------------------|
-> | 0         | Self / Selection        | A reference to the own object |
-> | 1         | SelectionMode           | Set the mode |
-
-[/ui-accordion-item]
-
-[ui-accordion-item title=<code>Selection::get_selected(Self)\040->\040Vec&lt;String&gt;</code>]
+[ui-accordion-item title=<code>selection.get_selected()\040->\040Vec&lt;String&gt;</code>]
 
 ##### Description
 Returns the idents of the selected options
-##### Parameters
-> | parameter | data type               | description                                                           |
-> |-----------|-------------------------|-----------------------------------------------------------------------|
-> | 0         | Self / Selection        | A reference to the own object |
 ##### Returns
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
-> | Vec&gt;Language&gt;     | Returns a list with the selected idents |
+> | Vec&gt;String&gt;       | Returns a list with the selected idents |
 
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>Selection::set_selected(Self,\040Vec&lt;String&gt;)</code>]
+[ui-accordion-item title=<code>selection.get_selected_single()\040->\040String</code>]
+
+##### Description
+Returns the idents of the selected options
+##### Returns
+> | data type               | description                                                           |
+> |-------------------------|-----------------------------------------------------------------------|
+> | String                  | Returns the first selected ident                                      |
+
+[/ui-accordion-item]
+
+[ui-accordion-item title=<code>selection.set_selected(Vec&lt;String&gt;)</code>]
 
 ##### Description
 Sets the selected options of the given selection
 ##### Parameters
 > | parameter | data type               | description                                                           |
 > |-----------|-------------------------|-----------------------------------------------------------------------|
-> | 0         | Self / Selection        | A reference to the own object |
-> | 1         | Vec&lt;String&gt;       | The selected option idents in a list  |
+> | 0         | Vec&lt;String&gt;       | The selected option idents in a list  |
 
 [/ui-accordion-item]
 [/ui-accordion]
