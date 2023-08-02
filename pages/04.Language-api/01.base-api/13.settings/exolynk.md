@@ -35,7 +35,7 @@ Returns the specific setting if found.
 ##### Parameters
 > | parameter | data type               | description                                                           |
 > |-----------|-------------------------|-----------------------------------------------------------------------|
-> | 0         | String                  | The setting ident                                                     |
+> | 0         | Ident                   | The setting ident                                                     |
 ##### Returns
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
@@ -50,7 +50,7 @@ Inserts a new setting in the settings object. An existing setting with the same 
 ##### Parameters
 > | parameter | data type               | description                                                           |
 > |-----------|-------------------------|-----------------------------------------------------------------------|
-> | 0         | String                  | The settings ident                                                    |
+> | 0         | Ident                   | The settings ident                                                    |
 > | 1         | String                  | The detail setting                                                    |
 ##### Returns
 > | data type               | description                                                           |
@@ -65,7 +65,7 @@ Removes a specific setting from the object.
 ##### Parameters
 > | parameter | data type               | description                                                           |
 > |-----------|-------------------------|-----------------------------------------------------------------------|
-> | 0         | String                  | The setting ident to be removed                                       |
+> | 0         | Ident                   | The setting ident to be removed                                       |
 ##### Returns
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
