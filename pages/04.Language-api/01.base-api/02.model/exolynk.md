@@ -53,7 +53,7 @@ custom variables a record has and stores the workflows and services for these sp
 
 [ui-accordion-item title=<code>Model::create_record(Ident,\040Version,\040Language,\040Language)\040->\040Record</code>]
 
-[ui-accordion-item title=<code>model::create_record()\040->\040Result&lt;Record&gt;/code>]
+[ui-accordion-item title=<code>model::create_record()\040->\040Result&lt;Record&gt;</code>]
 
 ##### Description
 Creates a new record from the model. Parameter 0 is always a reference to the own object

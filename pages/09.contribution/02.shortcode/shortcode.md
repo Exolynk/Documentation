@@ -156,9 +156,9 @@ The `[ui-browser]` shortcode has some optional parameters:
 
 > NOTE: Requires JQuery to be loaded
 
-The `[ui-callout]` shortcode is intended to be able to provide numbered callout badges on an image and allow you to hover over an image and see a tooltip describing a particular feature.  This is particularly useful when describing a user interface or provide notes or tips for an image.
+The `[ ui-callout]` shortcode is intended to be able to provide numbered callout badges on an image and allow you to hover over an image and see a tooltip describing a particular feature.  This is particularly useful when describing a user interface or provide notes or tips for an image.
 
-Each `[ui-callout-item]` defines a particular item or tip that exists for the image.
+Each `[ ui-callout-item]` defines a particular item or tip that exists for the image.
 
 ```
 [ ui-callout]
