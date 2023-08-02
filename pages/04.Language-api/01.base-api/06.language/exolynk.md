@@ -39,36 +39,38 @@ Returns a Language object with the english languauge set.
 ##### Returns
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
-> | Language                | A Language object |
+> | Result&lt;Language&gt;  | A Language object |
 
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>Language::get(Self,\040String)\040->\040Option&lt;String&gt;</code>]
+[ui-accordion-item title=<code>language.get(String)\040->\040Option&lt;String&gt;</code>]
 
 ##### Description
 Returns the text in the defined language if found.
 ##### Parameters
 > | parameter | data type               | description                                                           |
 > |-----------|-------------------------|-----------------------------------------------------------------------|
-> | 0         | Self / Language         | A reference to the own object |
-> | 1         | String                  | The language ident (en, de, fr, it, ...) |
+> | 0         | String                  | The language ident (en, de, fr, it, ...) |
 ##### Returns
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
-> | Option&gt;Self&gt;      | Returns the text in the defined language if found |
+> | Option&lt;String&gt;      | Returns the text in the defined language if found |
 
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>Language::set(Self,\040String,\040String)</code>]
+[ui-accordion-item title=<code>language.set(String,\040String)\040->\040Result&lt;()&gt;</code>]
 
 ##### Description
 Sets the language text for the given language ident.
 ##### Parameters
 > | parameter | data type               | description                                                           |
 > |-----------|-------------------------|-----------------------------------------------------------------------|
-> | 0         | Self / Language         | A reference to the own object |
-> | 1         | String                  | The language ident (en, de, fr, it, ...) |
-> | 2         | String                  | The language text |
+> | 0         | String                  | The language ident (en, de, fr, it, ...) |
+> | 1         | String                  | The language text |
+##### Returns
+> | data type               | description                                                           |
+> |-------------------------|-----------------------------------------------------------------------|
+> | Result&lt;()&gt;      | Returns the text in the defined language if found |
 
 [/ui-accordion-item]
 [/ui-accordion]
