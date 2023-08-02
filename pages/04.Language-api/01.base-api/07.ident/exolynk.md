@@ -34,7 +34,7 @@ Returns a new Ident.
 
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>Ident::from(String)\040->\040Result\040&lt;Ident&gt;</code>]
+[ui-accordion-item title=<code>Ident::from(String)\040->\040Result&lt;Ident&gt;</code>]
 
 ##### Description
 Returns a new Ident.
@@ -53,14 +53,10 @@ Returns a new Ident.
 
 ##### Description
 Returns a String whith the ident value.
-##### Parameters
-> | parameter | data type               | description                                                           |
-> |-----------|-------------------------|-----------------------------------------------------------------------|
-> | 0         | Self / Ident           | A reference to the own object |
 ##### Returns
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
-> | String                 | A String object |
+> | String                  | A String object |
 
 [/ui-accordion-item]
 [/ui-accordion]
