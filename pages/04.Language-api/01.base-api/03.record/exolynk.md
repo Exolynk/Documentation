@@ -52,7 +52,7 @@ a table which is uunique for this record type / model.
 
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>record.set_value(Ident,\040Value)\040->\040Result()</code>]
+[ui-accordion-item title=<code>record.set_value(Ident,\040Value)\040->\040&lt;Result&lt;</code>]
 
 ##### Description
 Sets the value inside of a record. Providing the Ident "name", "description", "status", sets the standard record values. All other Idents will set a custom value.
@@ -64,11 +64,11 @@ Sets the value inside of a record. Providing the Ident "name", "description", "s
 ##### Returns
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
-> | Result&lt;Value&gt;  | The value of the result |
+> | Result | The result |
 
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>record.get_value(Ident)\040->\040Result()</code>]
+[ui-accordion-item title=<code>record.get_value(Ident)\040->\040&lt;Result&lt;</code>]
 
 ##### Description
 Returns a Value for the given ident when found.
@@ -79,7 +79,7 @@ Returns a Value for the given ident when found.
 ##### Returns
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
-> | Option&lt;Value&gt;  | The value when found |
+> | Result | The result |
 
 [/ui-accordion-item]
 
@@ -90,9 +90,8 @@ Returns a Variable for the given ident when found. The model is needed to abstra
 ##### Parameters
 > | parameter | data type               | description                                                           |
 > |-----------|-------------------------|-----------------------------------------------------------------------|
-> | 0         | Self / Record           | A reference to the own object |
-> | 1         | Model                   | A reference to the model this record belongs to |
-> | 2         | Ident                   | The Ident we want to have the variable for |
+> | 0         | Model                   | A reference to the model this record belongs to |
+> | 1         | Ident                   | The Ident we want to have the variable for |
 ##### Returns
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
