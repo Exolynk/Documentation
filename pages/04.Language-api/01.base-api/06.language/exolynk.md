@@ -50,11 +50,11 @@ Returns the text in the defined language if found.
 ##### Parameters
 > | parameter | data type               | description                                                           |
 > |-----------|-------------------------|-----------------------------------------------------------------------|
-> | 0         | String                  | The language ident (en, de, fr, it, ...) |
+> | 0         | String                  | The language ident (en, de, fr, it, ...)                              |
 ##### Returns
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
-> | Option&lt;String&gt;      | Returns the text in the defined language if found |
+> | Option&lt;String&gt;    | Returns the text in the defined language if found                     |
 
 [/ui-accordion-item]
 
@@ -65,8 +65,8 @@ Sets the language text for the given language ident.
 ##### Parameters
 > | parameter | data type               | description                                                           |
 > |-----------|-------------------------|-----------------------------------------------------------------------|
-> | 0         | String                  | The language ident (en, de, fr, it, ...) |
-> | 1         | String                  | The language text |
+> | 0         | String                  | The language ident (en, de, fr, it, ...)                              |
+> | 1         | String                  | The language text                                                     |
 ##### Returns
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
