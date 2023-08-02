@@ -34,18 +34,33 @@ Returns a new Ident.
 
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>Ident::as_string(Ident)\040->\040String</code>]
+[ui-accordion-item title=<code>Ident::from(String)\040->\040Result\040&lt;Ident&gt;</code>]
+
+##### Description
+Returns a new Ident.
+##### Parameters
+> | parameter | data type               | description                                                           |
+> |-----------|-------------------------|-----------------------------------------------------------------------|
+> | 0         | String \| Ident         | A ident as String formated |
+##### Returns
+> | data type               | description                                                           |
+> |-------------------------|-----------------------------------------------------------------------|
+> | Result&lt;Ident&gt;                   | A Ident object |
+
+[/ui-accordion-item]
+
+[ui-accordion-item title=<code>ident.as_string()\040->\040String</code>]
 
 ##### Description
 Returns a String whith the ident value.
 ##### Parameters
 > | parameter | data type               | description                                                           |
 > |-----------|-------------------------|-----------------------------------------------------------------------|
-> | 0         | Self / Ident.           | A reference to the own object |
+> | 0         | Self / Ident           | A reference to the own object |
 ##### Returns
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
-> | String.                 | A String object |
+> | String                 | A String object |
 
 [/ui-accordion-item]
 [/ui-accordion]
