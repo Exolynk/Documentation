@@ -70,7 +70,7 @@ Sets the language text for the given language ident.
 ##### Returns
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
-> | Result&lt;()&gt;      | Returns the text in the defined language if found |
+> | Result&lt;()&gt;        | Returns error when input was wrong                                    |
 
 [/ui-accordion-item]
 [/ui-accordion]
