@@ -170,7 +170,7 @@ Resets the password for the given user. The needs to have the `password_reset` r
 > | async Result&lt;()&gt;     | Thorws an error when something went wrong                  |
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>server::db::get_model(String)\040->\040async\040Result&lt;Model&gt;</code>]
+[ui-accordion-item title=<code>server::db::get_model(Any)\040->\040async\040Result&lt;Model&gt;</code>]
 ##### Description
 Fetches a model from the database. Get ether a model by ident or by the uuid (always of active model).
 ##### Parameters
