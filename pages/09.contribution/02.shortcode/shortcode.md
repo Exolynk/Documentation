@@ -88,7 +88,7 @@ Phasellus cursus odio ex, in mattis lorem tincidunt vel. [Donec nibh odio](#), d
 
 ![](assets/ui-tabs.png)
 
-The `/[ui-tabs]` shortcode has some optional parameters:
+<!-- The `[ui-tabs]` shortcode has some optional parameters:
 
 * `position` - top-left | top-right | bottom-left | bottom-right
 * `active` - 0-index number of initial active tab state.  0 to (number of tabs - 1)
@@ -96,7 +96,7 @@ The `/[ui-tabs]` shortcode has some optional parameters:
 
 The `[ui-tab]` shortcode that defines each _tab_ has the following parameters:
 
-* `title` - The text to display for the actual tab title
+* `title` - The text to display for the actual tab title -->
 
 You can use whatever markdown you wish in the tab itself.  They are auto-adjusting and fully responsive.
 
