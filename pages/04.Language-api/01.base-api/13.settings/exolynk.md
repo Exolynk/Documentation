@@ -28,7 +28,7 @@ Returns a empty Settings object.
 
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>settings.get(String)\040->\040Option&lt;String&gt;</code>]
+[ui-accordion-item title=<code>settings.get(Ident)\040->\040Option&lt;String&gt;</code>]
 
 ##### Description
 Returns the specific setting if found.
@@ -43,7 +43,7 @@ Returns the specific setting if found.
 
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>settings.insert(String,\040String)\040->\040Result&lt;()&gt;</code>]
+[ui-accordion-item title=<code>settings.insert(Ident,\040String)\040->\040Result&lt;()&gt;</code>]
 
 ##### Description
 Inserts a new setting in the settings object. An existing setting with the same ident will be overwritten.
@@ -58,7 +58,7 @@ Inserts a new setting in the settings object. An existing setting with the same 
 > | Result&lt;()&gt;        | Returns error when input was wrong                                    |
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>settings.remove(String)\040->\040Result&lt;()&gt;</code>]
+[ui-accordion-item title=<code>settings.remove(Ident)\040->\040Result&lt;()&gt;</code>]
 
 ##### Description
 Removes a specific setting from the object.
