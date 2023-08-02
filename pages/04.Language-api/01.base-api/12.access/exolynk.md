@@ -20,11 +20,11 @@ Access is a enum to control how variables can be seen and changed within the UI 
 [ui-accordion-item title=<code>Variants</code>]
 
 ##### Variants
-> | data type                   | description                                                           |
-> |-----------------------------|-----------------------------------------------------------------------|
-> | Access::Write               | Allows the user to write/change the value of an input |
-> | Access::Change              | Allows the user to change the field e.g. insert new options |
-> | Access::Read                | Allows the user to just read the value |
+> | data type                   | description                                                               |
+> |-----------------------------|---------------------------------------------------------------------------|
+> | Access::Write               | Allows the user to write/change the value of an input                     |
+> | Access::Change              | Allows the user to change the field e.g. insert new options               |
+> | Access::Read                | Allows the user to just read the value                                    |
 > | Access::Hide                | Hide the value from the user. Be aware this is only for the ui rendering! |
 
 [/ui-accordion-item]
@@ -40,22 +40,18 @@ Creates the access enum from a string. When a wrong string is given, it returns 
 ##### Returns
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
-> | Access                  | The access struct generated from the string |
+> | Access                  | The access struct generated from the string                           |
 
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>Access::as_string(Access)\040->\040String</code>]
+[ui-accordion-item title=<code>access.to_string()\040->\040String</code>]
 
 ##### Description
 Returns a String whith the access value.
-##### Parameters
-> | parameter | data type               | description                                                           |
-> |-----------|-------------------------|-----------------------------------------------------------------------|
-> | 0         | Self / Access           | A reference to the own object |
 ##### Returns
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
-> | String                  | A String with the access |
+> | String                  | A String with the access                                              |
 
 [/ui-accordion-item]
 [/ui-accordion]

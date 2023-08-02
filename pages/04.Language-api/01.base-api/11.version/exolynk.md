@@ -29,7 +29,7 @@ Returns a new Version.
 ##### Returns
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
-> | Version                 | A Version object |
+> | Version                 | A Version object                                                      |
 
 [/ui-accordion-item]
 
@@ -40,7 +40,14 @@ Returns a String with the version.
 ##### Returns
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
-> | String                 | A String object |
+> | String                  | A String object                                                       |
+
+[/ui-accordion-item]
+
+[ui-accordion-item title=<code>version.next_version()</code>]
+
+##### Description
+Counts version one number up.
 
 [/ui-accordion-item]
 [/ui-accordion]
