@@ -68,7 +68,7 @@ Sets the value inside of a record. Providing the Ident "name", "description", "s
 
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>record.get_value(Ident)\040->\040Result&lt;()&gt;</code>]
+[ui-accordion-item title=<code>record.get_value(Ident)\040->\040Option&lt;Value&gt;</code>]
 
 ##### Description
 Returns a Value for the given ident when found.
@@ -79,7 +79,7 @@ Returns a Value for the given ident when found.
 ##### Returns
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
-> | Result&lt;()&gt; | Returns error when input was wrong |
+> | Option&lt;Value&gt;     | Returns a value if found |
 
 [/ui-accordion-item]
 
