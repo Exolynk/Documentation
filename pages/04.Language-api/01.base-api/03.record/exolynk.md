@@ -52,7 +52,7 @@ a table which is uunique for this record type / model.
 
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>record.set_value(Ident,\040Value)\040->\040&lt;Result&lt;</code>]
+[ui-accordion-item title=<code>record.set_value(Ident,\040Value)\040->\040Result&lt;()&gt;</code>]
 
 ##### Description
 Sets the value inside of a record. Providing the Ident "name", "description", "status", sets the standard record values. All other Idents will set a custom value.
@@ -64,11 +64,11 @@ Sets the value inside of a record. Providing the Ident "name", "description", "s
 ##### Returns
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
-> | Result | The result |
+> | Result&lt;()&gt; | The result |
 
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>record.get_value(Ident)\040->\040&lt;Result&lt;</code>]
+[ui-accordion-item title=<code>record.get_value(Ident)\040->\040Result&lt;()&gt;</code>]
 
 ##### Description
 Returns a Value for the given ident when found.
@@ -79,11 +79,11 @@ Returns a Value for the given ident when found.
 ##### Returns
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
-> | Result | The result |
+> | Result&lt;()&gt; | The result |
 
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>Record::get_variable(Model,\040Ident)\040->\040Option&lt;Variable&gt;</code>]
+[ui-accordion-item title=<code>Record::get_variable(Model,\040Ident)\040->\040Result&lt;()&gt;</code>]
 
 ##### Description
 Returns a Variable for the given ident when found. The model is needed to abstract the right values.
