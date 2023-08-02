@@ -102,7 +102,7 @@ Sets the selected options of the given selection
 
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>selection.set_selected_singl()\040->\040String</code>]
+[ui-accordion-item title=<code>selection.set_selected_single(String)\040->\040Result&lt;()&gt;</code>]
 
 ##### Description
 Sets the selected options of the given selection
@@ -110,6 +110,10 @@ Sets the selected options of the given selection
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
 > | String                  | Returns the selected options of the given selection                   |
+##### Returns
+> | data type               | description                                                           |
+> |-------------------------|-----------------------------------------------------------------------|
+> | Result&lt;()&gt;        | Returns error when input was wrong                                    |
 
 [/ui-accordion-item]
 [/ui-accordion]
