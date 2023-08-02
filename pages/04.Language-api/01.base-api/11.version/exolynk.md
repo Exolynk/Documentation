@@ -33,18 +33,14 @@ Returns a new Version.
 
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>Version::as_string(Version)\040->\040String</code>]
+[ui-accordion-item title=<code>version.to_string()\040->\040String</code>]
 
 ##### Description
 Returns a String with the version.
-##### Parameters
-> | parameter | data type               | description                                                           |
-> |-----------|-------------------------|-----------------------------------------------------------------------|
-> | 0         | Self / Version          | A reference to the own object |
 ##### Returns
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
-> | String.                 | A String object |
+> | String                 | A String object |
 
 [/ui-accordion-item]
 [/ui-accordion]

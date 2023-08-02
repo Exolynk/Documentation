@@ -29,7 +29,7 @@ Returns a new Reference with a uuid of nil/all zeros.
 
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>reference.to_string(Version)\040->\040String</code>]
+[ui-accordion-item title=<code>reference.to_string()\040->\040String</code>]
 
 ##### Description
 Returns a String with the uuid.

@@ -49,14 +49,14 @@ Returns a new Ident.
 
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>ident.as_string()\040->\040String</code>]
+[ui-accordion-item title=<code>ident.to_string()\040->\040String</code>]
 
 ##### Description
 Returns a String whith the ident value.
 ##### Returns
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
-> | String                  | A String object |
+> | String                  | A String object                                                       |
 
 [/ui-accordion-item]
 [/ui-accordion]
