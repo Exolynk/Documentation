@@ -123,12 +123,12 @@ Bacon ipsum dolor amet beef burgdoggen shoulder, meatball prosciutto kevin brisk
 
 ![](assets/ui-accordion.png)
 
-The `[ui-accordion]` shortcode has some optional parameters:
+The `[ ui-accordion]` shortcode has some optional parameters:
 
 * `open` - accordion item # starting from `0` (e.g. `1` = 2nd item) | `none` = all closed | `all` = all open
 * `independent` - `true` | `false` (default) = determines if panels can be opened independently from one-another
 
-The `[ui-accordion-item]` shortcode that defines each _accordion-item_ has the following parameters:
+The `[ ui-accordion-item]` shortcode that defines each _accordion-item_ has the following parameters:
 
 * `title` - The text to display for the actual accordion item
 
@@ -137,9 +137,9 @@ The `[ui-accordion-item]` shortcode that defines each _accordion-item_ has the f
 This shortcode wraps content (image, text, whatever) with a HTML/CSS Browser frame.
 
 ```
-[ui-browser address="http://getgrav.org" class="p-4"]
+[ ui-browser address="http://getgrav.org" class="p-4"]
 ![](getgrav.png)
-[/ui-browser]
+[ /ui-browser]
 ```
 
 NOTE: Address is displayed in the browser location field, and class is optional but is applied to the browser window.
@@ -161,18 +161,18 @@ The `[ui-callout]` shortcode is intended to be able to provide numbered callout 
 Each `[ui-callout-item]` defines a particular item or tip that exists for the image.
 
 ```
-[ui-callout]
-[ui-callout-item title="Outlines" position="15%, 20%, se"]
+[ ui-callout]
+[ ui-callout-item title="Outlines" position="15%, 20%, se"]
 This administrative panel lists displays the current theme's outlines, giving you quick access 
 to edit, rename, duplicate, and delete them.
-[/ui-callout-item]
-[ui-callout-item title="Menu Editor" position="60%, 85%, nw"]
+[ /ui-callout-item]
+[ ui-callout-item title="Menu Editor" position="60%, 85%, nw"]
 This administrative [color=blue]panel gives you the ability[/color] to enhance the platform's 
 menu by altering styling, rearranging links, and creating menu items that sit outside of the 
 CMS's integrated Menu Manager.
-[/ui-callout-item]
+[ /ui-callout-item]
 ![](affinity.jpg)
-[/ui-callout]
+[ /ui-callout]
 ```
 
 ##### Example
@@ -181,9 +181,9 @@ CMS's integrated Menu Manager.
 
 You can see this image has **2 items**
 
-The `[ui-callout]` has no parameters.
+The `[ ui-callout]` has no parameters.
 
-The `[ui-callout-item]` shortcode that defines each item has the following parameters:
+The `[ ui-callout-item]` shortcode that defines each item has the following parameters:
 
 * `title` - The title of the callout
 * `position` - format `Y%, X%, TIP_ORIENTATION`. The Y% and X% are measured from the top left corner.  That being `0%, 0%`, and the bottom right corner being `100%, 100%`.  The tip orientation should be one of these values: `ne, nw, se, sw`
@@ -193,9 +193,9 @@ You can use whatever markdown you wish in the item itself.  These will be repres
 You can also combine this shortcode with [Animate.css](https://daneden.github.io/animate.css/) by including the CSS class in your theme or page, and then adding top-level class entries:
 
 ```
-[ui-callout class="pulse infinite animated"] 
+[ ui-callout class="pulse infinite animated"] 
 ...
-[/ui-callout]
+[ /ui-callout]
 ```
 
 #### Image Compare
@@ -207,10 +207,10 @@ This shortcode takes two images and provides a simple way to compare them via a 
 Source: https://codyhouse.co/gem/css-jquery-image-comparison-slider/
 
 ```
-[ui-image-compare]
+[ ui-image-compare]
 ![Original](original.jpg?cache)
 ![Modified](modified.jpg?cache)
-[/ui-image-compare]
+[ /ui-image-compare]
 ```
 
 ##### Example
@@ -224,9 +224,9 @@ Simple provide two images, each on a newline between this shortcode.  The `Alt` 
 This shortcode displays an image in a polaroid frame which can be customized in various ways.
 
 ```
-[ui-polaroid angle="-3" margin="30px 50px 20px 0" position="left" title="How's this for embarrasing!"]
+[ ui-polaroid angle="-3" margin="30px 50px 20px 0" position="left" title="How's this for embarrasing!"]
 ![](my-image.jpg)
-[/ui-polaroid]
+[ /ui-polaroid]
 ```
 
 * `angle` can be a positive or negative value that represents the degree of rotation (3 by default)
@@ -257,25 +257,25 @@ The `[ui-animated-text]` shortcode has some parameters:
 ### Word-Based Animations
 
 ```
-[ui-animated-text words="pizza, chips, steak" animation="rotate-1" element="h2"]%WORDS% is my favorite food[/ui-animated-text]
+[ ui-animated-text words="pizza, chips, steak" animation="rotate-1" element="h2"]%WORDS% is my favorite food[/ui-animated-text]
 ```
 
 ![](assets/ui-animated-rotate1.gif)
 
 ```
-[ui-animated-text words="pizza, chips, steak" animation="loading-bar" element="h2"]My favorite food is[/ui-animated-text]
+[ ui-animated-text words="pizza, chips, steak" animation="loading-bar" element="h2"]My favorite food is[/ui-animated-text]
 ```
 
 ![](assets/ui-animated-loading-bar.gif)
 
 ```
-[ui-animated-text words="pizza, chips, steak" animation="slide" element="h2"]My favorite food is[/ui-animated-text]
+[ ui-animated-text words="pizza, chips, steak" animation="slide" element="h2"]My favorite food is[/ui-animated-text]
 ```
 
 ![](assets/ui-animated-slide.gif)
 
 ```
-[ui-animated-text words="pizza, chips, steak" animation="clip" element="h2"]My favorite food is[/ui-animated-text]
+[ ui-animated-text words="pizza, chips, steak" animation="clip" element="h2"]My favorite food is[/ui-animated-text]
 ```
 
 ![](assets/ui-animated-clip.gif)
@@ -287,7 +287,7 @@ The `[ui-animated-text]` shortcode has some parameters:
 ![](assets/ui-animated-zoom.gif)
 
 ```
-[ui-animated-text words="pizza, chips, steak" animation="push" element="h2"]My favorite food is[/ui-animated-text]
+[ ui-animated-text words="pizza, chips, steak" animation="push" element="h2"]My favorite food is[/ui-animated-text]
 ```
 
 ![](assets/ui-animated-push.gif)
@@ -295,25 +295,25 @@ The `[ui-animated-text]` shortcode has some parameters:
 ### Letter-Based Animations
 
 ```
-[ui-animated-text words="pizza, chips, steak" animation="letters rotate-2" element="h2"]My favorite food is[/ui-animated-text]
+[ ui-animated-text words="pizza, chips, steak" animation="letters rotate-2" element="h2"]My favorite food is[/ui-animated-text]
 ```
 
 ![](assets/ui-animated-rotate2.gif)
 
 ```
-[ui-animated-text words="pizza, chips, steak" animation="letters type" element="h2"]My favorite food is[/ui-animated-text]
+[ ui-animated-text words="pizza, chips, steak" animation="letters type" element="h2"]My favorite food is[/ui-animated-text]
 ```
 
 ![](assets/ui-animated-type.gif)
 
 ```
-[ui-animated-text words="pizza, chips, steak" animation="letters rotate-3" element="h2"]My favorite food is[/ui-animated-text]
+[ ui-animated-text words="pizza, chips, steak" animation="letters rotate-3" element="h2"]My favorite food is[/ui-animated-text]
 ```
 
 ![](assets/ui-animated-rotate3.gif)
 
 ```
-[ui-animated-text words="pizza, chips, steak" animation="letters scale" element="h2"]My favorite food is[/ui-animated-text]
+[ ui-animated-text words="pizza, chips, steak" animation="letters scale" element="h2"]My favorite food is[/ui-animated-text]
 ```
 
 ![](assets/ui-animated-scale.gif)

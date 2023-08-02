@@ -42,10 +42,10 @@ custom variables a record has and stores the workflows and services for these sp
 ##### Parameters
 > | name            | data type          | description                                                 |
 > |-----------------|--------------------|-------------------------------------------------------------|
-> | `icon`          | Icon \| String     | The icon of the model (either Icon or String)               |
+> | `icon`          | String             | The icon of the model (either Icon or String)               |
 > | `layout`        | String             | The html layout of the model for its records                |
-> | `name`          | Language \| String | Set the display name of the model (if string language is per default EN) |
-> | `description`   | Language \| String | Set the display descritption of the model (if string language is per default EN) |
+> | `name`          | Language           | Set the display name of the model                           |
+> | `description`   | Language           | Set the display descritption of the model                   |
 > | `record_status` | Selection          | Defines the different status options the record should have |
 > | `variables`     | &lt;Variable&gt;   | Set the list of variables of this model                     |
 
@@ -53,7 +53,7 @@ custom variables a record has and stores the workflows and services for these sp
 
 [ui-accordion-item title=<code>Model::create_record(Ident,\040Version,\040Language,\040Language)\040->\040Record</code>]
 
-[ui-accordion-item title=<code>model::create_record()\040->\040Record</code>]
+[ui-accordion-item title=<code>model::create_record()\040->\040Result&lt;Record&gt;/code>]
 
 ##### Description
 Creates a new record from the model. Parameter 0 is always a reference to the own object
@@ -62,8 +62,8 @@ Creates a new record from the model. Parameter 0 is always a reference to the ow
 > | parameter | data type            | description                                                    |
 > |-----------|----------------------|----------------------------------------------------------------|
 > | 0         | Self / Model         | A reference to the own object                                  |
-> | 1         | Ident                | Define the ident name of the new record                        |
-> | 2         | Version              | Set the version of the new record                              |
+> | 1         | Ident \| String      | Define the ident name of the new record                        |
+> | 2         | Version \| String    | Set the version of the new record                              |
 > | 3         | Language \| String   | Set the name of the new record (if string language is per default EN) |
 > | 4         | Language \| String   | Set the description of the new record (if string language is per default EN) |
 
