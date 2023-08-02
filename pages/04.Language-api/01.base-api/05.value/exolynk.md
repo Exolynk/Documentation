@@ -65,7 +65,7 @@ Returns an Option which includes a String, when the Value was of type String.
 
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>Value::get_list(Value)\040->\040Option&lt;List&gt;</code>]
+[ui-accordion-item title=<code>value.get_list(Value)\040->\040Option&lt;List&gt;</code>]
 
 ##### Description
 Returns an Option which includes a List, when the Value was of type List.
@@ -80,7 +80,7 @@ Returns an Option which includes a List, when the Value was of type List.
 
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>Value::get_reference(Value)\040->\040Option&lt;Reference&gt;</code>]
+[ui-accordion-item title=<code>value.get_reference(Value)\040->\040Option&lt;Reference&gt;</code>]
 
 ##### Description
 Returns an Option which includes a Reference, when the Value was of type Reference.
@@ -95,7 +95,7 @@ Returns an Option which includes a Reference, when the Value was of type Referen
 
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>Value::get_language(Value)\040->\040Option&lt;Language&gt;</code>]
+[ui-accordion-item title=<code>value.get_language(Value)\040->\040Option&lt;Language&gt;</code>]
 
 ##### Description
 Returns an Option which includes a Language, when the Value was of type Language.
@@ -110,7 +110,7 @@ Returns an Option which includes a Language, when the Value was of type Language
 
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>Value::get_float(Value)\040->\040Option&lt;f64&gt;</code>]
+[ui-accordion-item title=<code>value.get_float(Value)\040->\040Option&lt;f64&gt;</code>]
 
 ##### Description
 Returns an Option which includes a f64, when the Value was of type Float.
@@ -125,7 +125,7 @@ Returns an Option which includes a f64, when the Value was of type Float.
 
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>Value::get_integer(Value)\040->\040Option&lt;i64&gt;</code>]
+[ui-accordion-item title=<code>value.get_integer(Value)\040->\040Option&lt;i64&gt;</code>]
 
 ##### Description
 Returns an Option which includes a i64, when the Value was of type Integer.
@@ -140,7 +140,7 @@ Returns an Option which includes a i64, when the Value was of type Integer.
 
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>Value::get_bool(Value)\040->\040Option&lt;bool&gt;</code>]
+[ui-accordion-item title=<code>value.get_bool(Value)\040->\040Option&lt;bool&gt;</code>]
 
 ##### Description
 Returns an Option which includes a bool, when the Value was of type Bool.
@@ -155,7 +155,7 @@ Returns an Option which includes a bool, when the Value was of type Bool.
 
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>Value::get_ident(Value)\040->\040Option&lt;Ident&gt;</code>]
+[ui-accordion-item title=<code>value.get_ident(Value)\040->\040Option&lt;Ident&gt;</code>]
 
 ##### Description
 Returns an Option which includes a Ident, when the Value was of type Ident.
@@ -170,7 +170,7 @@ Returns an Option which includes a Ident, when the Value was of type Ident.
 
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>Value::get_selection(Value)\040->\040Option&lt;Selection&gt;</code>]
+[ui-accordion-item title=<code>value.get_selection(Value)\040->\040Option&lt;Selection&gt;</code>]
 
 ##### Description
 Returns an Option which includes a Selection, when the Value was of type Selection.
@@ -185,7 +185,7 @@ Returns an Option which includes a Selection, when the Value was of type Selecti
 
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>Value::get_version(Value)\040->\040Option&lt;Version&gt;</code>]
+[ui-accordion-item title=<code>value.get_version(Value)\040->\040Option&lt;Version&gt;</code>]
 
 ##### Description
 Returns an Option which includes a Version, when the Value was of type Version.
@@ -200,7 +200,7 @@ Returns an Option which includes a Version, when the Value was of type Version.
 
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>Value::get_color(Value)\040->\040Option&lt;Color&gt;</code>]
+[ui-accordion-item title=<code>value.get_color(Value)\040->\040Option&lt;Color&gt;</code>]
 
 ##### Description
 Returns an Option which includes a Color, when the Value was of type Color.
@@ -215,7 +215,7 @@ Returns an Option which includes a Color, when the Value was of type Color.
 
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>Value::get_table(Value)\040->\040Option&lt;Table&gt;</code>]
+[ui-accordion-item title=<code>value.get_table(Value)\040->\040Option&lt;Table&gt;</code>]
 
 ##### Description
 Returns an Option which includes a Table, when the Value was of type Table.
