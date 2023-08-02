@@ -64,7 +64,7 @@ Sets the value inside of a record. Providing the Ident "name", "description", "s
 ##### Returns
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
-> | Result&lt;()&gt; | The result |
+> | Result&lt;()&gt;        | Returns error when input was wrong |
 
 [/ui-accordion-item]
 
@@ -79,11 +79,11 @@ Returns a Value for the given ident when found.
 ##### Returns
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
-> | Result&lt;()&gt; | The result |
+> | Result&lt;()&gt; | Returns error when input was wrong |
 
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>Record::get_variable(Model,\040Ident)\040->\040Result&lt;()&gt;</code>]
+[ui-accordion-item title=<code>record.get_variable(Model,\040Ident)\040->\040Option&lt;Variable&gt;</code>]
 
 ##### Description
 Returns a Variable for the given ident when found. The model is needed to abstract the right values.
