@@ -64,7 +64,7 @@ This plugin provides a variety of plugins, each with a specific purpose:
 > NOTE: Requires JQuery to be loaded
 
 An example of the Tabs shortcode is as follows:
-<!-- 
+
 ```
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="First Tab"]
@@ -82,13 +82,13 @@ Phasellus cursus odio ex, in mattis lorem tincidunt vel. [Donec nibh odio](#), d
 
 [/ui-tab]
 [/ui-tabs]
-``` -->
+```
 
 ##### Example
 
 ![](assets/ui-tabs.png)
 
-The `[ui-tabs]` shortcode has some optional parameters:
+The `/[ui-tabs]` shortcode has some optional parameters:
 
 * `position` - top-left | top-right | bottom-left | bottom-right
 * `active` - 0-index number of initial active tab state.  0 to (number of tabs - 1)
