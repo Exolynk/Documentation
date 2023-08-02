@@ -50,7 +50,7 @@ Returns the Language object for the defined option, when found
 ##### Returns
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
-> | Option&gt;Language&gt;  | Returns the language if found |
+> | Option&lt;Language&gt;  | Returns the language if found |
 
 [/ui-accordion-item]
 
@@ -76,14 +76,14 @@ Returns the idents of the selected options
 ##### Returns
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
-> | Vec&gt;String&gt;       | Returns a list with the selected idents |
+> | Vec&lt;String&gt;       | Returns a list with the selected idents |
 
 [/ui-accordion-item]
 
 [ui-accordion-item title=<code>selection.get_selected_single()\040->\040String</code>]
 
 ##### Description
-Returns the idents of the selected options
+Returns the first selected ident
 ##### Returns
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
@@ -99,6 +99,17 @@ Sets the selected options of the given selection
 > | parameter | data type               | description                                                           |
 > |-----------|-------------------------|-----------------------------------------------------------------------|
 > | 0         | Vec&lt;String&gt;       | The selected option idents in a list  |
+
+[/ui-accordion-item]
+
+[ui-accordion-item title=<code>selection.set_selected_singl()\040->\040String</code>]
+
+##### Description
+Sets the selected options of the given selection
+##### Parameters
+> | data type               | description                                                           |
+> |-------------------------|-----------------------------------------------------------------------|
+> | String                  | Returns the selected options of the given selection                   |
 
 [/ui-accordion-item]
 [/ui-accordion]
