@@ -59,13 +59,13 @@ Returns the actual model for which the service has been triggered.
 Generale functions to interact with the database of the server.
 
 [ui-accordion independent=true open=none]
-[ui-accordion-item title=<code>server::db::get_record(String)\040->\040async\040Result&lt;Record&gt;</code>]
+[ui-accordion-item title=<code>server::db::get_record(Reference)\040->\040async\040Result&lt;Record&gt;</code>]
 ##### Description
 Fetches a record from the database.
 ##### Parameters
 > | parameter | data type               | description                                       |
 > |-----------|-------------------------|---------------------------------------------------|
-> | 0         | String                  | The uuid of the record to query |
+> | 0         | String\|Reference                  | The uuid of the record to query |
 ##### Returns
 > | data type                  | description                                                |
 > |----------------------------|------------------------------------------------------------|

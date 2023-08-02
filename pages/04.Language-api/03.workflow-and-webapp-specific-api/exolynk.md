@@ -164,7 +164,7 @@ Shows a popup to the user with the given Header, text and variables. When the us
 > |-----------|-------------------------|-----------------------------------------------------------------------|
 > | 0         | String                  | The header text of the popup |
 > | 1         | String                  | An additional message for the user inside the poup |
-> | 1         | Vec&lt;Variable&gt;     | A list of variables which should be shown to the user |
+> | 2         | Vec&lt;Variable&gt;     | A list of variables which should be shown to the user |
 ##### Returns
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
@@ -174,7 +174,7 @@ Shows a popup to the user with the given Header, text and variables. When the us
 [/ui-accordion-item]
 
 
-[ui-accordion-item title=<code>webapp::ui::notification(String,\040String,\040String)</code>]
+[ui-accordion-item title=<code>webapp::ui::notification(String,\040String,\040Integer)</code>]
 
 ##### Description
 Shows a notification to the user with a message for a specific time.
@@ -185,7 +185,7 @@ The design of the message need to be defined as either "Information", "Positive"
 > |-----------|-------------------------|-----------------------------------------------------------------------|
 > | 0         | String                  | The design of the motification message |
 > | 1         | String                  | The text of the message |
-> | 1         | u32                     | The time in ms to show the message to the user |
+> | 2         | u32                     | The time in ms to show the message to the user |
 
 [/ui-accordion-item]
 
