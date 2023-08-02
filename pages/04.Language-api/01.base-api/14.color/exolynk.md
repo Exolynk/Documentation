@@ -17,7 +17,7 @@ process:
 A variable wich stores a color code.
 
 [ui-accordion independent=true open=none]
-[ui-accordion-item title=<code>Color::new(String)\040->\040Settings</code>]
+[ui-accordion-item title=<code>Color::new(String)\040->\040Color</code>]
 
 ##### Description
 Create a new Color object from the given string.
@@ -28,22 +28,18 @@ Create a new Color object from the given string.
 ##### Returns
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
-> | Settings                | A Settings object |
+> | Color                   | A Color object                                                        |
 
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>Color::as_string(Self)\040->\040String</code>]
+[ui-accordion-item title=<code>color.to_string()\040->\040String</code>]
 
 ##### Description
 Returns the color as string.
-##### Parameters
-> | parameter | data type               | description                                                           |
-> |-----------|-------------------------|-----------------------------------------------------------------------|
-> | 0         | Self / Color            | A reference to the own object |
 ##### Returns
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
-> | String                  | Color as string |
+> | String                  | Color as string                                                       |
 
 [/ui-accordion-item]
 [/ui-accordion]

@@ -39,7 +39,7 @@ Returns the specific setting if found.
 ##### Returns
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
-> | Option&gt;String&gt;    | Returns the settings as string                                        |
+> | Option&lt;String&gt;    | Returns the settings as string                                        |
 
 [/ui-accordion-item]
 
