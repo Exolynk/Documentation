@@ -59,7 +59,7 @@ Sets the value inside of a record. Providing the Ident "name", "description", "s
 ##### Parameters
 > | parameter | data type               | description                                                           |
 > |-----------|-------------------------|-----------------------------------------------------------------------|
-> | 0         | Ident                   | Define which value should be set |
+> | 0         | Ident \| String         | Define which value should be set |
 > | 1         | Value                   | The value which should be set |
 ##### Returns
 > | data type               | description                                                           |
@@ -75,7 +75,7 @@ Returns a Value for the given ident when found.
 ##### Parameters
 > | parameter | data type               | description                                                           |
 > |-----------|-------------------------|-----------------------------------------------------------------------|
-> | 0         | Ident                   | The Ident we want to have the value for |
+> | 0         | Ident \| String         | The Ident we want to have the value for |
 ##### Returns
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
@@ -91,7 +91,7 @@ Returns a Variable for the given ident when found. The model is needed to abstra
 > | parameter | data type               | description                                                           |
 > |-----------|-------------------------|-----------------------------------------------------------------------|
 > | 0         | Model                   | A reference to the model this record belongs to |
-> | 1         | Ident                   | The Ident we want to have the variable for |
+> | 1         | Ident \| String         | The Ident we want to have the variable for |
 ##### Returns
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|

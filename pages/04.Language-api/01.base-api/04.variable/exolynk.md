@@ -48,7 +48,7 @@ to define how customer specific fields look like.
 
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>Variable::new(Ident,\040Value)\040->\040Variable</code>]
+[ui-accordion-item title=<code>variable.new(Ident,\040Value)\040->\040Result&lt;Variable&gt;</code>]
 
 ##### Description
 Creates a new variable with an ident and the value.
@@ -60,11 +60,11 @@ Creates a new variable with an ident and the value.
 ##### Returns
 > | data type               | description                                                           |
 > |-------------------------|-----------------------------------------------------------------------|
-> | Variable                | The newly created variable |
+> | Result&lt;Variable&gt;  | The newly created variable |
 
 [/ui-accordion-item]
 
-[ui-accordion-item title=<code>Variable::clone(Variable)\040->\040Variable</code>]
+[ui-accordion-item title=<code>variable.clone(Variable)\040->\040Variable</code>]
 
 ##### Description
 Clones a variable and returns a new one with independent of the original one.
