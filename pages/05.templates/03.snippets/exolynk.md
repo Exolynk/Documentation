@@ -81,3 +81,112 @@ pub async fn main(user, rec_uuid) {
 pub async fn test() {
 }
 ```
+
+
+
+### Set User Password
+
+Workflow and Service code to set user passwords.
+
+#### Set User Password Workflow
+
+Icon: ```two-keys```
+
+```rust
+pub fn show() {
+    true
+}
+
+pub async fn main() {
+    let vars = [Variable::new(Ident::new("password"), Value::String(""))];
+    let result = webapp::ui::popup("Reset Password", "", vars).await?;
+    if result.0 == false {
+        return;
+    }
+    let new_pw = result.1;
+    let new_pw = new_pw[0].value.get_string()?;
+    dbg(new_pw);
+    webapp::rpc_call("set_user_password_service", new_pw).await?;
+}
+
+pub async fn test() {
+    main().await?;
+}
+
+```
+
+#### Set User Password Service
+
+Icon: ```two-keys```
+
+```rust
+pub async fn main(inp) {
+    // todo - check for user rights - API still missing
+    dbg(inp);
+    let user=server::get_record()?.uuid;
+    server::db::reset_password(user, inp).await?;
+}
+
+pub async fn test() {
+}
+```
+
+
+
+### Add Favorite
+
+#### Add Favorite Workflow
+
+Icon: ```favorite```
+
+```rust
+
+```
+
+#### Add Favorite Service
+
+Icon: ```favorite```
+
+```rust
+
+```
+
+
+### Remove Favorite
+
+#### Remove Favorite Workflow
+
+Icon: ```unfavorite```
+
+```rust
+
+```
+
+#### Remove Favorite Service
+
+Icon: ```unfavorite```
+
+```rust
+
+```
+
+
+
+
+### Set User Password
+
+#### Set User Password Workflow
+
+Icon: ```two-keys```
+
+```rust
+
+```
+
+#### Set User Password Service
+
+Icon: ```two-keys```
+
+```rust
+
+```
