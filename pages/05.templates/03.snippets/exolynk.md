@@ -19,7 +19,7 @@ A collection of some helpfull code snippets to faster integrate workflows.
 
 ### Set Status
 
-#### Set Status Workflow
+#### Workflow
 
 Simple Status Workflow with user inbox notification and higlight color.
 
@@ -53,7 +53,7 @@ pub async fn test() {
 }
 ```
 
-#### Set Status Service
+#### Service
 
 ```rust
 pub async fn main(ident, color) {
@@ -71,7 +71,11 @@ pub async fn test() {
 }
 ```
 
-#### Set Inbox Service
+[/ui-accordion-item]
+
+[ui-accordion-item title=Set\040User\040Inbox]
+
+#### Workflow
 
 ```rust
 pub async fn main(user, rec_uuid) {
@@ -85,8 +89,22 @@ pub async fn test() {
 }
 ```
 
+#### Service
+
+```rust
+pub async fn main(user, rec_uuid) {
+    dbg(user);
+    dbg(rec_uuid);
+    server::db::add_inbox(user, rec_uuid).await?;
+    Ok(true)
+}
+
+pub async fn test() {
+}
+```
 
 [/ui-accordion-item]
+
 
 [ui-accordion-item title=Set\040User\040Password]
 
