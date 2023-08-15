@@ -16,6 +16,9 @@ A collection of some helpfull code snippets to faster integrate workflows.
 
 [ui-accordion independent=true open=0]
 [ui-accordion-item title=Status\040Workflow\040and\040Service]
+
+### Set Status
+
 #### Set Status Workflow
 
 Simple Status Workflow with user inbox notification and higlight color.
@@ -87,6 +90,8 @@ pub async fn test() {
 
 [ui-accordion-item title=Set\040User\040Password]
 
+### Set User Password
+
 Workflow and Service code to set user passwords.
 
 #### Set User Password Workflow
@@ -135,6 +140,8 @@ pub async fn test() {
 
 [ui-accordion-item title=Add\040Favorite]
 
+### Add Favorite
+
 #### Add Favorite Workflow
 
 Icon: ```favorite```
@@ -150,7 +157,9 @@ Icon: ```favorite```
 ```rust
 
 ```
+[/ui-accordion-item]
 
+[ui-accordion-item title=Remove\040Favorite]
 
 ### Remove Favorite
 
