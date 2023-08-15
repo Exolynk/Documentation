@@ -112,7 +112,7 @@ pub async fn test() {
 
 Workflow and Service code to set user passwords.
 
-#### Set User Password Workflow
+#### Workflow
 
 Icon: ```two-keys```
 
@@ -138,7 +138,7 @@ pub async fn test() {
 }
 ```
 
-#### Set User Password Service
+#### Service
 
 Icon: ```two-keys```
 
@@ -160,7 +160,7 @@ pub async fn test() {
 
 ### Add Favorite
 
-#### Add Favorite Workflow
+#### Workflow
 
 Icon: ```favorite```
 
@@ -168,7 +168,7 @@ Icon: ```favorite```
 
 ```
 
-#### Add Favorite Service
+#### Service
 
 Icon: ```favorite```
 
@@ -181,7 +181,7 @@ Icon: ```favorite```
 
 ### Remove Favorite
 
-#### Remove Favorite Workflow
+#### Workflow
 
 Icon: ```unfavorite```
 
@@ -189,7 +189,7 @@ Icon: ```unfavorite```
 
 ```
 
-#### Remove Favorite Service
+#### Service
 
 Icon: ```unfavorite```
 
