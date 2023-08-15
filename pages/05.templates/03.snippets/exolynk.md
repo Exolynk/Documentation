@@ -14,7 +14,7 @@ process:
 
 A collection of some helpfull code snippets to faster integrate workflows.
 
-[ui-accordion independent=true open=none]
+[ui-accordion independent=true open=0]
 [ui-accordion-item title=Status\040Workflow\040and\040Service]
 #### Set Status Workflow
 

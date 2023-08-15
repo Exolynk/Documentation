@@ -688,7 +688,7 @@ Content for chapter one.
 
 ## Accordion
 
-##### Function of Grav Plugin: <a href="https://github.com/getgrav/grav-plugin-shortcode-ui/blob/develop/README.md" target="_blank">grav-plugin-shortcode-ui</a>
+##### Function of Grav Plugin: <a href="https://github.com/getgrav/grav-plugin-shortcode-ui/blob/develop/README.md#accordion" target="_blank">grav-plugin-shortcode-ui</a>
 
 An example of the Accordion shortcode is as follows:
 
