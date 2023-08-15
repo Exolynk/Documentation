@@ -1,5 +1,5 @@
 ---
-title: RapidModels
+title: Templates
 taxonomy:
     category: docs
 child_type: docs
