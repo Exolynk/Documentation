@@ -14,8 +14,8 @@ process:
 
 A collection of some helpfull code snippets to faster integrate workflows.
 
-### Status Workflow and Service
-
+[ui-accordion independent=true open=none]
+[ui-accordion-item title=Status\040Workflow\040and\040Service]
 #### Set Status Workflow
 
 Simple Status Workflow with user inbox notification and higlight color.
@@ -83,8 +83,9 @@ pub async fn test() {
 ```
 
 
+[/ui-accordion-item]
 
-### Set User Password
+[ui-accordion-item title=Set\040User\040Password]
 
 Workflow and Service code to set user passwords.
 
@@ -98,7 +99,7 @@ pub fn show() {
 }
 
 pub async fn main() {
-    let vars = [Variable::new(Ident::new("password"), Value::String(""))];
+    let vars = [Variable::new(Ident::new("password"), Value::String(""))?];
     let result = webapp::ui::popup("Reset Password", "", vars).await?;
     if result.0 == false {
         return;
@@ -106,13 +107,12 @@ pub async fn main() {
     let new_pw = result.1;
     let new_pw = new_pw[0].value.get_string()?;
     dbg(new_pw);
-    webapp::rpc_call("set_user_password_service", new_pw).await?;
+    webapp::rpc_call("model", "set_user_password_service", new_pw).await?;
 }
 
 pub async fn test() {
     main().await?;
 }
-
 ```
 
 #### Set User Password Service
@@ -131,9 +131,9 @@ pub async fn test() {
 }
 ```
 
+[/ui-accordion-item]
 
-
-### Add Favorite
+[ui-accordion-item title=Add\040Favorite]
 
 #### Add Favorite Workflow
 
@@ -170,23 +170,5 @@ Icon: ```unfavorite```
 
 ```
 
-
-
-
-### Set User Password
-
-#### Set User Password Workflow
-
-Icon: ```two-keys```
-
-```rust
-
-```
-
-#### Set User Password Service
-
-Icon: ```two-keys```
-
-```rust
-
-```
+[/ui-accordion-item]
+[/ui-accordion]
