@@ -208,4 +208,16 @@ Example workflow
 > ```
 
 [/ui-accordion-item]
+
+[ui-accordion-item title=<code>webapp::ui::open_record(String)</code>]
+
+##### Description
+Navigates the user to view the provided record
+
+##### Parameters
+> | parameter | data type               | description                                                           |
+> |-----------|-------------------------|-----------------------------------------------------------------------|
+> | 0         | String                  | The uuid of the record to navigate the user towards |
+
+[/ui-accordion-item]
 [/ui-accordion]

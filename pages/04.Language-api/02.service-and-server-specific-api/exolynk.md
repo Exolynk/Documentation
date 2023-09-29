@@ -82,7 +82,7 @@ Inserts a new Record into the database.
 ##### Returns
 > | data type                  | description                                                |
 > |----------------------------|------------------------------------------------------------|
-> | async Result&lt;()&gt; | Thorws an error when something went wrong |
+> | async Result&lt;(String)&gt; | Returns the uuid of the created record or an error. |
 [/ui-accordion-item]
 
 [ui-accordion-item title=<code>server::db::update_record_value(Reference,\040Ident,\040Value)\040->\040async\040Result&lt;()&gt;</code>]
